@@ -7,19 +7,30 @@
     <meta name = "keywords" content = "woodys, menu, order">
     <meta name = "description" content = "Menu page of our Woody's Website.">
     <link rel="stylesheet" href="homePage.css">
-    <title> Woody's Cafe </title>
-</head>
-<body>
+    <link rel="shortcut icon" href = "/img/woodyLogo.jpeg"> <!-- The code to add an icon before your title! -->
 
+    <style>
+        body {
+            background-image: url('/img/woodyspic.jpg'); /* Path to your image */
+            background-size: cover; 
+            background-position: center 100px;
+            background-repeat: no-repeat; 
+        }
+    </style>
+
+    <title> Woody's Cafe </title>
+</head> 
+<body>
     <ul class = "navigation">
         <li id = "title"> Woody's Cafe </li> 
-        <a href = "homePage.html" target="_blank", style = "text-decoration: none;"> <li id = "homeButton"> Home </li> </a>
-        <a href = "../Menu/menuPage.html" target="_blank", style = "text-decoration: none;"> <li id = "menuButton"> Menu </li> </a>
-        <a href = "../Login/loginPage.html" target="_blank", style = "text-decoration: none;"> <li id = "loginButton"> Login </li> </a>
-        <a href = "../About/aboutPage.html" target="_blank", style = "text-decoration: none;"> <li id = "aboutButton"> About </li> </a>
+        <a href = "homePage.html", target = "_blank", style = "text-decoration: none;"> <li id = "homeButton"> Home </li> </a>
+        <a href = "../Menu/menuPage.html", target = "_blank", style = "text-decoration: none;"> <li id = "menuButton"> Menu </li> </a>
+        <a href = "../Login/loginPage.html", target = "_blank", style = "text-decoration: none;"> <li id = "loginButton"> Login </li> </a>
+        <a href = "../About/aboutPage.html", target = "_blank", style = "text-decoration: none;"> <li id = "aboutButton"> About </li> </a>
     </ul>
 
-    
-
+    <p id = "welcomeText"> Welcome To Woody's Cafe</p>
+    <p id = "timingsText"> Mon - Fri: 8:00 AM to 6:00 PM</p>
+    <p id = "addressText"> 675 Hoes Lane W, Piscataway, NJ, 08854</p>
 </body>
 </html>

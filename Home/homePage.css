@@ -6,6 +6,7 @@
     line-height: 25px;
     text-align: left;
     padding-top: 30px;
+    padding-left: 25px;
     color: #d62100;
 }
 
@@ -27,7 +28,6 @@
     padding-left: 50px;
     color: #281d1b;
     text-decoration: none;
-    border-bottom: 2px solid red; 
 }
 
 #loginButton {
@@ -38,8 +38,6 @@
     padding-left: 50px;
     color: #281d1b;
     text-decoration: none;
-    border-bottom: 2px solid red; 
-    border-width: 2px;
 }
 
 #aboutButton {
@@ -50,7 +48,28 @@
     padding-left: 50px;
     color: #281d1b;
     text-decoration: none;
-    border-bottom: 2px solid red; 
+}
+
+#welcomeText {
+    text-align: center;
+    padding-top: 250px;
+    font-size: 40px; 
+    font-family: "Public Sans";
+    color:white;
+}
+
+#timingsText {
+    text-align: center;
+    font-size: 20px; 
+    font-family: "Public Sans";
+    color:white;
+}
+
+#addressText {
+    text-align: center;
+    font-size: 20px; 
+    font-family: "Public Sans";
+    color:white;
 }
 
 
