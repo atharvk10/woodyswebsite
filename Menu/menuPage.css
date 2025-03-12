@@ -1,0 +1,63 @@
+#menuTitle {
+    list-style-type: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 25px;
+    text-align: left;
+    padding-top: 30px;
+    padding-left:25px;
+    color: #d62100;
+}
+
+#menuHomeButton {
+    font-family: "Public Sans";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 20px;
+    padding-left: 875px;
+    color: #281d1b;
+    text-decoration: none;
+
+}
+
+#menuMenuButton {
+    font-family: "Public Sans";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 20px;
+    padding-left: 50px;
+    color: #281d1b;
+    text-decoration: none;
+}
+
+#menuLoginButton {
+    font-family: "Public Sans";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 20px;
+    padding-left: 50px;
+    color: #281d1b;
+    text-decoration: none;
+}
+
+#menuAboutButton {
+    font-family: "Public Sans";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 20px;
+    padding-left: 50px;
+    color: #281d1b;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
