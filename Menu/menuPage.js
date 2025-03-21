@@ -1,35 +1,39 @@
+// server.js
 const express = require('express');
 const mysql = require('mysql2');
-const cors = require('cors');
-
-// Initialize express app
 const app = express();
 const port = 3000;
 
-// Enable CORS for frontend requests
-app.use(cors());
-
-// Set up MySQL connection
-const connection = mysql.createConnection({
-  host: 'localhost',    // Your database host (e.g., localhost or IP)
-  user: 'woodys',     // Your database username
-  password: '', // Your database password
-  database: 'menu' // Your database name
+// Create a connection to the MySQL database
+const db = mysql.createConnection({
+  host: 'localhost',    // Database host (localhost if it's on your local machine)
+  user: 'root',         // MySQL username (use your own username if different)
+  password: 'yourpassword', // MySQL password (use your own password)
+  database: 'menu_db'   // The name of your MySQL database
 });
 
-// Endpoint to fetch menu items
-app.get('/menu', (req, res) => {
-  const query = 'SELECT ItemName, ItemPrice FROM menu_table'; // Replace with your actual table/column names
-  connection.query(query, (err, results) => {
+// Connect to the MySQL database
+db.connect(err => {
+  if (err) {
+    console.error('Error connecting to MySQL:', err);
+    return;
+  }
+  console.log('Connected to MySQL database');
+});
+
+// API route to get menu items
+app.get('/api/menu', (req, res) => {
+  // Query to select all menu items from the 'menu_items' table
+  db.query('SELECT * FROM menu_table', (err, results) => {
     if (err) {
-      res.status(500).json({ error: 'Failed to fetch menu items' });
-    } else {
-      res.json(results);
+      res.status(500).json({ error: err.message });
+      return;
     }
+    res.json(results); // Send the result as JSON to the frontend
   });
 });
 
 // Start the server
 app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`);
+  console.log(`Server is running on http://localhost:${port}`);
 });
