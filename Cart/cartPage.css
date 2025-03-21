@@ -1,4 +1,4 @@
-#PaymentTitle {
+#cartTitle {
     list-style-type: none;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 400;
@@ -25,7 +25,7 @@
     text-decoration: none;
 }
 
-#paymentHomeButton {
+#cartHomeButton {
     font-family: "Trebuchet MS";
     font-weight: 700;
     font-size: 20px;
@@ -36,7 +36,7 @@
     text-decoration: none;
 }
 
-#paymentMenuButton {
+#cartMenuButton {
     font-family: "Trebuchet MS";
     font-weight: 700;
     font-size: 20px;
@@ -47,7 +47,7 @@
     text-decoration: none;
 }
 
-#paymentLoginButton {
+#cartLoginButton {
     font-family: "Trebuchet MS";
     font-weight: 700;
     font-size: 20px;
@@ -58,7 +58,7 @@
     text-decoration: none;
 }
 
-#paymentAboutButton {
+#cartAboutButton {
     font-family: "Trebuchet MS";
     font-weight: 700;
     font-size: 20px;
@@ -110,57 +110,34 @@ li a {
     text-decoration: none;
 }
 
-input[type=text] {
-    font-family: "Trebuchet MS";
-    border: 2px solid black;
-    border-radius: 4px;
+.cartTable{
+    margin: 80px auto;
+    table{
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th{
+        text-align: left;
+        padding: 5px;
+        color: white;
+        background: rgb(234, 94, 94);
+        font-weight: normal;
+    }
+    td{
+        padding: 10px 5px;
+    }
 }
 
-input[type=submit]{
-    font-family: "Trebuchet MS";
-    background-color: #850a1a;
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
+.cartTotal{
+    display: flex;
+    justify-content: flex-end;
+    table{
+        border-top: 3px solid rgb(234, 94, 94);
+        width: 100%;
+        max-width: 350px;
+    }
 }
 
-label{
+h2{
     font-family: "Trebuchet MS";
-}
-
-.namegroup{
-    font-family: "Trebuchet MS";
-    display: inline-flex;
-    flex-direction: column; 
-    width: 25%;
-}
-
-.paymentgroup {
-    label {
-        float: left;
-        clear: none;
-        display: block;
-        padding: 17px 2em 0px 0px;
-      }
-    font-family: "Trebuchet MS";
-    display: inline-flex;
-    flex-direction: row; 
-    width: 100%;
-    margin-left: 3em;
-}
-
-.cardgroup {
-    label {
-        font-family: "Trebuchet MS";
-        clear: none;
-        margin: 10px;
-        padding: 0px 0em 0px 0px;
-      }
-    display: inline-flex;
-    flex-direction: row; 
-    margin-left: 2.3em;
-    width: 100%;
 }
