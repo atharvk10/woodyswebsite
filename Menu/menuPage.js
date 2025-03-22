@@ -1,39 +1,286 @@
-// server.js
-const express = require('express');
-const mysql = require('mysql2');
-const app = express();
-const port = 3000;
-
-// Create a connection to the MySQL database
-const db = mysql.createConnection({
-  host: 'localhost',    // Database host (localhost if it's on your local machine)
-  user: 'root',         // MySQL username (use your own username if different)
-  password: 'yourpassword', // MySQL password (use your own password)
-  database: 'menu_db'   // The name of your MySQL database
-});
-
-// Connect to the MySQL database
-db.connect(err => {
-  if (err) {
-    console.error('Error connecting to MySQL:', err);
-    return;
+function smoothScrollToSection(event, sectionID) {
+  event.preventDefault();
+  const element = document.getElementById(sectionID);
+  if(element) {
+    element.scrollIntoView({behavior: "smooth"})
   }
-  console.log('Connected to MySQL database');
+}
+
+
+//THIS IS FOR BREAKFAST SANDWICHES
+
+document.addEventListener("DOMContentLoaded", function() {
+  fetch('./MenuDatabase/breakfastSandwiches.json')
+    .then(response => response.json())
+    .then(data => {
+        menuItems = data;
+        displayBreakfastSanwiches(menuItems);
+    })
+    .catch(error => console.error('Error loading menu:', error));
 });
 
-// API route to get menu items
-app.get('/api/menu', (req, res) => {
-  // Query to select all menu items from the 'menu_items' table
-  db.query('SELECT * FROM menu_table', (err, results) => {
-    if (err) {
-      res.status(500).json({ error: err.message });
-      return;
-    }
-    res.json(results); // Send the result as JSON to the frontend
+function displayBreakfastSanwiches(items) {
+    let menuDiv = document.getElementById('breakfast-sandwiches');
+    menuDiv.innerHTML = '';
+
+    items.forEach(item => {
+        let div = document.createElement('div');
+        div.className = 'menu-item';
+        div.innerHTML = `<div class = "item-name"> ${item.ItemName} <br> </div>
+                        <div class = "item-price">$${item.ItemPrice.toFixed(2)} </div> <br>
+                        <img class = "item-image" src = "${item.ItemImage}" width = "250"> 
+                        `;
+
+        menuDiv.appendChild(div);
+    });
+}
+
+//THIS IS FOR THE BREAKFAST ITEMS
+
+document.addEventListener("DOMContentLoaded", function() {
+  fetch('./MenuDatabase/breakfast.json')
+    .then(response => response.json())
+    .then(data => {
+        menuItems = data;
+        displayBreakfast(menuItems);
+    })
+    .catch(error => console.error('Error loading menu:', error));
+});
+
+function displayBreakfast(items) {
+    let menuDiv = document.getElementById('breakfast');
+    menuDiv.innerHTML = '';
+
+    items.forEach(item => {
+        let div = document.createElement('div');
+        div.className = 'menu-item';
+        div.innerHTML = `<div class = "item-name"> ${item.ItemName} <br> </div>
+                        <div class="item-price">$${item.ItemPrice.toFixed(2)}</div> <br>
+                        <img class = "item-image" src = "${item.ItemImage}" width = "250"> 
+                        `;
+
+        menuDiv.appendChild(div);
+    });
+}
+
+//THIS IS FOR THE BREAKFAST SIDES
+
+document.addEventListener("DOMContentLoaded", function() {
+  fetch('./MenuDatabase/breakfastSides.json')
+    .then(response => response.json())
+    .then(data => {
+        menuItems = data;
+        displayBreakfastSides(menuItems);
+    })
+    .catch(error => console.error('Error loading menu:', error));
+});
+
+function displayBreakfastSides(items) {
+    let menuDiv = document.getElementById('breakfast-sides');
+    menuDiv.innerHTML = '';
+
+    items.forEach(item => {
+        let div = document.createElement('div');
+        div.className = 'menu-item';
+        div.innerHTML = `<div class = "item-name"> ${item.ItemName} <br> </div>
+                        <div class="item-price">$${item.ItemPrice.toFixed(2)}</div> <br>
+                        <img class = "item-image" src = "${item.ItemImage}" width = "250"> 
+                        `;
+
+        menuDiv.appendChild(div);
+    });
+}
+
+//THIS IS FOR THE BAGELS
+
+document.addEventListener("DOMContentLoaded", function() {
+  fetch('./MenuDatabase/bagels.json')
+    .then(response => response.json())
+    .then(data => {
+        menuItems = data;
+        displayBagels(menuItems);
+    })
+    .catch(error => console.error('Error loading menu:', error));
+});
+
+function displayBagels(items) {
+    let menuDiv = document.getElementById('bagels');
+    menuDiv.innerHTML = '';
+
+    items.forEach(item => {
+        let div = document.createElement('div');
+        div.className = 'menu-item';
+        div.innerHTML = `<div class = "item-name"> ${item.ItemName} <br> </div>
+                        <div class="item-price">$${item.ItemPrice.toFixed(2)}</div> <br>
+                        <img class = "item-image" src = "${item.ItemImage}" width = "250"> 
+                        `;
+
+        menuDiv.appendChild(div);
+    });
+}
+
+//THIS IS FOR THE GRAB AND GO
+
+document.addEventListener("DOMContentLoaded", function() {
+  fetch('./MenuDatabase/grabAndGo.json')
+    .then(response => response.json())
+    .then(data => {
+        menuItems = data;
+        displayGrabAndGo(menuItems);
+    })
+    .catch(error => console.error('Error loading menu:', error));
+});
+
+function displayGrabAndGo(items) {
+    let menuDiv = document.getElementById('grab-and-go');
+    menuDiv.innerHTML = '';
+
+    items.forEach(item => {
+        let div = document.createElement('div');
+        div.className = 'menu-item';
+        div.innerHTML = `<div class = "item-name"> ${item.ItemName} <br> </div>
+                        <div class="item-price">$${item.ItemPrice.toFixed(2)}</div> <br>
+                        <img class = "item-image" src = "${item.ItemImage}" width = "250"> 
+                        `;
+
+        menuDiv.appendChild(div);
+    });
+}
+
+//THIS IS FOR THE LUNCH BAGELS
+
+document.addEventListener("DOMContentLoaded", function() {
+  fetch('./MenuDatabase/bagels.json')
+    .then(response => response.json())
+    .then(data => {
+        menuItems = data;
+        displayLunchBagels(menuItems);
+    })
+    .catch(error => console.error('Error loading menu:', error));
+});
+
+function displayLunchBagels(items) {
+    let menuDiv = document.getElementById('lunch-bagels');
+    menuDiv.innerHTML = '';
+
+    items.forEach(item => {
+        let div = document.createElement('div');
+        div.className = 'menu-item';
+        div.innerHTML = `<div class = "item-name"> ${item.ItemName} <br> </div>
+                        <div class="item-price">$${item.ItemPrice.toFixed(2)}</div> <br>
+                        <img class = "item-image" src = "${item.ItemImage}" width = "250"> 
+                        `;
+
+        menuDiv.appendChild(div);
+    });
+}
+
+//THIS IS FOR THE WRAPS
+
+document.addEventListener("DOMContentLoaded", function() {
+  fetch('./MenuDatabase/wraps.json')
+    .then(response => response.json())
+    .then(data => {
+        menuItems = data;
+        displayWraps(menuItems);
+    })
+    .catch(error => console.error('Error loading menu:', error));
+});
+
+function displayWraps(items) {
+    let menuDiv = document.getElementById('wraps');
+    menuDiv.innerHTML = '';
+
+    items.forEach(item => {
+        let div = document.createElement('div');
+        div.className = 'menu-item';
+        div.innerHTML = `<div class = "item-name"> ${item.ItemName} <br> </div>
+                        <div class="item-price">$${item.ItemPrice.toFixed(2)}</div> <br>
+                        <img class = "item-image" src = "${item.ItemImage}" width = "250"> 
+                        `;
+
+        menuDiv.appendChild(div);
+    });
+}
+
+//THIS IS FOR THE GRILLE
+
+document.addEventListener("DOMContentLoaded", function() {
+    fetch('./MenuDatabase/grille.json')
+      .then(response => response.json())
+      .then(data => {
+          menuItems = data;
+          displayGrille(menuItems);
+      })
+      .catch(error => console.error('Error loading menu:', error));
   });
-});
+  
+  function displayGrille(items) {
+      let menuDiv = document.getElementById('grille');
+      menuDiv.innerHTML = '';
+  
+      items.forEach(item => {
+          let div = document.createElement('div');
+          div.className = 'menu-item';
+          div.innerHTML = `<div class = "item-name"> ${item.ItemName} <br> </div>
+                          <div class="item-price">$${item.ItemPrice.toFixed(2)}</div> <br>
+                          <img class = "item-image" src = "${item.ItemImage}" width = "250"> 
+                          `;
+  
+          menuDiv.appendChild(div);
+      });
+  }
 
-// Start the server
-app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
-});
+  //THIS IS FOR THE PANANIS
+  document.addEventListener("DOMContentLoaded", function() {
+    fetch('./MenuDatabase/panani.json')
+      .then(response => response.json())
+      .then(data => {
+          menuItems = data;
+          displayPanani(menuItems);
+      })
+      .catch(error => console.error('Error loading menu:', error));
+  });
+  
+  function displayPanani(items) {
+      let menuDiv = document.getElementById('panani');
+      menuDiv.innerHTML = '';
+  
+      items.forEach(item => {
+          let div = document.createElement('div');
+          div.className = 'menu-item';
+          div.innerHTML = `<div class = "item-name"> ${item.ItemName} <br> </div>
+                          <div class="item-price">$${item.ItemPrice.toFixed(2)}</div> <br>
+                          <img class = "item-image" src = "${item.ItemImage}" width = "250"> 
+                          `;
+  
+          menuDiv.appendChild(div);
+      });
+  }
+
+  //THIS IS FOR THE TRADITIONAL SANDWICHES
+  document.addEventListener("DOMContentLoaded", function() {
+    fetch('./MenuDatabase/traditional.json')
+      .then(response => response.json())
+      .then(data => {
+          menuItems = data;
+          displayTraditional(menuItems);
+      })
+      .catch(error => console.error('Error loading menu:', error));
+  });
+  
+  function displayTraditional(items) {
+      let menuDiv = document.getElementById('traditional');
+      menuDiv.innerHTML = '';
+  
+      items.forEach(item => {
+          let div = document.createElement('div');
+          div.className = 'menu-item';
+          div.innerHTML = `<div class = "item-name"> ${item.ItemName} <br> </div>
+                          <div class="item-price">$${item.ItemPrice.toFixed(2)}</div> <br>
+                          <img class = "item-image" src = "${item.ItemImage}" width = "250"> 
+                          `;
+  
+          menuDiv.appendChild(div);
+      });
+  }

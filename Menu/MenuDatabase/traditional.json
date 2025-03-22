@@ -1,0 +1,53 @@
+[
+    {
+        "ItemName": "BLT",
+        "ItemPrice": 6.50, 
+        "ItemDescription":"",
+        "ItemImage": ""
+    },
+    {
+        "ItemName": "Chicken Salad Sandwich", 
+        "ItemPrice": 6.50, 
+        "ItemDescription":"",
+        "ItemImage": ""
+    },
+    {
+        "ItemName": "Egg Salad Sandwich", 
+        "ItemPrice": 6.50, 
+        "ItemDescription":"",
+        "ItemImage": ""
+    },
+    {
+        "ItemName": "Ham", 
+        "ItemPrice": 6.50,
+        "ItemDescription":"",
+        "ItemImage": ""
+    },
+    {
+        "ItemName": "Roast Beef and Cheese", 
+        "ItemPrice": 6.50, 
+        "ItemDescription":"",
+        "ItemImage": ""
+    },
+    {
+        "ItemName": "Tuna Salad Sandwich", 
+        "ItemPrice": 6.50, 
+        "ItemDescription":"",
+        "ItemImage": ""
+    },
+    {
+        "ItemName": "Turkey and Cheese", 
+        "ItemPrice": 6.50, 
+        "ItemDescription":"",
+        "ItemImage": ""
+    },
+    {
+        "ItemName": "Veggie Sandwich ", 
+        "ItemPrice": 6.50, 
+        "ItemDescription":"",
+        "ItemImage": ""
+    }
+        
+
+]
+

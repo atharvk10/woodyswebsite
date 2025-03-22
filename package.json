@@ -1,0 +1,23 @@
+{
+  "name": "woodyswebsite",
+  "version": "1.0.0",
+  "description": "Group Project for Software Engineering",
+  "main": "backend.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atharvk10/woodyswebsite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atharvk10/woodyswebsite/issues"
+  },
+  "homepage": "https://github.com/atharvk10/woodyswebsite#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

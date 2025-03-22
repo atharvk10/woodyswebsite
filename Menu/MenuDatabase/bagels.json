@@ -1,0 +1,36 @@
+[
+    {
+        "ItemName": "Cinnamon Raisin Bagel",
+        "ItemPrice": 1.79, 
+        "ItemDescription":"",
+        "ItemImage":"../img/cinnamon-bagel.jpeg"
+    },
+    {
+        "ItemName": "Everything Bagel",
+        "ItemPrice": 1.79,
+        "ItemDescription":"",
+        "ItemImage":"../img/everything-bagel.jpeg"
+    },
+    {
+        "ItemName": "Garlic Bagel",
+        "ItemPrice": 1.79,
+        "ItemDescription":"",
+        "ItemImage":"../img/garlic-bagel.jpeg"
+    },
+    {
+        "ItemName": "Jalapeno Bagel",
+        "ItemPrice": 1.79,
+        "ItemDescription": "",
+        "ItemImage":"../img/jalapeno-bagel.jpeg"
+    },
+    {
+        "ItemName": "Plain Bagel",
+        "ItemPrice": 1.79,
+        "ItemDescription": "",
+        "ItemImage": "../img/plain-bagel.jpeg"
+        
+    }
+    
+
+]
+

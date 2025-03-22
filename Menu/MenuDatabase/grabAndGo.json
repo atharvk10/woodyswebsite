@@ -1,0 +1,85 @@
+[
+    {
+        "ItemName": "3pc Chicken Tender with Fries",
+        "ItemPrice": 6.75, 
+        "ItemDescription":"",
+        "ItemImage":""
+    },
+    {
+        "ItemName": "5pc Chicken Tenders",
+        "ItemPrice": 7.50,
+        "ItemDescription":"",
+        "ItemImage":""
+    },
+    {
+        "ItemName": "8pc Chicken Wings",
+        "ItemPrice": 7.75,
+        "ItemDescription":"",
+        "ItemImage":""
+    },
+    {
+        "ItemName": "Bacon Cheeseburger",
+        "ItemPrice": 6.75,
+        "ItemDescription": "",
+        "ItemImage":""
+    },
+    {
+        "ItemName": "Black Bean Burger",
+        "ItemPrice": 6.75,
+        "ItemDescription": "",
+        "ItemImage": ""
+        
+    },
+    {
+        "ItemName": "Cheeseburger",
+        "ItemPrice": 7.25,
+        "ItemDescription": "",
+        "ItemImage": ""
+        
+    },
+    {
+        "ItemName": "Chicken Parmesan Sandwich",
+        "ItemPrice": 7.50,
+        "ItemDescription": "",
+        "ItemImage": ""
+        
+    },
+    {
+        "ItemName": "Crispy Buffalo Chicken Sandwich",
+        "ItemPrice": 7.50,
+        "ItemDescription": "",
+        "ItemImage": ""
+        
+    },
+    {
+        "ItemName": "Fries",
+        "ItemPrice": 3.50,
+        "ItemDescription": "",
+        "ItemImage": ""
+        
+    },
+    {
+        "ItemName": "Hamburger",
+        "ItemPrice": 6.75,
+        "ItemDescription": "",
+        "ItemImage": ""
+        
+    },
+    {
+        "ItemName": "Pulled Pork Sandwich",
+        "ItemPrice": 7.50,
+        "ItemDescription": "",
+        "ItemImage": ""
+        
+    },
+    {
+        "ItemName": "Turkey Burger",
+        "ItemPrice": 6.75,
+        "ItemDescription": "",
+        "ItemImage": ""
+        
+    }   
+    
+
+]
+

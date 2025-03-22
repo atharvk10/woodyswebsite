@@ -1,0 +1,23 @@
+[
+    {
+        "ItemName": "6pcs French Toast",
+        "ItemPrice": 4.50, 
+        "ItemDescription":"",
+        "ItemImage": "../img/french-toast.jpeg"
+    },
+    {
+        "ItemName": "Egg Platter", 
+        "ItemPrice": 6.75, 
+        "ItemDescription":"",
+        "ItemImage": "../img/eggplatter.jpg"
+    },
+    {
+        "ItemName": "Pancakes", 
+        "ItemPrice": 5.00, 
+        "ItemDescription":"",
+        "ItemImage": "../img/pancakes.jpg"
+    }
+        
+
+]
+

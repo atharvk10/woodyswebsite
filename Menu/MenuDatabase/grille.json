@@ -1,0 +1,41 @@
+[
+    {
+        "ItemName": "Bacon Grilled Cheese",
+        "ItemPrice": 6.50, 
+        "ItemDescription":"",
+        "ItemImage": ""
+    },
+    {
+        "ItemName": "Cheese Steak", 
+        "ItemPrice": 8.50, 
+        "ItemDescription":"",
+        "ItemImage": ""
+    },
+    {
+        "ItemName": "Chicken Sandwich", 
+        "ItemPrice": 6.50, 
+        "ItemDescription":"",
+        "ItemImage": ""
+    },
+    {
+        "ItemName": "Grilled Cheese", 
+        "ItemPrice": 5.50, 
+        "ItemDescription":"",
+        "ItemImage": ""
+    },
+    {
+        "ItemName": "NAAN Pizza", 
+        "ItemPrice": 5.25, 
+        "ItemDescription":"",
+        "ItemImage": ""
+    },
+    {
+        "ItemName": "Philly Cheesesteak Wrap", 
+        "ItemPrice": 8.50, 
+        "ItemDescription":"",
+        "ItemImage": ""
+    }
+        
+
+]
+

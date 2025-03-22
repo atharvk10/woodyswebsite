@@ -54,6 +54,11 @@
     text-decoration: none;
 }
 
+body {
+    max-width: 100%;
+    overflow: auto;
+}
+
 li {
     list-style-type: none;
     display: inline-block;
@@ -95,25 +100,71 @@ a:hover {
     This section is for styling the individual menu items
 **/
 
-.menu {
-    left:100;
+.item-container {   
     display:grid;
-    grid-template-columns: repeat(5, 200px);
-    justify-content: center;
-    padding-top: 100px;
+    gap:50px;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 100%;
+    margin:auto;
+    padding-top: 45px;
+    padding-left: 350px;
+    margin-right: 70px;
+  
+}
+
+.wraps-container {
+    display:grid;
+    gap:50px;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+    margin:auto;
+    padding-top: 45px;
+    padding-left: 350px;
+    margin-right: 70px;
+}
+
+.item-name {
+    font-size: 25px;
+    text-align: center;
+    font-family:cursive;
+}
+
+.item-price {
+    color:red;
+    font-size:20px;    
+    font-style: italic;
+    text-align: center;
+}   
+
+.item-image {
+   position: relative;
+   left:30px;
+   background-color:antiquewhite;
+
+}
+
+#divider {
+    border: none;
+    height:3px;
+    background-color: red;
+    width:1110px;
+    margin-right: 50px;
+
+}
+
+.menu-item {
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 2px 2px 5px rgba(255, 0, 0, 1);
+}
+
+h1 {
     padding-left: 300px;
-    gap:30px;
+    font-size: 50px;
 
 }
 
-.item {
-    border: 2px solid black;
-    border-radius: 4px;
-}
 
-.menuItemDetails {
-    display:flex;
-    flex-direction: coloumn;
-    padding:10px;
-    gap:10px;
-}
+
+

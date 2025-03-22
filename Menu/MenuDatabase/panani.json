@@ -1,0 +1,53 @@
+[
+    {
+        "ItemName": "Buffalo Panini",
+        "ItemPrice": 6.95, 
+        "ItemDescription":"",
+        "ItemImage": ""
+    },
+    {
+        "ItemName": "Chicken Bacon Ranch", 
+        "ItemPrice": 8.25, 
+        "ItemDescription":"",
+        "ItemImage": ""
+    },
+    {
+        "ItemName": "Cuban", 
+        "ItemPrice": 8.25, 
+        "ItemDescription":"",
+        "ItemImage": ""
+    },
+    {
+        "ItemName": "Pastrami Rueben", 
+        "ItemPrice": 8.25,
+        "ItemDescription":"",
+        "ItemImage": ""
+    },
+    {
+        "ItemName": "Tomato Mozzarella Semolina", 
+        "ItemPrice": 7.25, 
+        "ItemDescription":"",
+        "ItemImage": ""
+    },
+    {
+        "ItemName": "Valley Chicken Sandwich", 
+        "ItemPrice": 8.25, 
+        "ItemDescription":"",
+        "ItemImage": ""
+    },
+    {
+        "ItemName": "Veggie Dream", 
+        "ItemPrice": 8.25, 
+        "ItemDescription":"",
+        "ItemImage": ""
+    },
+    {
+        "ItemName": "Woody's Club", 
+        "ItemPrice": 8.25, 
+        "ItemDescription":"",
+        "ItemImage": ""
+    }
+        
+
+]
+
