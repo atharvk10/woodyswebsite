@@ -3,51 +3,48 @@
         "ItemName": "BLT",
         "ItemPrice": 6.50, 
         "ItemDescription":"",
-        "ItemImage": ""
+        "ItemImage": "../img/blt.jpg"
     },
     {
         "ItemName": "Chicken Salad Sandwich", 
         "ItemPrice": 6.50, 
         "ItemDescription":"",
-        "ItemImage": ""
+        "ItemImage": "../img/chicken_salad_sandwich.jpg"
     },
     {
         "ItemName": "Egg Salad Sandwich", 
         "ItemPrice": 6.50, 
         "ItemDescription":"",
-        "ItemImage": ""
+        "ItemImage": "../img/egg_salad_sandwich.jpg"
     },
     {
         "ItemName": "Ham", 
         "ItemPrice": 6.50,
         "ItemDescription":"",
-        "ItemImage": ""
+        "ItemImage": "../img/ham_sandwich.jpg"
     },
     {
         "ItemName": "Roast Beef and Cheese", 
         "ItemPrice": 6.50, 
         "ItemDescription":"",
-        "ItemImage": ""
+        "ItemImage": "../img/roast_beef_and_cheese_sandwich.jpg"
     },
     {
         "ItemName": "Tuna Salad Sandwich", 
         "ItemPrice": 6.50, 
         "ItemDescription":"",
-        "ItemImage": ""
+        "ItemImage": "../img/tuna_salad_sandwich.jpg"
     },
     {
         "ItemName": "Turkey and Cheese", 
         "ItemPrice": 6.50, 
         "ItemDescription":"",
-        "ItemImage": ""
+        "ItemImage": "../img/turkey_cheese_sandwich.jpg"
     },
     {
         "ItemName": "Veggie Sandwich ", 
         "ItemPrice": 6.50, 
         "ItemDescription":"",
-        "ItemImage": ""
+        "ItemImage": "../img/veggie_sandwich.jpg"
     }
-        
-
 ]
-

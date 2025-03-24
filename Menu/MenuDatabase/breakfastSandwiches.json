@@ -8,12 +8,14 @@
     {
         "ItemName": "Egg Sandwich",
         "ItemPrice": 5.75,
-        "ItemDescription":""
+        "ItemDescription":"",
+        "ItemImage":"../img/eggsandwich.jpg"
     },
     {
         "ItemName": "Meat Sandwich",
         "ItemPrice": 6.50,
-        "ItemDescription":""
+        "ItemDescription":"",
+        "ItemImage":"../img/meat_sandwich.jpg"
     },
     {
         "ItemName": "Pork Bacon Cheese Sandwich",
@@ -23,7 +25,8 @@
     {
         "ItemName": "Pork Bacon Egg Cheese Sandwich",
         "ItemPrice": 6.50,
-        "ItemDescription": ""
+        "ItemDescription": "",
+        "ItemImage":"../img/pork_bacon_egg_cheese_sandwich.jpg"
     },
     {
         "ItemName": "Pork Bacon Egg Sandwich",

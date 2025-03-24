@@ -3,25 +3,25 @@
         "ItemName": "Buffalo Panini",
         "ItemPrice": 6.95, 
         "ItemDescription":"",
-        "ItemImage": ""
+        "ItemImage": "../img/buffalo_chicken_panini.jpg"
     },
     {
         "ItemName": "Chicken Bacon Ranch", 
         "ItemPrice": 8.25, 
         "ItemDescription":"",
-        "ItemImage": ""
+        "ItemImage": "../img/chicken_bacon_ranch_panini.jpeg"
     },
     {
         "ItemName": "Cuban", 
         "ItemPrice": 8.25, 
         "ItemDescription":"",
-        "ItemImage": ""
+        "ItemImage": "../img/cuban_panini.jpg"
     },
     {
         "ItemName": "Pastrami Rueben", 
         "ItemPrice": 8.25,
         "ItemDescription":"",
-        "ItemImage": ""
+        "ItemImage": "../img/pastrami_reuben.jpg"
     },
     {
         "ItemName": "Tomato Mozzarella Semolina", 

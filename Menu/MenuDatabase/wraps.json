@@ -3,7 +3,7 @@
         "ItemName": "Crispy BBQ Chicken and Bacon Wrap",
         "ItemPrice": 7.25, 
         "ItemDescription":"",
-        "ItemImage": ""
+        "ItemImage": "../img/chicken_bacon_wrap.jpg"
     },
     {
         "ItemName": "Hot Knight Wrap", 
