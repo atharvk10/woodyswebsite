@@ -3,80 +3,80 @@
         "ItemName": "3pc Chicken Tender with Fries",
         "ItemPrice": 6.75, 
         "ItemDescription":"",
-        "ItemImage":""
+        "ItemImage":"../img/3pc_chicken_fries.avif"
     },
     {
         "ItemName": "5pc Chicken Tenders",
         "ItemPrice": 7.50,
         "ItemDescription":"",
-        "ItemImage":""
+        "ItemImage":"../img/5pc_chicken.jpg"
     },
     {
         "ItemName": "8pc Chicken Wings",
         "ItemPrice": 7.75,
         "ItemDescription":"",
-        "ItemImage":""
+        "ItemImage":"../img/8pc_chicken_wings.jpeg"
     },
     {
         "ItemName": "Bacon Cheeseburger",
         "ItemPrice": 6.75,
         "ItemDescription": "",
-        "ItemImage":""
+        "ItemImage":"../img/bacon_cheeseburger.jpg"
     },
     {
         "ItemName": "Black Bean Burger",
         "ItemPrice": 6.75,
         "ItemDescription": "",
-        "ItemImage": ""
+        "ItemImage": "../img/blackbean_burger.jpg"
         
     },
     {
         "ItemName": "Cheeseburger",
         "ItemPrice": 7.25,
         "ItemDescription": "",
-        "ItemImage": ""
+        "ItemImage": "../img/cheeseburger.jpg"
         
     },
     {
         "ItemName": "Chicken Parmesan Sandwich",
         "ItemPrice": 7.50,
         "ItemDescription": "",
-        "ItemImage": ""
+        "ItemImage": "../img/chicken_parm_sandwich.jpg"
         
     },
     {
         "ItemName": "Crispy Buffalo Chicken Sandwich",
         "ItemPrice": 7.50,
         "ItemDescription": "",
-        "ItemImage": ""
+        "ItemImage": "../img/crispy_buffalo_chicken.jpeg"
         
     },
     {
         "ItemName": "Fries",
         "ItemPrice": 3.50,
         "ItemDescription": "",
-        "ItemImage": ""
+        "ItemImage": "../img/fries.jpeg"
         
     },
     {
         "ItemName": "Hamburger",
         "ItemPrice": 6.75,
         "ItemDescription": "",
-        "ItemImage": ""
+        "ItemImage": "../img/hamburger.jpeg"
         
     },
     {
         "ItemName": "Pulled Pork Sandwich",
         "ItemPrice": 7.50,
         "ItemDescription": "",
-        "ItemImage": ""
+        "ItemImage": "../img/pulled_pork.jpeg"
         
     },
     {
         "ItemName": "Turkey Burger",
         "ItemPrice": 6.75,
         "ItemDescription": "",
-        "ItemImage": ""
+        "ItemImage": "../img/turkey_burger.jpg"
         
     }   
     

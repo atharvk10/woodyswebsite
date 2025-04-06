@@ -20,7 +20,8 @@
     {
         "ItemName": "Pork Bacon Cheese Sandwich",
         "ItemPrice": 6.00,
-        "ItemDescription": ""
+        "ItemDescription":"",
+        "ItemImage": "../img/pork_cheese_sandwich.jpg"
     },
     {
         "ItemName": "Pork Bacon Egg Cheese Sandwich",

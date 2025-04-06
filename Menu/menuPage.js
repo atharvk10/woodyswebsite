@@ -28,7 +28,7 @@ function displayBreakfastSanwiches(items) {
         div.className = 'menu-item';
         div.innerHTML = `<div class = "item-name"> ${item.ItemName} <br> </div>
                         <div class = "item-price">$${item.ItemPrice.toFixed(2)} </div> <br>
-                        <img class = "item-image" src = "${item.ItemImage}" width = "250"> 
+                        <img class = "item-image" src = "${item.ItemImage}" width = "250" height = "250"> 
                         `;
 
         menuDiv.appendChild(div);
@@ -84,7 +84,7 @@ function displayBreakfastSides(items) {
         div.className = 'menu-item';
         div.innerHTML = `<div class = "item-name"> ${item.ItemName} <br> </div>
                         <div class="item-price">$${item.ItemPrice.toFixed(2)}</div> <br>
-                        <img class = "item-image" src = "${item.ItemImage}" width = "250"> 
+                        <img class = "item-image" src = "${item.ItemImage}" width = "250">
                         `;
 
         menuDiv.appendChild(div);
@@ -196,7 +196,7 @@ function displayWraps(items) {
         div.className = 'menu-item';
         div.innerHTML = `<div class = "item-name"> ${item.ItemName} <br> </div>
                         <div class="item-price">$${item.ItemPrice.toFixed(2)}</div> <br>
-                        <img class = "item-image" src = "${item.ItemImage}" width = "250"> 
+                        <img class = "item-image" src = "${item.ItemImage}" width = "450" height = "400"> 
                         `;
 
         menuDiv.appendChild(div);
@@ -284,3 +284,5 @@ document.addEventListener("DOMContentLoaded", function() {
           menuDiv.appendChild(div);
       });
   }
+
+  //I am creating a website that holds menu items. I have individual cards for each menu item on the website. If i click on the card, I want a new HTML page that shows more information about that item. how would i do that? I don't want to make HTML pages for each menu item
