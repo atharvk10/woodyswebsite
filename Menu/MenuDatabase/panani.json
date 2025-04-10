@@ -27,25 +27,25 @@
         "ItemName": "Tomato Mozzarella Semolina", 
         "ItemPrice": 7.25, 
         "ItemDescription":"",
-        "ItemImage": ""
+        "ItemImage": "../img/tomato_mozzarella_semolina.jpg"
     },
     {
         "ItemName": "Valley Chicken Sandwich", 
         "ItemPrice": 8.25, 
         "ItemDescription":"",
-        "ItemImage": ""
+        "ItemImage": "../img/valleychicken.jpg"
     },
     {
         "ItemName": "Veggie Dream", 
         "ItemPrice": 8.25, 
         "ItemDescription":"",
-        "ItemImage": ""
+        "ItemImage": "../img/veggie_dream.jpg"
     },
     {
         "ItemName": "Woody's Club", 
         "ItemPrice": 8.25, 
         "ItemDescription":"",
-        "ItemImage": ""
+        "ItemImage": "../img/woodys_club.jpg"
     }
         
 
