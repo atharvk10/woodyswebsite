@@ -8,7 +8,7 @@
     {
         "ItemName": "Egg Sandwich",
         "ItemPrice": 5.75,
-        "ItemDescription":"",
+        "ItemDescription":"A delicious sandwich filled with healthy and fresh eggs and bread.",
         "ItemImage":"../img/eggsandwich.jpg"
     },
     {

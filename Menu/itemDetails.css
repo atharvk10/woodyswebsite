@@ -1,0 +1,132 @@
+#menuTitle {
+    list-style-type: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 25px;
+    text-align: left;
+    padding-top: 30px;
+    padding-left:25px;
+    color: #d62100;
+}
+
+#menuHomeButton {
+    list-style-type: none;
+    font-family: "Public Sans";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 20px;
+    padding-left: 875px;
+    color: #281d1b;
+    text-decoration: none;
+
+}
+
+#menuMenuButton {
+    font-family: "Public Sans";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 20px;
+    padding-left: 50px;
+    color: #281d1b;
+    text-decoration: none;
+}
+
+#menuLoginButton {
+    font-family: "Public Sans";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 20px;
+    padding-left: 50px;
+    color: #281d1b;
+    text-decoration: none;
+}
+
+#menuAboutButton {
+    font-family: "Public Sans";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 20px;
+    padding-left: 50px;
+    color: #281d1b;
+    text-decoration: none;
+}
+
+body {
+    max-width: 100%;
+    overflow: auto;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.itemName {
+    position:relative;
+    left:650px;
+    top:50px;
+    font-size: 50px;
+    font-family:cursive;
+    font-style: bold;
+
+}
+
+.itemImage {
+   max-width: 40%;
+   position: relative;
+   top:10px;
+   left:30px;
+   border-style: solid;
+   border-radius: 0.5cm;
+}
+
+.price {
+    position:relative;
+    font-size:30px;
+    left:1000px;
+    top:400px;
+    font-style: italic;
+}
+
+
+.itemDescription {
+    font-style: italic;
+    position: relative;
+    left:650px;
+    top:100px;
+
+}
+/* body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  #item-details {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  .description {
+    font-style: italic;
+    margin-top: 15px;
+  }
+  a.back {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  } */
