@@ -50,23 +50,27 @@
     {
         "ItemName": "Pork Roll Egg Sandwich",
         "ItemPrice": 6.00,
-        "ItemDescription": ""
+        "ItemDescription": "",
+        "ItemImage": "../img/pork_roll_egg.jpg"
     },
     {
         "ItemName": "Pork Sausage Cheese Sandwich",
         "ItemPrice": 6.00,
-        "ItemDescription": ""
+        "ItemDescription": "",
+        "ItemImage": "../img/pork_sausage_cheese.jpg"
     },
     {
         "ItemName": "Pork Sausage Egg Cheese Sandwich",
         "ItemPrice": 6.50,
-        "ItemDescription": ""
+        "ItemDescription": "",
+        "ItemImage": "../img/pork_sausage_egg_cheese.jpg"
     }
     ,
     {
         "ItemName": "Pork Sausage Egg Sandwich",
         "ItemPrice": 6.00,
-        "ItemDescription": ""
+        "ItemDescription": "",
+        "ItemImage": "../img/pork_sausage_egg.jpg"
     },
     {
         "ItemName": "Turkey Bacon Cheese Sandwich",
@@ -77,12 +81,14 @@
     {
         "ItemName": "Turkey Bacon Egg Cheese Sandwich",
         "ItemPrice": 6.50,
-        "ItemDescription": ""
+        "ItemDescription": "",
+        "ItemImage":"../img/turkey_bacon_egg_cheese.jpg"
     },
     {
         "ItemName": "Turkey Bacon Egg Sandwich",
         "ItemPrice": 6.00,
-        "ItemDescription": ""
+        "ItemDescription": "",
+        "ItemImage":"../img/turkey_bacon_egg_cheese.jpg"
     }
  
     
