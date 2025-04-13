@@ -26,11 +26,10 @@ function displayBreakfastSanwiches(items) {
     items.forEach(item => {
         let div = document.createElement('div');
         div.className = 'menu-item';
-        div.innerHTML = `<div class = "item-name"> <a href="itemDetails.html?item=${encodeURIComponent(item.ItemName)}"target = "_blank"> ${item.ItemName} <a> <br> </div>
+        div.innerHTML = `<div class = "item-name"> <a style = "text-decoration: none" href="itemDetails.html?item=${encodeURIComponent(item.ItemName)}"target = "_blank"> ${item.ItemName} <a> <br> </div>
                         <div class = "item-price">$${item.ItemPrice.toFixed(2)} </div> <br>
                         <img class = "item-image" src = "${item.ItemImage}" width = "250" height = "250"> 
                         `;
-
         menuDiv.appendChild(div);
     });
 }
@@ -54,11 +53,10 @@ function displayBreakfast(items) {
     items.forEach(item => {
         let div = document.createElement('div');
         div.className = 'menu-item';
-        div.innerHTML = `<div class = "item-name"> <a target = "_blank"> ${item.ItemName} <a> <br> </div>
-                        <div class="item-price">$${item.ItemPrice.toFixed(2)}</div> <br>
-                        <img class = "item-image" src = "${item.ItemImage}" width = "250"> 
+        div.innerHTML = `<div class = "item-name"> <a style = "text-decoration: none" href="itemDetails.html?item=${encodeURIComponent(item.ItemName)}"target = "_blank"> ${item.ItemName} <a> <br> </div>
+                        <div class = "item-price">$${item.ItemPrice.toFixed(2)} </div> <br>
+                        <img class = "item-image" src = "${item.ItemImage}" width = "250" height = "250"> 
                         `;
-
         menuDiv.appendChild(div);
     });
 }
@@ -82,9 +80,9 @@ function displayBreakfastSides(items) {
     items.forEach(item => {
         let div = document.createElement('div');
         div.className = 'menu-item';
-        div.innerHTML = `<div class = "item-name"> <a target = "_blank"> ${item.ItemName} <a> <br> </div>
-                        <div class="item-price">$${item.ItemPrice.toFixed(2)}</div> <br>
-                        <img class = "item-image" src = "${item.ItemImage}" width = "250">
+        div.innerHTML = `<div class = "item-name"> <a style = "text-decoration: none" href="itemDetails.html?item=${encodeURIComponent(item.ItemName)}"target = "_blank"> ${item.ItemName} <a> <br> </div>
+                        <div class = "item-price">$${item.ItemPrice.toFixed(2)} </div> <br>
+                        <img class = "item-image" src = "${item.ItemImage}" width = "250" height = "250"> 
                         `;
 
         menuDiv.appendChild(div);
@@ -110,9 +108,9 @@ function displayBagels(items) {
     items.forEach(item => {
         let div = document.createElement('div');
         div.className = 'menu-item';
-        div.innerHTML = `<div class = "item-name"> <a target = "_blank"> ${item.ItemName} <a> <br> </div>
-                        <div class="item-price">$${item.ItemPrice.toFixed(2)}</div> <br>
-                        <img class = "item-image" src = "${item.ItemImage}" width = "250"> 
+        div.innerHTML = `<div class = "item-name"> <a style = "text-decoration: none" href="itemDetails.html?item=${encodeURIComponent(item.ItemName)}"target = "_blank"> ${item.ItemName} <a> <br> </div>
+                        <div class = "item-price">$${item.ItemPrice.toFixed(2)} </div> <br>
+                        <img class = "item-image" src = "${item.ItemImage}" width = "250" height = "250"> 
                         `;
 
         menuDiv.appendChild(div);
@@ -138,9 +136,9 @@ function displayGrabAndGo(items) {
     items.forEach(item => {
         let div = document.createElement('div');
         div.className = 'menu-item';
-        div.innerHTML = `<div class = "item-name"> <a target = "_blank"> ${item.ItemName} <a> <br> </div>
-                        <div class="item-price">$${item.ItemPrice.toFixed(2)}</div> <br>
-                        <img class = "item-image" src = "${item.ItemImage}" width = "250"> 
+        div.innerHTML = `<div class = "item-name"> <a style = "text-decoration: none" href="itemDetails.html?item=${encodeURIComponent(item.ItemName)}"target = "_blank"> ${item.ItemName} <a> <br> </div>
+                        <div class = "item-price">$${item.ItemPrice.toFixed(2)} </div> <br>
+                        <img class = "item-image" src = "${item.ItemImage}" width = "250" height = "250"> 
                         `;
 
         menuDiv.appendChild(div);
@@ -166,9 +164,9 @@ function displayLunchBagels(items) {
     items.forEach(item => {
         let div = document.createElement('div');
         div.className = 'menu-item';
-        div.innerHTML = `<div class = "item-name"> <a target = "_blank"> ${item.ItemName} <a> <br> </div>
-                        <div class="item-price">$${item.ItemPrice.toFixed(2)}</div> <br>
-                        <img class = "item-image" src = "${item.ItemImage}" width = "250"> 
+        div.innerHTML = `<div class = "item-name"> <a style = "text-decoration: none" href="itemDetails.html?item=${encodeURIComponent(item.ItemName)}"target = "_blank"> ${item.ItemName} <a> <br> </div>
+                        <div class = "item-price">$${item.ItemPrice.toFixed(2)} </div> <br>
+                        <img class = "item-image" src = "${item.ItemImage}" width = "250" height = "250"> 
                         `;
 
         menuDiv.appendChild(div);
@@ -222,10 +220,10 @@ document.addEventListener("DOMContentLoaded", function() {
       items.forEach(item => {
           let div = document.createElement('div');
           div.className = 'menu-item';
-          div.innerHTML = `<div class = "item-name"> <a target = "_blank"> ${item.ItemName} <a> <br> </div>
-                          <div class="item-price">$${item.ItemPrice.toFixed(2)}</div> <br>
-                          <img class = "item-image" src = "${item.ItemImage}" width = "250"> 
-                          `;
+          div.innerHTML = `<div class = "item-name"> <a style = "text-decoration: none" href="itemDetails.html?item=${encodeURIComponent(item.ItemName)}"target = "_blank"> ${item.ItemName} <a> <br> </div>
+                        <div class = "item-price">$${item.ItemPrice.toFixed(2)} </div> <br>
+                        <img class = "item-image" src = "${item.ItemImage}" width = "250" height = "250"> 
+                        `;
   
           menuDiv.appendChild(div);
       });
@@ -249,10 +247,10 @@ document.addEventListener("DOMContentLoaded", function() {
       items.forEach(item => {
           let div = document.createElement('div');
           div.className = 'menu-item';
-          div.innerHTML = `<div class = "item-name"> <a target = "_blank"> ${item.ItemName} <a> <br> </div>
-                          <div class="item-price">$${item.ItemPrice.toFixed(2)}</div> <br>
-                          <img class = "item-image" src = "${item.ItemImage}" width = "250"> 
-                          `;
+          div.innerHTML = `<div class = "item-name"> <a style = "text-decoration: none" href="itemDetails.html?item=${encodeURIComponent(item.ItemName)}"target = "_blank"> ${item.ItemName} <a> <br> </div>
+                        <div class = "item-price">$${item.ItemPrice.toFixed(2)} </div> <br>
+                        <img class = "item-image" src = "${item.ItemImage}" width = "250" height = "250"> 
+                        `;
   
           menuDiv.appendChild(div);
       });
@@ -276,46 +274,16 @@ document.addEventListener("DOMContentLoaded", function() {
       items.forEach(item => {
           let div = document.createElement('div');
           div.className = 'menu-item';
-          div.innerHTML = `<div class = "item-name"> <a target = "_blank"> ${item.ItemName} <a> <br> </div>
-                          <div class="item-price">$${item.ItemPrice.toFixed(2)}</div> <br>
-                          <img class = "item-image" src = "${item.ItemImage}" width = "250"> 
-                          `;
+          div.innerHTML = `<div class = "item-name"> <a style = "text-decoration: none" href="itemDetails.html?item=${encodeURIComponent(item.ItemName)}"target = "_blank"> ${item.ItemName} <a> <br> </div>
+                        <div class = "item-price">$${item.ItemPrice.toFixed(2)} </div> <br>
+                        <img class = "item-image" src = "${item.ItemImage}" width = "250" height = "250"> 
+                        `;
   
           menuDiv.appendChild(div);
       });
   }
 
-  document.addEventListener("DOMContentLoaded", function () {
-    const params = new URLSearchParams(window.location.search);
-    const itemName = params.get('item');
-
-    fetch('./MenuDatabase/breakfastSandwiches.json')
-      .then(response => response.json())
-      .then(data => {
-        const item = data.find(i => i.ItemName === itemName);
-        if (item) {
-          displayItemDetails(item);
-        } else {
-          document.getElementById('item-details').innerHTML = '<p>Item not found.</p>';
-        }
-      })
-      .catch(error => {
-        console.error('Error loading item details:', error);
-        document.getElementById('item-details').innerHTML = '<p>Error loading item details.</p>';
-      });
-  });
-
-  function displayItemDetails(item) {
-    const container = document.getElementById('item-details');
-    container.innerHTML = `
-      <h1>${item.ItemName}</h1>
-      <img src="${item.ItemImage}" alt="${item.ItemName}">
-      <div class="price">Price: $${item.ItemPrice.toFixed(2)}</div>
-      <div class="description">${item.ItemDescription || 'No description available.'}</div>
-      <a href="index.html" class="back">← Back to menu</a>
-    `;
-  }
-
+  
   
 
   //I am creating a website that holds menu items. I have individual cards for each menu item on the website. If i click on the card, I want a new HTML page that shows more information about that item. how would i do that? I don't want to make HTML pages for each menu item
