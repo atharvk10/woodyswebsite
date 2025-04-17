@@ -18,7 +18,7 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 20px;
-    padding-left: 875px;
+    padding-left: 750px;
     color: #281d1b;
     text-decoration: none;
 
@@ -44,14 +44,31 @@
     text-decoration: none;
 }
 
-#menuAboutButton {
-    font-family: "Public Sans";
+#cartButton {
+    font-family: "Trebuchet MS";
     font-weight: 700;
-    font-size: 24px;
+    font-size: 30px;
     line-height: 20px;
     padding-left: 50px;
+    padding-top: 25px;
     color: #281d1b;
     text-decoration: none;
+    position: relative;
+}
+
+.cartAmount{
+    font-size: 20px;
+    position: absolute;
+    bottom: -15px;
+    left: 30px;
+    background-color: rgb(203, 33, 33);
+    color: white;
+    padding: 4px;
+    border-radius: 50%;
+}
+
+#cartButton:hover {
+    color: red;
 }
 
 body {
@@ -94,6 +111,15 @@ a:visited {
 
 a:hover {
     text-decoration: none; color:red; 
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: black; /* or whatever your default color is */
+}
+
+.navigation li a:hover {
+    color: red;
 }
 
 /** 
@@ -164,6 +190,8 @@ h1 {
     font-size: 50px;
 
 }
+
+
 
 
 

@@ -1,4 +1,4 @@
-function loadBreakfastItems(item) {
+function loadItems(item) {
   const container = document.getElementById('item-details');
   container.innerHTML = `
     <h1 class = "itemName">${item.ItemName}</h1>
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
       .then(data => {
         const item = data.find(i => i.ItemName === itemName);
         if (item) {
-          loadBreakfastItems(item);
+          loadItems(item);
         } else {
           document.getElementById('item-details').innerHTML = '<p>Item not found.</p>';
         }

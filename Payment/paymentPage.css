@@ -26,46 +26,35 @@
 }
 
 #paymentHomeButton {
-    font-family: "Trebuchet MS";
+    font-family: "Public Sans";
     font-weight: 700;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 20px;
-    padding-left: 710px;
+    padding-left: 750px;
     padding-top: 30px;
-    color: #281d1b;
+    color:black;
     text-decoration: none;
 }
 
 #paymentMenuButton {
-    font-family: "Trebuchet MS";
+    font-family: "Public Sans";
     font-weight: 700;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 20px;
     padding-left: 50px;
     padding-top: 30px;
-    color: #281d1b;
+    color:black;
     text-decoration: none;
 }
 
 #paymentLoginButton {
-    font-family: "Trebuchet MS";
+    font-family: "Public Sans";
     font-weight: 700;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 20px;
     padding-left: 50px;
     padding-top: 30px;
-    color: #281d1b;
-    text-decoration: none;
-}
-
-#paymentAboutButton {
-    font-family: "Trebuchet MS";
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 20px;
-    padding-left: 50px;
-    padding-top: 30px;
-    color: #281d1b;
+    color:black;
     text-decoration: none;
 }
 
@@ -90,6 +79,19 @@
     color: white;
     padding: 4px;
     border-radius: 50%;
+}
+
+#cartButton:hover {
+    color: red;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: black; /* or whatever your default color is */
+}
+
+.navigation li a:hover {
+    color: red;
 }
 
 ul {
