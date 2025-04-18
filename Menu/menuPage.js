@@ -429,4 +429,3 @@ document.addEventListener("DOMContentLoaded", function() {
   
   
 
-  //I am creating a website that holds menu items. I have individual cards for each menu item on the website. If i click on the card, I want a new HTML page that shows more information about that item. how would i do that? I don't want to make HTML pages for each menu item
