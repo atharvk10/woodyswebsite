@@ -97,7 +97,7 @@ ul {
 
 .itemName {
     position:relative;
-    left:650px;
+    left:550px;
     top:50px;
     font-size: 50px;
     font-family:cursive;
@@ -106,7 +106,8 @@ ul {
 }
 
 .itemImage {
-   max-width: 40%;
+   width: 500px;
+   height:500px;
    position: relative;
    top:10px;
    left:30px;
@@ -117,7 +118,7 @@ ul {
 .price {
     position:relative;
     font-size:30px;
-    left:1000px;
+    left:750px;
     top:400px;
     font-style: italic;
 }
@@ -126,7 +127,7 @@ ul {
 .itemDescription {
     font-style: italic;
     position: relative;
-    left:650px;
+    left: 550px;
     top:100px;
 
 }

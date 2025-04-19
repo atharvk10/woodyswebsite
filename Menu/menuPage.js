@@ -35,7 +35,6 @@ function displayBreakfastSanwiches(items) {
                         .item-name a:hover {
                         color: red;
                         }
-
                     </style>
                     <div class="item-name">
                         <a href="itemDetails.html?item=${encodeURIComponent(item.ItemName)}" target="_blank">
