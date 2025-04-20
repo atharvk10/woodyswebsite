@@ -4,17 +4,17 @@
 #menuTitle {
     list-style-type: none;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 50px;
     line-height: 25px;
     text-align: left;
     padding-top: 30px;
-    padding-left:25px;
+    padding-left: 25px;
     color: #d62100;
 }
 
 #menuHomeButton {
-    font-family: "Trebuchet MS";
+    font-family: "Public Sans";
     font-weight: 700;
     font-size: 24px;
     line-height: 20px;
@@ -25,7 +25,7 @@
 }
 
 #menuMenuButton {
-    font-family: "Trebuchet MS";
+    font-family: "Public Sans";
     font-weight: 700;
     font-size: 24px;
     line-height: 20px;
@@ -35,7 +35,7 @@
 }
 
 #menuLoginButton {
-    font-family: "Trebuchet MS";
+    font-family: "Public Sans";
     font-weight: 700;
     font-size: 24px;
     line-height: 20px;
@@ -45,18 +45,6 @@
 }
 
 #cartButton {
-    font-family: "Trebuchet MS";
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 20px;
-    padding-left: 50px;
-    padding-top: 25px;
-    color: #281d1b;
-    text-decoration: none;
-    position: relative;
-}
-
-#menuAboutButton {
     font-family: "Trebuchet MS";
     font-weight: 700;
     font-size: 30px;
@@ -96,7 +84,7 @@
 }
 
 body {
-    font-family: "Trebuchet MS";
+    font-family: "Public Sans";
     max-width: 100%;
     overflow: auto;
 }
@@ -122,11 +110,11 @@ ul {
     left: 35px;
     color: black;
     font-size: 25px;
-    font-family: "Trebuchet MS";
+    font-family: "Public Sans";
 }
 
 .sidebar ul {
-    font-family: "Trebuchet MS";
+    font-family: "Public Sans";
     font-size: 20px;
     text-decoration: none;
 }

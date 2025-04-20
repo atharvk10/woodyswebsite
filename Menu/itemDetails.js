@@ -1,10 +1,10 @@
-function loadItems(item) {
-  const container = document.getElementById('itemDetails');
+function loadItems(item, id) {
+  const container = document.getElementById(id);
   container.innerHTML = `
     <h1 class = "itemName">${item.ItemName}</h1>
+    <img class = "itemImage" src="${item.ItemImage}" alt="${item.ItemName}">
     <div class="itemDescription">${item.ItemDescription || 'No description available.'}</div>
     <div class="price">Price: $${item.ItemPrice.toFixed(2)}</div>
-    <img class = "itemImage" src="${item.ItemImage}" alt="${item.ItemName}">
     `;
 }
 
@@ -17,18 +17,13 @@ document.addEventListener("DOMContentLoaded", function () {
     .then(response => response.json())
     .then(data => {
       const item = data.find(i => i.ItemName.trim().toLowerCase() === itemName?.trim().toLowerCase());
-      if (item) {
-        loadItems(item);
-      } else {
-        document.getElementById('itemDetails').innerHTML = '<p>Item not found.</p>';
-      }
+      if (item) loadItems(item, 'breakfastsandwiches');
     })
     .catch(error => {
       console.error('Error loading item details:', error);
-      document.getElementById('itemDetails').innerHTML = '<p>Error loading item details.</p>';
+      document.getElementById('breakfastsandwiches').innerHTML = '<p>Error loading item details.</p>';
     });
 });
-
 
 //THIS IS FOR THE BREAKFAST ITEMS
 document.addEventListener("DOMContentLoaded", function () {
@@ -39,15 +34,11 @@ document.addEventListener("DOMContentLoaded", function () {
     .then(response => response.json())
     .then(data => {
       const item = data.find(i => i.ItemName.trim().toLowerCase() === itemName?.trim().toLowerCase());
-      if (item) {
-        loadItems(item);
-      } else {
-        document.getElementById('itemDetails').innerHTML = '<p>Item not found.</p>';
-      }
+      if (item) loadItems(item, 'breakfast'); 
     })
     .catch(error => {
       console.error('Error loading item details:', error);
-      document.getElementById('itemDetails').innerHTML = '<p>Error loading item details.</p>';
+      document.getElementById('breakfast').innerHTML = '<p>Error loading item details.</p>';
     });
 });
 
@@ -60,15 +51,11 @@ document.addEventListener("DOMContentLoaded", function () {
     .then(response => response.json())
     .then(data => {
       const item = data.find(i => i.ItemName.trim().toLowerCase() === itemName?.trim().toLowerCase());
-      if (item) {
-        loadItems(item);
-      } else {
-        document.getElementById('itemDetails').innerHTML = '<p>Item not found.</p>';
-      }
+      if (item) loadItems(item, 'breakfastsides');
     })
     .catch(error => {
       console.error('Error loading item details:', error);
-      document.getElementById('itemDetails').innerHTML = '<p>Error loading item details.</p>';
+      document.getElementById('breakfastsides').innerHTML = '<p>Error loading item details.</p>';
     });
 });
 
@@ -82,14 +69,12 @@ document.addEventListener("DOMContentLoaded", function () {
     .then(data => {
       const item = data.find(i => i.ItemName === itemName);
       if (item) {
-        loadItems(item);
-      } else {
-        document.getElementById('itemDetails').innerHTML = '<p>Item not found.</p>';
-      }
+        loadItems(item, 'breakfastbagels');
+      } 
     })
     .catch(error => {
       console.error('Error loading item details:', error);
-      document.getElementById('itemDetails').innerHTML = '<p>Error loading item details.</p>';
+      document.getElementById('breakfastbagels').innerHTML = '<p>Error loading item details.</p>';
     });
 });
 
@@ -103,14 +88,12 @@ document.addEventListener("DOMContentLoaded", function () {
     .then(data => {
       const item = data.find(i => i.ItemName === itemName);
       if (item) {
-        loadItems(item);
-      } else {
-        document.getElementById('itemDetails').innerHTML = '<p>Item not found.</p>';
-      }
+        loadItems(item, 'grabandgo');
+      } 
     })
     .catch(error => {
       console.error('Error loading item details:', error);
-      document.getElementById('itemDetails').innerHTML = '<p>Error loading item details.</p>';
+      document.getElementById('grabandgo').innerHTML = '<p>Error loading item details.</p>';
     });
 });
 
@@ -124,14 +107,12 @@ document.addEventListener("DOMContentLoaded", function () {
     .then(data => {
       const item = data.find(i => i.ItemName === itemName);
       if (item) {
-        loadItems(item);
-      } else {
-        document.getElementById('itemDetails').innerHTML = '<p>Item not found.</p>';
-      }
+        loadItems(item, 'lunchbagels');
+      } 
     })
     .catch(error => {
       console.error('Error loading item details:', error);
-      document.getElementById('itemDetails').innerHTML = '<p>Error loading item details.</p>';
+      document.getElementById('lunchbagels').innerHTML = '<p>Error loading item details.</p>';
     });
 });
 
@@ -145,14 +126,12 @@ document.addEventListener("DOMContentLoaded", function () {
     .then(data => {
       const item = data.find(i => i.ItemName === itemName);
       if (item) {
-        loadItems(item);
-      } else {
-        document.getElementById('itemDetails').innerHTML = '<p>Item not found.</p>';
-      }
+        loadItems(item, 'wraps');
+      } 
     })
     .catch(error => {
       console.error('Error loading item details:', error);
-      document.getElementById('itemDetails').innerHTML = '<p>Error loading item details.</p>';
+      document.getElementById('wraps').innerHTML = '<p>Error loading item details.</p>';
     });
 });
 
@@ -166,14 +145,12 @@ document.addEventListener("DOMContentLoaded", function () {
     .then(data => {
       const item = data.find(i => i.ItemName === itemName);
       if (item) {
-        loadItems(item);
-      } else {
-        document.getElementById('itemDetails').innerHTML = '<p>Item not found.</p>';
-      }
+        loadItems(item, 'grille');
+      } 
     })
     .catch(error => {
       console.error('Error loading item details:', error);
-      document.getElementById('itemDetails').innerHTML = '<p>Error loading item details.</p>';
+      document.getElementById('grille').innerHTML = '<p>Error loading item details.</p>';
     });
 });
 
@@ -187,14 +164,12 @@ document.addEventListener("DOMContentLoaded", function () {
     .then(data => {
       const item = data.find(i => i.ItemName === itemName);
       if (item) {
-        loadItems(item);
-      } else {
-        document.getElementById('itemDetails').innerHTML = '<p>Item not found.</p>';
-      }
+        loadItems(item, 'pananis');
+      } 
     })
     .catch(error => {
       console.error('Error loading item details:', error);
-      document.getElementById('itemDetails').innerHTML = '<p>Error loading item details.</p>';
+      document.getElementById('pananis').innerHTML = '<p>Error loading item details.</p>';
     });
 });
 
@@ -208,14 +183,12 @@ document.addEventListener("DOMContentLoaded", function () {
     .then(data => {
       const item = data.find(i => i.ItemName === itemName);
       if (item) {
-        loadItems(item);
-      } else {
-        document.getElementById('itemDetails').innerHTML = '<p>Item not found.</p>';
-      }
+        loadItems(item, 'traditional');
+      } 
     })
     .catch(error => {
       console.error('Error loading item details:', error);
-      document.getElementById('itemDetails').innerHTML = '<p>Error loading item details.</p>';
+      document.getElementById('traditional').innerHTML = '<p>Error loading item details.</p>';
     });
 });
 

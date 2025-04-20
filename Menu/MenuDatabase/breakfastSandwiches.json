@@ -2,92 +2,92 @@
     {
         "ItemName": "Egg and Cheese Sandwich",
         "ItemPrice": 5.75, 
-        "ItemDescription":"",
+        "ItemDescription":"A simple yet satisfying sandwich made with fluffy egg and melted cheese layered between soft, buttery bread. Seasoned with salt and pepper and served with complementary crispy breakfast potatoes.",
         "ItemImage":"../img/Egg-Cheese-Bagel.jpg"
     },
     {
         "ItemName": "Egg Sandwich",
         "ItemPrice": 5.75,
-        "ItemDescription":"A delicious sandwich filled with healthy and fresh eggs and bread.",
+        "ItemDescription":"Light and classic, this sandwich features a fresh-cooked egg nestled in warm, buttered bread. Finished with a touch of salt and pepper, and comes with a side of complementary cripsy breakfast potatoes.",
         "ItemImage":"../img/eggsandwich.jpg"
     },
     {
         "ItemName": "Meat Sandwich",
         "ItemPrice": 6.50,
-        "ItemDescription":"",
+        "ItemDescription":"Hearty and savory, this sandwich pairs your choice of meat with soft bread and rich butter for a no-frills breakfast bite. Lightly seasoned and served with complementary crispy breakfast potatoes on the side.",
         "ItemImage":"../img/meat_sandwich.jpg"
     },
     {
         "ItemName": "Pork Bacon Cheese Sandwich",
         "ItemPrice": 6.00,
-        "ItemDescription":"",
+        "ItemDescription":"Crispy pork bacon and melted cheese come together in this indulgent breakfast sandwich. Served on buttery bread with a side of complementary crispy golden breakfast potatoes.",
         "ItemImage": "../img/pork_bacon_cheese.jpg"
     },
     {
         "ItemName": "Pork Bacon Egg Cheese Sandwich",
         "ItemPrice": 6.50,
-        "ItemDescription": "",
+        "ItemDescription": "A flavorful combo of pork bacon, egg, and cheese packed into a warm, buttery sandwich. Comes complete with complementary seasoned breakfast potatoes.",
         "ItemImage": "../img/pork_bacon_egg_cheese.jpg"
     },
     {
         "ItemName": "Pork Bacon Egg Sandwich",
         "ItemPrice": 6.50,
-        "ItemDescription": "",
+        "ItemDescription": "This sandwich features pork bacon and a freshly cooked egg tucked between slices of soft bread. Lightly seasoned and served with a side of complementary breakfast potatoes.",
         "ItemImage": "../img/pork_bacon_egg.jpg"
     },
     {
         "ItemName": "Pork Roll Cheese Sandwich",
         "ItemPrice": 6.00,
-        "ItemDescription": "",
+        "ItemDescription": "Enjoy the bold taste of pork roll paired with melted cheese on buttery bread. This sandwich is served with complementary crispy breakfast potatoes for a filling start to your day.",
         "ItemImage": "../img/pork_roll_cheese.jpg"
     },
     {
         "ItemName": "Pork Roll Egg Cheese Sandwich",
         "ItemPrice": 6.50,
-        "ItemDescription": "",
+        "ItemDescription": "Packed with pork roll, egg, and cheese, this sandwich delivers a hearty and savory breakfast experience. Served hot with a side of golden complementary breakfast potatoes.",
         "ItemImage": "../img/pork_roll_egg_cheese.jpg"
     },
     {
         "ItemName": "Pork Roll Egg Sandwich",
         "ItemPrice": 6.00,
-        "ItemDescription": "",
+        "ItemDescription": "A satisfying combo of pork roll and egg, served on buttered bread and seasoned just right. Comes with complementary breakfast potatoes to complete your morning meal.",
         "ItemImage": "../img/pork_roll_egg.jpg"
     },
     {
         "ItemName": "Pork Sausage Cheese Sandwich",
         "ItemPrice": 6.00,
-        "ItemDescription": "",
+        "ItemDescription": "Spiced pork sausage and melted cheese come together on buttery bread for a rich, meaty bite. Perfectly seasoned and satisfying.",
         "ItemImage": "../img/pork_sausage_cheese.jpg"
     },
     {
         "ItemName": "Pork Sausage Egg Cheese Sandwich",
         "ItemPrice": 6.50,
-        "ItemDescription": "",
+        "ItemDescription": "Hearty pork sausage, egg, and cheese make this sandwich a powerhouse breakfast option. Flavorful, filling, and ready to kickstart your day.",
         "ItemImage": "../img/pork_sausage_egg_cheese.jpg"
     }
     ,
     {
         "ItemName": "Pork Sausage Egg Sandwich",
         "ItemPrice": 6.00,
-        "ItemDescription": "",
+        "ItemDescription": "This sandwich features seasoned pork sausage and a fluffy egg layered on buttered bread. A warm and savory choice for a quick breakfast.",
         "ItemImage": "../img/pork_sausage_egg.jpg"
     },
     {
         "ItemName": "Turkey Bacon Cheese Sandwich",
         "ItemPrice": 6.00,
-        "ItemDescription": "",
+        "ItemDescription": "Lean turkey bacon and creamy cheese stacked between buttery slices of bread for a lighter take on a classic. Deliciously simple and satisfying.",
         "ItemImage": "../img/turkey_bacon_cheese.jpg"
     },
     {
         "ItemName": "Turkey Bacon Egg Cheese Sandwich",
         "ItemPrice": 6.50,
-        "ItemDescription": "",
+        "ItemDescription": "A well-balanced sandwich with turkey bacon, egg, and cheese for a lighter yet flavorful breakfast. Served warm and made to satisfy.",
         "ItemImage":"../img/turkey_bacon_egg_cheese.jpg"
     },
     {
         "ItemName": "Turkey Bacon Egg Sandwich",
         "ItemPrice": 6.00,
-        "ItemDescription": "",
+        "ItemDescription": "Savory turkey bacon and a fluffy egg come together in this simple, protein-packed sandwich. Great for an energizing start to your morning.",
         "ItemImage":"../img/turkey_bacon_egg_cheese.jpg"
     }
  
