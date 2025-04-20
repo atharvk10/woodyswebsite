@@ -45,14 +45,25 @@ let decrease = (ItemName) => {
     }else{
       itemFind.item -= 1;
     }
+    userCart = userCart.filter((x) => x.item !== 0);
     localStorage.setItem("storage", JSON.stringify(userCart));
     updateQuantity(itemToAdd.ItemName);
-    userCart = userCart.filter((x) => x.item !== 0);
   };
   
   let updateQuantity = (ItemName) => {
     let itemFind = userCart.find((x) => x.ItemName === ItemName);
-    document.getElementById(ItemName).innerHTML = itemFind.item;
+    if(!itemFind){
+        const element1 = document.getElementById(ItemName);
+        if(element1){
+          element1.innerHTML = 0;
+        }
+        updateCart();
+        return;
+    }
+    const element2 = document.getElementById(ItemName);
+    if (element2) {
+      element2.innerHTML = itemFind.item;
+    }
     updateCart();
   };  
 
