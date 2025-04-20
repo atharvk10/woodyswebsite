@@ -1,0 +1,36 @@
+[
+    {
+        "ItemName": "Cinnamon Raisin Bagel (Lunch)",
+        "ItemPrice": 1.79, 
+        "ItemDescription":"",
+        "ItemImage":"../img/cinnamon-bagel.jpeg"
+    },
+    {
+        "ItemName": "Everything Bagel (Lunch)",
+        "ItemPrice": 1.79,
+        "ItemDescription":"",
+        "ItemImage":"../img/everything-bagel.jpeg"
+    },
+    {
+        "ItemName": "Garlic Bagel (Lunch)",
+        "ItemPrice": 1.79,
+        "ItemDescription":"",
+        "ItemImage":"../img/garlic-bagel.jpeg"
+    },
+    {
+        "ItemName": "Jalapeno Bagel (Lunch)",
+        "ItemPrice": 1.79,
+        "ItemDescription": "",
+        "ItemImage":"../img/jalapeno-bagel.jpeg"
+    },
+    {
+        "ItemName": "Plain Bagel (Lunch)",
+        "ItemPrice": 1.79,
+        "ItemDescription": "",
+        "ItemImage": "../img/plain-bagel.jpeg"
+        
+    }
+    
+
+]
+

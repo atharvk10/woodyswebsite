@@ -6,17 +6,24 @@
     <meta name="author" content = "Yes, We Do Byte">
     <link rel ="stylesheet" href = "menuPage.css">
     <link rel ="shortcut icon" href = "/img/woodyLogo.jpeg"> 
-    <script src = "menuPage.js"> </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src = "menuPage.js" defer> </script>
     <title> Woody's Cafe Menu </title>
 </head>
 <body>
     <ul class = "navigation">
         <li id = "menuTitle"> Menu </li> 
 
-        <a href = "../Home/homePage.html", target = "_blank", style = "text-decoration: none"> <li id = "menuHomeButton"> Home </li> </a>
-        <a href = "../Menu/menuPage.html", style = "text-decoration: none"> <li id = "menuMenuButton"> Menu </li> </a>
-        <a href = "../Login/loginPage.html", target = "_blank", style = "text-decoration: none"> <li id = "menuLoginButton"> Login </li> </a>
-        <a href = "../About/aboutPage.html", target = "_blank", style = "text-decoration: none"> <li id = "menuAboutButton"> About </li> </a>
+        <li id="menuHomeButton"><a href="../Home/homePage.html" target="_blank" style="text-decoration: none"> Home </a></li>
+        <li id = "menuMenuButton"><a href = "../Menu/menuPage.html" style = "text-decoration: none"> Menu </a></li>
+        <li id = "menuLoginButton"><a href = "../Login/loginPage.html" target = "_blank" style = "text-decoration: none"> Login </a></li>
+        <li id = "menuAboutButton"><a href = "../About/aboutPage.html" target = "_blank" style = "text-decoration: none"> About </a></li>
+        <li id = "menuCartButton">
+            <a href = "../Cart/cartPage.html", target = "_blank", style = "text-decoration: none">
+                <i class="bi bi-cart4"></i>
+                <div id=cartnavbar class="cartAmount">0</div>
+            </a>
+        </li>
     </ul>
 
     <div class = "sidebar">
@@ -24,7 +31,7 @@
         <br> 
         <ul class = "breakfastCategories"> 
             <br> <a href = "#" onclick = "smoothScrollToSection(event, 'breakfast-sandwiches-title')"> <li> Breakfast Sandwiches </li> </a>
-            <br> <a href = "#" onclick = "smoothScrollToSection(event, 'breakfast-title')", style = "text-decoration: none"> Breakfast </li> </a>
+            <br> <a href = "#" onclick = "smoothScrollToSection(event, 'breakfast-title')" style="text-decoration: none"><li> Breakfast </li></a>
             <br> <a href = "#" onclick = "smoothScrollToSection(event, 'breakfast-sides-title')"> <li> Breakfast Sides </li> </a>
             <br> <a href = "#" onclick = "smoothScrollToSection(event, 'bagels-title')"> <li> Bagels </li> </a>
         </ul>
@@ -83,12 +90,6 @@
     <div class = "item-container" id = "traditional"> </div>
     <br> <br> <br> <br> <br>
 
-
-
-
-
-    
-    
 
 </body>
 </html>

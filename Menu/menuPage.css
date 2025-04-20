@@ -14,7 +14,7 @@
 }
 
 #menuHomeButton {
-    font-family: "Public Sans";
+    font-family: "Trebuchet MS";
     font-weight: 700;
     font-size: 24px;
     line-height: 20px;
@@ -25,7 +25,7 @@
 }
 
 #menuMenuButton {
-    font-family: "Public Sans";
+    font-family: "Trebuchet MS";
     font-weight: 700;
     font-size: 24px;
     line-height: 20px;
@@ -35,7 +35,7 @@
 }
 
 #menuLoginButton {
-    font-family: "Public Sans";
+    font-family: "Trebuchet MS";
     font-weight: 700;
     font-size: 24px;
     line-height: 20px;
@@ -45,7 +45,7 @@
 }
 
 #menuAboutButton {
-    font-family: "Public Sans";
+    font-family: "Trebuchet MS";
     font-weight: 700;
     font-size: 24px;
     line-height: 20px;
@@ -54,7 +54,31 @@
     text-decoration: none;
 }
 
+#menuCartButton {
+    font-family: "Trebuchet MS";
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 20px;
+    padding-left: 50px;
+    padding-top: 25px;
+    color: #281d1b;
+    text-decoration: none;
+    position: relative;
+}
+
+.cartAmount{
+    font-size: 20px;
+    position: absolute;
+    bottom: -15px;
+    left: 30px;
+    background-color: rgb(203, 33, 33);
+    color: white;
+    padding: 4px;
+    border-radius: 50%;
+}
+
 body {
+    font-family: "Trebuchet MS";
     max-width: 100%;
     overflow: auto;
 }
@@ -80,10 +104,11 @@ ul {
     left: 35px;
     color: black;
     font-size: 25px;
-    font-family: "Public Sans";
+    font-family: "Trebuchet MS";
 }
 
 .sidebar ul {
+    font-family: "Trebuchet MS";
     font-size: 20px;
     text-decoration: none;
 }
@@ -153,6 +178,7 @@ a:hover {
 }
 
 .menu-item {
+    font-family: "Trebuchet MS";
     border: 2px solid;
     border-radius: 10px;
     padding: 5px;
@@ -165,6 +191,36 @@ h1 {
 
 }
 
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
 
+.buttons ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+}
 
+.button-item {
+    background-color: #d62100;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 25px;
+}
 
+.button-item:hover {
+    background-color: #a91a00;
+}
+
+.quantity {
+    font-size: 20px;
+    padding: 0 10px;
+    line-height: 35px;
+}
