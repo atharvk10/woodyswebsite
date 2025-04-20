@@ -5,23 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content = "Yes, We Do Byte">
   <link rel ="stylesheet" href = "itemDetails.css">
-  <script src = "itemDetails.js"> </script> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="itemDetails.js" defer></script>
 
 </head>
 <body>
 
-    <ul class = "navigation">
-        <li id = "menuTitle"> Menu </li> 
-
-        <a href = "../Home/homePage.html", target = "_blank", style = "text-decoration: none"> <li id = "menuHomeButton"> Home </li> </a>
-        <a href = "../Menu/menuPage.html", style = "text-decoration: none"> <li id = "menuMenuButton"> Menu </li> </a>
-        <a href = "../Login/loginPage.html", target = "_blank", style = "text-decoration: none"> <li id = "menuLoginButton"> Login </li> </a>
-        <a href = "../About/aboutPage.html", target = "_blank", style = "text-decoration: none"> <li id = "menuAboutButton"> About </li> </a>
+    <ul class="navigation">
+        <li id="menuTitle">Woody's Cafe</li> 
+        <li id="itemHomeButton"><a href="../Home/homePage.html" target="_blank" style = "text-decoration: none">Home</a></li>
+        <li id="itemMenuButton"><a href="../Menu/menuPage.html" target="_blank" style = "text-decoration: none">Menu</a></li>
+        <li id="itemLoginButton"><a href="../Login/loginPage.html" target="_blank" style = "text-decoration: none">Login</a></li>
+        <a href = "../Cart/cartPage.html", target = "_blank", style = "text-decoration: none">
+          <li id = "cartButton">
+              <i class="bi bi-cart4"></i>
+              <div class="cartAmount">0</div>
+          </li>
+      </a>
     </ul>
     
-  <div id="item-details">
+  <div id = "itemDetails"> 
     <p>Loading the Item Details!</p>
   </div>
+
 
   <br><br><br><br><br>
 

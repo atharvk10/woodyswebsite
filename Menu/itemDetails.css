@@ -10,19 +10,19 @@
     color: #d62100;
 }
 
-#menuHomeButton {
+#itemHomeButton {
     list-style-type: none;
     font-family: "Public Sans";
     font-weight: 700;
     font-size: 24px;
     line-height: 20px;
-    padding-left: 875px;
+    padding-left: 700px;
     color: #281d1b;
     text-decoration: none;
 
 }
 
-#menuMenuButton {
+#itemMenuButton {
     font-family: "Public Sans";
     font-weight: 700;
     font-size: 24px;
@@ -32,7 +32,7 @@
     text-decoration: none;
 }
 
-#menuLoginButton {
+#itemLoginButton {
     font-family: "Public Sans";
     font-weight: 700;
     font-size: 24px;
@@ -42,15 +42,33 @@
     text-decoration: none;
 }
 
-#menuAboutButton {
-    font-family: "Public Sans";
+#cartButton {
+    font-family: "Trebuchet MS";
     font-weight: 700;
-    font-size: 24px;
+    font-size: 30px;
     line-height: 20px;
     padding-left: 50px;
+    padding-top: 25px;
     color: #281d1b;
     text-decoration: none;
+    position: relative;
 }
+
+.cartAmount{
+    font-size: 20px;
+    position: absolute;
+    bottom: -15px;
+    left: 30px;
+    background-color: rgb(203, 33, 33);
+    color: white;
+    padding: 4px;
+    border-radius: 50%;
+}
+
+#cartButton:hover {
+    color: red;
+}
+
 
 body {
     max-width: 100%;
@@ -68,9 +86,18 @@ ul {
     padding: 0;
 }
 
+.navigation li a {
+    text-decoration: none;
+    color: black; /* or whatever your default color is */
+}
+
+.navigation li a:hover {
+    color: red;
+}
+
 .itemName {
     position:relative;
-    left:650px;
+    left:550px;
     top:50px;
     font-size: 50px;
     font-family:cursive;
@@ -79,7 +106,8 @@ ul {
 }
 
 .itemImage {
-   max-width: 40%;
+   width: 500px;
+   height:500px;
    position: relative;
    top:10px;
    left:30px;
@@ -90,7 +118,7 @@ ul {
 .price {
     position:relative;
     font-size:30px;
-    left:1000px;
+    left:750px;
     top:400px;
     font-style: italic;
 }
@@ -98,11 +126,12 @@ ul {
 .itemDescription {
     font-style: italic;
     position: relative;
-    left:650px;
+    left: 550px;
     top:100px;
 
 }
-/* body {
+
+body {
     font-family: Arial, sans-serif;
     padding: 20px;
   }
@@ -115,9 +144,7 @@ ul {
     max-width: 100%;
     height: auto;
   }
-    font-size: 1.2em;
-    margin: 10px 0;
-  }
+
   .description {
     font-style: italic;
     margin-top: 15px;
@@ -128,4 +155,5 @@ ul {
     text-decoration: none;
     color: #333;
     font-weight: bold;
-  } */
+  }
+

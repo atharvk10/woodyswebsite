@@ -2,10 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rutgers CAS Login</title>
+    <link rel="stylesheet" href="loginPage.css">
 </head>
 <body>
-    <p1> Welcome to the login page! </p1>
+    <div class="page-wrapper">
+        <img src="rutgers-netid-logo.png" alt="Rutgers Logo">
+        <div class="login-container">
+            <h1>NetID Login</h1>
+            <form method="post" action="/">
+                <label for="netid">NetID:</label>
+                <input type="text" id="netid" name="netid" required>
+            
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            
+                <div class="options">
+                    <input type="checkbox" id="public" name="public">
+                    <label for="public">I am at a public workstation</label>
+                </div>
+            
+                <button type="submit">Login</button>
+            </form>
+            </form>
+            <div class="links">
+                <a href="#">Forgot your NetID or password?</a><br>
+                <a href="#">First-time users, activate your NetID.</a><br>
+                <a href="#">Need more help?</a>
+            </div>
+            <p class="footer">For security reasons, please log out and exit your web browser when you are done accessing services that require authentication!</p>
+        </div>
+    </div>
 </body>
-</html>

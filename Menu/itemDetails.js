@@ -1,5 +1,5 @@
-function loadBreakfastItems(item) {
-  const container = document.getElementById('item-details');
+function loadItems(item) {
+  const container = document.getElementById('itemDetails');
   container.innerHTML = `
     <h1 class = "itemName">${item.ItemName}</h1>
     <div class="itemDescription">${item.ItemDescription || 'No description available.'}</div>
@@ -10,24 +10,24 @@ function loadBreakfastItems(item) {
 
 //THIS IS FOR THE BREAKFAST SANDWICHES
 document.addEventListener("DOMContentLoaded", function () {
-    const params = new URLSearchParams(window.location.search);
-    const itemName = params.get('item');
+  const params = new URLSearchParams(window.location.search);
+  const itemName = params.get('item');
 
-    fetch('./MenuDatabase/breakfastSandwiches.json')
-      .then(response => response.json())
-      .then(data => {
-        const item = data.find(i => i.ItemName === itemName);
-        if (item) {
-          loadBreakfastItems(item);
-        } else {
-          document.getElementById('item-details').innerHTML = '<p>Item not found.</p>';
-        }
-      })
-      .catch(error => {
-        console.error('Error loading item details:', error);
-        document.getElementById('item-details').innerHTML = '<p>Error loading item details.</p>';
-      });
-  });
+  fetch('./MenuDatabase/breakfastSandwiches.json')
+    .then(response => response.json())
+    .then(data => {
+      const item = data.find(i => i.ItemName.trim().toLowerCase() === itemName?.trim().toLowerCase());
+      if (item) {
+        loadItems(item);
+      } else {
+        document.getElementById('itemDetails').innerHTML = '<p>Item not found.</p>';
+      }
+    })
+    .catch(error => {
+      console.error('Error loading item details:', error);
+      document.getElementById('itemDetails').innerHTML = '<p>Error loading item details.</p>';
+    });
+});
 
 
 //THIS IS FOR THE BREAKFAST ITEMS
@@ -38,16 +38,16 @@ document.addEventListener("DOMContentLoaded", function () {
   fetch('./MenuDatabase/breakfast.json')
     .then(response => response.json())
     .then(data => {
-      const item = data.find(i => i.ItemName === itemName);
+      const item = data.find(i => i.ItemName.trim().toLowerCase() === itemName?.trim().toLowerCase());
       if (item) {
         loadItems(item);
       } else {
-        document.getElementById('item-details').innerHTML = '<p>Item not found.</p>';
+        document.getElementById('itemDetails').innerHTML = '<p>Item not found.</p>';
       }
     })
     .catch(error => {
       console.error('Error loading item details:', error);
-      document.getElementById('item-details').innerHTML = '<p>Error loading item details.</p>';
+      document.getElementById('itemDetails').innerHTML = '<p>Error loading item details.</p>';
     });
 });
 
@@ -59,16 +59,16 @@ document.addEventListener("DOMContentLoaded", function () {
   fetch('./MenuDatabase/breakfastSides.json')
     .then(response => response.json())
     .then(data => {
-      const item = data.find(i => i.ItemName === itemName);
+      const item = data.find(i => i.ItemName.trim().toLowerCase() === itemName?.trim().toLowerCase());
       if (item) {
         loadItems(item);
       } else {
-        document.getElementById('item-details').innerHTML = '<p>Item not found.</p>';
+        document.getElementById('itemDetails').innerHTML = '<p>Item not found.</p>';
       }
     })
     .catch(error => {
       console.error('Error loading item details:', error);
-      document.getElementById('item-details').innerHTML = '<p>Error loading item details.</p>';
+      document.getElementById('itemDetails').innerHTML = '<p>Error loading item details.</p>';
     });
 });
 
@@ -84,12 +84,12 @@ document.addEventListener("DOMContentLoaded", function () {
       if (item) {
         loadItems(item);
       } else {
-        document.getElementById('item-details').innerHTML = '<p>Item not found.</p>';
+        document.getElementById('itemDetails').innerHTML = '<p>Item not found.</p>';
       }
     })
     .catch(error => {
       console.error('Error loading item details:', error);
-      document.getElementById('item-details').innerHTML = '<p>Error loading item details.</p>';
+      document.getElementById('itemDetails').innerHTML = '<p>Error loading item details.</p>';
     });
 });
 
@@ -105,12 +105,12 @@ document.addEventListener("DOMContentLoaded", function () {
       if (item) {
         loadItems(item);
       } else {
-        document.getElementById('item-details').innerHTML = '<p>Item not found.</p>';
+        document.getElementById('itemDetails').innerHTML = '<p>Item not found.</p>';
       }
     })
     .catch(error => {
       console.error('Error loading item details:', error);
-      document.getElementById('item-details').innerHTML = '<p>Error loading item details.</p>';
+      document.getElementById('itemDetails').innerHTML = '<p>Error loading item details.</p>';
     });
 });
 
@@ -126,12 +126,12 @@ document.addEventListener("DOMContentLoaded", function () {
       if (item) {
         loadItems(item);
       } else {
-        document.getElementById('item-details').innerHTML = '<p>Item not found.</p>';
+        document.getElementById('itemDetails').innerHTML = '<p>Item not found.</p>';
       }
     })
     .catch(error => {
       console.error('Error loading item details:', error);
-      document.getElementById('item-details').innerHTML = '<p>Error loading item details.</p>';
+      document.getElementById('itemDetails').innerHTML = '<p>Error loading item details.</p>';
     });
 });
 
@@ -147,12 +147,12 @@ document.addEventListener("DOMContentLoaded", function () {
       if (item) {
         loadItems(item);
       } else {
-        document.getElementById('item-details').innerHTML = '<p>Item not found.</p>';
+        document.getElementById('itemDetails').innerHTML = '<p>Item not found.</p>';
       }
     })
     .catch(error => {
       console.error('Error loading item details:', error);
-      document.getElementById('item-details').innerHTML = '<p>Error loading item details.</p>';
+      document.getElementById('itemDetails').innerHTML = '<p>Error loading item details.</p>';
     });
 });
 
@@ -168,12 +168,12 @@ document.addEventListener("DOMContentLoaded", function () {
       if (item) {
         loadItems(item);
       } else {
-        document.getElementById('item-details').innerHTML = '<p>Item not found.</p>';
+        document.getElementById('itemDetails').innerHTML = '<p>Item not found.</p>';
       }
     })
     .catch(error => {
       console.error('Error loading item details:', error);
-      document.getElementById('item-details').innerHTML = '<p>Error loading item details.</p>';
+      document.getElementById('itemDetails').innerHTML = '<p>Error loading item details.</p>';
     });
 });
 
@@ -189,12 +189,12 @@ document.addEventListener("DOMContentLoaded", function () {
       if (item) {
         loadItems(item);
       } else {
-        document.getElementById('item-details').innerHTML = '<p>Item not found.</p>';
+        document.getElementById('itemDetails').innerHTML = '<p>Item not found.</p>';
       }
     })
     .catch(error => {
       console.error('Error loading item details:', error);
-      document.getElementById('item-details').innerHTML = '<p>Error loading item details.</p>';
+      document.getElementById('itemDetails').innerHTML = '<p>Error loading item details.</p>';
     });
 });
 
@@ -210,12 +210,12 @@ document.addEventListener("DOMContentLoaded", function () {
       if (item) {
         loadItems(item);
       } else {
-        document.getElementById('item-details').innerHTML = '<p>Item not found.</p>';
+        document.getElementById('itemDetails').innerHTML = '<p>Item not found.</p>';
       }
     })
     .catch(error => {
       console.error('Error loading item details:', error);
-      document.getElementById('item-details').innerHTML = '<p>Error loading item details.</p>';
+      document.getElementById('itemDetails').innerHTML = '<p>Error loading item details.</p>';
     });
 });
 

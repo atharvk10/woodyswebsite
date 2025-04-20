@@ -26,9 +26,9 @@
 }
 
 #cartHomeButton {
-    font-family: "Trebuchet MS";
+    font-family: "Public Sans";
     font-weight: 700;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 20px;
     padding-left: 710px;
     padding-top: 30px;
@@ -37,9 +37,9 @@
 }
 
 #cartMenuButton {
-    font-family: "Trebuchet MS";
+    font-family: "Public Sans";
     font-weight: 700;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 20px;
     padding-left: 50px;
     padding-top: 30px;
@@ -48,20 +48,9 @@
 }
 
 #cartLoginButton {
-    font-family: "Trebuchet MS";
+    font-family: "Public Sans";
     font-weight: 700;
-    font-size: 20px;
-    line-height: 20px;
-    padding-left: 50px;
-    padding-top: 30px;
-    color: #281d1b;
-    text-decoration: none;
-}
-
-#cartAboutButton {
-    font-family: "Trebuchet MS";
-    font-weight: 700;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 20px;
     padding-left: 50px;
     padding-top: 30px;
@@ -90,6 +79,10 @@
     color: white;
     padding: 4px;
     border-radius: 50%;
+}
+
+#cartButton:hover {
+    color: red;
 }
 
 ul {
@@ -140,4 +133,13 @@ li a {
 
 h2{
     font-family: "Trebuchet MS";
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: black; /* or whatever your default color is */
+}
+
+.navigation li a:hover {
+    color: red;
 }

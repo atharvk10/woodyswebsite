@@ -91,17 +91,32 @@ function displayBreakfastSanwiches(items) {
             }
         }
         div.className = 'menu-item';
-        div.innerHTML = `<div class = "item-name"> <a style = "text-decoration: none" href="itemDetails.html?item=${encodeURIComponent(item.ItemName)}"target = "_blank"> ${item.ItemName} </a> </div>
-                        <div class = "item-price">$${item.ItemPrice.toFixed(2)} </div>   
-                        <div class="buttons">
-                            <ul>
-                                <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
-                                <li id="${item.ItemName}" class="quantity">${existingItem}</li>
-                                <li onclick="increase({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-plus"></i></li>
-                            </ul>
-                        </div>
-                        <img class = "item-image" src = "${item.ItemImage}" width = "250" height = "250">
-                        `;
+        div.innerHTML = `
+                    <style>
+                        .item-name a {
+                        text-decoration: none;
+                        color: black;
+                        }
+                        .item-name a:hover {
+                        color: red;
+                        }
+                    </style>
+                    <div class="item-name">
+                        <a href="itemDetails.html?item=${encodeURIComponent(item.ItemName)}" target="_blank">
+                        ${item.ItemName}
+                        </a>
+                    </div>
+                    <div class="item-price">$${item.ItemPrice.toFixed(2)}</div>
+                    <div class="buttons">
+                        <ul>
+                            <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
+                            <li id="${item.ItemName}" class="quantity">${existingItem}</li>
+                            <li onclick="increase({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-plus"></i></li>
+                        </ul>
+                    </div>
+                    <img class="item-image" src="${item.ItemImage}" width="250" height="250">
+                    `;
+
         menuDiv.appendChild(div);
     });
 }
@@ -132,17 +147,31 @@ function displayBreakfast(items) {
             }
         }
         div.className = 'menu-item';
-        div.innerHTML = `<div class = "item-name"> <a style = "text-decoration: none" href="itemDetails.html?item=${encodeURIComponent(item.ItemName)}"target = "_blank"> ${item.ItemName} </a> </div>
-                        <div class = "item-price">$${item.ItemPrice.toFixed(2)} </div>
-                        <div class="buttons">
-                            <ul>
-                                <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
-                                <li id="${item.ItemName}" class="quantity">${existingItem}</li>
-                                <li onclick="increase({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-plus"></i></li>
-                            </ul>
-                        </div>
-                        <img class = "item-image" src = "${item.ItemImage}" width = "250" height = "250"> 
-                        `;
+        div.innerHTML = `
+                    <style>
+                        .item-name a {
+                        text-decoration: none;
+                        color: black;
+                        }
+                        .item-name a:hover {
+                        color: red;
+                        }
+                    </style>
+                    <div class="item-name">
+                        <a href="itemDetails.html?item=${encodeURIComponent(item.ItemName)}" target="_blank">
+                        ${item.ItemName}
+                        </a>
+                    </div>
+                    <div class="item-price">$${item.ItemPrice.toFixed(2)}</div>
+                    <div class="buttons">
+                        <ul>
+                            <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
+                            <li id="${item.ItemName}" class="quantity">${existingItem}</li>
+                            <li onclick="increase({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-plus"></i></li>
+                        </ul>
+                    </div>
+                    <img class="item-image" src="${item.ItemImage}" width="250" height="250">
+                    `;
         menuDiv.appendChild(div);
     });
 }
@@ -173,17 +202,31 @@ function displayBreakfastSides(items) {
             }
         }
         div.className = 'menu-item';
-        div.innerHTML = `<div class = "item-name"> <a style = "text-decoration: none" href="itemDetails.html?item=${encodeURIComponent(item.ItemName)}"target = "_blank"> ${item.ItemName} </a> </div>
-                        <div class = "item-price">$${item.ItemPrice.toFixed(2)} </div>
-                        <div class="buttons">
-                            <ul>
-                                <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
-                                <li id="${item.ItemName}" class="quantity">${existingItem}</li>
-                                <li onclick="increase({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-plus"></i></li>
-                            </ul>
-                        </div>
-                        <img class = "item-image" src = "${item.ItemImage}" width = "250" height = "250"> 
-                        `;
+        div.innerHTML = `
+                    <style>
+                        .item-name a {
+                        text-decoration: none;
+                        color: black;
+                        }
+                        .item-name a:hover {
+                        color: red;
+                        }
+                    </style>
+                    <div class="item-name">
+                        <a href="itemDetails.html?item=${encodeURIComponent(item.ItemName)}" target="_blank">
+                        ${item.ItemName}
+                        </a>
+                    </div>
+                    <div class="item-price">$${item.ItemPrice.toFixed(2)}</div>
+                    <div class="buttons">
+                        <ul>
+                            <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
+                            <li id="${item.ItemName}" class="quantity">${existingItem}</li>
+                            <li onclick="increase({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-plus"></i></li>
+                        </ul>
+                    </div>
+                    <img class="item-image" src="${item.ItemImage}" width="250" height="250">
+                    `;
 
         menuDiv.appendChild(div);
     });
@@ -215,17 +258,31 @@ function displayBagels(items) {
             }
         }
         div.className = 'menu-item';
-        div.innerHTML = `<div class = "item-name"> <a style = "text-decoration: none" href="itemDetails.html?item=${encodeURIComponent(item.ItemName)}"target = "_blank"> ${item.ItemName} </a> </div>
-                        <div class = "item-price">$${item.ItemPrice.toFixed(2)} </div>
-                        <div class="buttons">
-                            <ul>
-                                <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
-                                <li id="${item.ItemName}" class="quantity">${existingItem}</li>
-                                <li onclick="increase({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-plus"></i></li>
-                            </ul>
-                        </div>
-                        <img class = "item-image" src = "${item.ItemImage}" width = "250" height = "250"> 
-                        `;
+        div.innerHTML = `
+                    <style>
+                        .item-name a {
+                        text-decoration: none;
+                        color: black;
+                        }
+                        .item-name a:hover {
+                        color: red;
+                        }
+                    </style>
+                    <div class="item-name">
+                        <a href="itemDetails.html?item=${encodeURIComponent(item.ItemName)}" target="_blank">
+                        ${item.ItemName}
+                        </a>
+                    </div>
+                    <div class="item-price">$${item.ItemPrice.toFixed(2)}</div>
+                    <div class="buttons">
+                        <ul>
+                            <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
+                            <li id="${item.ItemName}" class="quantity">${existingItem}</li>
+                            <li onclick="increase({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-plus"></i></li>
+                        </ul>
+                    </div>
+                    <img class="item-image" src="${item.ItemImage}" width="250" height="250">
+                    `;
 
         menuDiv.appendChild(div);
     });
@@ -257,17 +314,31 @@ function displayGrabAndGo(items) {
             }
         }
         div.className = 'menu-item';
-        div.innerHTML = `<div class = "item-name"> <a style = "text-decoration: none" href="itemDetails.html?item=${encodeURIComponent(item.ItemName)}"target = "_blank"> ${item.ItemName} </a> </div>
-                        <div class = "item-price">$${item.ItemPrice.toFixed(2)} </div>
-                        <div class="buttons">
-                            <ul>
-                                <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
-                                <li id="${item.ItemName}" class="quantity">${existingItem}</li>
-                                <li onclick="increase({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-plus"></i></li>
-                            </ul>
-                        </div>
-                        <img class = "item-image" src = "${item.ItemImage}" width = "250" height = "250"> 
-                        `;
+        div.innerHTML = `
+                    <style>
+                        .item-name a {
+                        text-decoration: none;
+                        color: black;
+                        }
+                        .item-name a:hover {
+                        color: red;
+                        }
+                    </style>
+                    <div class="item-name">
+                        <a href="itemDetails.html?item=${encodeURIComponent(item.ItemName)}" target="_blank">
+                        ${item.ItemName}
+                        </a>
+                    </div>
+                    <div class="item-price">$${item.ItemPrice.toFixed(2)}</div>
+                    <div class="buttons">
+                        <ul>
+                            <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
+                            <li id="${item.ItemName}" class="quantity">${existingItem}</li>
+                            <li onclick="increase({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-plus"></i></li>
+                        </ul>
+                    </div>
+                    <img class="item-image" src="${item.ItemImage}" width="250" height="250">
+                    `;
 
         menuDiv.appendChild(div);
     });
@@ -299,17 +370,31 @@ function displayLunchBagels(items) {
             }
         }
         div.className = 'menu-item';
-        div.innerHTML = `<div class = "item-name"> <a style = "text-decoration: none" href="itemDetails.html?item=${encodeURIComponent(item.ItemName)}"target = "_blank"> ${item.ItemName} </a> </div>
-                        <div class = "item-price">$${item.ItemPrice.toFixed(2)} </div>
-                        <div class="buttons">
-                            <ul>
-                                <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
-                                <li id="${item.ItemName}" class="quantity">${existingItem}</li>
-                                <li onclick="increase({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-plus"></i></li>
-                            </ul>
-                        </div>
-                        <img class = "item-image" src = "${item.ItemImage}" width = "250" height = "250"> 
-                        `;
+        div.innerHTML = `
+                    <style>
+                        .item-name a {
+                        text-decoration: none;
+                        color: black;
+                        }
+                        .item-name a:hover {
+                        color: red;
+                        }
+                    </style>
+                    <div class="item-name">
+                        <a href="itemDetails.html?item=${encodeURIComponent(item.ItemName)}" target="_blank">
+                        ${item.ItemName}
+                        </a>
+                    </div>
+                    <div class="item-price">$${item.ItemPrice.toFixed(2)}</div>
+                    <div class="buttons">
+                        <ul>
+                            <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
+                            <li id="${item.ItemName}" class="quantity">${existingItem}</li>
+                            <li onclick="increase({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-plus"></i></li>
+                        </ul>
+                    </div>
+                    <img class="item-image" src="${item.ItemImage}" width="250" height="250">
+                    `;
 
         menuDiv.appendChild(div);
     });
@@ -341,17 +426,31 @@ function displayWraps(items) {
             }
         }
         div.className = 'menu-item';
-        div.innerHTML = `<div class = "item-name"> <a target = "_blank"> ${item.ItemName} </a> </div>
-                        <div class="item-price">$${item.ItemPrice.toFixed(2)}</div>
-                        <div class="buttons">
-                            <ul>
-                                <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
-                                <li id="${item.ItemName}" class="quantity">${existingItem}</li>
-                                <li onclick="increase({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-plus"></i></li>
-                            </ul>
-                        </div>
-                        <img class = "item-image" src = "${item.ItemImage}" width = "450" height = "400"> 
-                        `;
+        div.innerHTML = `
+                    <style>
+                        .item-name a {
+                        text-decoration: none;
+                        color: black;
+                        }
+                        .item-name a:hover {
+                        color: red;
+                        }
+                    </style>
+                    <div class="item-name">
+                        <a href="itemDetails.html?item=${encodeURIComponent(item.ItemName)}" target="_blank">
+                        ${item.ItemName}
+                        </a>
+                    </div>
+                    <div class="item-price">$${item.ItemPrice.toFixed(2)}</div>
+                    <div class="buttons">
+                        <ul>
+                            <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
+                            <li id="${item.ItemName}" class="quantity">${existingItem}</li>
+                            <li onclick="increase({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-plus"></i></li>
+                        </ul>
+                    </div>
+                    <img class="item-image" src="${item.ItemImage}" width="450" height="400">
+                    `;
 
         menuDiv.appendChild(div);
     });
@@ -383,17 +482,31 @@ document.addEventListener("DOMContentLoaded", function() {
               }
           }
           div.className = 'menu-item';
-          div.innerHTML = `<div class = "item-name"> <a style = "text-decoration: none" href="itemDetails.html?item=${encodeURIComponent(item.ItemName)}"target = "_blank"> ${item.ItemName} </a> </div>
-                        <div class = "item-price">$${item.ItemPrice.toFixed(2)} </div>
-                        <div class="buttons">
-                            <ul>
-                                <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
-                                <li id="${item.ItemName}" class="quantity">${existingItem}</li>
-                                <li onclick="increase({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-plus"></i></li>
-                            </ul>
-                        </div>
-                        <img class = "item-image" src = "${item.ItemImage}" width = "250" height = "250"> 
-                        `;
+          div.innerHTML = `
+                    <style>
+                        .item-name a {
+                        text-decoration: none;
+                        color: black;
+                        }
+                        .item-name a:hover {
+                        color: red;
+                        }
+                    </style>
+                    <div class="item-name">
+                        <a href="itemDetails.html?item=${encodeURIComponent(item.ItemName)}" target="_blank">
+                        ${item.ItemName}
+                        </a>
+                    </div>
+                    <div class="item-price">$${item.ItemPrice.toFixed(2)}</div>
+                    <div class="buttons">
+                        <ul>
+                            <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
+                            <li id="${item.ItemName}" class="quantity">${existingItem}</li>
+                            <li onclick="increase({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-plus"></i></li>
+                        </ul>
+                    </div>
+                    <img class="item-image" src="${item.ItemImage}" width="250" height="250">
+                    `;
   
           menuDiv.appendChild(div);
       });
@@ -424,17 +537,31 @@ document.addEventListener("DOMContentLoaded", function() {
               }
           }
           div.className = 'menu-item';
-          div.innerHTML = `<div class = "item-name"> <a style = "text-decoration: none" href="itemDetails.html?item=${encodeURIComponent(item.ItemName)}"target = "_blank"> ${item.ItemName} </a> </div>
-                        <div class = "item-price">$${item.ItemPrice.toFixed(2)} </div>
-                        <div class="buttons">
-                            <ul>
-                                <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
-                                <li id="${item.ItemName}" class="quantity">${existingItem}</li>
-                                <li onclick="increase({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-plus"></i></li>
-                            </ul>
-                        </div>
-                        <img class = "item-image" src = "${item.ItemImage}" width = "250" height = "250"> 
-                        `;
+          div.innerHTML = `
+                    <style>
+                        .item-name a {
+                        text-decoration: none;
+                        color: black;
+                        }
+                        .item-name a:hover {
+                        color: red;
+                        }
+                    </style>
+                    <div class="item-name">
+                        <a href="itemDetails.html?item=${encodeURIComponent(item.ItemName)}" target="_blank">
+                        ${item.ItemName}
+                        </a>
+                    </div>
+                    <div class="item-price">$${item.ItemPrice.toFixed(2)}</div>
+                    <div class="buttons">
+                        <ul>
+                            <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
+                            <li id="${item.ItemName}" class="quantity">${existingItem}</li>
+                            <li onclick="increase({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-plus"></i></li>
+                        </ul>
+                    </div>
+                    <img class="item-image" src="${item.ItemImage}" width="250" height="250">
+                    `;
   
           menuDiv.appendChild(div);
       });
@@ -465,17 +592,32 @@ document.addEventListener("DOMContentLoaded", function() {
               }
           }
           div.className = 'menu-item';
-          div.innerHTML = `<div class = "item-name"> <a style = "text-decoration: none" href="itemDetails.html?item=${encodeURIComponent(item.ItemName)}"target = "_blank"> ${item.ItemName} </a> </div>
-                        <div class = "item-price">$${item.ItemPrice.toFixed(2)} </div>
-                        <div class="buttons">
-                            <ul>
-                                <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
-                                <li id="${item.ItemName}" class="quantity">${existingItem}</li>
-                                <li onclick="increase({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-plus"></i></li>
-                            </ul>
-                        </div>
-                        <img class = "item-image" src = "${item.ItemImage}" width = "250" height = "250"> 
-                        `;
+          div.innerHTML = `
+                    <style>
+                        .item-name a {
+                        text-decoration: none;
+                        color: black;
+                        }
+                        .item-name a:hover {
+                        color: red;
+                        }
+                        
+                    </style>
+                    <div class="item-name">
+                        <a href="itemDetails.html?item=${encodeURIComponent(item.ItemName)}" target="_blank">
+                        ${item.ItemName}
+                        </a>
+                    </div>
+                    <div class="item-price">$${item.ItemPrice.toFixed(2)}</div>
+                    <div class="buttons">
+                        <ul>
+                            <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
+                            <li id="${item.ItemName}" class="quantity">${existingItem}</li>
+                            <li onclick="increase({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-plus"></i></li>
+                        </ul>
+                    </div>                    
+                    <img class="item-image" src="${item.ItemImage}" width="250" height="250">
+                    `;
   
           menuDiv.appendChild(div);
       });
