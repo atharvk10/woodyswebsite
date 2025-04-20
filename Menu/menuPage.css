@@ -68,17 +68,6 @@
     position: relative;
 }
 
-.cartAmount{
-    font-size: 20px;
-    position: absolute;
-    bottom: -15px;
-    left: 30px;
-    background-color: rgb(203, 33, 33);
-    color: white;
-    padding: 4px;
-    border-radius: 50%;
-}
-
 #cartButton:hover {
     color: red;
 }
