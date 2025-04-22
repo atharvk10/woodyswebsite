@@ -97,63 +97,51 @@ ul {
 
 .itemName {
     position:relative;
-    left:650px;
-    top:50px;
+    left:550px;
+    top:40px;
     font-size: 50px;
     font-family:cursive;
     font-style: bold;
+    
 
 }
 
 .itemImage {
-   max-width: 40%;
+   width: 500px;
+   height: 500px;
    position: relative;
-   top:10px;
    left:30px;
+   top:30px;
    border-style: solid;
    border-radius: 0.5cm;
 }
 
 .price {
     position:relative;
-    font-size:30px;
-    left:1000px;
-    top:400px;
+    font-size:25px;
+    left:550px;
+    bottom:175px;
     font-style: italic;
-}
+    font-family:Georgia, 'Times New Roman', Times, serif
 
+}
 
 .itemDescription {
     font-style: italic;
     position: relative;
-    left:650px;
-    top:100px;
+    left: 550px;
+    bottom:450px;
+    width: 800px;
+    font-size:25px;
+    font-family:Georgia, 'Times New Roman', Times, serif
+
+
 
 }
 
 body {
     font-family: Arial, sans-serif;
     padding: 20px;
-  }
-  #item-details {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  img {
-    max-width: 100%;
-    height: auto;
-  }
+}
 
-  .description {
-    font-style: italic;
-    margin-top: 15px;
-  }
-  a.back {
-    display: inline-block;
-    margin-top: 20px;
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-  }
 

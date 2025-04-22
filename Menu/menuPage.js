@@ -6,6 +6,75 @@ function smoothScrollToSection(event, sectionID) {
   }
 }
 
+let userCart = JSON.parse(localStorage.getItem("storage")) || [];
+
+let increase = (ItemName) => {
+    let itemToAdd = ItemName;
+    let itemFind = "";
+    for (let element of userCart) {
+        if (element.ItemName === itemToAdd.ItemName) {
+            itemFind = element;
+            break;
+        }
+    }
+    if (itemFind === ""){
+      userCart.push({
+        ItemName: itemToAdd.ItemName,
+        item: 1,
+      });
+    }else{
+      itemFind.item += 1;
+    }
+    localStorage.setItem("storage", JSON.stringify(userCart));
+    updateQuantity(itemToAdd.ItemName);
+  };
+
+let decrease = (ItemName) => {
+    let itemToAdd = ItemName;
+    let itemFind = "";
+    for (let element of userCart) {
+        if (element.ItemName === itemToAdd.ItemName) {
+            itemFind = element;
+            break;
+        }
+    }
+    if (itemFind === ""){
+        return;
+    }else if(itemFind.item === 0){
+        return;
+    }else{
+      itemFind.item -= 1;
+    }
+    userCart = userCart.filter((x) => x.item !== 0);
+    localStorage.setItem("storage", JSON.stringify(userCart));
+    updateQuantity(itemToAdd.ItemName);
+  };
+  
+  let updateQuantity = (ItemName) => {
+    let itemFind = userCart.find((x) => x.ItemName === ItemName);
+    if(!itemFind){
+        const element1 = document.getElementById(ItemName);
+        if(element1){
+          element1.innerHTML = 0;
+        }
+        updateCart();
+        return;
+    }
+    const element2 = document.getElementById(ItemName);
+    if (element2) {
+      element2.innerHTML = itemFind.item;
+    }
+    updateCart();
+  };  
+
+  let updateCart = () => {
+    let cartnavbarUP = document.getElementById("cartnavbar");
+    let totalCartAmount = 0;
+    for (var i = 0; i < userCart.length; ++i) {
+        totalCartAmount = totalCartAmount + userCart[i].item;
+    }
+    cartnavbarUP.innerHTML=totalCartAmount;
+  }
 
 //THIS IS FOR BREAKFAST SANDWICHES
 
@@ -13,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function() {
   fetch('./MenuDatabase/breakfastSandwiches.json')
     .then(response => response.json())
     .then(data => {
-        menuItems = data;
+        let menuItems = data;
         displayBreakfastSanwiches(menuItems);
     })
     .catch(error => console.error('Error loading menu:', error));
@@ -25,6 +94,13 @@ function displayBreakfastSanwiches(items) {
 
     items.forEach(item => {
         let div = document.createElement('div');
+        let existingItem = 0;
+        for (let i = 0; i < userCart.length; i++) {
+            if (userCart[i].ItemName === item.ItemName) {
+                existingItem = userCart[i].item;
+                break;
+            }
+        }
         div.className = 'menu-item';
         div.innerHTML = `
                     <style>
@@ -35,14 +111,20 @@ function displayBreakfastSanwiches(items) {
                         .item-name a:hover {
                         color: red;
                         }
-
                     </style>
                     <div class="item-name">
                         <a href="itemDetails.html?item=${encodeURIComponent(item.ItemName)}" target="_blank">
                         ${item.ItemName}
                         </a>
                     </div>
-                    <div class="item-price">$${item.ItemPrice.toFixed(2)}</div><br>
+                    <div class="item-price">$${item.ItemPrice.toFixed(2)}</div>
+                    <div class="buttons">
+                        <ul>
+                            <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
+                            <li id="${item.ItemName}" class="quantity">${existingItem}</li>
+                            <li onclick="increase({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-plus"></i></li>
+                        </ul>
+                    </div>
                     <img class="item-image" src="${item.ItemImage}" width="250" height="250">
                     `;
 
@@ -56,7 +138,7 @@ document.addEventListener("DOMContentLoaded", function() {
   fetch('./MenuDatabase/breakfast.json')
     .then(response => response.json())
     .then(data => {
-        menuItems = data;
+        let menuItems = data;
         displayBreakfast(menuItems);
     })
     .catch(error => console.error('Error loading menu:', error));
@@ -68,6 +150,13 @@ function displayBreakfast(items) {
 
     items.forEach(item => {
         let div = document.createElement('div');
+        let existingItem = 0;
+        for (let i = 0; i < userCart.length; i++) {
+            if (userCart[i].ItemName === item.ItemName) {
+                existingItem = userCart[i].item;
+                break;
+            }
+        }
         div.className = 'menu-item';
         div.innerHTML = `
                     <style>
@@ -84,7 +173,14 @@ function displayBreakfast(items) {
                         ${item.ItemName}
                         </a>
                     </div>
-                    <div class="item-price">$${item.ItemPrice.toFixed(2)}</div><br>
+                    <div class="item-price">$${item.ItemPrice.toFixed(2)}</div>
+                    <div class="buttons">
+                        <ul>
+                            <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
+                            <li id="${item.ItemName}" class="quantity">${existingItem}</li>
+                            <li onclick="increase({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-plus"></i></li>
+                        </ul>
+                    </div>
                     <img class="item-image" src="${item.ItemImage}" width="250" height="250">
                     `;
         menuDiv.appendChild(div);
@@ -97,7 +193,7 @@ document.addEventListener("DOMContentLoaded", function() {
   fetch('./MenuDatabase/breakfastSides.json')
     .then(response => response.json())
     .then(data => {
-        menuItems = data;
+        let menuItems = data;
         displayBreakfastSides(menuItems);
     })
     .catch(error => console.error('Error loading menu:', error));
@@ -109,6 +205,13 @@ function displayBreakfastSides(items) {
 
     items.forEach(item => {
         let div = document.createElement('div');
+        let existingItem = 0;
+        for (let i = 0; i < userCart.length; i++) {
+            if (userCart[i].ItemName === item.ItemName) {
+                existingItem = userCart[i].item;
+                break;
+            }
+        }
         div.className = 'menu-item';
         div.innerHTML = `
                     <style>
@@ -125,7 +228,14 @@ function displayBreakfastSides(items) {
                         ${item.ItemName}
                         </a>
                     </div>
-                    <div class="item-price">$${item.ItemPrice.toFixed(2)}</div><br>
+                    <div class="item-price">$${item.ItemPrice.toFixed(2)}</div>
+                    <div class="buttons">
+                        <ul>
+                            <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
+                            <li id="${item.ItemName}" class="quantity">${existingItem}</li>
+                            <li onclick="increase({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-plus"></i></li>
+                        </ul>
+                    </div>
                     <img class="item-image" src="${item.ItemImage}" width="250" height="250">
                     `;
 
@@ -139,7 +249,7 @@ document.addEventListener("DOMContentLoaded", function() {
   fetch('./MenuDatabase/bagels.json')
     .then(response => response.json())
     .then(data => {
-        menuItems = data;
+        let menuItems = data;
         displayBagels(menuItems);
     })
     .catch(error => console.error('Error loading menu:', error));
@@ -151,6 +261,13 @@ function displayBagels(items) {
 
     items.forEach(item => {
         let div = document.createElement('div');
+        let existingItem = 0;
+        for (let i = 0; i < userCart.length; i++) {
+            if (userCart[i].ItemName === item.ItemName) {
+                existingItem = userCart[i].item;
+                break;
+            }
+        }
         div.className = 'menu-item';
         div.innerHTML = `
                     <style>
@@ -167,7 +284,14 @@ function displayBagels(items) {
                         ${item.ItemName}
                         </a>
                     </div>
-                    <div class="item-price">$${item.ItemPrice.toFixed(2)}</div><br>
+                    <div class="item-price">$${item.ItemPrice.toFixed(2)}</div>
+                    <div class="buttons">
+                        <ul>
+                            <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
+                            <li id="${item.ItemName}" class="quantity">${existingItem}</li>
+                            <li onclick="increase({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-plus"></i></li>
+                        </ul>
+                    </div>
                     <img class="item-image" src="${item.ItemImage}" width="250" height="250">
                     `;
 
@@ -181,7 +305,7 @@ document.addEventListener("DOMContentLoaded", function() {
   fetch('./MenuDatabase/grabAndGo.json')
     .then(response => response.json())
     .then(data => {
-        menuItems = data;
+        let menuItems = data;
         displayGrabAndGo(menuItems);
     })
     .catch(error => console.error('Error loading menu:', error));
@@ -193,6 +317,13 @@ function displayGrabAndGo(items) {
 
     items.forEach(item => {
         let div = document.createElement('div');
+        let existingItem = 0;
+        for (let i = 0; i < userCart.length; i++) {
+            if (userCart[i].ItemName === item.ItemName) {
+                existingItem = userCart[i].item;
+                break;
+            }
+        }
         div.className = 'menu-item';
         div.innerHTML = `
                     <style>
@@ -209,7 +340,14 @@ function displayGrabAndGo(items) {
                         ${item.ItemName}
                         </a>
                     </div>
-                    <div class="item-price">$${item.ItemPrice.toFixed(2)}</div><br>
+                    <div class="item-price">$${item.ItemPrice.toFixed(2)}</div>
+                    <div class="buttons">
+                        <ul>
+                            <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
+                            <li id="${item.ItemName}" class="quantity">${existingItem}</li>
+                            <li onclick="increase({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-plus"></i></li>
+                        </ul>
+                    </div>
                     <img class="item-image" src="${item.ItemImage}" width="250" height="250">
                     `;
 
@@ -220,10 +358,10 @@ function displayGrabAndGo(items) {
 //THIS IS FOR THE LUNCH BAGELS
 
 document.addEventListener("DOMContentLoaded", function() {
-  fetch('./MenuDatabase/bagels.json')
+  fetch('./MenuDatabase/lunchbagels.json')
     .then(response => response.json())
     .then(data => {
-        menuItems = data;
+        let menuItems = data;
         displayLunchBagels(menuItems);
     })
     .catch(error => console.error('Error loading menu:', error));
@@ -235,6 +373,13 @@ function displayLunchBagels(items) {
 
     items.forEach(item => {
         let div = document.createElement('div');
+        let existingItem = 0;
+        for (let i = 0; i < userCart.length; i++) {
+            if (userCart[i].ItemName === item.ItemName) {
+                existingItem = userCart[i].item;
+                break;
+            }
+        }
         div.className = 'menu-item';
         div.innerHTML = `
                     <style>
@@ -251,7 +396,14 @@ function displayLunchBagels(items) {
                         ${item.ItemName}
                         </a>
                     </div>
-                    <div class="item-price">$${item.ItemPrice.toFixed(2)}</div><br>
+                    <div class="item-price">$${item.ItemPrice.toFixed(2)}</div>
+                    <div class="buttons">
+                        <ul>
+                            <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
+                            <li id="${item.ItemName}" class="quantity">${existingItem}</li>
+                            <li onclick="increase({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-plus"></i></li>
+                        </ul>
+                    </div>
                     <img class="item-image" src="${item.ItemImage}" width="250" height="250">
                     `;
 
@@ -265,7 +417,7 @@ document.addEventListener("DOMContentLoaded", function() {
   fetch('./MenuDatabase/wraps.json')
     .then(response => response.json())
     .then(data => {
-        menuItems = data;
+        let menuItems = data;
         displayWraps(menuItems);
     })
     .catch(error => console.error('Error loading menu:', error));
@@ -277,6 +429,13 @@ function displayWraps(items) {
 
     items.forEach(item => {
         let div = document.createElement('div');
+        let existingItem = 0;
+        for (let i = 0; i < userCart.length; i++) {
+            if (userCart[i].ItemName === item.ItemName) {
+                existingItem = userCart[i].item;
+                break;
+            }
+        }
         div.className = 'menu-item';
         div.innerHTML = `
                     <style>
@@ -293,7 +452,14 @@ function displayWraps(items) {
                         ${item.ItemName}
                         </a>
                     </div>
-                    <div class="item-price">$${item.ItemPrice.toFixed(2)}</div><br>
+                    <div class="item-price">$${item.ItemPrice.toFixed(2)}</div>
+                    <div class="buttons">
+                        <ul>
+                            <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
+                            <li id="${item.ItemName}" class="quantity">${existingItem}</li>
+                            <li onclick="increase({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-plus"></i></li>
+                        </ul>
+                    </div>
                     <img class="item-image" src="${item.ItemImage}" width="450" height="400">
                     `;
 
@@ -307,7 +473,7 @@ document.addEventListener("DOMContentLoaded", function() {
     fetch('./MenuDatabase/grille.json')
       .then(response => response.json())
       .then(data => {
-          menuItems = data;
+          let menuItems = data;
           displayGrille(menuItems);
       })
       .catch(error => console.error('Error loading menu:', error));
@@ -319,6 +485,13 @@ document.addEventListener("DOMContentLoaded", function() {
   
       items.forEach(item => {
           let div = document.createElement('div');
+          let existingItem = 0;
+          for (let i = 0; i < userCart.length; i++) {
+              if (userCart[i].ItemName === item.ItemName) {
+                  existingItem = userCart[i].item;
+                  break;
+              }
+          }
           div.className = 'menu-item';
           div.innerHTML = `
                     <style>
@@ -335,7 +508,14 @@ document.addEventListener("DOMContentLoaded", function() {
                         ${item.ItemName}
                         </a>
                     </div>
-                    <div class="item-price">$${item.ItemPrice.toFixed(2)}</div><br>
+                    <div class="item-price">$${item.ItemPrice.toFixed(2)}</div>
+                    <div class="buttons">
+                        <ul>
+                            <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
+                            <li id="${item.ItemName}" class="quantity">${existingItem}</li>
+                            <li onclick="increase({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-plus"></i></li>
+                        </ul>
+                    </div>
                     <img class="item-image" src="${item.ItemImage}" width="250" height="250">
                     `;
   
@@ -348,7 +528,7 @@ document.addEventListener("DOMContentLoaded", function() {
     fetch('./MenuDatabase/panani.json')
       .then(response => response.json())
       .then(data => {
-          menuItems = data;
+          let menuItems = data;
           displayPanani(menuItems);
       })
       .catch(error => console.error('Error loading menu:', error));
@@ -360,6 +540,13 @@ document.addEventListener("DOMContentLoaded", function() {
   
       items.forEach(item => {
           let div = document.createElement('div');
+          let existingItem = 0;
+          for (let i = 0; i < userCart.length; i++) {
+              if (userCart[i].ItemName === item.ItemName) {
+                  existingItem = userCart[i].item;
+                  break;
+              }
+          }
           div.className = 'menu-item';
           div.innerHTML = `
                     <style>
@@ -376,7 +563,14 @@ document.addEventListener("DOMContentLoaded", function() {
                         ${item.ItemName}
                         </a>
                     </div>
-                    <div class="item-price">$${item.ItemPrice.toFixed(2)}</div><br>
+                    <div class="item-price">$${item.ItemPrice.toFixed(2)}</div>
+                    <div class="buttons">
+                        <ul>
+                            <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
+                            <li id="${item.ItemName}" class="quantity">${existingItem}</li>
+                            <li onclick="increase({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-plus"></i></li>
+                        </ul>
+                    </div>
                     <img class="item-image" src="${item.ItemImage}" width="250" height="250">
                     `;
   
@@ -389,7 +583,7 @@ document.addEventListener("DOMContentLoaded", function() {
     fetch('./MenuDatabase/traditional.json')
       .then(response => response.json())
       .then(data => {
-          menuItems = data;
+          let menuItems = data;
           displayTraditional(menuItems);
       })
       .catch(error => console.error('Error loading menu:', error));
@@ -401,6 +595,13 @@ document.addEventListener("DOMContentLoaded", function() {
   
       items.forEach(item => {
           let div = document.createElement('div');
+          let existingItem = 0;
+          for (let i = 0; i < userCart.length; i++) {
+              if (userCart[i].ItemName === item.ItemName) {
+                  existingItem = userCart[i].item;
+                  break;
+              }
+          }
           div.className = 'menu-item';
           div.innerHTML = `
                     <style>
@@ -418,7 +619,14 @@ document.addEventListener("DOMContentLoaded", function() {
                         ${item.ItemName}
                         </a>
                     </div>
-                    <div class="item-price">$${item.ItemPrice.toFixed(2)}</div><br>
+                    <div class="item-price">$${item.ItemPrice.toFixed(2)}</div>
+                    <div class="buttons">
+                        <ul>
+                            <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
+                            <li id="${item.ItemName}" class="quantity">${existingItem}</li>
+                            <li onclick="increase({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-plus"></i></li>
+                        </ul>
+                    </div>                    
                     <img class="item-image" src="${item.ItemImage}" width="250" height="250">
                     `;
   
@@ -426,7 +634,4 @@ document.addEventListener("DOMContentLoaded", function() {
       });
   }
 
-  
-  
-
-  //I am creating a website that holds menu items. I have individual cards for each menu item on the website. If i click on the card, I want a new HTML page that shows more information about that item. how would i do that? I don't want to make HTML pages for each menu item
+  updateCart();
