@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8"/>
+    <title>Student Account</title>
+    <link rel="stylesheet" href="studentAccPage.css"/>
+    
+</head>
+<body>
+    <div class = "container">
+        <h1 id = "welcomeMessage"> Welcome!</h1>
+        <p>Meal Swipes: <span id = "mealSwipes">0</span></p>
+        <p>Retail Swipes: <span id = "retailSwipes">0</span></p>
+
+        <br />
+        <a href="../Home/homePage.html">Go to Homepage</a>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const user = JSON.parse(localStorage.getItem('loggedInUser'));
+
+            if (user) {
+                document.getElementById('welcomeMessage').textContent = `Welcome, ${user.netid}!`;
+                document.getElementById('mealSwipes').textContent = user.swipes.num_meal_swipes;
+                document.getElementById('retailSwipes').textContent = user.swipes.retail_swipes;
+            } else {
+        
+            window.location.href = 'loginPage.html';
+            }
+        });
+    </script>
+    <script src="studentAccPage.js"></script>
+
+</body>
+</html>
