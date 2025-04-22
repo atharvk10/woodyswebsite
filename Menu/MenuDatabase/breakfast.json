@@ -3,19 +3,22 @@
         "ItemName": "6pcs French Toast",
         "ItemPrice": 4.50, 
         "ItemDescription":"",
-        "ItemImage": "../img/french-toast.jpeg"
+        "ItemImage": "../img/french-toast.jpeg",
+        "ItemIngredients": ["Eggs", "Milk", "Bread", "Cinnamon", "Vanilla Extract", "Butter"]
     },
     {
         "ItemName": "Egg Platter", 
         "ItemPrice": 6.75, 
         "ItemDescription":"",
-        "ItemImage": "../img/eggplatter.jpg"
+        "ItemImage": "../img/eggplatter.jpg",
+        "ItemIngredients": ["Eggs", "Meat", "Butter", "Salt", "Pepper"]
     },
     {
         "ItemName": "Pancakes", 
         "ItemPrice": 5.00, 
         "ItemDescription":"",
-        "ItemImage": "../img/pancakes.jpg"
+        "ItemImage": "../img/pancakes.jpg",
+        "ItemIngredients": ["Flour", "Eggs", "Milk", "Butter", "Sugar", "Baking Powder", "Vanilla Extract"]
     }
         
 

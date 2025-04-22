@@ -1,11 +1,46 @@
-function loadItems(item, id) {
+async function loadItems(item, id) {
+  const calories = await getCalories(item.ItemIngredients);
+  const ingredients = item.ItemIngredients.join(', ');
   const container = document.getElementById(id);
   container.innerHTML = `
     <h1 class = "itemName">${item.ItemName}</h1>
     <img class = "itemImage" src="${item.ItemImage}" alt="${item.ItemName}">
     <div class="itemDescription">${item.ItemDescription || 'No description available.'}</div>
     <div class="price">Price: $${item.ItemPrice.toFixed(2)}</div>
+    <div class="calories">Calories: ${calories} calories</div>
+    <div class="ingredients">Ingredients: ${ingredients}</div>
     `;
+}
+
+async function getCalories(ingredients){
+  const apiKey = 'yZw91PtqEeP8cfePqMIiqV0rQYSjrHSOJ5getpIV';
+  let sumCals = 0;
+
+  for (let i = 0; i < ingredients.length; i++){
+    const ingredient = ingredients[i];
+    const url = 'https://api.nal.usda.gov/fdc/v1/foods/search?api_key=' + apiKey + '&query=' + encodeURIComponent(ingredient);
+    try{
+      const databaseResponse = await fetch(url);
+      const ingredientData = await databaseResponse.json();
+      if (ingredientData.foods){
+        const selectedItem = ingredientData.foods[0];
+        if (selectedItem.foodNutrients){
+          for (let j = 0; j < selectedItem.foodNutrients.length; j++){
+            if (selectedItem.foodNutrients[j].nutrientName == "Energy"){
+              sumCals += selectedItem.foodNutrients[j].value;
+              break;
+            }
+          }
+        }
+      }
+    }
+    catch (error){
+      console.error('Error fetching calories for' + ingredient, error);
+    }
+  }
+
+  sumCals = Math.round(sumCals/4.184);
+  return sumCals;
 }
 
 //THIS IS FOR THE BREAKFAST SANDWICHES
@@ -67,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
   fetch('./MenuDatabase/bagels.json')
     .then(response => response.json())
     .then(data => {
-      const item = data.find(i => i.ItemName === itemName);
+      const item = data.find(i => i.ItemName.trim().toLowerCase() === itemName?.trim().toLowerCase());
       if (item) {
         loadItems(item, 'breakfastbagels');
       } 
@@ -86,7 +121,7 @@ document.addEventListener("DOMContentLoaded", function () {
   fetch('./MenuDatabase/grabAndGo.json')
     .then(response => response.json())
     .then(data => {
-      const item = data.find(i => i.ItemName === itemName);
+      const item = data.find(i => i.ItemName.trim().toLowerCase() === itemName?.trim().toLowerCase());
       if (item) {
         loadItems(item, 'grabandgo');
       } 
@@ -105,7 +140,7 @@ document.addEventListener("DOMContentLoaded", function () {
   fetch('./MenuDatabase/bagels.json')
     .then(response => response.json())
     .then(data => {
-      const item = data.find(i => i.ItemName === itemName);
+      const item = data.find(i => i.ItemName.trim().toLowerCase() === itemName?.trim().toLowerCase());
       if (item) {
         loadItems(item, 'lunchbagels');
       } 
@@ -124,7 +159,7 @@ document.addEventListener("DOMContentLoaded", function () {
   fetch('./MenuDatabase/wraps.json')
     .then(response => response.json())
     .then(data => {
-      const item = data.find(i => i.ItemName === itemName);
+      const item = data.find(i => i.ItemName.trim().toLowerCase() === itemName?.trim().toLowerCase());
       if (item) {
         loadItems(item, 'wraps');
       } 
@@ -143,7 +178,7 @@ document.addEventListener("DOMContentLoaded", function () {
   fetch('./MenuDatabase/grille.json')
     .then(response => response.json())
     .then(data => {
-      const item = data.find(i => i.ItemName === itemName);
+      const item = data.find(i => i.ItemName.trim().toLowerCase() === itemName?.trim().toLowerCase());
       if (item) {
         loadItems(item, 'grille');
       } 
@@ -162,7 +197,7 @@ document.addEventListener("DOMContentLoaded", function () {
   fetch('./MenuDatabase/panani.json')
     .then(response => response.json())
     .then(data => {
-      const item = data.find(i => i.ItemName === itemName);
+      const item = data.find(i => i.ItemName.trim().toLowerCase() === itemName?.trim().toLowerCase());
       if (item) {
         loadItems(item, 'pananis');
       } 
@@ -181,7 +216,7 @@ document.addEventListener("DOMContentLoaded", function () {
   fetch('./MenuDatabase/traditional.json')
     .then(response => response.json())
     .then(data => {
-      const item = data.find(i => i.ItemName === itemName);
+      const item = data.find(i => i.ItemName.trim().toLowerCase() === itemName?.trim().toLowerCase());
       if (item) {
         loadItems(item, 'traditional');
       } 

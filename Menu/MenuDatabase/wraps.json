@@ -3,13 +3,15 @@
         "ItemName": "Crispy BBQ Chicken and Bacon Wrap",
         "ItemPrice": 7.25, 
         "ItemDescription":"",
-        "ItemImage": "../img/chicken_bacon_wrap.jpg"
+        "ItemImage": "../img/chicken_bacon_wrap.jpg",
+        "ItemIngredients": ["Tortilla wrap", "chicken", "bacon", "barbecue sauce", "lettuce", "tomatoes", "cheese", "onions", "salt", "pepper"]
     },
     {
         "ItemName": "Hot Knight Wrap", 
         "ItemPrice": 7.25, 
         "ItemDescription":"",
-        "ItemImage": "../img/hot_knight_wrap.jpg"
+        "ItemImage": "../img/hot_knight_wrap.jpg",
+        "ItemIngredients": ["Unknown"]
     }
     
 
