@@ -53,6 +53,38 @@
             </tr>
         </table>
     </div>
+<div style="text-align: center; margin-top: 30px;">
+    <button id="orderNowButton" class="orderOption" onclick="setOrderTiming('now')">Order Now</button>
+    <button id="orderLaterButton" class="orderOption" onclick="setOrderTiming('later')">Order Later</button>
+</div>
+<div id="timePickerWrapper" style="display: none; margin-top: 15px;">
+    <label for="orderTime" style="font-family: 'Trebuchet MS'; margin-right: 10px;">Select pickup time: </label>
+    <select id="orderTime" style="padding: 6px; font-family: 'Trebuchet MS';">
+        
+    </select>
+</div>
+
+
+    <div style="text-align: center; margin-top: 20px;">
+        
+            <button id="continueToPayment" style="
+                font-family: 'Trebuchet MS';
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 24px;
+                color: #fff;
+                background-color: rgb(234, 94, 94);
+                border: none;
+                padding: 14px 28px;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+                ">
+                Continue to Payment
+            </button>
+
+        
+    </div>
     <script src="cartPage.js"></script>
 </body>
 </html>

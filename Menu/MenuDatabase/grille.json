@@ -3,39 +3,43 @@
         "ItemName": "Bacon Grilled Cheese",
         "ItemPrice": 6.50, 
         "ItemDescription":"",
-        "ItemImage": "../img/bacon_grilled_cheese.jpg"
+        "ItemImage": "../img/bacon_grilled_cheese.jpg",
+        "ItemIngredients": ["Bacon", "bread", "cheese", "oil", "salt", "pepper"]
     },
     {
         "ItemName": "Cheese Steak", 
         "ItemPrice": 8.50, 
         "ItemDescription":"",
-        "ItemImage": "../img/cheesesteak.jpg"
+        "ItemImage": "../img/cheesesteak.jpg",
+        "ItemIngredients": ["Beef", "chicken", "onions", "cheese", "bread", "salt", "pepper"]
     },
     {
         "ItemName": "Chicken Sandwich", 
         "ItemPrice": 6.50, 
         "ItemDescription":"",
-        "ItemImage": "../img/chickensandwich.jpg"
+        "ItemImage": "../img/chickensandwich.jpg",
+        "ItemIngredients": ["chicken", "cheese", "bread", "lettuce", "tomato", "onions", "oil", "salt", "pepper", "mayonnaise spread"]
     },
     {
         "ItemName": "Grilled Cheese", 
         "ItemPrice": 5.50, 
         "ItemDescription":"",
-        "ItemImage": "../img/grilledcheese.jpg"
+        "ItemImage": "../img/grilledcheese.jpg",
+        "ItemIngredients": ["Bread", "butter", "cheese", "salt", "pepper"]
     },
     {
         "ItemName": "NAAN Pizza", 
         "ItemPrice": 5.25, 
         "ItemDescription":"",
-        "ItemImage": "../img/NAANPizza.jpg"
+        "ItemImage": "../img/NAANPizza.jpg",
+        "ItemIngredients": ["Naan bread", "cheese", "marinara sauce", "oil"]
     },
     {
         "ItemName": "Philly Cheesesteak Wrap", 
         "ItemPrice": 8.50, 
         "ItemDescription":"",
-        "ItemImage": "../img/phillycheesesteak.jpg"
+        "ItemImage": "../img/phillycheesesteak.jpg",
+        "ItemIngredients": ["Beef", "chicken", "bacon", "cheese", "onions", "bell peppers", "tortilla"]
     }
-        
-
 ]
 

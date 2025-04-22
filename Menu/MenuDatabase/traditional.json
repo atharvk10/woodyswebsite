@@ -3,48 +3,56 @@
         "ItemName": "BLT",
         "ItemPrice": 6.50, 
         "ItemDescription":"",
-        "ItemImage": "../img/blt.jpg"
+        "ItemImage": "../img/blt.jpg",
+        "ItemIngredients": ["Bacon", "lettuce", "tomato", "bread", "salt", "pepper"]
     },
     {
         "ItemName": "Chicken Salad Sandwich", 
         "ItemPrice": 6.50, 
         "ItemDescription":"",
-        "ItemImage": "../img/chicken_salad_sandwich.jpg"
+        "ItemImage": "../img/chicken_salad_sandwich.jpg",
+        "ItemIngredients": ["Chicken", "mayonnaise", "celery", "salt", "pepper", "onions", "garlic", "herbs", "mustard", "bread"]
     },
     {
         "ItemName": "Egg Salad Sandwich", 
         "ItemPrice": 6.50, 
         "ItemDescription":"",
-        "ItemImage": "../img/egg_salad_sandwich.jpg"
+        "ItemImage": "../img/egg_salad_sandwich.jpg",
+        "ItemIngredients": ["Eggs", "mayonnaise", "bread", "salt", "pepper", "mustard", "herbs", "celery", "onions", "pickles"]
     },
     {
         "ItemName": "Ham", 
         "ItemPrice": 6.50,
         "ItemDescription":"",
-        "ItemImage": "../img/ham_sandwich.jpg"
+        "ItemImage": "../img/ham_sandwich.jpg",
+        "ItemIngredients": ["Bread", "ham", "cheese", "lettuce", "tomatoes", "onions", "pickles", "mayonnaise", "mustard", "butter", "pepper", "salt"]
     },
     {
         "ItemName": "Roast Beef and Cheese", 
         "ItemPrice": 6.50, 
         "ItemDescription":"",
-        "ItemImage": "../img/roast_beef_and_cheese_sandwich.jpg"
+        "ItemImage": "../img/roast_beef_and_cheese_sandwich.jpg",
+        "ItemIngredients": ["Roast beef", "cheese", "bread", "lettuce", "tomatoes", "onions", "pickles", "mayonnaise", "mustard", "salt", "pepper"]
     },
     {
         "ItemName": "Tuna Salad Sandwich", 
         "ItemPrice": 6.50, 
         "ItemDescription":"",
-        "ItemImage": "../img/tuna_salad_sandwich.jpg"
+        "ItemImage": "../img/tuna_salad_sandwich.jpg",
+        "ItemIngredients": ["Tuna", "oil", "bread", "cheese", "mayonnaise", "onions", "celery", "mustard", "lettuce", "tomatoes", "pepper", "salt"]
     },
     {
         "ItemName": "Turkey and Cheese", 
         "ItemPrice": 6.50, 
         "ItemDescription":"",
-        "ItemImage": "../img/turkey_cheese_sandwich.jpg"
+        "ItemImage": "../img/turkey_cheese_sandwich.jpg",
+        "ItemIngredients": ["Bread", "turkey", "cheese", "mayonnaise", "lettuce", "tomatoes", "mustard", "onions", "salt", "pepper"]
     },
     {
         "ItemName": "Veggie Sandwich ", 
         "ItemPrice": 6.50, 
         "ItemDescription":"",
-        "ItemImage": "../img/veggie_sandwich.jpg"
+        "ItemImage": "../img/veggie_sandwich.jpg",
+        "ItemIngredients": ["Bread", "mayonnaise", "mustard", "cheese", "lettuce", "tomatoes", "cucumbers", "onions", "bell peppers", "carrots", "avocado", "sprouts", "pickles", "salt", "pepper"]
     }
 ]

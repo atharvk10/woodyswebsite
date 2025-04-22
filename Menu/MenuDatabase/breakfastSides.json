@@ -3,20 +3,22 @@
         "ItemName": "12 oz Oatmeal with Seasonal Berries",
         "ItemPrice": 3.75, 
         "ItemDescription":"",
-        "ItemImage":"../img/oatmeal-bowl-blueberries-strawberries.jpeg"  
+        "ItemImage":"../img/oatmeal-bowl-blueberries-strawberries.jpeg",
+        "ItemIngredients": ["Oats", "Water", "Milk", "Strawberries", "Blueberries", "Raspberries"]
     }, 
     {
         "ItemName": "2 Slices of Toast", 
         "ItemPrice": 1.15, 
         "ItemDescription":"",
-        "ItemImage":"../img/Two-slices-of-toast.jpg"
-
+        "ItemImage":"../img/Two-slices-of-toast.jpg",
+        "ItemIngredients": ["Bread", "Butter"]
     },
     {
         "ItemName": "Breakfast Potatoes", 
         "ItemPrice": 2.75, 
         "ItemDescription":"",
-        "ItemImage":"../img/breakfast-potatoes.jpeg"
+        "ItemImage":"../img/breakfast-potatoes.jpeg",
+        "ItemIngredients": ["Potatoes", "Butter", "Salt", "Pepper"]
     }
         
 

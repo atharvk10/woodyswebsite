@@ -3,81 +3,87 @@
         "ItemName": "3pc Chicken Tender with Fries",
         "ItemPrice": 6.75, 
         "ItemDescription":"",
-        "ItemImage":"../img/3pc_chicken_fries.avif"
+        "ItemImage":"../img/3pc_chicken_fries.avif",
+        "ItemIngredients": ["Chicken", "flour", "eggs", "bread crumbs", "salt", "pepper", "oil"]
     },
     {
         "ItemName": "5pc Chicken Tenders",
         "ItemPrice": 7.50,
         "ItemDescription":"",
-        "ItemImage":"../img/5pc_chicken.jpg"
+        "ItemImage":"../img/5pc_chicken.jpg",
+        "ItemIngredients": ["Chicken", "flour", "eggs", "bread crumbs", "salt", "pepper", "oil"]
     },
     {
         "ItemName": "8pc Chicken Wings",
         "ItemPrice": 7.75,
         "ItemDescription":"",
-        "ItemImage":"../img/8pc_chicken_wings.jpeg"
+        "ItemImage":"../img/8pc_chicken_wings.jpeg",
+        "ItemIngredients": ["Chicken", "flour", "eggs", "bread crumbs", "salt", "pepper", "oil"]
     },
     {
         "ItemName": "Bacon Cheeseburger",
         "ItemPrice": 6.75,
         "ItemDescription": "",
-        "ItemImage":"../img/bacon_cheeseburger.jpg"
+        "ItemImage":"../img/bacon_cheeseburger.jpg",
+        "ItemIngredients": ["Bacon", "mayonnaise", "ketchup", "mustard", "pepper", "salt", "ground beef", "hamburger rolls", "cheese", "onions", "pickles", "lettuce", "tomatoes"]
     },
     {
         "ItemName": "Black Bean Burger",
         "ItemPrice": 6.75,
         "ItemDescription": "",
-        "ItemImage": "../img/blackbean_burger.jpg"
-        
+        "ItemImage": "../img/blackbean_burger.jpg",
+        "ItemIngredients": ["Black beans", "onions", "garlic", "eggs", "breadcrumbs", "salt", "pepper", "oil"]
     },
     {
         "ItemName": "Cheeseburger",
         "ItemPrice": 7.25,
         "ItemDescription": "",
-        "ItemImage": "../img/cheeseburger.jpg"
-        
+        "ItemImage": "../img/cheeseburger.jpg",
+        "ItemIngredients": ["Ground beef", "hamburger rolls", "cheese", "tomatoes", "onions", "pickles", "lettuce", "butter”, “oil", "mayonnaise", "salt", "pepper"]
     },
     {
         "ItemName": "Chicken Parmesan Sandwich",
         "ItemPrice": 7.50,
         "ItemDescription": "",
-        "ItemImage": "../img/chicken_parm_sandwich.jpg"
-        
+        "ItemImage": "../img/chicken_parm_sandwich.jpg",
+        "ItemIngredients": ["Chicken", "flour", "eggs", "bread crumbs", "salt", "pepper", "parmesan cheese", "oil", "bread", "butter", "marinara sauce"]
     },
     {
         "ItemName": "Crispy Buffalo Chicken Sandwich",
         "ItemPrice": 7.50,
         "ItemDescription": "",
-        "ItemImage": "../img/crispy_buffalo_chicken.jpeg"
+        "ItemImage": "../img/crispy_buffalo_chicken.jpeg",
+        "ItemIngredients": ["Chicken", "buffalo sauce", "bread", "lettuce", "tomatoes", "pickles", "onions", "flour", "breadcrumbs", "buttermilk", "salt", "pepper"]
         
     },
     {
         "ItemName": "Fries",
         "ItemPrice": 3.50,
         "ItemDescription": "",
-        "ItemImage": "../img/fries.jpeg"
+        "ItemImage": "../img/fries.jpeg",
+        "ItemIngredients": ["Potatoes", "oil", "salt"]
         
     },
     {
         "ItemName": "Hamburger",
         "ItemPrice": 6.75,
         "ItemDescription": "",
-        "ItemImage": "../img/hamburger.jpeg"
-        
+        "ItemImage": "../img/hamburger.jpeg",
+        "ItemIngredients": ["Ground beef", "cheese", "hamburger rolls", "onions", "lettuce", "garlic", "tomatoes", "salt", "pepper", "butter"]
     },
     {
         "ItemName": "Pulled Pork Sandwich",
         "ItemPrice": 7.50,
         "ItemDescription": "",
-        "ItemImage": "../img/pulled_pork.jpeg"
-        
+        "ItemImage": "../img/pulled_pork.jpeg",
+        "ItemIngredients": ["Pork", "bread", "pepper", "salt", "mustard", "barbecue sauce", "onions", "pickles", "coleslaw"]
     },
     {
         "ItemName": "Turkey Burger",
         "ItemPrice": 6.75,
         "ItemDescription": "",
-        "ItemImage": "../img/turkey_burger.jpg"
-        
+        "ItemImage": "../img/turkey_burger.jpg",
+        "ItemIngredients": ["Turkey", "breadcrumbs", "onions", "ketchup", "garlic", "hamburger rolls", "cheese", "tomatoes", "lettuce", "pickles", "mustard", "salt", "pepper"]
     }   
     
 

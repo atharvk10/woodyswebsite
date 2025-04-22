@@ -3,32 +3,36 @@
         "ItemName": "Cinnamon Raisin Bagel (Lunch)",
         "ItemPrice": 1.79, 
         "ItemDescription":"",
-        "ItemImage":"../img/cinnamon-bagel.jpeg"
+        "ItemImage":"../img/cinnamon-bagel.jpeg",
+        "ItemIngredients": ["Flour", "Yeast", "Sugar", "Salt", "Cinnamon", "Raisin", "Cream Cheese"]
     },
     {
         "ItemName": "Everything Bagel (Lunch)",
         "ItemPrice": 1.79,
         "ItemDescription":"",
-        "ItemImage":"../img/everything-bagel.jpeg"
+        "ItemImage":"../img/everything-bagel.jpeg",
+        "ItemIngredients": ["flour", "yeast", "salt", "poppy seeds", "sesame seeds", "onion", "garlic", "salt", "cream cheese"]
     },
     {
         "ItemName": "Garlic Bagel (Lunch)",
         "ItemPrice": 1.79,
         "ItemDescription":"",
-        "ItemImage":"../img/garlic-bagel.jpeg"
+        "ItemImage":"../img/garlic-bagel.jpeg",
+        "ItemIngredients": ["flour", "yeast", "salt", "garlic", "Cream cheese"]
     },
     {
         "ItemName": "Jalapeno Bagel (Lunch)",
         "ItemPrice": 1.79,
         "ItemDescription": "",
-        "ItemImage":"../img/jalapeno-bagel.jpeg"
+        "ItemImage":"../img/jalapeno-bagel.jpeg",
+        "ItemIngredients": ["flour", "yeast", "salt", "Jalapeños", "Cream cheese"]
     },
     {
         "ItemName": "Plain Bagel (Lunch)",
         "ItemPrice": 1.79,
         "ItemDescription": "",
-        "ItemImage": "../img/plain-bagel.jpeg"
-        
+        "ItemImage": "../img/plain-bagel.jpeg",
+        "ItemIngredients": ["flour", "yeast", "salt", "Cream cheese"]
     }
     
 
