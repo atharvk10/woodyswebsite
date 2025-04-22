@@ -78,7 +78,7 @@
 
     const summaryDiv = document.getElementById("orderSummary");
     if (summaryDiv) {
-        let html = `<h3>🛒 Your Order:</h3><ul style="list-style: none; padding: 0;">`;
+        let html = `<h3> Your Order:</h3><ul style="list-style: none; padding: 0;">`;
             cart.forEach(item => {
                 html+= `<li>${item.quantity} x ${item.name} @ $${item.price.toFixed(2)}</li>`;
    
