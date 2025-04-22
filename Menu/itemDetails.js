@@ -1,11 +1,97 @@
 function loadItems(item, id) {
   const container = document.getElementById(id);
+  let existingItem = 0;
+  for (let i = 0; i < userCart.length; i++) {
+      if (userCart[i].ItemName === item.ItemName) {
+          existingItem = userCart[i].item;
+          break;
+      }
+  }
   container.innerHTML = `
     <h1 class = "itemName">${item.ItemName}</h1>
     <img class = "itemImage" src="${item.ItemImage}" alt="${item.ItemName}">
     <div class="itemDescription">${item.ItemDescription || 'No description available.'}</div>
-    <div class="price">Price: $${item.ItemPrice.toFixed(2)}</div>
+    <div class="price-and-buttons">
+      <div class="price">Price: $${item.ItemPrice.toFixed(2)}</div>
+      <div class="buttons">
+        <ul>
+          <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
+          <li id="${item.ItemName}" class="quantity">${existingItem}</li>
+          <li onclick="increase({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-plus"></i></li>
+        </ul>
+      </div>
+    </div>
     `;
+}
+
+let userCart = JSON.parse(localStorage.getItem("storage")) || [];
+
+let increase = (ItemName) => {
+  let itemToAdd = ItemName;
+  let itemFind = "";
+  for (let element of userCart) {
+      if (element.ItemName === itemToAdd.ItemName) {
+          itemFind = element;
+          break;
+      }
+  }
+  if (itemFind === ""){
+    userCart.push({
+      ItemName: itemToAdd.ItemName,
+      item: 1,
+    });
+  }else{
+    itemFind.item += 1;
+  }
+  localStorage.setItem("storage", JSON.stringify(userCart));
+  updateQuantity(itemToAdd.ItemName);
+};
+
+let decrease = (ItemName) => {
+  let itemToAdd = ItemName;
+  let itemFind = "";
+  for (let element of userCart) {
+      if (element.ItemName === itemToAdd.ItemName) {
+          itemFind = element;
+          break;
+      }
+  }
+  if (itemFind === ""){
+      return;
+  }else if(itemFind.item === 0){
+      return;
+  }else{
+    itemFind.item -= 1;
+  }
+  userCart = userCart.filter((x) => x.item !== 0);
+  localStorage.setItem("storage", JSON.stringify(userCart));
+  updateQuantity(itemToAdd.ItemName);
+};
+
+let updateQuantity = (ItemName) => {
+  let itemFind = userCart.find((x) => x.ItemName === ItemName);
+  if(!itemFind){
+      const element1 = document.getElementById(ItemName);
+      if(element1){
+        element1.innerHTML = 0;
+      }
+      updateCart();
+      return;
+  }
+  const element2 = document.getElementById(ItemName);
+  if (element2) {
+    element2.innerHTML = itemFind.item;
+  }
+  updateCart();
+};  
+
+let updateCart = () => {
+  let cartnavbarUP = document.getElementById("cartnavbar");
+  let totalCartAmount = 0;
+  for (var i = 0; i < userCart.length; ++i) {
+      totalCartAmount = totalCartAmount + userCart[i].item;
+  }
+  cartnavbarUP.innerHTML=totalCartAmount;
 }
 
 //THIS IS FOR THE BREAKFAST SANDWICHES
@@ -102,7 +188,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const params = new URLSearchParams(window.location.search);
   const itemName = params.get('item');
 
-  fetch('./MenuDatabase/bagels.json')
+  fetch('./MenuDatabase/lunchbagels.json')
     .then(response => response.json())
     .then(data => {
       const item = data.find(i => i.ItemName === itemName);
@@ -192,7 +278,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-
+updateCart();
 
 
 
