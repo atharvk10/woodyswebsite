@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Account</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='studentAccPage.css') }}">
+    
+</head>
+<body>
+    <h1>Welcome, {{ netid }}!</h1>
+    <p>Meal Swipes: {{ swipes['num_meal_swipes'] }}</p>
+    <p>Retail Swipes: {{ swipes['retail_swipes'] }}</p>
+
+    <br>
+    <a href="{{ url_for('home') }}">Go to Homepage</a>
+</body>
+</html>

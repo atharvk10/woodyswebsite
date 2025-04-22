@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, send_from_directory, request, redirect, url_for
 import sqlite3
 import os
 
@@ -31,7 +31,7 @@ def login():
     
 @app.route("/home")
 def home():
-    return render_template("homePage.html")
-    
+    return send_from_directory("Home", "HomePage.html")
+
 if __name__== "__main__":
     app.run(debug=True)
