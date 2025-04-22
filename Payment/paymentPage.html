@@ -24,6 +24,11 @@
         </a>
     </ul>
     <h2 id="PaymentTitle">Payment Form</h2>
+
+    <div id="orderSummary" style="text-align: center; font-family: 'Trebuchet MS'; margin-bottom: 30px;">
+
+    </div>
+
     <form id = "formbody">
         <div class="namegroup">
             <label for="fname">First name:</label><br>
@@ -62,3 +67,27 @@
     </form>
 </body>
 </html>
+<script>
+    const cart = JSON.parse(localStorage.getItem("userCart")) || [];
+    const timing = localStorage.getItem("userCartTiming") || "";
+    const selectedTime = localStorage.getItem("userCartSelectedTime") || "";
+
+    console.log("User Cart: ", cart);
+    console.log("Order Timing: ", timing);
+    console.log("Pickup Time: ", selectedTime);
+
+    const summaryDiv = document.getElementById("orderSummary");
+    if (summaryDiv) {
+        let html = `<h3>🛒 Your Order:</h3><ul style="list-style: none; padding: 0;">`;
+            cart.forEach(item => {
+                html+= `<li>${item.quantity} x ${item.name} @ $${item.price.toFixed(2)}</li>`;
+   
+            });
+            html += `</ul>`;
+            html += `<p><strong>Order Timing:</strong> ${timing}<p>`;
+            if (timing === "later") {
+                html += `<p><strong>Pickup Time:</strong> ${selectedTime}</p>`;
+            }
+            summaryDiv.innerHTML = html;
+    }
+</script>
