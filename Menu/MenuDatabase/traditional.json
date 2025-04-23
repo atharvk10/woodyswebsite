@@ -2,7 +2,7 @@
     {
         "ItemName": "BLT",
         "ItemPrice": 6.50, 
-        "ItemDescription":"",
+        "ItemDescription":"A timeless favorite with crispy bacon, fresh lettuce, and juicy tomatoes, served on your choice of bread. Lightly seasoned with salt and pepper for that perfect savory crunch in every bite.",
         "ItemImage": "../img/blt.jpg",
         "ItemIngredients": ["Bacon", "lettuce", "tomato", "bread", "salt", "pepper"],
         "ItemOptions": {
@@ -42,7 +42,7 @@
     {
         "ItemName": "Chicken Salad Sandwich", 
         "ItemPrice": 6.50, 
-        "ItemDescription":"",
+        "ItemDescription":"A creamy, herbed chicken salad made with tender chicken, mayo, celery, onions, and a touch of mustard and garlic. Served on your choice of bread — fresh, flavorful, and packed with texture.",
         "ItemImage": "../img/chicken_salad_sandwich.jpg",
         "ItemIngredients": ["Chicken", "mayonnaise", "celery", "salt", "pepper", "onions", "garlic", "herbs", "mustard", "bread"],
         "ItemOptions": {
@@ -82,7 +82,7 @@
     {
         "ItemName": "Egg Salad Sandwich", 
         "ItemPrice": 6.50, 
-        "ItemDescription":"",
+        "ItemDescription":"Classic and comforting. Chopped eggs mixed with creamy mayo, herbs, mustard, and crisp celery, plus a bit of onion and pickle for zing. A satisfying bite from start to finish.",
         "ItemImage": "../img/egg_salad_sandwich.jpg",
         "ItemIngredients": ["Eggs", "mayonnaise", "bread", "salt", "pepper", "mustard", "herbs", "celery", "onions", "pickles"],
         "ItemOptions": {
@@ -122,7 +122,7 @@
     {
         "ItemName": "Ham", 
         "ItemPrice": 6.50,
-        "ItemDescription":"",
+        "ItemDescription":"Sliced ham layered with melty cheese, lettuce, tomatoes, onions, and pickles, finished with mayo, mustard, and a touch of butter. Simple, savory, and fully customizable.",
         "ItemImage": "../img/ham_sandwich.jpg",
         "ItemIngredients": ["Bread", "ham", "cheese", "lettuce", "tomatoes", "onions", "pickles", "mayonnaise", "mustard", "butter", "pepper", "salt"],
         "ItemOptions": {
@@ -162,7 +162,7 @@
     {
         "ItemName": "Roast Beef and Cheese", 
         "ItemPrice": 6.50, 
-        "ItemDescription":"",
+        "ItemDescription":"Tender roast beef paired with your choice of cheese, crisp greens, juicy tomatoes, and zesty toppings. Served on fresh bread with mustard, mayo, and a bold, meaty flavor in every bite.",
         "ItemImage": "../img/roast_beef_and_cheese_sandwich.jpg",
         "ItemIngredients": ["Roast beef", "cheese", "bread", "lettuce", "tomatoes", "onions", "pickles", "mayonnaise", "mustard", "salt", "pepper"],
         "ItemOptions": {
@@ -202,7 +202,7 @@
     {
         "ItemName": "Tuna Salad Sandwich", 
         "ItemPrice": 6.50, 
-        "ItemDescription":"",
+        "ItemDescription":"A rich, savory mix of tuna, mayo, celery, and onions, layered with lettuce, tomato, and your choice of cheese. Finished with oil, mustard, and seasonings — fresh and satisfying.",
         "ItemImage": "../img/tuna_salad_sandwich.jpg",
         "ItemIngredients": ["Tuna", "oil", "bread", "cheese", "mayonnaise", "onions", "celery", "mustard", "lettuce", "tomatoes", "pepper", "salt"],
         "ItemOptions": {
@@ -242,7 +242,7 @@
     {
         "ItemName": "Turkey and Cheese", 
         "ItemPrice": 6.50, 
-        "ItemDescription":"",
+        "ItemDescription":"Sliced turkey and melty cheese served with lettuce, tomatoes, onions, mustard, and mayo. A go-to sandwich with clean, classic flavor, customized just how you like it.",
         "ItemImage": "../img/turkey_cheese_sandwich.jpg",
         "ItemIngredients": ["Bread", "turkey", "cheese", "mayonnaise", "lettuce", "tomatoes", "mustard", "onions", "salt", "pepper"],
         "ItemOptions": {
@@ -282,7 +282,7 @@
     {
         "ItemName": "Veggie Sandwich ", 
         "ItemPrice": 6.50, 
-        "ItemDescription":"",
+        "ItemDescription":"A fresh, crunchy mix of lettuce, tomatoes, cucumbers, onions, carrots, bell peppers, avocado, sprouts, and pickles with cheese, mayo, and mustard. A garden in every bite.",
         "ItemImage": "../img/veggie_sandwich.jpg",
         "ItemIngredients": ["Bread", "mayonnaise", "mustard", "cheese", "lettuce", "tomatoes", "cucumbers", "onions", "bell peppers", "carrots", "avocado", "sprouts", "pickles", "salt", "pepper"],
         "ItemOptions": {

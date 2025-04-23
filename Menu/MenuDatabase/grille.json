@@ -2,7 +2,7 @@
     {
         "ItemName": "Bacon Grilled Cheese",
         "ItemPrice": 6.50, 
-        "ItemDescription":"",
+        "ItemDescription":"Golden-grilled bread stuffed with gooey melted cheese and crispy bacon, toasted to perfection in oil with a hint of salt and pepper.",
         "ItemImage": "../img/bacon_grilled_cheese.jpg",
         "ItemIngredients": ["Bacon", "bread", "cheese", "oil", "salt", "pepper"],
         "ItemOptions": {
@@ -18,7 +18,7 @@
     {
         "ItemName": "Cheese Steak", 
         "ItemPrice": 8.50, 
-        "ItemDescription":"",
+        "ItemDescription":"A savory sandwich packed with your choice of seasoned beef or chicken, sautéed onions, and melted cheese, all nestled in warm bread.",
         "ItemImage": "../img/cheesesteak.jpg",
         "ItemIngredients": ["Beef", "chicken", "onions", "cheese", "bread", "salt", "pepper"],
         "ItemOptions": {
@@ -45,7 +45,7 @@
     {
         "ItemName": "Chicken Sandwich", 
         "ItemPrice": 6.50, 
-        "ItemDescription":"",
+        "ItemDescription":"Juicy chicken—crispy or grilled—topped with melted cheese, crisp lettuce, ripe tomato, and onions, finished with your choice of flavorful mayo spread and seasonings, all on fresh bread.",
         "ItemImage": "../img/chickensandwich.jpg",
         "ItemIngredients": ["chicken", "cheese", "bread", "lettuce", "tomato", "onions", "oil", "salt", "pepper", "mayonnaise spread"],
         "ItemOptions": {
@@ -78,7 +78,7 @@
     {
         "ItemName": "Grilled Cheese", 
         "ItemPrice": 5.50, 
-        "ItemDescription":"",
+        "ItemDescription":"A classic comfort food: buttery toasted bread with rich melted cheese, seasoned simply with salt and pepper.",
         "ItemImage": "../img/grilledcheese.jpg",
         "ItemIngredients": ["Bread", "butter", "cheese", "salt", "pepper"],
         "ItemOptions": {
@@ -91,7 +91,7 @@
     {
         "ItemName": "NAAN Pizza", 
         "ItemPrice": 5.25, 
-        "ItemDescription":"",
+        "ItemDescription":"A personal-sized pizza made on warm naan bread, topped with savory marinara sauce and a generous layer of melted cheese, drizzled with a touch of oil for a crisp finish.",
         "ItemImage": "../img/NAANPizza.jpg",
         "ItemIngredients": ["Naan bread", "cheese", "marinara sauce", "oil"],
         "ItemOptions": {
@@ -104,7 +104,7 @@
     {
         "ItemName": "Philly Cheesesteak Wrap", 
         "ItemPrice": 8.50, 
-        "ItemDescription":"",
+        "ItemDescription":"All the bold flavors of a Philly cheesesteak wrapped in a soft tortilla—your choice of beef or chicken, crispy bacon, melty cheese, sautéed onions, and bell peppers.",
         "ItemImage": "../img/phillycheesesteak.jpg",
         "ItemIngredients": ["Beef", "chicken", "bacon", "cheese", "onions", "bell peppers", "tortilla"],
         "ItemOptions": {

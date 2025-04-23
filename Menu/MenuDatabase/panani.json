@@ -2,7 +2,7 @@
     {
         "ItemName": "Buffalo Panini",
         "ItemPrice": 6.95, 
-        "ItemDescription":"",
+        "ItemDescription":"Grilled chicken tossed in bold buffalo sauce, layered with melted cheese, crisp lettuce, juicy tomatoes, and sautéed onions. Pressed in golden bread with just the right seasoning — spicy, savory, and satisfying.",
         "ItemImage": "../img/buffalo_chicken_panini.jpg",
         "ItemIngredients": ["Bread", "chicken", "buffalo sauce", "cheese", "onions", "lettuce", "tomatoes", "salt", "pepper"],
         "ItemOptions": {
@@ -42,7 +42,7 @@
     {
         "ItemName": "Chicken Bacon Ranch", 
         "ItemPrice": 8.25, 
-        "ItemDescription":"",
+        "ItemDescription":"Tender chicken and crispy bacon paired with creamy ranch, melted cheese, and fresh veggies on toasted bread. A rich, flavorful favorite that balances crunch and creaminess in every bite.",
         "ItemImage": "../img/chicken_bacon_ranch_panini.jpeg",
         "ItemIngredients": ["Chicken", "bacon", "bread", "ranch dressing", "cheese", "lettuce", "tomatoes", "onions", "salt", "pepper"],
         "ItemOptions": {
@@ -82,7 +82,7 @@
     {
         "ItemName": "Cuban", 
         "ItemPrice": 8.25, 
-        "ItemDescription":"",
+        "ItemDescription":"A bold and tangy sandwich with layers of juicy pork, smoky ham, melty cheese, and sharp pickles, pressed with garlic butter and mustard on crispy grilled bread. Classic, savory, and loaded with flavor.",
         "ItemImage": "../img/cuban_panini.jpg",
         "ItemIngredients": ["Bread", "butter", "garlic", "mustard", "cheese", "pork", "ham", "pickles", "salt", "pepper"],
         "ItemOptions": {
@@ -122,7 +122,7 @@
     {
         "ItemName": "Pastrami Rueben", 
         "ItemPrice": 8.25,
-        "ItemDescription":"",
+        "ItemDescription":"A warm, melty stack of pastrami, tangy sauerkraut, gooey cheese, and creamy dressing on buttery grilled bread. A savory, deli-style classic with serious flavor.",
         "ItemImage": "../img/pastrami_reuben.jpg",
         "ItemIngredients": ["Bread", "pastrami", "cheese", "sauerkraut", "dressing", "butter", "salt", "pepper"],
         "ItemOptions": {
@@ -162,7 +162,7 @@
     {
         "ItemName": "Tomato Mozzarella Semolina", 
         "ItemPrice": 7.25, 
-        "ItemDescription":"",
+        "ItemDescription":"Comfort food with a twist — soft semolina pasta, juicy tomatoes, and rich cheese on toasted bread, finished with a light drizzle of oil and simple seasonings. Fresh and hearty in one bite.",
         "ItemImage": "../img/tomato_mozzarella_semolina.jpg",
         "ItemIngredients": ["Bread", "semolina pasta", "cheese", "tomatoes", "oil", "salt", "pepper"],
         "ItemOptions": {
@@ -202,7 +202,7 @@
     {
         "ItemName": "Valley Chicken Sandwich", 
         "ItemPrice": 8.25, 
-        "ItemDescription":"",
+        "ItemDescription":"A crisp and flavorful combo of seasoned chicken, fresh lettuce, tomatoes, onions, and pickles, finished with creamy ranch and melted cheese on your choice of bread. Balanced, bold, and satisfying.",
         "ItemImage": "../img/valleychicken.jpg",
         "ItemIngredients": ["Chicken", "bread", "ranch dressing", "lettuce", "tomatoes", "onions", "pickles", "cheese", "salt", "pepper"],
         "ItemOptions": {
@@ -242,7 +242,7 @@
     {
         "ItemName": "Veggie Dream", 
         "ItemPrice": 8.25, 
-        "ItemDescription":"",
+        "ItemDescription":"Loaded with colorful veggies like avocado, beets, carrots, spinach, cucumbers, and sprouts, layered with smooth cream cheese and fresh toppings. A crunchy, creamy bite packed with garden goodness.",
         "ItemImage": "../img/veggie_dream.jpg",
         "ItemIngredients": ["Bread", "cream cheese", "tomatoes", "lettuce", "onions", "bell peppers", "carrots", "spinach", "cucumber", "beets", "sprouts", "avocado", "salt", "pepper"],
         "ItemOptions": {
@@ -282,7 +282,7 @@
     {
         "ItemName": "Woodys Club", 
         "ItemPrice": 8.25, 
-        "ItemDescription":"",
+        "ItemDescription":"Build it your way — pick your bread or wrap, cheese, mayo, and toppings like lettuce, tomatoes, and more. Toasted or not, this classic club hits the spot with bold, layered flavor.",
         "ItemImage": "../img/woodys_club.jpg",
         "ItemIngredients": ["Bread", "cream cheese", "tomatoes", "lettuce", "onions", "bell peppers", "carrots", "spinach", "cucumber", "beets", "sprouts", "avocado", "salt", "pepper"],
         "ItemOptions": {
