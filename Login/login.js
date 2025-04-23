@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
             localStorage.setItem("num_meal_swipes", user.num_meal_swipes);
             localStorage.setItem("retail_swipes", user.retail_swipes);
             
-            window.location.href = 'studentAccPage.html';
+            window.location.href = '../Home/homePage.html';
         }else{
             alert('Invalid NetID or Password. Please try again');
         }
