@@ -12,7 +12,7 @@
 
 #homeButton {
     text-decoration: none;
-    font-family: "Public Sans";
+    font-family:"Trebuchet MS";;
     font-weight: 700;
     font-size: 24px;
     line-height: 20px;
@@ -22,7 +22,7 @@
 }
 
 #menuButton {
-    font-family: "Public Sans";
+    font-family: "Trebuchet MS";;
     font-weight: 700;
     font-size: 24px;
     line-height: 20px;
@@ -32,7 +32,7 @@
 }
 
 #loginButton {
-    font-family: "Public Sans";
+    font-family: "Trebuchet MS";;
     font-weight: 700;
     font-size: 24px;
     line-height: 20px;

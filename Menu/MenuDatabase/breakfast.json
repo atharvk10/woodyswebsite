@@ -2,7 +2,7 @@
     {
         "ItemName": "6pcs French Toast",
         "ItemPrice": 4.50, 
-        "ItemDescription":"",
+        "ItemDescription":"Golden, fluffy, and full of flavor — six slices of thick-cut bread dipped in a cinnamon-vanilla egg batter, grilled to perfection, and served warm with a touch of butter. Perfect for a cozy breakfast or sweet snack any time of day.",
         "ItemImage": "../img/french-toast.jpeg",
         "ItemIngredients": ["Eggs", "Milk", "Bread", "Cinnamon", "Vanilla Extract", "Butter"],
         "ItemOptions": {
@@ -15,7 +15,7 @@
     {
         "ItemName": "Egg Platter", 
         "ItemPrice": 6.75, 
-        "ItemDescription":"",
+        "ItemDescription":"A hearty start to your day! Our Egg Platter features perfectly cooked eggs with your choice of savory meat, seasoned with salt and pepper, and finished with a bit of melted butter. Great with toast, bagels, or on its own!",
         "ItemImage": "../img/eggplatter.jpg",
         "ItemIngredients": ["Eggs", "Meat", "Butter", "Salt", "Pepper"],
         "ItemOptions": {
@@ -33,7 +33,7 @@
     {
         "ItemName": "Pancakes", 
         "ItemPrice": 5.00, 
-        "ItemDescription":"",
+        "ItemDescription":"Light, fluffy, and just the right amount of sweet. Our pancakes are made from scratch with vanilla, sugar, and a hint of buttery goodness — stacked and ready for syrup, fruit, or whatever you love on top.",
         "ItemImage": "../img/pancakes.jpg",
         "ItemIngredients": ["Flour", "Eggs", "Milk", "Butter", "Sugar", "Baking Powder", "Vanilla Extract"],
         "ItemOptions": {

@@ -2,7 +2,7 @@
     {
         "ItemName": "Cinnamon Raisin Bagel",
         "ItemPrice": 1.79, 
-        "ItemDescription":"",
+        "ItemDescription":"A sweet and cozy classic! Our Cinnamon Raisin Bagel blends warm cinnamon spice with plump, juicy raisins for a nostalgic flavor in every bite.Toasted or untoasted — your call.",
         "ItemImage":"../img/cinnamon-bagel.jpeg",
         "ItemIngredients": ["Flour", "Yeast", "Sugar", "Salt", "Cinnamon", "Raisin", "Cream Cheese"],
         "ItemOptions": {
@@ -22,7 +22,7 @@
     {
         "ItemName": "Everything Bagel",
         "ItemPrice": 1.79,
-        "ItemDescription":"",
+        "ItemDescription":"The bagel that has it all! A bold mix of poppy seeds, sesame seeds, onion, garlic, and salt makes every bite savory and satisfying. Available toasted or untoasted.",
         "ItemImage":"../img/everything-bagel.jpeg",
         "ItemIngredients": ["flour", "yeast", "salt", "poppy seeds", "sesame seeds", "onion", "garlic", "salt", "cream cheese"],
         "ItemOptions": {
@@ -42,7 +42,7 @@
     {
         "ItemName": "Garlic Bagel",
         "ItemPrice": 1.79,
-        "ItemDescription":"",
+        "ItemDescription":"Bold and aromatic! Our Garlic Bagel is baked with roasted garlic that packs a punch. A flavorful twist for garlic lovers. Enjoy it toasted or untoasted.",
         "ItemImage":"../img/garlic-bagel.jpeg",
         "ItemIngredients": ["flour", "yeast", "salt", "garlic", "Cream cheese"],
         "ItemOptions": {
@@ -62,7 +62,7 @@
     {
         "ItemName": "Jalapeno Bagel",
         "ItemPrice": 1.79,
-        "ItemDescription": "",
+        "ItemDescription": "Spice things up with this fiery favorite! Jalapeños bring the heat, while a dollop of cream cheese cools it down just right. Toasted or not — totally up to you.",
         "ItemImage":"../img/jalapeno-bagel.jpeg",
         "ItemIngredients": ["flour", "yeast", "salt", "Jalapeños", "Cream cheese"],
         "ItemOptions": {
@@ -82,7 +82,7 @@
     {
         "ItemName": "Plain Bagel",
         "ItemPrice": 1.79,
-        "ItemDescription": "",
+        "ItemDescription": "Soft, chewy, and classically simple. The Plain Bagel is a blank canvas ready for your favorite spread or toppings. Have it toasted or keep it soft and warm.",
         "ItemImage": "../img/plain-bagel.jpeg",
         "ItemIngredients": ["flour", "yeast", "salt", "Cream cheese"],
         "ItemOptions": {

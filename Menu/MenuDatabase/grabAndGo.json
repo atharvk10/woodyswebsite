@@ -2,7 +2,7 @@
     {
         "ItemName": "3pc Chicken Tender with Fries",
         "ItemPrice": 6.75, 
-        "ItemDescription":"",
+        "ItemDescription":"Three crispy, golden chicken tenders seasoned and breaded to perfection, served hot with a side of fries. Crunchy on the outside, juicy on the inside — the ultimate combo!",
         "ItemImage":"../img/3pc_chicken_fries.avif",
         "ItemIngredients": ["Chicken", "flour", "eggs", "bread crumbs", "salt", "pepper", "oil"],
         "ItemOptions": {
@@ -16,7 +16,7 @@
     {
         "ItemName": "5pc Chicken Tenders",
         "ItemPrice": 7.50,
-        "ItemDescription":"",
+        "ItemDescription":"More to love! Five tender, hand-breaded chicken strips cooked to crispy perfection. No sides, just straight-up chicken goodness.",
         "ItemImage":"../img/5pc_chicken.jpg",
         "ItemIngredients": ["Chicken", "flour", "eggs", "bread crumbs", "salt", "pepper", "oil"],
         "ItemOptions": {
@@ -30,7 +30,7 @@
     {
         "ItemName": "8pc Chicken Wings",
         "ItemPrice": 7.75,
-        "ItemDescription":"",
+        "ItemDescription":"Eight crispy wings, lightly breaded and full of flavor. Perfectly seasoned and fried for that satisfying crunch in every bite.",
         "ItemImage":"../img/8pc_chicken_wings.jpeg",
         "ItemIngredients": ["Chicken", "flour", "eggs", "bread crumbs", "salt", "pepper", "oil"],
         "ItemOptions": {
@@ -44,7 +44,7 @@
     {
         "ItemName": "Bacon Cheeseburger",
         "ItemPrice": 6.75,
-        "ItemDescription": "",
+        "ItemDescription": "Juicy ground beef, melty cheese, crispy bacon, and all the classic fixings — mayo, ketchup, mustard, pickles, lettuce, tomatoes, onions — all stacked on a fresh roll. A serious burger for serious cravings.",
         "ItemImage":"../img/bacon_cheeseburger.jpg",
         "ItemIngredients": ["Bacon", "mayonnaise", "ketchup", "mustard", "pepper", "salt", "ground beef", "hamburger rolls", "cheese", "onions", "pickles", "lettuce", "tomatoes"],
         "ItemOptions": {
@@ -58,7 +58,7 @@
     {
         "ItemName": "Black Bean Burger",
         "ItemPrice": 6.75,
-        "ItemDescription": "",
+        "ItemDescription": "A tasty veggie twist! Our house-made black bean patty is packed with flavor from garlic, onions, and spices, served up crispy on a bun. A great meat-free option that doesn't hold back on flavor.",
         "ItemImage": "../img/blackbean_burger.jpg",
         "ItemIngredients": ["Black beans", "onions", "garlic", "eggs", "breadcrumbs", "salt", "pepper", "oil"],
         "ItemOptions": {
@@ -72,7 +72,7 @@
     {
         "ItemName": "Cheeseburger",
         "ItemPrice": 7.25,
-        "ItemDescription": "",
+        "ItemDescription": "A classic done right — seasoned ground beef, melted cheese, lettuce, tomato, onions, pickles, and creamy mayo on a soft bun. Comfort food at its finest.",
         "ItemImage": "../img/cheeseburger.jpg",
         "ItemIngredients": ["Ground beef", "hamburger rolls", "cheese", "tomatoes", "onions", "pickles", "lettuce", "butter”, “oil", "mayonnaise", "salt", "pepper"],
         "ItemOptions": {
@@ -86,7 +86,7 @@
     {
         "ItemName": "Chicken Parmesan Sandwich",
         "ItemPrice": 7.50,
-        "ItemDescription": "",
+        "ItemDescription": "Crispy breaded chicken topped with marinara sauce and parmesan cheese, served warm on toasted bread with a buttery finish. Like your favorite Italian dinner, but handheld.",
         "ItemImage": "../img/chicken_parm_sandwich.jpg",
         "ItemIngredients": ["Chicken", "flour", "eggs", "bread crumbs", "salt", "pepper", "parmesan cheese", "oil", "bread", "butter", "marinara sauce"],
         "ItemOptions": {
@@ -100,7 +100,7 @@
     {
         "ItemName": "Crispy Buffalo Chicken Sandwich",
         "ItemPrice": 7.50,
-        "ItemDescription": "",
+        "ItemDescription": "Spicy and satisfying! This sandwich features crispy chicken drenched in zesty buffalo sauce, topped with lettuce, tomatoes, onions, and pickles — all nestled in fresh bread.",
         "ItemImage": "../img/crispy_buffalo_chicken.jpeg",
         "ItemIngredients": ["Chicken", "buffalo sauce", "bread", "lettuce", "tomatoes", "pickles", "onions", "flour", "breadcrumbs", "buttermilk", "salt", "pepper"],
         "ItemOptions": {
@@ -114,7 +114,7 @@
     {
         "ItemName": "Fries",
         "ItemPrice": 3.50,
-        "ItemDescription": "",
+        "ItemDescription": "Golden, crispy, and seasoned just right. Our fries are the perfect sidekick to any meal — or great on their own!",
         "ItemImage": "../img/fries.jpeg",
         "ItemIngredients": ["Potatoes", "oil", "salt"],
         "ItemOptions": {
@@ -128,7 +128,7 @@
     {
         "ItemName": "Hamburger",
         "ItemPrice": 6.75,
-        "ItemDescription": "",
+        "ItemDescription": "Grilled to perfection with all the classics: ground beef, lettuce, tomatoes, onions, and a hint of garlic, stacked on a buttery bun. Simple and delicious.",
         "ItemImage": "../img/hamburger.jpeg",
         "ItemIngredients": ["Ground beef", "cheese", "hamburger rolls", "onions", "lettuce", "garlic", "tomatoes", "salt", "pepper", "butter"],
         "ItemOptions": {
@@ -142,7 +142,7 @@
     {
         "ItemName": "Pulled Pork Sandwich",
         "ItemPrice": 7.50,
-        "ItemDescription": "",
+        "ItemDescription": "Tender pulled pork smothered in tangy BBQ sauce, layered with onions, pickles, and creamy coleslaw, all served on fresh bread. A Southern-style favorite you’ll crave again and again.",
         "ItemImage": "../img/pulled_pork.jpeg",
         "ItemIngredients": ["Pork", "bread", "pepper", "salt", "mustard", "barbecue sauce", "onions", "pickles", "coleslaw"],
         "ItemOptions": {
@@ -156,7 +156,7 @@
     {
         "ItemName": "Turkey Burger",
         "ItemPrice": 6.75,
-        "ItemDescription": "",
+        "ItemDescription": "Lean ground turkey seasoned with garlic and ketchup, topped with cheese, tomatoes, lettuce, pickles, and mustard. A flavorful alternative that’s light but still totally satisfying.",
         "ItemImage": "../img/turkey_burger.jpg",
         "ItemIngredients": ["Turkey", "breadcrumbs", "onions", "ketchup", "garlic", "hamburger rolls", "cheese", "tomatoes", "lettuce", "pickles", "mustard", "salt", "pepper"],
         "ItemOptions": {

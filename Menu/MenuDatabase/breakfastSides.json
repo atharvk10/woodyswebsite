@@ -2,7 +2,7 @@
     {
         "ItemName": "12 oz Oatmeal with Seasonal Berries",
         "ItemPrice": 3.75, 
-        "ItemDescription":"",
+        "ItemDescription":"Comfort in a cup! This hearty oatmeal is made fresh with your choice of water or milk, then topped with sweet seasonal berries — strawberries, blueberries, or raspberries. Nutritious, delicious, and perfect for a cozy morning.",
         "ItemImage":"../img/oatmeal-bowl-blueberries-strawberries.jpeg",
         "ItemIngredients": ["Oats", "Water", "Milk", "Strawberries", "Blueberries", "Raspberries"],
         "ItemOptions": {
@@ -15,7 +15,7 @@
     {
         "ItemName": "2 Slices of Toast", 
         "ItemPrice": 1.15, 
-        "ItemDescription":"",
+        "ItemDescription":"Crispy, golden, and buttery — the perfect side to any breakfast.",
         "ItemImage":"../img/Two-slices-of-toast.jpg",
         "ItemIngredients": ["Bread", "Butter"],
         "ItemOptions": {
@@ -32,7 +32,7 @@
     {
         "ItemName": "Breakfast Potatoes", 
         "ItemPrice": 2.75, 
-        "ItemDescription":"",
+        "ItemDescription":"Crispy on the outside, soft on the inside. These golden potatoes are seasoned simply with butter, salt, and pepper — the ideal savory sidekick to your morning plate.",
         "ItemImage":"../img/breakfast-potatoes.jpeg",
         "ItemIngredients": ["Potatoes", "Butter", "Salt", "Pepper"],
         "ItemOptions": {
