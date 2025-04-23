@@ -18,7 +18,8 @@
         "ItemPrice": 6.50, 
         "ItemDescription":"",
         "ItemImage": "../img/chickensandwich.jpg",
-        "ItemIngredients": ["chicken", "cheese", "bread", "lettuce", "tomato", "onions", "oil", "salt", "pepper", "mayonnaise spread"]
+        "ItemIngredients": ["chicken", "cheese", "bread", "lettuce", "tomato", "onions", "oil", "salt", "pepper", "mayonnaise spread"],
+
     },
     {
         "ItemName": "Grilled Cheese", 

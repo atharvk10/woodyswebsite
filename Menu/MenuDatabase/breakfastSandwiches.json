@@ -4,108 +4,575 @@
         "ItemPrice": 5.75, 
         "ItemDescription":"A simple yet satisfying sandwich made with fluffy egg and melted cheese layered between soft, buttery bread. Seasoned with salt and pepper and served with complementary crispy breakfast potatoes.",
         "ItemImage":"../img/Egg-Cheese-Bagel.jpg",
-        "ItemIngredients": ["Bread", "Cheese", "Egg", "Butter", "Oil", "Salt", "Pepper"]
+        "ItemIngredients": ["Bread", "Cheese", "Egg", "Butter", "Oil", "Salt", "Pepper"],
+        "ItemOptions": {
+            "Bread": [
+                {"name": "Salt Bagel", "price": 0}, {"name": "Kaiser Roll", "price": 0},
+  	            {"name": "Plain Bagel", "price": 0}, {"name": "Garlic Bagel", "price": 0},
+                {"name": "Everything Bagel", "price": 0}, {"name": "Wrap", "price": 0},
+                {"name": "Gluten Free Wrap", "price": 0}, {"name": "White Bread", "price": 0},
+                {"name": "Whole Wheat Bread", "price": 0}, {"name": "Rye Bread", "price": 0},
+                {"name": "Brioche Roll", "price": 0}
+            ],
+            "Cheese": [
+                {"name": "American Cheese", "price": 0}, {"name": "Pepper Jack Cheese", "price": 0},
+                {"name": "Provolone Cheese", "price": 0}, {"name": "Swiss Cheese", "price": 0},
+                {"name": "No Cheese", "price": 0}
+            ],
+            "Extra cheese": [
+                {"name": "American Cheese", "price": 1.00}, {"name": "Pepper Jack Cheese", "price": 1.00},
+                {"name": "Provolone Cheese", "price": 1.00}, {"name": "Swiss Cheese", "price": 1.00},
+                {"name": "No Extra Cheese", "price": 0}
+            ],
+            "Extra egg": [
+                {"name": "Fried Egg", "price": 2.00}, {"name": "No Extra Egg", "price": 0}
+	        ],
+            "Breakfast Potatoes": [
+                {"name": "Breakfast Potatoes", "price": 2.75}, {"name": "No Breakfast Potatoes", "price": 0}
+	        ],
+            "Drinks": [
+                {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
+                {"name": "No drinks", "price": 0}
+            ]
+        }
     },
     {
         "ItemName": "Egg Sandwich",
         "ItemPrice": 5.75,
         "ItemDescription":"Light and classic, this sandwich features a fresh-cooked egg nestled in warm, buttered bread. Finished with a touch of salt and pepper, and comes with a side of complementary cripsy breakfast potatoes.",
         "ItemImage":"../img/eggsandwich.jpg",
-        "ItemIngredients": ["Bread", "Egg", "Butter", "Salt", "Pepper"]
+        "ItemIngredients": ["Bread", "Egg", "Butter", "Salt", "Pepper"],
+        "ItemOptions": {
+            "Bread": [
+                {"name": "Salt Bagel", "price": 0}, {"name": "Kaiser Roll", "price": 0},
+  	            {"name": "Plain Bagel", "price": 0}, {"name": "Garlic Bagel", "price": 0},
+                {"name": "Everything Bagel", "price": 0}, {"name": "Wrap", "price": 0},
+                {"name": "Gluten Free Wrap", "price": 0}, {"name": "White Bread", "price": 0},
+                {"name": "Whole Wheat Bread", "price": 0}, {"name": "Rye Bread", "price": 0},
+                {"name": "Brioche Roll", "price": 0}
+            ],
+            "Cheese": [
+                {"name": "American Cheese", "price": 0}, {"name": "Pepper Jack Cheese", "price": 0},
+                {"name": "Provolone Cheese", "price": 0}, {"name": "Swiss Cheese", "price": 0},
+                {"name": "No Cheese", "price": 0}
+            ],
+            "Extra egg": [
+                {"name": "Fried Egg", "price": 2.00}, {"name": "No Extra Egg", "price": 0}
+	        ],
+            "Breakfast Potatoes": [
+                {"name": "Breakfast Potatoes", "price": 2.75}, {"name": "No Breakfast Potatoes", "price": 0}
+	        ],
+            "Drinks": [
+                {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
+                {"name": "No drinks", "price": 0}
+            ]
+        }
     },
     {
         "ItemName": "Meat Sandwich",
         "ItemPrice": 6.50,
         "ItemDescription":"Hearty and savory, this sandwich pairs your choice of meat with soft bread and rich butter for a no-frills breakfast bite. Lightly seasoned and served with complementary crispy breakfast potatoes on the side.",
         "ItemImage":"../img/meat_sandwich.jpg",
-        "ItemIngredients": ["Bread", "Meat", "Butter", "Salt", "Pepper"]
+        "ItemIngredients": ["Bread", "Meat", "Butter", "Salt", "Pepper"],
+        "ItemOptions": {
+            "Bread": [
+                {"name": "Salt Bagel", "price": 0}, {"name": "Kaiser Roll", "price": 0},
+  	            {"name": "Plain Bagel", "price": 0}, {"name": "Garlic Bagel", "price": 0},
+                {"name": "Everything Bagel", "price": 0}, {"name": "Wrap", "price": 0},
+                {"name": "Gluten Free Wrap", "price": 0}, {"name": "White Bread", "price": 0},
+                {"name": "Whole Wheat Bread", "price": 0}, {"name": "Rye Bread", "price": 0},
+                {"name": "Brioche Roll", "price": 0}
+            ],
+            "Cheese": [
+                {"name": "American Cheese", "price": 0}, {"name": "Pepper Jack Cheese", "price": 0},
+                {"name": "Provolone Cheese", "price": 0}, {"name": "Swiss Cheese", "price": 0},
+                {"name": "No Cheese", "price": 0}
+            ],
+            "Extra meat": [
+                {"name": "Beef Bacon", "price": 2.25}, {"name": "Pork Bacon", "price": 2.25},
+                {"name": "Pork Roll", "price": 2.25}, {"name": "Pork Sausage", "price": 2.25},
+                {"name": "Turkey Bacon", "price": 2.25}
+            ],
+            "Breakfast Potatoes": [
+                {"name": "Breakfast Potatoes", "price": 2.75}, {"name": "No Breakfast Potatoes", "price": 0}
+	        ],
+            "Drinks": [
+                {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
+                {"name": "No drinks", "price": 0}
+            ]
+        }
     },
     {
         "ItemName": "Pork Bacon Cheese Sandwich",
         "ItemPrice": 6.00,
         "ItemDescription":"Crispy pork bacon and melted cheese come together in this indulgent breakfast sandwich. Served on buttery bread with a side of complementary crispy golden breakfast potatoes.",
         "ItemImage": "../img/pork_bacon_cheese.jpg",
-        "ItemIngredients": ["Bread", "Pork Bacon", "Cheese", "Butter", "Salt", "Pepper"]
+        "ItemIngredients": ["Bread", "Pork Bacon", "Cheese", "Butter", "Salt", "Pepper"],
+        "ItemOptions": {
+            "Bread": [
+                {"name": "Salt Bagel", "price": 0}, {"name": "Kaiser Roll", "price": 0},
+  	            {"name": "Plain Bagel", "price": 0}, {"name": "Garlic Bagel", "price": 0},
+                {"name": "Everything Bagel", "price": 0}, {"name": "Wrap", "price": 0},
+                {"name": "Gluten Free Wrap", "price": 0}, {"name": "White Bread", "price": 0},
+                {"name": "Whole Wheat Bread", "price": 0}, {"name": "Rye Bread", "price": 0},
+                {"name": "Brioche Roll", "price": 0}
+            ],
+            "Cheese": [
+                {"name": "American Cheese", "price": 0}, {"name": "Pepper Jack Cheese", "price": 0},
+                {"name": "Provolone Cheese", "price": 0}, {"name": "Swiss Cheese", "price": 0},
+                {"name": "No Cheese", "price": 0}
+            ],
+            "Extra cheese": [
+                {"name": "American Cheese", "price": 1.00}, {"name": "Pepper Jack Cheese", "price": 1.00},
+                {"name": "Provolone Cheese", "price": 1.00}, {"name": "Swiss Cheese", "price": 1.00},
+                {"name": "No Extra Cheese", "price": 0}
+            ],
+            "Extra meat": [
+                {"name": "Beef Bacon", "price": 2.25}, {"name": "Pork Bacon", "price": 2.25},
+                {"name": "Pork Roll", "price": 2.25}, {"name": "Pork Sausage", "price": 2.25},
+                {"name": "Turkey Bacon", "price": 2.25}
+            ],
+            "Breakfast Potatoes": [
+                {"name": "Breakfast Potatoes", "price": 2.75}, {"name": "No Breakfast Potatoes", "price": 0}
+	        ],
+            "Drinks": [
+                {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
+                {"name": "No drinks", "price": 0}
+            ]
+        }
     },
     {
         "ItemName": "Pork Bacon Egg Cheese Sandwich",
         "ItemPrice": 6.50,
         "ItemDescription": "A flavorful combo of pork bacon, egg, and cheese packed into a warm, buttery sandwich. Comes complete with complementary seasoned breakfast potatoes.",
         "ItemImage": "../img/pork_bacon_egg_cheese.jpg",
-        "ItemIngredients": ["Bread", "Pork Bacon", "Egg", "Cheese", "Butter", "Salt", "Pepper"]
+        "ItemIngredients": ["Bread", "Pork Bacon", "Egg", "Cheese", "Butter", "Salt", "Pepper"],
+        "ItemOptions": {
+            "Bread": [
+                {"name": "Salt Bagel", "price": 0}, {"name": "Kaiser Roll", "price": 0},
+  	            {"name": "Plain Bagel", "price": 0}, {"name": "Garlic Bagel", "price": 0},
+                {"name": "Everything Bagel", "price": 0}, {"name": "Wrap", "price": 0},
+                {"name": "Gluten Free Wrap", "price": 0}, {"name": "White Bread", "price": 0},
+                {"name": "Whole Wheat Bread", "price": 0}, {"name": "Rye Bread", "price": 0},
+                {"name": "Brioche Roll", "price": 0}
+            ],
+            "Cheese": [
+                {"name": "American Cheese", "price": 0}, {"name": "Pepper Jack Cheese", "price": 0},
+                {"name": "Provolone Cheese", "price": 0}, {"name": "Swiss Cheese", "price": 0},
+                {"name": "No Cheese", "price": 0}
+            ],
+            "Extra cheese": [
+                {"name": "American Cheese", "price": 1.00}, {"name": "Pepper Jack Cheese", "price": 1.00},
+                {"name": "Provolone Cheese", "price": 1.00}, {"name": "Swiss Cheese", "price": 1.00},
+                {"name": "No Extra Cheese", "price": 0}
+            ],
+            "Extra meat": [
+                {"name": "Beef Bacon", "price": 2.25}, {"name": "Pork Bacon", "price": 2.25},
+                {"name": "Pork Roll", "price": 2.25}, {"name": "Pork Sausage", "price": 2.25},
+                {"name": "Turkey Bacon", "price": 2.25}
+            ],
+            "Extra egg": [
+                {"name": "Fried Egg", "price": 2.00}, {"name": "No Extra Egg", "price": 0}
+	        ],
+            "Breakfast Potatoes": [
+                {"name": "Breakfast Potatoes", "price": 2.75}, {"name": "No Breakfast Potatoes", "price": 0}
+	        ],
+            "Drinks": [
+                {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
+                {"name": "No drinks", "price": 0}
+            ]
+        }
     },
     {
         "ItemName": "Pork Bacon Egg Sandwich",
         "ItemPrice": 6.50,
         "ItemDescription": "This sandwich features pork bacon and a freshly cooked egg tucked between slices of soft bread. Lightly seasoned and served with a side of complementary breakfast potatoes.",
         "ItemImage": "../img/pork_bacon_egg.jpg",
-        "ItemIngredients": ["Bread", "Pork Bacon", "Egg", "Butter", "Salt", "Pepper"]
+        "ItemIngredients": ["Bread", "Pork Bacon", "Egg", "Butter", "Salt", "Pepper"],
+        "ItemOptions": {
+            "Bread": [
+                {"name": "Salt Bagel", "price": 0}, {"name": "Kaiser Roll", "price": 0},
+  	            {"name": "Plain Bagel", "price": 0}, {"name": "Garlic Bagel", "price": 0},
+                {"name": "Everything Bagel", "price": 0}, {"name": "Wrap", "price": 0},
+                {"name": "Gluten Free Wrap", "price": 0}, {"name": "White Bread", "price": 0},
+                {"name": "Whole Wheat Bread", "price": 0}, {"name": "Rye Bread", "price": 0},
+                {"name": "Brioche Roll", "price": 0}
+            ],
+            "Cheese": [
+                {"name": "American Cheese", "price": 0}, {"name": "Pepper Jack Cheese", "price": 0},
+                {"name": "Provolone Cheese", "price": 0}, {"name": "Swiss Cheese", "price": 0},
+                {"name": "No Cheese", "price": 0}
+            ],
+            "Extra meat": [
+                {"name": "Beef Bacon", "price": 2.25}, {"name": "Pork Bacon", "price": 2.25},
+                {"name": "Pork Roll", "price": 2.25}, {"name": "Pork Sausage", "price": 2.25},
+                {"name": "Turkey Bacon", "price": 2.25}
+            ],
+            "Extra egg": [
+                {"name": "Fried Egg", "price": 2.00}, {"name": "No Extra Egg", "price": 0}
+	        ],
+            "Breakfast Potatoes": [
+                {"name": "Breakfast Potatoes", "price": 2.75}, {"name": "No Breakfast Potatoes", "price": 0}
+	        ],
+            "Drinks": [
+                {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
+                {"name": "No drinks", "price": 0}
+            ]
+        }
     },
     {
         "ItemName": "Pork Roll Cheese Sandwich",
         "ItemPrice": 6.00,
         "ItemDescription": "Enjoy the bold taste of pork roll paired with melted cheese on buttery bread. This sandwich is served with complementary crispy breakfast potatoes for a filling start to your day.",
         "ItemImage": "../img/pork_roll_cheese.jpg",
-        "ItemIngredients": ["Bread", "Pork Roll", "Cheese", "Butter", "Salt", "Pepper"]
+        "ItemIngredients": ["Bread", "Pork Roll", "Cheese", "Butter", "Salt", "Pepper"],
+        "ItemOptions": {
+            "Bread": [
+                {"name": "Salt Bagel", "price": 0}, {"name": "Kaiser Roll", "price": 0},
+  	            {"name": "Plain Bagel", "price": 0}, {"name": "Garlic Bagel", "price": 0},
+                {"name": "Everything Bagel", "price": 0}, {"name": "Wrap", "price": 0},
+                {"name": "Gluten Free Wrap", "price": 0}, {"name": "White Bread", "price": 0},
+                {"name": "Whole Wheat Bread", "price": 0}, {"name": "Rye Bread", "price": 0},
+                {"name": "Brioche Roll", "price": 0}
+            ],
+            "Cheese": [
+                {"name": "American Cheese", "price": 0}, {"name": "Pepper Jack Cheese", "price": 0},
+                {"name": "Provolone Cheese", "price": 0}, {"name": "Swiss Cheese", "price": 0},
+                {"name": "No Cheese", "price": 0}
+            ],
+            "Extra cheese": [
+                {"name": "American Cheese", "price": 1.00}, {"name": "Pepper Jack Cheese", "price": 1.00},
+                {"name": "Provolone Cheese", "price": 1.00}, {"name": "Swiss Cheese", "price": 1.00},
+                {"name": "No Extra Cheese", "price": 0}
+            ],
+            "Extra meat": [
+                {"name": "Beef Bacon", "price": 2.25}, {"name": "Pork Bacon", "price": 2.25},
+                {"name": "Pork Roll", "price": 2.25}, {"name": "Pork Sausage", "price": 2.25},
+                {"name": "Turkey Bacon", "price": 2.25}
+            ],
+            "Breakfast Potatoes": [
+                {"name": "Breakfast Potatoes", "price": 2.75}, {"name": "No Breakfast Potatoes", "price": 0}
+	        ],
+            "Drinks": [
+                {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
+                {"name": "No drinks", "price": 0}
+            ]
+        }
     },
     {
         "ItemName": "Pork Roll Egg Cheese Sandwich",
         "ItemPrice": 6.50,
         "ItemDescription": "Packed with pork roll, egg, and cheese, this sandwich delivers a hearty and savory breakfast experience. Served hot with a side of golden complementary breakfast potatoes.",
         "ItemImage": "../img/pork_roll_egg_cheese.jpg",
-        "ItemIngredients": ["Bread", "Pork Roll", "Egg", "Cheese", "Butter", "Salt", "Pepper"]
+        "ItemIngredients": ["Bread", "Pork Roll", "Egg", "Cheese", "Butter", "Salt", "Pepper"],
+        "ItemOptions": {
+            "Bread": [
+                {"name": "Salt Bagel", "price": 0}, {"name": "Kaiser Roll", "price": 0},
+  	            {"name": "Plain Bagel", "price": 0}, {"name": "Garlic Bagel", "price": 0},
+                {"name": "Everything Bagel", "price": 0}, {"name": "Wrap", "price": 0},
+                {"name": "Gluten Free Wrap", "price": 0}, {"name": "White Bread", "price": 0},
+                {"name": "Whole Wheat Bread", "price": 0}, {"name": "Rye Bread", "price": 0},
+                {"name": "Brioche Roll", "price": 0}
+            ],
+            "Cheese": [
+                {"name": "American Cheese", "price": 0}, {"name": "Pepper Jack Cheese", "price": 0},
+                {"name": "Provolone Cheese", "price": 0}, {"name": "Swiss Cheese", "price": 0},
+                {"name": "No Cheese", "price": 0}
+            ],
+            "Extra cheese": [
+                {"name": "American Cheese", "price": 1.00}, {"name": "Pepper Jack Cheese", "price": 1.00},
+                {"name": "Provolone Cheese", "price": 1.00}, {"name": "Swiss Cheese", "price": 1.00},
+                {"name": "No Extra Cheese", "price": 0}
+            ],
+            "Extra meat": [
+                {"name": "Beef Bacon", "price": 2.25}, {"name": "Pork Bacon", "price": 2.25},
+                {"name": "Pork Roll", "price": 2.25}, {"name": "Pork Sausage", "price": 2.25},
+                {"name": "Turkey Bacon", "price": 2.25}
+            ],
+            "Extra egg": [
+                {"name": "Fried Egg", "price": 2.00}, {"name": "No Extra Egg", "price": 0}
+	        ],
+            "Breakfast Potatoes": [
+                {"name": "Breakfast Potatoes", "price": 2.75}, {"name": "No Breakfast Potatoes", "price": 0}
+	        ],
+            "Drinks": [
+                {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
+                {"name": "No drinks", "price": 0}
+            ]
+        }
     },
     {
         "ItemName": "Pork Roll Egg Sandwich",
         "ItemPrice": 6.00,
         "ItemDescription": "A satisfying combo of pork roll and egg, served on buttered bread and seasoned just right. Comes with complementary breakfast potatoes to complete your morning meal.",
         "ItemImage": "../img/pork_roll_egg.jpg",
-        "ItemIngredients": ["Bread", "Pork Roll", "Egg", "Butter", "Salt", "Pepper"]
+        "ItemIngredients": ["Bread", "Pork Roll", "Egg", "Butter", "Salt", "Pepper"],
+        "ItemOptions": {
+            "Bread": [
+                {"name": "Salt Bagel", "price": 0}, {"name": "Kaiser Roll", "price": 0},
+  	            {"name": "Plain Bagel", "price": 0}, {"name": "Garlic Bagel", "price": 0},
+                {"name": "Everything Bagel", "price": 0}, {"name": "Wrap", "price": 0},
+                {"name": "Gluten Free Wrap", "price": 0}, {"name": "White Bread", "price": 0},
+                {"name": "Whole Wheat Bread", "price": 0}, {"name": "Rye Bread", "price": 0},
+                {"name": "Brioche Roll", "price": 0}
+            ],
+            "Cheese": [
+                {"name": "American Cheese", "price": 0}, {"name": "Pepper Jack Cheese", "price": 0},
+                {"name": "Provolone Cheese", "price": 0}, {"name": "Swiss Cheese", "price": 0},
+                {"name": "No Cheese", "price": 0}
+            ],
+            "Extra meat": [
+                {"name": "Beef Bacon", "price": 2.25}, {"name": "Pork Bacon", "price": 2.25},
+                {"name": "Pork Roll", "price": 2.25}, {"name": "Pork Sausage", "price": 2.25},
+                {"name": "Turkey Bacon", "price": 2.25}
+            ],
+            "Extra egg": [
+                {"name": "Fried Egg", "price": 2.00}, {"name": "No Extra Egg", "price": 0}
+	        ],
+            "Breakfast Potatoes": [
+                {"name": "Breakfast Potatoes", "price": 2.75}, {"name": "No Breakfast Potatoes", "price": 0}
+	        ],
+            "Drinks": [
+                {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
+                {"name": "No drinks", "price": 0}
+            ]
+        }
     },
     {
         "ItemName": "Pork Sausage Cheese Sandwich",
         "ItemPrice": 6.00,
         "ItemDescription": "Spiced pork sausage and melted cheese come together on buttery bread for a rich, meaty bite. Perfectly seasoned and satisfying.",
         "ItemImage": "../img/pork_sausage_cheese.jpg",
-        "ItemIngredients": ["Bread", "Pork Sausage", "Cheese", "Butter", "Salt", "Pepper"]
+        "ItemIngredients": ["Bread", "Pork Sausage", "Cheese", "Butter", "Salt", "Pepper"],
+        "ItemOptions": {
+            "Bread": [
+                {"name": "Salt Bagel", "price": 0}, {"name": "Kaiser Roll", "price": 0},
+  	            {"name": "Plain Bagel", "price": 0}, {"name": "Garlic Bagel", "price": 0},
+                {"name": "Everything Bagel", "price": 0}, {"name": "Wrap", "price": 0},
+                {"name": "Gluten Free Wrap", "price": 0}, {"name": "White Bread", "price": 0},
+                {"name": "Whole Wheat Bread", "price": 0}, {"name": "Rye Bread", "price": 0},
+                {"name": "Brioche Roll", "price": 0}
+            ],
+            "Cheese": [
+                {"name": "American Cheese", "price": 0}, {"name": "Pepper Jack Cheese", "price": 0},
+                {"name": "Provolone Cheese", "price": 0}, {"name": "Swiss Cheese", "price": 0},
+                {"name": "No Cheese", "price": 0}
+            ],
+            "Extra cheese": [
+                {"name": "American Cheese", "price": 1.00}, {"name": "Pepper Jack Cheese", "price": 1.00},
+                {"name": "Provolone Cheese", "price": 1.00}, {"name": "Swiss Cheese", "price": 1.00},
+                {"name": "No Extra Cheese", "price": 0}
+            ],
+            "Extra meat": [
+                {"name": "Beef Bacon", "price": 2.25}, {"name": "Pork Bacon", "price": 2.25},
+                {"name": "Pork Roll", "price": 2.25}, {"name": "Pork Sausage", "price": 2.25},
+                {"name": "Turkey Bacon", "price": 2.25}
+            ],
+            "Breakfast Potatoes": [
+                {"name": "Breakfast Potatoes", "price": 2.75}, {"name": "No Breakfast Potatoes", "price": 0}
+	        ],
+            "Drinks": [
+                {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
+                {"name": "No drinks", "price": 0}
+            ]
+        }
     },
     {
         "ItemName": "Pork Sausage Egg Cheese Sandwich",
         "ItemPrice": 6.50,
         "ItemDescription": "Hearty pork sausage, egg, and cheese make this sandwich a powerhouse breakfast option. Flavorful, filling, and ready to kickstart your day.",
         "ItemImage": "../img/pork_sausage_egg_cheese.jpg",
-        "ItemIngredients": ["Bread", "Pork Sausage", "Egg", "Cheese", "Butter", "Salt", "Pepper"]
+        "ItemIngredients": ["Bread", "Pork Sausage", "Egg", "Cheese", "Butter", "Salt", "Pepper"],
+        "ItemOptions": {
+            "Bread": [
+                {"name": "Salt Bagel", "price": 0}, {"name": "Kaiser Roll", "price": 0},
+  	            {"name": "Plain Bagel", "price": 0}, {"name": "Garlic Bagel", "price": 0},
+                {"name": "Everything Bagel", "price": 0}, {"name": "Wrap", "price": 0},
+                {"name": "Gluten Free Wrap", "price": 0}, {"name": "White Bread", "price": 0},
+                {"name": "Whole Wheat Bread", "price": 0}, {"name": "Rye Bread", "price": 0},
+                {"name": "Brioche Roll", "price": 0}
+            ],
+            "Cheese": [
+                {"name": "American Cheese", "price": 0}, {"name": "Pepper Jack Cheese", "price": 0},
+                {"name": "Provolone Cheese", "price": 0}, {"name": "Swiss Cheese", "price": 0},
+                {"name": "No Cheese", "price": 0}
+            ],
+            "Extra cheese": [
+                {"name": "American Cheese", "price": 1.00}, {"name": "Pepper Jack Cheese", "price": 1.00},
+                {"name": "Provolone Cheese", "price": 1.00}, {"name": "Swiss Cheese", "price": 1.00},
+                {"name": "No Extra Cheese", "price": 0}
+            ],
+            "Extra meat": [
+                {"name": "Beef Bacon", "price": 2.25}, {"name": "Pork Bacon", "price": 2.25},
+                {"name": "Pork Roll", "price": 2.25}, {"name": "Pork Sausage", "price": 2.25},
+                {"name": "Turkey Bacon", "price": 2.25}
+            ],
+            "Extra egg": [
+                {"name": "Fried Egg", "price": 2.00}, {"name": "No Extra Egg", "price": 0}
+	        ],
+            "Breakfast Potatoes": [
+                {"name": "Breakfast Potatoes", "price": 2.75}, {"name": "No Breakfast Potatoes", "price": 0}
+	        ],
+            "Drinks": [
+                {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
+                {"name": "No drinks", "price": 0}
+            ]
+        }
     },
     {
         "ItemName": "Pork Sausage Egg Sandwich",
         "ItemPrice": 6.00,
         "ItemDescription": "This sandwich features seasoned pork sausage and a fluffy egg layered on buttered bread. A warm and savory choice for a quick breakfast.",
         "ItemImage": "../img/pork_sausage_egg.jpg",
-        "ItemIngredients": ["Bread", "Pork Sausage", "Egg", "Butter", "Salt", "Pepper"]
+        "ItemIngredients": ["Bread", "Pork Sausage", "Egg", "Butter", "Salt", "Pepper"],
+        "ItemOptions": {
+            "Bread": [
+                {"name": "Salt Bagel", "price": 0}, {"name": "Kaiser Roll", "price": 0},
+  	            {"name": "Plain Bagel", "price": 0}, {"name": "Garlic Bagel", "price": 0},
+                {"name": "Everything Bagel", "price": 0}, {"name": "Wrap", "price": 0},
+                {"name": "Gluten Free Wrap", "price": 0}, {"name": "White Bread", "price": 0},
+                {"name": "Whole Wheat Bread", "price": 0}, {"name": "Rye Bread", "price": 0},
+                {"name": "Brioche Roll", "price": 0}
+            ],
+            "Cheese": [
+                {"name": "American Cheese", "price": 0}, {"name": "Pepper Jack Cheese", "price": 0},
+                {"name": "Provolone Cheese", "price": 0}, {"name": "Swiss Cheese", "price": 0},
+                {"name": "No Cheese", "price": 0}
+            ],
+            "Extra meat": [
+                {"name": "Beef Bacon", "price": 2.25}, {"name": "Pork Bacon", "price": 2.25},
+                {"name": "Pork Roll", "price": 2.25}, {"name": "Pork Sausage", "price": 2.25},
+                {"name": "Turkey Bacon", "price": 2.25}
+            ],
+            "Extra egg": [
+                {"name": "Fried Egg", "price": 2.00}, {"name": "No Extra Egg", "price": 0}
+	        ],
+            "Breakfast Potatoes": [
+                {"name": "Breakfast Potatoes", "price": 2.75}, {"name": "No Breakfast Potatoes", "price": 0}
+	        ],
+            "Drinks": [
+                {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
+                {"name": "No drinks", "price": 0}
+            ]
+        }
     },
     {
         "ItemName": "Turkey Bacon Cheese Sandwich",
         "ItemPrice": 6.00,
         "ItemDescription": "Lean turkey bacon and creamy cheese stacked between buttery slices of bread for a lighter take on a classic. Deliciously simple and satisfying.",
         "ItemImage": "../img/turkey_bacon_cheese.jpg",
-        "ItemIngredients": ["Bread", "Turkey", "Bacon", "Cheese", "Butter", "Salt", "Pepper"]
+        "ItemIngredients": ["Bread", "Turkey", "Bacon", "Cheese", "Butter", "Salt", "Pepper"],
+        "ItemOptions": {
+            "Bread": [
+                {"name": "Salt Bagel", "price": 0}, {"name": "Kaiser Roll", "price": 0},
+  	            {"name": "Plain Bagel", "price": 0}, {"name": "Garlic Bagel", "price": 0},
+                {"name": "Everything Bagel", "price": 0}, {"name": "Wrap", "price": 0},
+                {"name": "Gluten Free Wrap", "price": 0}, {"name": "White Bread", "price": 0},
+                {"name": "Whole Wheat Bread", "price": 0}, {"name": "Rye Bread", "price": 0},
+                {"name": "Brioche Roll", "price": 0}
+            ],
+            "Cheese": [
+                {"name": "American Cheese", "price": 0}, {"name": "Pepper Jack Cheese", "price": 0},
+                {"name": "Provolone Cheese", "price": 0}, {"name": "Swiss Cheese", "price": 0},
+                {"name": "No Cheese", "price": 0}
+            ],
+            "Extra cheese": [
+                {"name": "American Cheese", "price": 1.00}, {"name": "Pepper Jack Cheese", "price": 1.00},
+                {"name": "Provolone Cheese", "price": 1.00}, {"name": "Swiss Cheese", "price": 1.00},
+                {"name": "No Extra Cheese", "price": 0}
+            ],
+            "Extra meat": [
+                {"name": "Beef Bacon", "price": 2.25}, {"name": "Pork Bacon", "price": 2.25},
+                {"name": "Pork Roll", "price": 2.25}, {"name": "Pork Sausage", "price": 2.25},
+                {"name": "Turkey Bacon", "price": 2.25}
+            ],
+            "Breakfast Potatoes": [
+                {"name": "Breakfast Potatoes", "price": 2.75}, {"name": "No Breakfast Potatoes", "price": 0}
+	        ],
+            "Drinks": [
+                {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
+                {"name": "No drinks", "price": 0}
+            ]
+        }
     },
     {
         "ItemName": "Turkey Bacon Egg Cheese Sandwich",
         "ItemPrice": 6.50,
         "ItemDescription": "A well-balanced sandwich with turkey bacon, egg, and cheese for a lighter yet flavorful breakfast. Served warm and made to satisfy.",
         "ItemImage":"../img/turkey_bacon_egg_cheese.jpg",
-        "ItemIngredients": ["Bread", "Turkey", "Bacon", "Cheese", "Egg", "Butter", "Salt", "Pepper"]
+        "ItemIngredients": ["Bread", "Turkey", "Bacon", "Cheese", "Egg", "Butter", "Salt", "Pepper"],
+        "ItemOptions": {
+            "Bread": [
+                {"name": "Salt Bagel", "price": 0}, {"name": "Kaiser Roll", "price": 0},
+  	            {"name": "Plain Bagel", "price": 0}, {"name": "Garlic Bagel", "price": 0},
+                {"name": "Everything Bagel", "price": 0}, {"name": "Wrap", "price": 0},
+                {"name": "Gluten Free Wrap", "price": 0}, {"name": "White Bread", "price": 0},
+                {"name": "Whole Wheat Bread", "price": 0}, {"name": "Rye Bread", "price": 0},
+                {"name": "Brioche Roll", "price": 0}
+            ],
+            "Cheese": [
+                {"name": "American Cheese", "price": 0}, {"name": "Pepper Jack Cheese", "price": 0},
+                {"name": "Provolone Cheese", "price": 0}, {"name": "Swiss Cheese", "price": 0},
+                {"name": "No Cheese", "price": 0}
+            ],
+            "Extra cheese": [
+                {"name": "American Cheese", "price": 1.00}, {"name": "Pepper Jack Cheese", "price": 1.00},
+                {"name": "Provolone Cheese", "price": 1.00}, {"name": "Swiss Cheese", "price": 1.00},
+                {"name": "No Extra Cheese", "price": 0}
+            ],
+            "Extra meat": [
+                {"name": "Beef Bacon", "price": 2.25}, {"name": "Pork Bacon", "price": 2.25},
+                {"name": "Pork Roll", "price": 2.25}, {"name": "Pork Sausage", "price": 2.25},
+                {"name": "Turkey Bacon", "price": 2.25}
+            ],
+            "Extra egg": [
+                {"name": "Fried Egg", "price": 2.00}, {"name": "No Extra Egg", "price": 0}
+	        ],
+            "Breakfast Potatoes": [
+                {"name": "Breakfast Potatoes", "price": 2.75}, {"name": "No Breakfast Potatoes", "price": 0}
+	        ],
+            "Drinks": [
+                {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
+                {"name": "No drinks", "price": 0}
+            ]
+        }
     },
     {
         "ItemName": "Turkey Bacon Egg Sandwich",
         "ItemPrice": 6.00,
         "ItemDescription": "Savory turkey bacon and a fluffy egg come together in this simple, protein-packed sandwich. Great for an energizing start to your morning.",
         "ItemImage":"../img/turkey_bacon_egg_cheese.jpg",
-        "ItemIngredients": ["Bread", "Turkey", "Bacon", "Egg", "Butter", "Salt", "Pepper"]
+        "ItemIngredients": ["Bread", "Turkey", "Bacon", "Egg", "Butter", "Salt", "Pepper"],
+        "ItemOptions": {
+            "Bread": [
+                {"name": "Salt Bagel", "price": 0}, {"name": "Kaiser Roll", "price": 0},
+  	            {"name": "Plain Bagel", "price": 0}, {"name": "Garlic Bagel", "price": 0},
+                {"name": "Everything Bagel", "price": 0}, {"name": "Wrap", "price": 0},
+                {"name": "Gluten Free Wrap", "price": 0}, {"name": "White Bread", "price": 0},
+                {"name": "Whole Wheat Bread", "price": 0}, {"name": "Rye Bread", "price": 0},
+                {"name": "Brioche Roll", "price": 0}
+            ],
+            "Cheese": [
+                {"name": "American Cheese", "price": 0}, {"name": "Pepper Jack Cheese", "price": 0},
+                {"name": "Provolone Cheese", "price": 0}, {"name": "Swiss Cheese", "price": 0},
+                {"name": "No Cheese", "price": 0}
+            ],
+            "Extra meat": [
+                {"name": "Beef Bacon", "price": 2.25}, {"name": "Pork Bacon", "price": 2.25},
+                {"name": "Pork Roll", "price": 2.25}, {"name": "Pork Sausage", "price": 2.25},
+                {"name": "Turkey Bacon", "price": 2.25}
+            ],
+            "Extra egg": [
+                {"name": "Fried Egg", "price": 2.00}, {"name": "No Extra Egg", "price": 0}
+	        ],
+            "Breakfast Potatoes": [
+                {"name": "Breakfast Potatoes", "price": 2.75}, {"name": "No Breakfast Potatoes", "price": 0}
+	        ],
+            "Drinks": [
+                {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
+                {"name": "No drinks", "price": 0}
+            ]
+        }
     }
- 
-    
-
 ]
 

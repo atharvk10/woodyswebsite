@@ -73,7 +73,7 @@ document.getElementById("continueToPayment").addEventListener("click", () => {
     }
 
     if (orderTiming === 'later' && !localStorage.getItem("orderTime")){
-        alert("Please select a pickup time. ");
+        alert("Please select a pickup time.");
         return;
     }
 

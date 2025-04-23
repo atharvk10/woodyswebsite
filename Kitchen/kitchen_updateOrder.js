@@ -79,6 +79,6 @@ async function updateOrder(orderId, status){
         }
     }
 
-    viewOrders();
+    viewOrders(orderId);
     
 }

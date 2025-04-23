@@ -1,36 +1,34 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 <head>
-    <meta charset = "UTF-8"/>
+    <meta charset="UTF-8"/>
     <title>Student Account</title>
     <link rel="stylesheet" href="studentAccPage.css"/>
-    
 </head>
 <body>
-    <div class = "container">
-        <h1 id = "welcomeMessage"> Welcome!</h1>
-        <p>Meal Swipes: <span id = "mealSwipes">0</span></p>
-        <p>Retail Swipes: <span id = "retailSwipes">0</span></p>
+    <div class="container">
+        <h1 id="welcomeMessage">Welcome!</h1>
+        <p>Meal Swipes: <span id="mealSwipes">0</span></p>
+        <p>Retail Swipes: <span id="retailSwipes">0</span></p>
 
         <br />
-        <a href="../Home/homePage.html">Go to Homepage</a>
+        <a href="../Home/homePage.html">Go to Homepage</a> 
     </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const user = JSON.parse(localStorage.getItem('loggedInUser'));
+            const netid = localStorage.getItem('netid');
+            const mealSwipes = localStorage.getItem('num_meal_swipes');
+            const retailSwipes = localStorage.getItem('retail_swipes');
 
-            if (user) {
-                document.getElementById('welcomeMessage').textContent = `Welcome, ${user.netid}!`;
-                document.getElementById('mealSwipes').textContent = user.swipes.num_meal_swipes;
-                document.getElementById('retailSwipes').textContent = user.swipes.retail_swipes;
+            if (netid && mealSwipes && retailSwipes) {
+                document.getElementById('welcomeMessage').textContent = `Welcome, ${netid}!`;
+                document.getElementById('mealSwipes').textContent = mealSwipes;
+                document.getElementById('retailSwipes').textContent = retailSwipes;
             } else {
-        
-            window.location.href = 'loginPage.html';
+                window.location.href = 'loginPage.html'; // Redirect if not logged in
             }
         });
     </script>
-    <script src="studentAccPage.js"></script>
-
 </body>
 </html>

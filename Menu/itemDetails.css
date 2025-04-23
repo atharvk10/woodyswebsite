@@ -119,8 +119,8 @@ ul {
 .price {
     position:relative;
     font-size:25px;
-    left:550px;
-    bottom:175px;
+    bottom:50px;
+    left: 150px;
     font-style: italic;
     font-family:Georgia, 'Times New Roman', Times, serif
 
@@ -134,11 +134,12 @@ ul {
     width: 800px;
     font-size:25px;
     font-family:Georgia, 'Times New Roman', Times, serif
+
 }
 
 .calories {
     position:relative;
-    font-size:25px;
+    font-size:15px;
     left:550px;
     bottom:150px;
     font-style: italic;
@@ -147,23 +148,17 @@ ul {
 
 .ingredients {
     position:relative;
-    font-size:25px;
+    font-size:15px;
     left:550px;
-    bottom:125px;
+    bottom:150px;
     font-style: italic;
     font-family:Georgia, 'Times New Roman', Times, serif
+
 }
 
 body {
     font-family: Arial, sans-serif;
     padding: 20px;
-}
-
-.buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
 }
 
 .buttons ul {
@@ -198,7 +193,7 @@ body {
     display: flex;
     gap: 20px;
     position: relative;
-    left: 550px;
+    left: 400px;
     bottom: 175px;
 }
 

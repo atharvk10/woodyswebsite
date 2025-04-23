@@ -4,7 +4,7 @@
         "ItemPrice": 4.50, 
         "ItemDescription":"",
         "ItemImage": "../img/french-toast.jpeg",
-        "ItemIngredients": ["Eggs", "Milk", "Bread", "Cinnamon", "Vanilla Extract", "Butter"]
+        "ItemIngredients": ["Eggs", "Milk", "Bread", "Cinnamon", "Vanilla Extract", "Butter"],
     },
     {
         "ItemName": "Egg Platter", 
