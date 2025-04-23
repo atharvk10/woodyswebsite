@@ -9,7 +9,7 @@ body {
     background-color: #fff;
     padding: 30px;
     max-width: 500px;
-    margin: auto;
+    margin: 50px auto 0;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
@@ -36,3 +36,102 @@ body {
     text-decoration: underline;
   }
   
+  .navigation li a {
+    text-decoration: none;
+    color: black; /* or whatever your default color is */
+}
+
+#homeButton {
+  text-decoration: none;
+  font-family:"Trebuchet MS";;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 20px;
+  padding-left: 750px;
+  color: #281d1b;
+
+}
+
+#menuButton {
+  font-family: "Trebuchet MS";;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 20px;
+  padding-left: 50px;
+  color: #281d1b;
+  text-decoration: none;
+}
+
+#loginButton {
+  font-family: "Trebuchet MS";;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 20px;
+  padding-left: 50px;
+  color: #281d1b;
+  text-decoration: none;
+}
+
+
+#welcomeText {
+  text-align: center;
+  padding-top: 250px;
+  font-size: 40px; 
+  font-family: "Public Sans";
+  color:white;
+}
+
+#timingsText {
+  text-align: center;
+  font-size: 20px; 
+  font-family: "Public Sans";
+  color:white;
+}
+
+#addressText {
+  text-align: center;
+  font-size: 20px; 
+  font-family: "Public Sans";
+  color:white;
+}
+
+#cartButton {
+  font-family: "Trebuchet MS";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 20px;
+  padding-left: 50px;
+  padding-top: 25px;
+  color: #281d1b;
+  text-decoration: none;
+  position: relative;
+}
+
+.cartAmount{
+  font-size: 20px;
+  position: absolute;
+  bottom: -15px;
+  left: 30px;
+  background-color: rgb(203, 33, 33);
+  color: white;
+  padding: 4px;
+  border-radius: 50%;
+}
+
+#cartButton:hover {
+  color: red;
+}
+
+
+li {
+  display: inline-block;
+}
+
+ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+.navigation li a:hover {
+    color: red;
+}
