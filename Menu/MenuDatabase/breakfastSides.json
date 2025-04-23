@@ -4,23 +4,43 @@
         "ItemPrice": 3.75, 
         "ItemDescription":"",
         "ItemImage":"../img/oatmeal-bowl-blueberries-strawberries.jpeg",
-        "ItemIngredients": ["Oats", "Water", "Milk", "Strawberries", "Blueberries", "Raspberries"]
+        "ItemIngredients": ["Oats", "Water", "Milk", "Strawberries", "Blueberries", "Raspberries"],
+        "ItemOptions": {
+            "Drinks": [
+                {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
+                {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
+            ]
+        }
     }, 
     {
         "ItemName": "2 Slices of Toast", 
         "ItemPrice": 1.15, 
         "ItemDescription":"",
         "ItemImage":"../img/Two-slices-of-toast.jpg",
-        "ItemIngredients": ["Bread", "Butter"]
+        "ItemIngredients": ["Bread", "Butter"],
+        "ItemOptions": {
+            "Bread": [
+                {"name": "White Bread", "price": 0}, {"name": "Whole Wheat Bread", "price": 0}, 
+                {"name": "Rye Bread", "price": 0}, {"name": "Brioche Roll", "price": 0}
+            ],
+            "Drinks": [
+                {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
+                {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
+            ]
+        }
     },
     {
         "ItemName": "Breakfast Potatoes", 
         "ItemPrice": 2.75, 
         "ItemDescription":"",
         "ItemImage":"../img/breakfast-potatoes.jpeg",
-        "ItemIngredients": ["Potatoes", "Butter", "Salt", "Pepper"]
+        "ItemIngredients": ["Potatoes", "Butter", "Salt", "Pepper"],
+        "ItemOptions": {
+            "Drinks": [
+                {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
+                {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
+            ]
+        }
     }
-        
-
 ]
 

@@ -4,16 +4,34 @@
         "ItemPrice": 7.25, 
         "ItemDescription":"",
         "ItemImage": "../img/chicken_bacon_wrap.jpg",
-        "ItemIngredients": ["Tortilla wrap", "chicken", "bacon", "barbecue sauce", "lettuce", "tomatoes", "cheese", "onions", "salt", "pepper"]
+        "ItemIngredients": ["Tortilla wrap", "chicken", "bacon", "barbecue sauce", "lettuce", "tomatoes", "cheese", "onions", "salt", "pepper"],
+        "ItemOptions": {
+            "Toasted": [
+                {"name": "Toasted", "price": 0}, {"name": "Not toasted", "price": 0}
+            ],
+            "Drinks": [
+                {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
+                {"name": "Water", "price": 2.00}, {"name": "Fountain drink", "price": 2.00},
+                {"name": "No drinks", "price": 0}
+            ]
+        }
     },
     {
         "ItemName": "Hot Knight Wrap", 
         "ItemPrice": 7.25, 
         "ItemDescription":"",
         "ItemImage": "../img/hot_knight_wrap.jpg",
-        "ItemIngredients": ["Unknown"]
+        "ItemIngredients": ["Tortilla wrap", "chicken", "bacon", "barbecue sauce", "lettuce", "tomatoes", "cheese", "onions", "salt", "pepper"],
+        "ItemOptions": {
+            "Toasted": [
+                {"name": "Toasted", "price": 0}, {"name": "Not toasted", "price": 0}
+            ],
+            "Drinks": [
+                {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
+                {"name": "Water", "price": 2.00}, {"name": "Fountain drink", "price": 2.00},
+                {"name": "No drinks", "price": 0}
+            ]
+        }
     }
-    
-
 ]
 

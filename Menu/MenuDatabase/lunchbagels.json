@@ -4,37 +4,104 @@
         "ItemPrice": 1.79, 
         "ItemDescription":"",
         "ItemImage":"../img/cinnamon-bagel.jpeg",
-        "ItemIngredients": ["Flour", "Yeast", "Sugar", "Salt", "Cinnamon", "Raisin", "Cream Cheese"]
+        "ItemIngredients": ["Flour", "Yeast", "Sugar", "Salt", "Cinnamon", "Raisin", "Cream Cheese"],
+        "ItemOptions": {
+            "Cream Cheese": [
+                {"name": "Avocado Cream Cheese", "price": 2.71}, {"name": "Vegetable Cream Cheese", "price": 2.71},
+                {"name": "Butter", "price": 0.71}, {"name": "Plain Cream Cheese", "price": 1.71}
+            ],
+            "Toasted": [
+                {"name": "Toasted", "price": 0}, {"name": "Not toasted", "price": 0}
+            ],
+            "Drinks": [
+                {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
+                {"name": "Water", "price": 2.00}, {"name": "Fountain drink", "price": 2.00},
+                {"name": "No drinks", "price": 0}
+            ]
+        }
     },
     {
         "ItemName": "Everything Bagel (Lunch)",
         "ItemPrice": 1.79,
         "ItemDescription":"",
         "ItemImage":"../img/everything-bagel.jpeg",
-        "ItemIngredients": ["flour", "yeast", "salt", "poppy seeds", "sesame seeds", "onion", "garlic", "salt", "cream cheese"]
+        "ItemIngredients": ["flour", "yeast", "salt", "poppy seeds", "sesame seeds", "onion", "garlic", "salt", "cream cheese"],
+        "ItemOptions": {
+            "Cream Cheese": [
+                {"name": "Avocado Cream Cheese", "price": 2.71}, {"name": "Vegetable Cream Cheese", "price": 2.71},
+                {"name": "Butter", "price": 0.71}, {"name": "Plain Cream Cheese", "price": 1.71}
+            ],
+            "Toasted": [
+                {"name": "Toasted", "price": 0}, {"name": "Not toasted", "price": 0}
+            ],
+            "Drinks": [
+                {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
+                {"name": "Water", "price": 2.00}, {"name": "Fountain drink", "price": 2.00},
+                {"name": "No drinks", "price": 0}
+            ]
+        }
     },
     {
         "ItemName": "Garlic Bagel (Lunch)",
         "ItemPrice": 1.79,
         "ItemDescription":"",
         "ItemImage":"../img/garlic-bagel.jpeg",
-        "ItemIngredients": ["flour", "yeast", "salt", "garlic", "Cream cheese"]
+        "ItemIngredients": ["flour", "yeast", "salt", "garlic", "Cream cheese"],
+        "ItemOptions": {
+            "Cream Cheese": [
+                {"name": "Avocado Cream Cheese", "price": 2.71}, {"name": "Vegetable Cream Cheese", "price": 2.71},
+                {"name": "Butter", "price": 0.71}, {"name": "Plain Cream Cheese", "price": 1.71}
+            ],
+            "Toasted": [
+                {"name": "Toasted", "price": 0}, {"name": "Not toasted", "price": 0}
+            ],
+            "Drinks": [
+                {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
+                {"name": "Water", "price": 2.00}, {"name": "Fountain drink", "price": 2.00},
+                {"name": "No drinks", "price": 0}
+            ]
+        }
     },
     {
         "ItemName": "Jalapeno Bagel (Lunch)",
         "ItemPrice": 1.79,
         "ItemDescription": "",
         "ItemImage":"../img/jalapeno-bagel.jpeg",
-        "ItemIngredients": ["flour", "yeast", "salt", "Jalapeños", "Cream cheese"]
+        "ItemIngredients": ["flour", "yeast", "salt", "Jalapeños", "Cream cheese"],
+        "ItemOptions": {
+            "Cream Cheese": [
+                {"name": "Avocado Cream Cheese", "price": 2.71}, {"name": "Vegetable Cream Cheese", "price": 2.71},
+                {"name": "Butter", "price": 0.71}, {"name": "Plain Cream Cheese", "price": 1.71}
+            ],
+            "Toasted": [
+                {"name": "Toasted", "price": 0}, {"name": "Not toasted", "price": 0}
+            ],
+            "Drinks": [
+                {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
+                {"name": "Water", "price": 2.00}, {"name": "Fountain drink", "price": 2.00},
+                {"name": "No drinks", "price": 0}
+            ]
+        }
     },
     {
         "ItemName": "Plain Bagel (Lunch)",
         "ItemPrice": 1.79,
         "ItemDescription": "",
         "ItemImage": "../img/plain-bagel.jpeg",
-        "ItemIngredients": ["flour", "yeast", "salt", "Cream cheese"]
+        "ItemIngredients": ["flour", "yeast", "salt", "Cream cheese"],
+        "ItemOptions": {
+            "Cream Cheese": [
+                {"name": "Avocado Cream Cheese", "price": 2.71}, {"name": "Vegetable Cream Cheese", "price": 2.71},
+                {"name": "Butter", "price": 0.71}, {"name": "Plain Cream Cheese", "price": 1.71}
+            ],
+            "Toasted": [
+                {"name": "Toasted", "price": 0}, {"name": "Not toasted", "price": 0}
+            ],
+            "Drinks": [
+                {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
+                {"name": "Water", "price": 2.00}, {"name": "Fountain drink", "price": 2.00},
+                {"name": "No drinks", "price": 0}
+            ]
+        }
     }
-    
-
 ]
-

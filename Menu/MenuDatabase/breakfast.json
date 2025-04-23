@@ -5,22 +5,43 @@
         "ItemDescription":"",
         "ItemImage": "../img/french-toast.jpeg",
         "ItemIngredients": ["Eggs", "Milk", "Bread", "Cinnamon", "Vanilla Extract", "Butter"],
+        "ItemOptions": {
+            "Drinks": [
+                {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
+                {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
+            ]
+        }
     },
     {
         "ItemName": "Egg Platter", 
         "ItemPrice": 6.75, 
         "ItemDescription":"",
         "ItemImage": "../img/eggplatter.jpg",
-        "ItemIngredients": ["Eggs", "Meat", "Butter", "Salt", "Pepper"]
+        "ItemIngredients": ["Eggs", "Meat", "Butter", "Salt", "Pepper"],
+        "ItemOptions": {
+            "Meat": [
+                {"name": "Beef Bacon", "price": 0}, {"name": "Pork Bacon", "price": 0},
+                {"name": "Pork Roll", "price": 0}, {"name": "Pork Sausage", "price": 0},
+                {"name": "Turkey Bacon", "price": 0}
+            ],
+            "Drinks": [
+                {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
+                {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
+            ]
+        }
     },
     {
         "ItemName": "Pancakes", 
         "ItemPrice": 5.00, 
         "ItemDescription":"",
         "ItemImage": "../img/pancakes.jpg",
-        "ItemIngredients": ["Flour", "Eggs", "Milk", "Butter", "Sugar", "Baking Powder", "Vanilla Extract"]
+        "ItemIngredients": ["Flour", "Eggs", "Milk", "Butter", "Sugar", "Baking Powder", "Vanilla Extract"],
+        "ItemOptions": {
+            "Drinks": [
+                {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
+                {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
+            ]
+        }
     }
-        
-
 ]
 

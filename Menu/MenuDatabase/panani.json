@@ -4,41 +4,7 @@
         "ItemPrice": 6.95, 
         "ItemDescription":"",
         "ItemImage": "../img/buffalo_chicken_panini.jpg",
-        "ItemIngredients": ["Bread", "chicken", "buffalo sauce", "cheese", "onions", "lettuce", "tomatoes", "salt", "pepper"],
-        "ItemOptions": {
-            "bread": [
-                {"name": "White Bread", "price": 0}, {"name": "Whole Wheat Bread", "price": 0},
-  	            {"name": "Rye Bread", "price": 0}, {"name": "Brioche Roll", "price": 0},
-                {"name": "Wrap", "price": 0}, {"name": "Wheat Wrap", "price": 0},
-                {"name": "Sun Dried Tomato Wrap", "price": 0}, {"name": "Gluten Free Wrap", "price": 0},
-                {"name": "No bread", "price": 0}
-            ],
-            "mayonnaise spread": [
-                {"name": "Regular Mayonnaise", "price": 0}, {"name": "Chipotle Mayonnaise", "price": 0}, 
-                {"name": "Pesto Mayonnaise", "price": 0}, {"name": "Sriracha Mayonnaise", "price": 0},
-                {"name": "Mustard", "price": 0}, {"name": "No Mayonnaise", "price": 0}
-            ],
-            "toasted": [
-                {"name": "Toasted", "price": 0}, {"name": "Not Toasted", "price": 0}
-	        ],
-            "toppings": [
-                {"name": "Oil", "price": 0}, {"name": "Lettuce", "price": 0}, 
-                {"name": "Tomato", "price": 0}, {"name": "Onions", "price": 0},
-                {"name": "Pickle Chips", "price": 0}, {"name": "Jalapeno Slices", "price": 0},
-                {"name": "Red Wine Vinegar", "price": 0}, {"name": "Salt", "price": 0},
-                {"name": "Pepper", "price": 0}, {"name": "Oregano", "price": 0}
-	        ],
-            "cheese options": [
-                {"name": "American Cheese", "price": 0}, {"name": "Pepper Jack Cheese", "price": 0},
-                {"name": "Provolone Cheese", "price": 0}, {"name": "Swiss Cheese", "price": 0}
-            ],
-            "fountain drinks": [
-                {"name": "Coke", "price": 2.00}, {"name": "Diet Coke", "price": 2.00},
-                {"name": "Sprite", "price": 2.00}, {"name": "Dr. Pepper", "price": 2.00},
-                {"name": "Lemonade", "price": 2.00}, {"name": "Iced Tea", "price": 2.00},
-                {"name": "No drink", "price": 0}
-            ]
-        }
+        "ItemIngredients": ["Bread", "chicken", "buffalo sauce", "cheese", "onions", "lettuce", "tomatoes", "salt", "pepper"]
     },
     {
         "ItemName": "Chicken Bacon Ranch", 

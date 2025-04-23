@@ -19,7 +19,36 @@
         "ItemDescription":"",
         "ItemImage": "../img/chickensandwich.jpg",
         "ItemIngredients": ["chicken", "cheese", "bread", "lettuce", "tomato", "onions", "oil", "salt", "pepper", "mayonnaise spread"],
-
+        "ItemOptions": {
+            "Bread": [
+                {"name": "Salt Bagel", "price": 0}, {"name": "Kaiser Roll", "price": 0},
+  	            {"name": "Plain Bagel", "price": 0}, {"name": "Garlic Bagel", "price": 0},
+                {"name": "Everything Bagel", "price": 0}, {"name": "Wrap", "price": 0},
+                {"name": "Gluten Free Wrap", "price": 0}, {"name": "White Bread", "price": 0},
+                {"name": "Whole Wheat Bread", "price": 0}, {"name": "Rye Bread", "price": 0},
+                {"name": "Brioche Roll", "price": 0}
+            ],
+            "Cheese": [
+                {"name": "American Cheese", "price": 0}, {"name": "Pepper Jack Cheese", "price": 0},
+                {"name": "Provolone Cheese", "price": 0}, {"name": "Swiss Cheese", "price": 0},
+                {"name": "No Cheese", "price": 0}
+            ],
+            "Mayonnaise Spread": [
+                {"name": "Chipotle Mayonnaise", "price": 0}, {"name": "Mustard", "price": 0},
+                {"name": "Pesto Mayonnaise", "price": 0}, {"name": "Regular Mayonnaise", "price": 0},
+                {"name": "Sriracha Mayonnaise", "price": 0}, {"name": "No Mayonnaise", "price": 0}
+            ],
+            "Extra egg": [
+                {"name": "Fried Egg", "price": 2.00}, {"name": "No Extra Egg", "price": 0}
+	        ],
+            "Breakfast Potatoes": [
+                {"name": "Breakfast Potatoes", "price": 2.75}, {"name": "No Breakfast Potatoes", "price": 0}
+	        ],
+            "Drinks": [
+                {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
+                {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
+            ]
+        }
     },
     {
         "ItemName": "Grilled Cheese", 
