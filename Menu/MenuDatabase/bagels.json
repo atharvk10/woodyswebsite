@@ -6,17 +6,26 @@
         "ItemImage":"../img/cinnamon-bagel.jpeg",
         "ItemIngredients": ["Flour", "Yeast", "Sugar", "Salt", "Cinnamon", "Raisin", "Cream Cheese"],
         "ItemOptions": {
-            "Cream Cheese": [
+            "Cream Cheese": {
+                "type": "single",
+                "choices": [
                 {"name": "Avocado Cream Cheese", "price": 2.71}, {"name": "Vegetable Cream Cheese", "price": 2.71},
                 {"name": "Butter", "price": 0.71}, {"name": "Plain Cream Cheese", "price": 1.71}
-            ],
-            "Toasted": [
+                ]
+            },
+            "Toasted": {
+                "type": "single",
+                "choices": [
                 {"name": "Toasted", "price": 0}, {"name": "Not toasted", "price": 0}
-            ],
-            "Drinks": [
+                ]
+            },
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
                 {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
-            ]
+                ]
+            }
         }
     },
     {
@@ -26,17 +35,26 @@
         "ItemImage":"../img/everything-bagel.jpeg",
         "ItemIngredients": ["flour", "yeast", "salt", "poppy seeds", "sesame seeds", "onion", "garlic", "salt", "cream cheese"],
         "ItemOptions": {
-            "Cream Cheese": [
+            "Cream Cheese": {
+                "type": "single",
+                "choices": [
                 {"name": "Avocado Cream Cheese", "price": 2.71}, {"name": "Vegetable Cream Cheese", "price": 2.71},
                 {"name": "Butter", "price": 0.71}, {"name": "Plain Cream Cheese", "price": 1.71}
-            ],
-            "Toasted": [
+                ]
+            },
+            "Toasted": {
+                "type": "single",
+                "choices": [
                 {"name": "Toasted", "price": 0}, {"name": "Not toasted", "price": 0}
-            ],
-            "Drinks": [
+                ]
+            },
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
                 {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
-            ]
+                ]
+            }
         }
     },
     {
@@ -46,17 +64,26 @@
         "ItemImage":"../img/garlic-bagel.jpeg",
         "ItemIngredients": ["flour", "yeast", "salt", "garlic", "Cream cheese"],
         "ItemOptions": {
-            "Cream Cheese": [
+            "Cream Cheese": {
+                "type": "single",
+                "choices": [
                 {"name": "Avocado Cream Cheese", "price": 2.71}, {"name": "Vegetable Cream Cheese", "price": 2.71},
                 {"name": "Butter", "price": 0.71}, {"name": "Plain Cream Cheese", "price": 1.71}
-            ],
-            "Toasted": [
+                ]
+            },
+            "Toasted": {
+                "type": "single",
+                "choices": [
                 {"name": "Toasted", "price": 0}, {"name": "Not toasted", "price": 0}
-            ],
-            "Drinks": [
+                ]
+            },
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
                 {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
-            ]
+                ]
+            }
         }
     },
     {
@@ -66,17 +93,26 @@
         "ItemImage":"../img/jalapeno-bagel.jpeg",
         "ItemIngredients": ["flour", "yeast", "salt", "Jalapeños", "Cream cheese"],
         "ItemOptions": {
-            "Cream Cheese": [
+            "Cream Cheese": {
+                "type": "single",
+                "choices": [
                 {"name": "Avocado Cream Cheese", "price": 2.71}, {"name": "Vegetable Cream Cheese", "price": 2.71},
                 {"name": "Butter", "price": 0.71}, {"name": "Plain Cream Cheese", "price": 1.71}
-            ],
-            "Toasted": [
+                ]
+            },
+            "Toasted": {
+                "type": "single",
+                "choices": [
                 {"name": "Toasted", "price": 0}, {"name": "Not toasted", "price": 0}
-            ],
-            "Drinks": [
+                ]
+            },
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
                 {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
-            ]
+                ]
+            }
         }
     },
     {
@@ -86,17 +122,26 @@
         "ItemImage": "../img/plain-bagel.jpeg",
         "ItemIngredients": ["flour", "yeast", "salt", "Cream cheese"],
         "ItemOptions": {
-            "Cream Cheese": [
+            "Cream Cheese": {
+                "type": "single",
+                "choices": [
                 {"name": "Avocado Cream Cheese", "price": 2.71}, {"name": "Vegetable Cream Cheese", "price": 2.71},
                 {"name": "Butter", "price": 0.71}, {"name": "Plain Cream Cheese", "price": 1.71}
-            ],
-            "Toasted": [
+                ]
+            },
+            "Toasted": {
+                "type": "single",
+                "choices": [
                 {"name": "Toasted", "price": 0}, {"name": "Not toasted", "price": 0}
-            ],
-            "Drinks": [
+                ]
+            },
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
                 {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
-            ]
+                ]
+            }
         }
     }
 ]

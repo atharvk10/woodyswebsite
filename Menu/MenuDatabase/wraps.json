@@ -6,14 +6,20 @@
         "ItemImage": "../img/chicken_bacon_wrap.jpg",
         "ItemIngredients": ["Tortilla wrap", "chicken", "bacon", "barbecue sauce", "lettuce", "tomatoes", "cheese", "onions", "salt", "pepper"],
         "ItemOptions": {
-            "Toasted": [
+            "Toasted": {
+                "type": "single",
+                "choices": [
                 {"name": "Toasted", "price": 0}, {"name": "Not toasted", "price": 0}
-            ],
-            "Drinks": [
+                ]
+            },
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
                 {"name": "Water", "price": 2.00}, {"name": "Fountain drink", "price": 2.00},
                 {"name": "No drinks", "price": 0}
-            ]
+                ]
+            }
         }
     },
     {
@@ -22,14 +28,20 @@
         "ItemDescription":"Bold flavor in every bite. This wrap combines juicy grilled chicken, crispy bacon, melted cheese, fresh lettuce, ripe tomatoes, and grilled onions, all coated in sweet and smoky barbecue sauce. Wrapped in a warm tortilla and seasoned with a dash of salt and pepper. Toasted or not — your call.",
         "ItemIngredients": ["Tortilla wrap", "chicken", "bacon", "barbecue sauce", "lettuce", "tomatoes", "cheese", "onions", "salt", "pepper"],
         "ItemOptions": {
-            "Toasted": [
+            "Toasted": {
+                "type": "single",
+                "choices": [
                 {"name": "Toasted", "price": 0}, {"name": "Not toasted", "price": 0}
-            ],
-            "Drinks": [
+                ]
+            },
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
                 {"name": "Water", "price": 2.00}, {"name": "Fountain drink", "price": 2.00},
                 {"name": "No drinks", "price": 0}
-            ]
+                ]
+            }
         }
     }
 ]

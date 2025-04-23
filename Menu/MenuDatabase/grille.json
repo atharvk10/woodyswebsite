@@ -6,13 +6,20 @@
         "ItemImage": "../img/bacon_grilled_cheese.jpg",
         "ItemIngredients": ["Bacon", "bread", "cheese", "oil", "salt", "pepper"],
         "ItemOptions": {
-            "Bacon": [
+            "Bacon": {
+                "type": "single",
+                "choices": [
                 {"name": "Beef Bacon", "price": 0}, {"name": "Pork Bacon", "price": 0}
-            ],
-            "Drinks": [
+                ]
+            },
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
-                {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
-            ]
+                {"name": "Water", "price": 2.00}, {"name": "Fountain drink", "price": 2.00},
+                {"name": "No drinks", "price": 0}
+                ]
+            }
         }
     },
     {
@@ -22,24 +29,40 @@
         "ItemImage": "../img/cheesesteak.jpg",
         "ItemIngredients": ["Beef", "chicken", "onions", "cheese", "bread", "salt", "pepper"],
         "ItemOptions": {
-            "Cheese": [
+            "Cheese": {
+                "type": "single",
+                "choices": [
                 {"name": "American Cheese", "price": 0}, {"name": "Pepper Jack Cheese", "price": 0},
                 {"name": "Provolone Cheese", "price": 0}, {"name": "Swiss Cheese", "price": 0},
                 {"name": "No Cheese", "price": 0}
-            ],
-            "Toppings": [
+                ]
+            },
+            "Toppings": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Onions", "price": 0}, {"name": "Peppers", "price": 0}
-            ],
-            "Meat": [
+                ]
+            },
+            "Meat": {
+                "type": "single",
+                "choices": [
                 {"name": "Beef", "price": 0}, {"name": "Chicken", "price": 0}
-            ],
-            "Bacon": [
+                ]
+            },
+            "Bacon": {
+                "type": "single",
+                "choices": [
                 {"name": "Bacon", "price": 0}, {"name": "No bacon", "price": 0}
-            ],
-            "Drinks": [
+                ]
+            },
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
-                {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
-            ]
+                {"name": "Water", "price": 2.00}, {"name": "Fountain drink", "price": 2.00},
+                {"name": "No drinks", "price": 0}
+                ]
+            }
         }
     },
     {
@@ -49,30 +72,46 @@
         "ItemImage": "../img/chickensandwich.jpg",
         "ItemIngredients": ["chicken", "cheese", "bread", "lettuce", "tomato", "onions", "oil", "salt", "pepper", "mayonnaise spread"],
         "ItemOptions": {
-            "Cheese": [
+            "Cheese": {
+                "type": "single",
+                "choices": [
                 {"name": "American Cheese", "price": 0}, {"name": "Pepper Jack Cheese", "price": 0},
                 {"name": "Provolone Cheese", "price": 0}, {"name": "Swiss Cheese", "price": 0},
                 {"name": "No Cheese", "price": 0}
-            ],
-            "Mayonnaise Spread": [
+                ]
+            },
+            "Mayonnaise Spread": {
+                "type": "single",
+                "choices": [
                 {"name": "Chipotle Mayonnaise", "price": 0}, {"name": "Mustard", "price": 0},
                 {"name": "Pesto Mayonnaise", "price": 0}, {"name": "Regular Mayonnaise", "price": 0},
                 {"name": "Sriracha Mayonnaise", "price": 0}, {"name": "No Mayonnaise", "price": 0}
-            ],
-            "Toppings": [
+                ]
+            },
+            "Toppings": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Oil", "price": 0}, {"name": "Lettuce", "price": 0},
   	            {"name": "Tomato", "price": 0}, {"name": "Onions", "price": 0},
                 {"name": "Pickled Chips", "price": 0}, {"name": "Jalapeño Slices", "price": 0},
                 {"name": "Red wine vinegar", "price": 0}, {"name": "Salt", "price": 0},
                 {"name": "Pepper", "price": 0}, {"name": "Oregano", "price": 0}
-            ],
-            "Chicken": [
+                ]
+            },
+            "Chicken": {
+                "type": "single",
+                "choices": [
                 {"name": "Crispy Chicken", "price": 0}, {"name": "Grilled Chicken", "price": 0}
-            ],
-            "Drinks": [
+                ]
+            },
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
-                {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
-            ]
+                {"name": "Water", "price": 2.00}, {"name": "Fountain drink", "price": 2.00},
+                {"name": "No drinks", "price": 0}
+                ]
+            }
         }
     },
     {
@@ -82,10 +121,14 @@
         "ItemImage": "../img/grilledcheese.jpg",
         "ItemIngredients": ["Bread", "butter", "cheese", "salt", "pepper"],
         "ItemOptions": {
-            "Drinks": [
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
-                {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
-            ]
+                {"name": "Water", "price": 2.00}, {"name": "Fountain drink", "price": 2.00},
+                {"name": "No drinks", "price": 0}
+                ]
+            }
         }
     },
     {
@@ -95,10 +138,14 @@
         "ItemImage": "../img/NAANPizza.jpg",
         "ItemIngredients": ["Naan bread", "cheese", "marinara sauce", "oil"],
         "ItemOptions": {
-            "Drinks": [
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
-                {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
-            ]
+                {"name": "Water", "price": 2.00}, {"name": "Fountain drink", "price": 2.00},
+                {"name": "No drinks", "price": 0}
+                ]
+            }
         }
     },
     {
@@ -108,24 +155,40 @@
         "ItemImage": "../img/phillycheesesteak.jpg",
         "ItemIngredients": ["Beef", "chicken", "bacon", "cheese", "onions", "bell peppers", "tortilla"],
         "ItemOptions": {
-            "Cheese": [
+            "Cheese": {
+                "type": "single",
+                "choices": [
                 {"name": "American Cheese", "price": 0}, {"name": "Pepper Jack Cheese", "price": 0},
                 {"name": "Provolone Cheese", "price": 0}, {"name": "Swiss Cheese", "price": 0},
                 {"name": "No Cheese", "price": 0}
-            ],
-            "Toppings": [
+                ]
+            },
+            "Toppings": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Onions", "price": 0}, {"name": "Peppers", "price": 0}
-            ],
-            "Meat": [
+                ]
+            },
+            "Meat": {
+                "type": "single",
+                "choices": [
                 {"name": "Beef", "price": 0}, {"name": "Chicken", "price": 0}
-            ],
-            "Bacon": [
+                ]
+            },
+            "Bacon": {
+                "type": "single",
+                "choices": [
                 {"name": "Bacon", "price": 0}, {"name": "No bacon", "price": 0}
-            ],
-            "Drinks": [
+                ]
+            },
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
-                {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
-            ]
+                {"name": "Water", "price": 2.00}, {"name": "Fountain drink", "price": 2.00},
+                {"name": "No drinks", "price": 0}
+                ]
+            }
         }
     }
 ]
