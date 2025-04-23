@@ -4,55 +4,319 @@
         "ItemPrice": 6.50, 
         "ItemDescription":"",
         "ItemImage": "../img/blt.jpg",
-        "ItemIngredients": ["Bacon", "lettuce", "tomato", "bread", "salt", "pepper"]
+        "ItemIngredients": ["Bacon", "lettuce", "tomato", "bread", "salt", "pepper"],
+        "ItemOptions": {
+            "Bread": [
+                {"name": "White Bread", "price": 0}, {"name": "Whole Wheat Bread", "price": 0},
+  	            {"name": "Rye Bread", "price": 0}, {"name": "Brioche Roll", "price": 0},
+                {"name": "Wrap", "price": 0}, {"name": "Wheat Wrap", "price": 0},
+                {"name": "Sun Dried Tomato Wrap", "price": 0}, {"name": "Gluten Free Wrap", "price": 0},
+                {"name": "No Bread", "price": 0}
+            ],
+            "Cheese": [
+                {"name": "American Cheese", "price": 0}, {"name": "Pepper Jack Cheese", "price": 0},
+                {"name": "Provolone Cheese", "price": 0}, {"name": "Swiss Cheese", "price": 0},
+                {"name": "No Cheese", "price": 0}
+            ],
+            "Mayonnaise Spread": [
+                {"name": "Chipotle Mayonnaise", "price": 0}, {"name": "Mustard", "price": 0},
+                {"name": "Pesto Mayonnaise", "price": 0}, {"name": "Regular Mayonnaise", "price": 0},
+                {"name": "Sriracha Mayonnaise", "price": 0}, {"name": "No Mayonnaise", "price": 0}
+            ],
+            "Toppings": [
+                {"name": "Oil", "price": 0}, {"name": "Lettuce", "price": 0},
+  	            {"name": "Tomato", "price": 0}, {"name": "Onions", "price": 0},
+                {"name": "Pickled Chips", "price": 0}, {"name": "Jalapeño Slices", "price": 0},
+                {"name": "Red wine vinegar", "price": 0}, {"name": "Salt", "price": 0},
+                {"name": "Pepper", "price": 0}, {"name": "Oregano", "price": 0}
+            ],
+            "Toasted": [
+                {"name": "Toasted", "price": 0}, {"name": "Not Toasted", "price": 0}
+            ],
+            "Drinks": [
+                {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
+                {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
+            ]
+        }
     },
     {
         "ItemName": "Chicken Salad Sandwich", 
         "ItemPrice": 6.50, 
         "ItemDescription":"",
         "ItemImage": "../img/chicken_salad_sandwich.jpg",
-        "ItemIngredients": ["Chicken", "mayonnaise", "celery", "salt", "pepper", "onions", "garlic", "herbs", "mustard", "bread"]
+        "ItemIngredients": ["Chicken", "mayonnaise", "celery", "salt", "pepper", "onions", "garlic", "herbs", "mustard", "bread"],
+        "ItemOptions": {
+            "Bread": [
+                {"name": "White Bread", "price": 0}, {"name": "Whole Wheat Bread", "price": 0},
+  	            {"name": "Rye Bread", "price": 0}, {"name": "Brioche Roll", "price": 0},
+                {"name": "Wrap", "price": 0}, {"name": "Wheat Wrap", "price": 0},
+                {"name": "Sun Dried Tomato Wrap", "price": 0}, {"name": "Gluten Free Wrap", "price": 0},
+                {"name": "No Bread", "price": 0}
+            ],
+            "Cheese": [
+                {"name": "American Cheese", "price": 0}, {"name": "Pepper Jack Cheese", "price": 0},
+                {"name": "Provolone Cheese", "price": 0}, {"name": "Swiss Cheese", "price": 0},
+                {"name": "No Cheese", "price": 0}
+            ],
+            "Mayonnaise Spread": [
+                {"name": "Chipotle Mayonnaise", "price": 0}, {"name": "Mustard", "price": 0},
+                {"name": "Pesto Mayonnaise", "price": 0}, {"name": "Regular Mayonnaise", "price": 0},
+                {"name": "Sriracha Mayonnaise", "price": 0}, {"name": "No Mayonnaise", "price": 0}
+            ],
+            "Toppings": [
+                {"name": "Oil", "price": 0}, {"name": "Lettuce", "price": 0},
+  	            {"name": "Tomato", "price": 0}, {"name": "Onions", "price": 0},
+                {"name": "Pickled Chips", "price": 0}, {"name": "Jalapeño Slices", "price": 0},
+                {"name": "Red wine vinegar", "price": 0}, {"name": "Salt", "price": 0},
+                {"name": "Pepper", "price": 0}, {"name": "Oregano", "price": 0}
+            ],
+            "Toasted": [
+                {"name": "Toasted", "price": 0}, {"name": "Not Toasted", "price": 0}
+            ],
+            "Drinks": [
+                {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
+                {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
+            ]
+        }
     },
     {
         "ItemName": "Egg Salad Sandwich", 
         "ItemPrice": 6.50, 
         "ItemDescription":"",
         "ItemImage": "../img/egg_salad_sandwich.jpg",
-        "ItemIngredients": ["Eggs", "mayonnaise", "bread", "salt", "pepper", "mustard", "herbs", "celery", "onions", "pickles"]
+        "ItemIngredients": ["Eggs", "mayonnaise", "bread", "salt", "pepper", "mustard", "herbs", "celery", "onions", "pickles"],
+        "ItemOptions": {
+            "Bread": [
+                {"name": "White Bread", "price": 0}, {"name": "Whole Wheat Bread", "price": 0},
+  	            {"name": "Rye Bread", "price": 0}, {"name": "Brioche Roll", "price": 0},
+                {"name": "Wrap", "price": 0}, {"name": "Wheat Wrap", "price": 0},
+                {"name": "Sun Dried Tomato Wrap", "price": 0}, {"name": "Gluten Free Wrap", "price": 0},
+                {"name": "No Bread", "price": 0}
+            ],
+            "Cheese": [
+                {"name": "American Cheese", "price": 0}, {"name": "Pepper Jack Cheese", "price": 0},
+                {"name": "Provolone Cheese", "price": 0}, {"name": "Swiss Cheese", "price": 0},
+                {"name": "No Cheese", "price": 0}
+            ],
+            "Mayonnaise Spread": [
+                {"name": "Chipotle Mayonnaise", "price": 0}, {"name": "Mustard", "price": 0},
+                {"name": "Pesto Mayonnaise", "price": 0}, {"name": "Regular Mayonnaise", "price": 0},
+                {"name": "Sriracha Mayonnaise", "price": 0}, {"name": "No Mayonnaise", "price": 0}
+            ],
+            "Toppings": [
+                {"name": "Oil", "price": 0}, {"name": "Lettuce", "price": 0},
+  	            {"name": "Tomato", "price": 0}, {"name": "Onions", "price": 0},
+                {"name": "Pickled Chips", "price": 0}, {"name": "Jalapeño Slices", "price": 0},
+                {"name": "Red wine vinegar", "price": 0}, {"name": "Salt", "price": 0},
+                {"name": "Pepper", "price": 0}, {"name": "Oregano", "price": 0}
+            ],
+            "Toasted": [
+                {"name": "Toasted", "price": 0}, {"name": "Not Toasted", "price": 0}
+            ],
+            "Drinks": [
+                {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
+                {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
+            ]
+        }
     },
     {
         "ItemName": "Ham", 
         "ItemPrice": 6.50,
         "ItemDescription":"",
         "ItemImage": "../img/ham_sandwich.jpg",
-        "ItemIngredients": ["Bread", "ham", "cheese", "lettuce", "tomatoes", "onions", "pickles", "mayonnaise", "mustard", "butter", "pepper", "salt"]
+        "ItemIngredients": ["Bread", "ham", "cheese", "lettuce", "tomatoes", "onions", "pickles", "mayonnaise", "mustard", "butter", "pepper", "salt"],
+        "ItemOptions": {
+            "Bread": [
+                {"name": "White Bread", "price": 0}, {"name": "Whole Wheat Bread", "price": 0},
+  	            {"name": "Rye Bread", "price": 0}, {"name": "Brioche Roll", "price": 0},
+                {"name": "Wrap", "price": 0}, {"name": "Wheat Wrap", "price": 0},
+                {"name": "Sun Dried Tomato Wrap", "price": 0}, {"name": "Gluten Free Wrap", "price": 0},
+                {"name": "No Bread", "price": 0}
+            ],
+            "Cheese": [
+                {"name": "American Cheese", "price": 0}, {"name": "Pepper Jack Cheese", "price": 0},
+                {"name": "Provolone Cheese", "price": 0}, {"name": "Swiss Cheese", "price": 0},
+                {"name": "No Cheese", "price": 0}
+            ],
+            "Mayonnaise Spread": [
+                {"name": "Chipotle Mayonnaise", "price": 0}, {"name": "Mustard", "price": 0},
+                {"name": "Pesto Mayonnaise", "price": 0}, {"name": "Regular Mayonnaise", "price": 0},
+                {"name": "Sriracha Mayonnaise", "price": 0}, {"name": "No Mayonnaise", "price": 0}
+            ],
+            "Toppings": [
+                {"name": "Oil", "price": 0}, {"name": "Lettuce", "price": 0},
+  	            {"name": "Tomato", "price": 0}, {"name": "Onions", "price": 0},
+                {"name": "Pickled Chips", "price": 0}, {"name": "Jalapeño Slices", "price": 0},
+                {"name": "Red wine vinegar", "price": 0}, {"name": "Salt", "price": 0},
+                {"name": "Pepper", "price": 0}, {"name": "Oregano", "price": 0}
+            ],
+            "Toasted": [
+                {"name": "Toasted", "price": 0}, {"name": "Not Toasted", "price": 0}
+            ],
+            "Drinks": [
+                {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
+                {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
+            ]
+        }
     },
     {
         "ItemName": "Roast Beef and Cheese", 
         "ItemPrice": 6.50, 
         "ItemDescription":"",
         "ItemImage": "../img/roast_beef_and_cheese_sandwich.jpg",
-        "ItemIngredients": ["Roast beef", "cheese", "bread", "lettuce", "tomatoes", "onions", "pickles", "mayonnaise", "mustard", "salt", "pepper"]
+        "ItemIngredients": ["Roast beef", "cheese", "bread", "lettuce", "tomatoes", "onions", "pickles", "mayonnaise", "mustard", "salt", "pepper"],
+        "ItemOptions": {
+            "Bread": [
+                {"name": "White Bread", "price": 0}, {"name": "Whole Wheat Bread", "price": 0},
+  	            {"name": "Rye Bread", "price": 0}, {"name": "Brioche Roll", "price": 0},
+                {"name": "Wrap", "price": 0}, {"name": "Wheat Wrap", "price": 0},
+                {"name": "Sun Dried Tomato Wrap", "price": 0}, {"name": "Gluten Free Wrap", "price": 0},
+                {"name": "No Bread", "price": 0}
+            ],
+            "Cheese": [
+                {"name": "American Cheese", "price": 0}, {"name": "Pepper Jack Cheese", "price": 0},
+                {"name": "Provolone Cheese", "price": 0}, {"name": "Swiss Cheese", "price": 0},
+                {"name": "No Cheese", "price": 0}
+            ],
+            "Mayonnaise Spread": [
+                {"name": "Chipotle Mayonnaise", "price": 0}, {"name": "Mustard", "price": 0},
+                {"name": "Pesto Mayonnaise", "price": 0}, {"name": "Regular Mayonnaise", "price": 0},
+                {"name": "Sriracha Mayonnaise", "price": 0}, {"name": "No Mayonnaise", "price": 0}
+            ],
+            "Toppings": [
+                {"name": "Oil", "price": 0}, {"name": "Lettuce", "price": 0},
+  	            {"name": "Tomato", "price": 0}, {"name": "Onions", "price": 0},
+                {"name": "Pickled Chips", "price": 0}, {"name": "Jalapeño Slices", "price": 0},
+                {"name": "Red wine vinegar", "price": 0}, {"name": "Salt", "price": 0},
+                {"name": "Pepper", "price": 0}, {"name": "Oregano", "price": 0}
+            ],
+            "Toasted": [
+                {"name": "Toasted", "price": 0}, {"name": "Not Toasted", "price": 0}
+            ],
+            "Drinks": [
+                {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
+                {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
+            ]
+        }
     },
     {
         "ItemName": "Tuna Salad Sandwich", 
         "ItemPrice": 6.50, 
         "ItemDescription":"",
         "ItemImage": "../img/tuna_salad_sandwich.jpg",
-        "ItemIngredients": ["Tuna", "oil", "bread", "cheese", "mayonnaise", "onions", "celery", "mustard", "lettuce", "tomatoes", "pepper", "salt"]
+        "ItemIngredients": ["Tuna", "oil", "bread", "cheese", "mayonnaise", "onions", "celery", "mustard", "lettuce", "tomatoes", "pepper", "salt"],
+        "ItemOptions": {
+            "Bread": [
+                {"name": "White Bread", "price": 0}, {"name": "Whole Wheat Bread", "price": 0},
+  	            {"name": "Rye Bread", "price": 0}, {"name": "Brioche Roll", "price": 0},
+                {"name": "Wrap", "price": 0}, {"name": "Wheat Wrap", "price": 0},
+                {"name": "Sun Dried Tomato Wrap", "price": 0}, {"name": "Gluten Free Wrap", "price": 0},
+                {"name": "No Bread", "price": 0}
+            ],
+            "Cheese": [
+                {"name": "American Cheese", "price": 0}, {"name": "Pepper Jack Cheese", "price": 0},
+                {"name": "Provolone Cheese", "price": 0}, {"name": "Swiss Cheese", "price": 0},
+                {"name": "No Cheese", "price": 0}
+            ],
+            "Mayonnaise Spread": [
+                {"name": "Chipotle Mayonnaise", "price": 0}, {"name": "Mustard", "price": 0},
+                {"name": "Pesto Mayonnaise", "price": 0}, {"name": "Regular Mayonnaise", "price": 0},
+                {"name": "Sriracha Mayonnaise", "price": 0}, {"name": "No Mayonnaise", "price": 0}
+            ],
+            "Toppings": [
+                {"name": "Oil", "price": 0}, {"name": "Lettuce", "price": 0},
+  	            {"name": "Tomato", "price": 0}, {"name": "Onions", "price": 0},
+                {"name": "Pickled Chips", "price": 0}, {"name": "Jalapeño Slices", "price": 0},
+                {"name": "Red wine vinegar", "price": 0}, {"name": "Salt", "price": 0},
+                {"name": "Pepper", "price": 0}, {"name": "Oregano", "price": 0}
+            ],
+            "Toasted": [
+                {"name": "Toasted", "price": 0}, {"name": "Not Toasted", "price": 0}
+            ],
+            "Drinks": [
+                {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
+                {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
+            ]
+        }
     },
     {
         "ItemName": "Turkey and Cheese", 
         "ItemPrice": 6.50, 
         "ItemDescription":"",
         "ItemImage": "../img/turkey_cheese_sandwich.jpg",
-        "ItemIngredients": ["Bread", "turkey", "cheese", "mayonnaise", "lettuce", "tomatoes", "mustard", "onions", "salt", "pepper"]
+        "ItemIngredients": ["Bread", "turkey", "cheese", "mayonnaise", "lettuce", "tomatoes", "mustard", "onions", "salt", "pepper"],
+        "ItemOptions": {
+            "Bread": [
+                {"name": "White Bread", "price": 0}, {"name": "Whole Wheat Bread", "price": 0},
+  	            {"name": "Rye Bread", "price": 0}, {"name": "Brioche Roll", "price": 0},
+                {"name": "Wrap", "price": 0}, {"name": "Wheat Wrap", "price": 0},
+                {"name": "Sun Dried Tomato Wrap", "price": 0}, {"name": "Gluten Free Wrap", "price": 0},
+                {"name": "No Bread", "price": 0}
+            ],
+            "Cheese": [
+                {"name": "American Cheese", "price": 0}, {"name": "Pepper Jack Cheese", "price": 0},
+                {"name": "Provolone Cheese", "price": 0}, {"name": "Swiss Cheese", "price": 0},
+                {"name": "No Cheese", "price": 0}
+            ],
+            "Mayonnaise Spread": [
+                {"name": "Chipotle Mayonnaise", "price": 0}, {"name": "Mustard", "price": 0},
+                {"name": "Pesto Mayonnaise", "price": 0}, {"name": "Regular Mayonnaise", "price": 0},
+                {"name": "Sriracha Mayonnaise", "price": 0}, {"name": "No Mayonnaise", "price": 0}
+            ],
+            "Toppings": [
+                {"name": "Oil", "price": 0}, {"name": "Lettuce", "price": 0},
+  	            {"name": "Tomato", "price": 0}, {"name": "Onions", "price": 0},
+                {"name": "Pickled Chips", "price": 0}, {"name": "Jalapeño Slices", "price": 0},
+                {"name": "Red wine vinegar", "price": 0}, {"name": "Salt", "price": 0},
+                {"name": "Pepper", "price": 0}, {"name": "Oregano", "price": 0}
+            ],
+            "Toasted": [
+                {"name": "Toasted", "price": 0}, {"name": "Not Toasted", "price": 0}
+            ],
+            "Drinks": [
+                {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
+                {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
+            ]
+        }
     },
     {
         "ItemName": "Veggie Sandwich ", 
         "ItemPrice": 6.50, 
         "ItemDescription":"",
         "ItemImage": "../img/veggie_sandwich.jpg",
-        "ItemIngredients": ["Bread", "mayonnaise", "mustard", "cheese", "lettuce", "tomatoes", "cucumbers", "onions", "bell peppers", "carrots", "avocado", "sprouts", "pickles", "salt", "pepper"]
+        "ItemIngredients": ["Bread", "mayonnaise", "mustard", "cheese", "lettuce", "tomatoes", "cucumbers", "onions", "bell peppers", "carrots", "avocado", "sprouts", "pickles", "salt", "pepper"],
+        "ItemOptions": {
+            "Bread": [
+                {"name": "White Bread", "price": 0}, {"name": "Whole Wheat Bread", "price": 0},
+  	            {"name": "Rye Bread", "price": 0}, {"name": "Brioche Roll", "price": 0},
+                {"name": "Wrap", "price": 0}, {"name": "Wheat Wrap", "price": 0},
+                {"name": "Sun Dried Tomato Wrap", "price": 0}, {"name": "Gluten Free Wrap", "price": 0},
+                {"name": "No Bread", "price": 0}
+            ],
+            "Cheese": [
+                {"name": "American Cheese", "price": 0}, {"name": "Pepper Jack Cheese", "price": 0},
+                {"name": "Provolone Cheese", "price": 0}, {"name": "Swiss Cheese", "price": 0},
+                {"name": "No Cheese", "price": 0}
+            ],
+            "Mayonnaise Spread": [
+                {"name": "Chipotle Mayonnaise", "price": 0}, {"name": "Mustard", "price": 0},
+                {"name": "Pesto Mayonnaise", "price": 0}, {"name": "Regular Mayonnaise", "price": 0},
+                {"name": "Sriracha Mayonnaise", "price": 0}, {"name": "No Mayonnaise", "price": 0}
+            ],
+            "Toppings": [
+                {"name": "Oil", "price": 0}, {"name": "Lettuce", "price": 0},
+  	            {"name": "Tomato", "price": 0}, {"name": "Onions", "price": 0},
+                {"name": "Pickled Chips", "price": 0}, {"name": "Jalapeño Slices", "price": 0},
+                {"name": "Red wine vinegar", "price": 0}, {"name": "Salt", "price": 0},
+                {"name": "Pepper", "price": 0}, {"name": "Oregano", "price": 0}
+            ],
+            "Toasted": [
+                {"name": "Toasted", "price": 0}, {"name": "Not Toasted", "price": 0}
+            ],
+            "Drinks": [
+                {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
+                {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
+            ]
+        }
     }
 ]
