@@ -12,7 +12,7 @@
 
 #itemHomeButton {
     list-style-type: none;
-    font-family: "Public Sans";
+    font-family: "Trebuchet MS";
     font-weight: 700;
     font-size: 24px;
     line-height: 20px;
@@ -23,7 +23,7 @@
 }
 
 #itemMenuButton {
-    font-family: "Public Sans";
+    font-family: "Trebuchet MS";
     font-weight: 700;
     font-size: 24px;
     line-height: 20px;
@@ -33,7 +33,7 @@
 }
 
 #itemLoginButton {
-    font-family: "Public Sans";
+    font-family: "Trebuchet MS";
     font-weight: 700;
     font-size: 24px;
     line-height: 20px;
@@ -188,6 +188,7 @@ body {
 }
 
 .quantity {
+    font-family: "Trebuchet MS";
     font-size: 20px;
     padding: 0 10px;
     line-height: 35px;

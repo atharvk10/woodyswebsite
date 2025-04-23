@@ -1,6 +1,6 @@
-let basket = JSON.parse(localStorage.getItem("data")) || [
-    { id: 1, name:"Everything Bagel", price: 3.99, quantity: 2},
-    { id: 2, name:"Iced Coffee", price: 2.49, quantity: 1}
+let basket = JSON.parse(localStorage.getItem("storage")) || [
+    { ItemName:"Everything Bagel", price: 3.99, quantity: 2},
+    { ItemName:"Iced Coffee", price: 2.49, quantity: 1}
 ];
 function updatedCartCount(){
     const cartAmountDisplay = document.querySelector(".cartAmount");
@@ -12,7 +12,7 @@ function renderCartItems(){
     table.innerHTML = `
     <tr>
         <th>Product</th>
-        <th>quantity</th>
+        <th>Quantity</th>
         <th>Subtotal</th>
     </tr>
     `;
@@ -21,8 +21,8 @@ function renderCartItems(){
 
         const row = document.createElement("tr");
         row.innerHTML = `
-        <td>${item.name}</td>
-        <td><input type="number" min = "1" value="${item.quantity}" data-id="${item.id}"></td>
+        <td>${item.ItemName}</td>
+        <td><input type="number" min = "1" value="${item.quantity}" data-id="${item.ItemName}"></td>
         <td>$${subtotal}</td>
         `;
         const input = row.querySelector("input");
@@ -30,7 +30,7 @@ function renderCartItems(){
             const newQuantity = parseInt(e.target.value);
             if (newQuantity < 1) return;
 
-            const itemsInBasket = basket.find((x) => x.id === item.id);
+            const itemsInBasket = basket.find((x) => x.ItemName === item.ItemName);
             itemsInBasket.quantity = newQuantity;
 
 
@@ -38,7 +38,7 @@ function renderCartItems(){
 
 
             updatedCartCount();   
-            localStorage.setItem("data", JSON.stringify(basket)); 
+            localStorage.setItem("storage", JSON.stringify(basket)); 
             renderCartItems();
             updateCartTotal();
         });
@@ -73,16 +73,14 @@ document.getElementById("continueToPayment").addEventListener("click", () => {
     }
 
     if (orderTiming === 'later' && !localStorage.getItem("orderTime")){
-        alert("Please select a pcikup time. ");
+        alert("Please select a pickup time. ");
         return;
     }
 
     const userCart = basket.map(item => ({
-        id: item.id,
-        name: item.name,
+        ItemName: item.ItemName,
         quantity: item.quantity,
         price: item.price
-
     }));
 
     const timing = localStorage.getItem("orderTiming");
