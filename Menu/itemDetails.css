@@ -135,7 +135,24 @@ ul {
     font-size:25px;
     font-family:Georgia, 'Times New Roman', Times, serif
 
+}
 
+.calories {
+    position:relative;
+    font-size:15px;
+    left:550px;
+    bottom:150px;
+    font-style: italic;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+.ingredients {
+    position:relative;
+    font-size:15px;
+    left:550px;
+    bottom:150px;
+    font-style: italic;
+    font-family:Georgia, 'Times New Roman', Times, serif
 
 }
 
@@ -144,4 +161,44 @@ body {
     padding: 20px;
 }
 
+.buttons ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+}
 
+.button-item {
+    background-color: #d62100;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.button-item:hover {
+    background-color: #a91a00;
+}
+
+.quantity {
+    font-size: 20px;
+    padding: 0 10px;
+    line-height: 35px;
+}
+
+.price-and-buttons {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    left: 400px;
+    bottom: 175px;
+}
+
+.price {
+    font-size: 25px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+}
