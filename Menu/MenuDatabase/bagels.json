@@ -20,7 +20,7 @@
                 ]
             },
             "Drinks": {
-                "type": "multiple",
+                "type": "single",
                 "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
                 {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
@@ -49,7 +49,7 @@
                 ]
             },
             "Drinks": {
-                "type": "multiple",
+                "type": "single",
                 "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
                 {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
@@ -78,7 +78,7 @@
                 ]
             },
             "Drinks": {
-                "type": "multiple",
+                "type": "single",
                 "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
                 {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
@@ -107,7 +107,7 @@
                 ]
             },
             "Drinks": {
-                "type": "multiple",
+                "type": "single",
                 "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
                 {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
@@ -136,7 +136,7 @@
                 ]
             },
             "Drinks": {
-                "type": "multiple",
+                "type": "single",
                 "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
                 {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}

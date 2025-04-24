@@ -137,10 +137,37 @@ ul {
 
 }
 
+.itemOptions {
+    font-style: italic;
+    position: relative;
+    padding: 4px;
+    left: 550px;
+    bottom:505px;
+    width: 800px;
+    font-size:20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.itemOptionsSelections {
+    font-style: italic;
+    position: relative;
+    padding: 4px;
+    left: 10px;
+    width: 250px;
+    font-size:15px;
+    border-radius:15px;
+    text-align:center;
+    background-color: #d62100;
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
 .calories {
     position:relative;
     font-size:15px;
-    left:550px;
+    left:900px;
     bottom:150px;
     font-style: italic;
     font-family:Georgia, 'Times New Roman', Times, serif
@@ -149,7 +176,7 @@ ul {
 .ingredients {
     position:relative;
     font-size:15px;
-    left:550px;
+    left:900px;
     bottom:150px;
     width: 800px;
     font-style: italic;
@@ -194,8 +221,8 @@ body {
     display: flex;
     gap: 20px;
     position: relative;
-    left: 400px;
-    bottom: 175px;
+    left: 750px;
+    bottom: 385px;
 }
 
 .price {

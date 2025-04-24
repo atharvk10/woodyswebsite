@@ -7,7 +7,7 @@
         "ItemIngredients": ["Eggs", "Milk", "Bread", "Cinnamon", "Vanilla Extract", "Butter"],
         "ItemOptions": {
             "Drinks": {
-                "type": "multiple",
+                "type": "single",
                 "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
                 {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
@@ -31,7 +31,7 @@
                 ]
             },
             "Drinks": {
-                "type": "multiple",
+                "type": "single",
                 "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
                 {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
@@ -47,7 +47,7 @@
         "ItemIngredients": ["Flour", "Eggs", "Milk", "Butter", "Sugar", "Baking Powder", "Vanilla Extract"],
         "ItemOptions": {
             "Drinks": {
-                "type": "multiple",
+                "type": "single",
                 "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
                 {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}

@@ -26,8 +26,26 @@ async function loadItems(item, id) {
     <div class="calories">Calories: ${calories} calories</div>
     <div class="ingredients">Ingredients: ${ingredients}</div>
     `;
-}
 
+  let optionsHTML = '';
+  if (item.ItemOptions){
+    const optionKeys = Object.keys(item.ItemOptions);
+    const optionValues = Object.values(item.ItemOptions);
+    for (let i = 0; i < optionKeys.length; i++){
+      const key = optionKeys[i];
+      const value = optionValues[i];
+      optionsHTML = optionsHTML + `<div class="itemOptions">${key}
+      <select class="itemOptionsSelections" id="${key}">`;
+      for (let j = 0; j < value.choices.length; j++){
+        const choice = value.choices[j];
+        optionsHTML = optionsHTML + `<option value="${choice.name}">${choice.name} ($${choice.price.toFixed(2)})</option>`;
+      }
+      optionsHTML = optionsHTML + `</select>
+      </div>`;
+    }
+  }
+  container.innerHTML = container.innerHTML + optionsHTML;
+}
 async function getCalories(ingredients){
   const apiKey = 'yZw91PtqEeP8cfePqMIiqV0rQYSjrHSOJ5getpIV';
   let sumCals = 0;
@@ -314,6 +332,3 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 updateCart();
-
-
-
