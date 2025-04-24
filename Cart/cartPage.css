@@ -61,10 +61,11 @@
     font-size: 30px;
     line-height: 20px;
     padding-left: 50px;
-    padding-top: 25px;
+    padding-top: 5px;
     color: #281d1b;
     text-decoration: none;
     position: relative;
+    vertical-align: top;
 }
 
 #cartButton:hover {
@@ -74,7 +75,7 @@
 .cartAmount{
     font-size: 20px;
     position: absolute;
-    bottom: -15px;
+    bottom: -10px;
     left: 30px;
     background-color: rgb(203, 33, 33);
     color: white;
@@ -124,11 +125,15 @@ ul {
     display: flex;
     justify-content: flex-end;
     padding-right: 30px;
+    margin-top: 40px;
     table{
         border-top: 3px solid rgb(234, 94, 94);
         width: 100%;
         max-width: 350px;
     }
+}
+.cartTotal td:last-child {
+    font-weight: bold;
 }
 
 h2{
@@ -167,4 +172,43 @@ h2{
 .orderOption.active {
     background-color: rgb(234, 94, 94);
     color: white;
+}
+.orderOption:hover,
+#continueToPayment:hover {
+    background-color: #c94c4c;
+    color: white;
+}
+
+
+#orderTime {
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-family: 'Trebuchet MS';
+    font-size:  16px;
+    border: 1px solid #ccc;
+    background-color: white;
+    transition: border-color 0.3s;
+    margin-top: 10px;
+}
+
+
+#orderTime:focus {
+    border-color: #ea5e5e;
+    outline: none;
+}
+
+#continueToPayment {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+#continueToPayment:hover {
+    box-shadow: 0 6px rgba(0, 0, 0, 0.2);
+}
+
+#timePickerWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
 }
