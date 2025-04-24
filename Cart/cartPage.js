@@ -129,15 +129,27 @@ function populateTimePicker() {
     now.setSeconds(0);
     now.setMilliseconds(0);
 
-    for (let i = 0; i < 16; i++){
-        const optionTime = new Date(now.getTime() + i * 15 * 60 * 1000);
-        const timeStr = optionTime.toLocaleTimeString([], { 
-            hour: '2-digit', 
+    const end = new Date();
+    end.setHours(17, 45, 0, 0);
+
+    while (now <= end) {
+        const timeStr = now.toLocaleTimeString([], {
+            hour: '2-digit',
             minute: '2-digit'
         });
+    
+
         const option = document.createElement("option");
         option.value = timeStr;
         option.textContent = timeStr;
+        dropdown.appendChild(option);
+
+        now.setMinutes(now.getMinutes() + 15);
+    }
+    if (dropdown.options.length === 0){
+        const option = document.createElement("option");
+        option.value = "";
+        option.textContent = "No available pickup times";
         dropdown.appendChild(option);
     }
 }

@@ -6,10 +6,13 @@
         "ItemImage":"../img/oatmeal-bowl-blueberries-strawberries.jpeg",
         "ItemIngredients": ["Oats", "Water", "Milk", "Strawberries", "Blueberries", "Raspberries"],
         "ItemOptions": {
-            "Drinks": [
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
                 {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
-            ]
+                ]
+            }
         }
     }, 
     {
@@ -19,14 +22,20 @@
         "ItemImage":"../img/Two-slices-of-toast.jpg",
         "ItemIngredients": ["Bread", "Butter"],
         "ItemOptions": {
-            "Bread": [
+            "Bread": {
+                "type": "single",
+                "choices": [
                 {"name": "White Bread", "price": 0}, {"name": "Whole Wheat Bread", "price": 0}, 
                 {"name": "Rye Bread", "price": 0}, {"name": "Brioche Roll", "price": 0}
-            ],
-            "Drinks": [
+                ]
+            },
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
                 {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
-            ]
+                ]
+            }
         }
     },
     {
@@ -36,10 +45,13 @@
         "ItemImage":"../img/breakfast-potatoes.jpeg",
         "ItemIngredients": ["Potatoes", "Butter", "Salt", "Pepper"],
         "ItemOptions": {
-            "Drinks": [
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
                 {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
-            ]
+                ]
+            }
         }
     }
 ]

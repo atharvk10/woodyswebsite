@@ -6,37 +6,56 @@
         "ItemImage": "../img/buffalo_chicken_panini.jpg",
         "ItemIngredients": ["Bread", "chicken", "buffalo sauce", "cheese", "onions", "lettuce", "tomatoes", "salt", "pepper"],
         "ItemOptions": {
-            "Bread": [
+            "Bread": {
+                "type": "single",
+                "choices": [
                 {"name": "White Bread", "price": 0}, {"name": "Whole Wheat Bread", "price": 0},
   	            {"name": "Rye Bread", "price": 0}, {"name": "Brioche Roll", "price": 0},
                 {"name": "Wrap", "price": 0}, {"name": "Wheat Wrap", "price": 0},
                 {"name": "Sun Dried Tomato Wrap", "price": 0}, {"name": "Gluten Free Wrap", "price": 0},
                 {"name": "No Bread", "price": 0}
-            ],
-            "Cheese": [
+                ]
+            },
+            "Cheese": {
+                "type": "single",
+                "choices": [
                 {"name": "American Cheese", "price": 0}, {"name": "Pepper Jack Cheese", "price": 0},
                 {"name": "Provolone Cheese", "price": 0}, {"name": "Swiss Cheese", "price": 0},
                 {"name": "No Cheese", "price": 0}
-            ],
-            "Mayonnaise Spread": [
+                ]
+            },
+            "Mayonnaise Spread": {
+                "type": "single",
+                "choices": [
                 {"name": "Chipotle Mayonnaise", "price": 0}, {"name": "Mustard", "price": 0},
                 {"name": "Pesto Mayonnaise", "price": 0}, {"name": "Regular Mayonnaise", "price": 0},
                 {"name": "Sriracha Mayonnaise", "price": 0}, {"name": "No Mayonnaise", "price": 0}
-            ],
-            "Toppings": [
+                ]
+            },
+            "Toppings": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Oil", "price": 0}, {"name": "Lettuce", "price": 0},
   	            {"name": "Tomato", "price": 0}, {"name": "Onions", "price": 0},
                 {"name": "Pickled Chips", "price": 0}, {"name": "Jalapeño Slices", "price": 0},
                 {"name": "Red wine vinegar", "price": 0}, {"name": "Salt", "price": 0},
                 {"name": "Pepper", "price": 0}, {"name": "Oregano", "price": 0}
-            ],
-            "Toasted": [
-                {"name": "Toasted", "price": 0}, {"name": "Not Toasted", "price": 0}
-            ],
-            "Drinks": [
+                ]
+            },
+            "Toasted": {
+                "type": "single",
+                "choices": [
+                {"name": "Toasted", "price": 0}, {"name": "Not toasted", "price": 0}
+                ]
+            },
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
-                {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
-            ]
+                {"name": "Water", "price": 2.00}, {"name": "Fountain drink", "price": 2.00},
+                {"name": "No drinks", "price": 0}
+                ]
+            }
         }
     },
     {
@@ -46,37 +65,56 @@
         "ItemImage": "../img/chicken_bacon_ranch_panini.jpeg",
         "ItemIngredients": ["Chicken", "bacon", "bread", "ranch dressing", "cheese", "lettuce", "tomatoes", "onions", "salt", "pepper"],
         "ItemOptions": {
-            "Bread": [
+            "Bread": {
+                "type": "single",
+                "choices": [
                 {"name": "White Bread", "price": 0}, {"name": "Whole Wheat Bread", "price": 0},
   	            {"name": "Rye Bread", "price": 0}, {"name": "Brioche Roll", "price": 0},
                 {"name": "Wrap", "price": 0}, {"name": "Wheat Wrap", "price": 0},
                 {"name": "Sun Dried Tomato Wrap", "price": 0}, {"name": "Gluten Free Wrap", "price": 0},
                 {"name": "No Bread", "price": 0}
-            ],
-            "Cheese": [
+                ]
+            },
+            "Cheese": {
+                "type": "single",
+                "choices": [
                 {"name": "American Cheese", "price": 0}, {"name": "Pepper Jack Cheese", "price": 0},
                 {"name": "Provolone Cheese", "price": 0}, {"name": "Swiss Cheese", "price": 0},
                 {"name": "No Cheese", "price": 0}
-            ],
-            "Mayonnaise Spread": [
+                ]
+            },
+            "Mayonnaise Spread": {
+                "type": "single",
+                "choices": [
                 {"name": "Chipotle Mayonnaise", "price": 0}, {"name": "Mustard", "price": 0},
                 {"name": "Pesto Mayonnaise", "price": 0}, {"name": "Regular Mayonnaise", "price": 0},
                 {"name": "Sriracha Mayonnaise", "price": 0}, {"name": "No Mayonnaise", "price": 0}
-            ],
-            "Toppings": [
+                ]
+            },
+            "Toppings": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Oil", "price": 0}, {"name": "Lettuce", "price": 0},
   	            {"name": "Tomato", "price": 0}, {"name": "Onions", "price": 0},
                 {"name": "Pickled Chips", "price": 0}, {"name": "Jalapeño Slices", "price": 0},
                 {"name": "Red wine vinegar", "price": 0}, {"name": "Salt", "price": 0},
                 {"name": "Pepper", "price": 0}, {"name": "Oregano", "price": 0}
-            ],
-            "Toasted": [
-                {"name": "Toasted", "price": 0}, {"name": "Not Toasted", "price": 0}
-            ],
-            "Drinks": [
+                ]
+            },
+            "Toasted": {
+                "type": "single",
+                "choices": [
+                {"name": "Toasted", "price": 0}, {"name": "Not toasted", "price": 0}
+                ]
+            },
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
-                {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
-            ]
+                {"name": "Water", "price": 2.00}, {"name": "Fountain drink", "price": 2.00},
+                {"name": "No drinks", "price": 0}
+                ]
+            }
         }
     },
     {
@@ -86,37 +124,56 @@
         "ItemImage": "../img/cuban_panini.jpg",
         "ItemIngredients": ["Bread", "butter", "garlic", "mustard", "cheese", "pork", "ham", "pickles", "salt", "pepper"],
         "ItemOptions": {
-            "Bread": [
+            "Bread": {
+                "type": "single",
+                "choices": [
                 {"name": "White Bread", "price": 0}, {"name": "Whole Wheat Bread", "price": 0},
   	            {"name": "Rye Bread", "price": 0}, {"name": "Brioche Roll", "price": 0},
                 {"name": "Wrap", "price": 0}, {"name": "Wheat Wrap", "price": 0},
                 {"name": "Sun Dried Tomato Wrap", "price": 0}, {"name": "Gluten Free Wrap", "price": 0},
                 {"name": "No Bread", "price": 0}
-            ],
-            "Cheese": [
+                ]
+            },
+            "Cheese": {
+                "type": "single",
+                "choices": [
                 {"name": "American Cheese", "price": 0}, {"name": "Pepper Jack Cheese", "price": 0},
                 {"name": "Provolone Cheese", "price": 0}, {"name": "Swiss Cheese", "price": 0},
                 {"name": "No Cheese", "price": 0}
-            ],
-            "Mayonnaise Spread": [
+                ]
+            },
+            "Mayonnaise Spread": {
+                "type": "single",
+                "choices": [
                 {"name": "Chipotle Mayonnaise", "price": 0}, {"name": "Mustard", "price": 0},
                 {"name": "Pesto Mayonnaise", "price": 0}, {"name": "Regular Mayonnaise", "price": 0},
                 {"name": "Sriracha Mayonnaise", "price": 0}, {"name": "No Mayonnaise", "price": 0}
-            ],
-            "Toppings": [
+                ]
+            },
+            "Toppings": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Oil", "price": 0}, {"name": "Lettuce", "price": 0},
   	            {"name": "Tomato", "price": 0}, {"name": "Onions", "price": 0},
                 {"name": "Pickled Chips", "price": 0}, {"name": "Jalapeño Slices", "price": 0},
                 {"name": "Red wine vinegar", "price": 0}, {"name": "Salt", "price": 0},
                 {"name": "Pepper", "price": 0}, {"name": "Oregano", "price": 0}
-            ],
-            "Toasted": [
-                {"name": "Toasted", "price": 0}, {"name": "Not Toasted", "price": 0}
-            ],
-            "Drinks": [
+                ]
+            },
+            "Toasted": {
+                "type": "single",
+                "choices": [
+                {"name": "Toasted", "price": 0}, {"name": "Not toasted", "price": 0}
+                ]
+            },
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
-                {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
-            ]
+                {"name": "Water", "price": 2.00}, {"name": "Fountain drink", "price": 2.00},
+                {"name": "No drinks", "price": 0}
+                ]
+            }
         }
     },
     {
@@ -126,37 +183,56 @@
         "ItemImage": "../img/pastrami_reuben.jpg",
         "ItemIngredients": ["Bread", "pastrami", "cheese", "sauerkraut", "dressing", "butter", "salt", "pepper"],
         "ItemOptions": {
-            "Bread": [
+            "Bread": {
+                "type": "single",
+                "choices": [
                 {"name": "White Bread", "price": 0}, {"name": "Whole Wheat Bread", "price": 0},
   	            {"name": "Rye Bread", "price": 0}, {"name": "Brioche Roll", "price": 0},
                 {"name": "Wrap", "price": 0}, {"name": "Wheat Wrap", "price": 0},
                 {"name": "Sun Dried Tomato Wrap", "price": 0}, {"name": "Gluten Free Wrap", "price": 0},
                 {"name": "No Bread", "price": 0}
-            ],
-            "Cheese": [
+                ]
+            },
+            "Cheese": {
+                "type": "single",
+                "choices": [
                 {"name": "American Cheese", "price": 0}, {"name": "Pepper Jack Cheese", "price": 0},
                 {"name": "Provolone Cheese", "price": 0}, {"name": "Swiss Cheese", "price": 0},
                 {"name": "No Cheese", "price": 0}
-            ],
-            "Mayonnaise Spread": [
+                ]
+            },
+            "Mayonnaise Spread": {
+                "type": "single",
+                "choices": [
                 {"name": "Chipotle Mayonnaise", "price": 0}, {"name": "Mustard", "price": 0},
                 {"name": "Pesto Mayonnaise", "price": 0}, {"name": "Regular Mayonnaise", "price": 0},
                 {"name": "Sriracha Mayonnaise", "price": 0}, {"name": "No Mayonnaise", "price": 0}
-            ],
-            "Toppings": [
+                ]
+            },
+            "Toppings": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Oil", "price": 0}, {"name": "Lettuce", "price": 0},
   	            {"name": "Tomato", "price": 0}, {"name": "Onions", "price": 0},
                 {"name": "Pickled Chips", "price": 0}, {"name": "Jalapeño Slices", "price": 0},
                 {"name": "Red wine vinegar", "price": 0}, {"name": "Salt", "price": 0},
                 {"name": "Pepper", "price": 0}, {"name": "Oregano", "price": 0}
-            ],
-            "Toasted": [
-                {"name": "Toasted", "price": 0}, {"name": "Not Toasted", "price": 0}
-            ],
-            "Drinks": [
+                ]
+            },
+            "Toasted": {
+                "type": "single",
+                "choices": [
+                {"name": "Toasted", "price": 0}, {"name": "Not toasted", "price": 0}
+                ]
+            },
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
-                {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
-            ]
+                {"name": "Water", "price": 2.00}, {"name": "Fountain drink", "price": 2.00},
+                {"name": "No drinks", "price": 0}
+                ]
+            }
         }
     },
     {
@@ -166,37 +242,56 @@
         "ItemImage": "../img/tomato_mozzarella_semolina.jpg",
         "ItemIngredients": ["Bread", "semolina pasta", "cheese", "tomatoes", "oil", "salt", "pepper"],
         "ItemOptions": {
-            "Bread": [
+            "Bread": {
+                "type": "single",
+                "choices": [
                 {"name": "White Bread", "price": 0}, {"name": "Whole Wheat Bread", "price": 0},
   	            {"name": "Rye Bread", "price": 0}, {"name": "Brioche Roll", "price": 0},
                 {"name": "Wrap", "price": 0}, {"name": "Wheat Wrap", "price": 0},
                 {"name": "Sun Dried Tomato Wrap", "price": 0}, {"name": "Gluten Free Wrap", "price": 0},
                 {"name": "No Bread", "price": 0}
-            ],
-            "Cheese": [
+                ]
+            },
+            "Cheese": {
+                "type": "single",
+                "choices": [
                 {"name": "American Cheese", "price": 0}, {"name": "Pepper Jack Cheese", "price": 0},
                 {"name": "Provolone Cheese", "price": 0}, {"name": "Swiss Cheese", "price": 0},
                 {"name": "No Cheese", "price": 0}
-            ],
-            "Mayonnaise Spread": [
+                ]
+            },
+            "Mayonnaise Spread": {
+                "type": "single",
+                "choices": [
                 {"name": "Chipotle Mayonnaise", "price": 0}, {"name": "Mustard", "price": 0},
                 {"name": "Pesto Mayonnaise", "price": 0}, {"name": "Regular Mayonnaise", "price": 0},
                 {"name": "Sriracha Mayonnaise", "price": 0}, {"name": "No Mayonnaise", "price": 0}
-            ],
-            "Toppings": [
+                ]
+            },
+            "Toppings": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Oil", "price": 0}, {"name": "Lettuce", "price": 0},
   	            {"name": "Tomato", "price": 0}, {"name": "Onions", "price": 0},
                 {"name": "Pickled Chips", "price": 0}, {"name": "Jalapeño Slices", "price": 0},
                 {"name": "Red wine vinegar", "price": 0}, {"name": "Salt", "price": 0},
                 {"name": "Pepper", "price": 0}, {"name": "Oregano", "price": 0}
-            ],
-            "Toasted": [
-                {"name": "Toasted", "price": 0}, {"name": "Not Toasted", "price": 0}
-            ],
-            "Drinks": [
+                ]
+            },
+            "Toasted": {
+                "type": "single",
+                "choices": [
+                {"name": "Toasted", "price": 0}, {"name": "Not toasted", "price": 0}
+                ]
+            },
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
-                {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
-            ]
+                {"name": "Water", "price": 2.00}, {"name": "Fountain drink", "price": 2.00},
+                {"name": "No drinks", "price": 0}
+                ]
+            }
         }
     },
     {
@@ -206,37 +301,56 @@
         "ItemImage": "../img/valleychicken.jpg",
         "ItemIngredients": ["Chicken", "bread", "ranch dressing", "lettuce", "tomatoes", "onions", "pickles", "cheese", "salt", "pepper"],
         "ItemOptions": {
-            "Bread": [
+            "Bread": {
+                "type": "single",
+                "choices": [
                 {"name": "White Bread", "price": 0}, {"name": "Whole Wheat Bread", "price": 0},
   	            {"name": "Rye Bread", "price": 0}, {"name": "Brioche Roll", "price": 0},
                 {"name": "Wrap", "price": 0}, {"name": "Wheat Wrap", "price": 0},
                 {"name": "Sun Dried Tomato Wrap", "price": 0}, {"name": "Gluten Free Wrap", "price": 0},
                 {"name": "No Bread", "price": 0}
-            ],
-            "Cheese": [
+                ]
+            },
+            "Cheese": {
+                "type": "single",
+                "choices": [
                 {"name": "American Cheese", "price": 0}, {"name": "Pepper Jack Cheese", "price": 0},
                 {"name": "Provolone Cheese", "price": 0}, {"name": "Swiss Cheese", "price": 0},
                 {"name": "No Cheese", "price": 0}
-            ],
-            "Mayonnaise Spread": [
+                ]
+            },
+            "Mayonnaise Spread": {
+                "type": "single",
+                "choices": [
                 {"name": "Chipotle Mayonnaise", "price": 0}, {"name": "Mustard", "price": 0},
                 {"name": "Pesto Mayonnaise", "price": 0}, {"name": "Regular Mayonnaise", "price": 0},
                 {"name": "Sriracha Mayonnaise", "price": 0}, {"name": "No Mayonnaise", "price": 0}
-            ],
-            "Toppings": [
+                ]
+            },
+            "Toppings": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Oil", "price": 0}, {"name": "Lettuce", "price": 0},
   	            {"name": "Tomato", "price": 0}, {"name": "Onions", "price": 0},
                 {"name": "Pickled Chips", "price": 0}, {"name": "Jalapeño Slices", "price": 0},
                 {"name": "Red wine vinegar", "price": 0}, {"name": "Salt", "price": 0},
                 {"name": "Pepper", "price": 0}, {"name": "Oregano", "price": 0}
-            ],
-            "Toasted": [
-                {"name": "Toasted", "price": 0}, {"name": "Not Toasted", "price": 0}
-            ],
-            "Drinks": [
+                ]
+            },
+            "Toasted": {
+                "type": "single",
+                "choices": [
+                {"name": "Toasted", "price": 0}, {"name": "Not toasted", "price": 0}
+                ]
+            },
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
-                {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
-            ]
+                {"name": "Water", "price": 2.00}, {"name": "Fountain drink", "price": 2.00},
+                {"name": "No drinks", "price": 0}
+                ]
+            }
         }
     },
     {
@@ -246,37 +360,56 @@
         "ItemImage": "../img/veggie_dream.jpg",
         "ItemIngredients": ["Bread", "cream cheese", "tomatoes", "lettuce", "onions", "bell peppers", "carrots", "spinach", "cucumber", "beets", "sprouts", "avocado", "salt", "pepper"],
         "ItemOptions": {
-            "Bread": [
+            "Bread": {
+                "type": "single",
+                "choices": [
                 {"name": "White Bread", "price": 0}, {"name": "Whole Wheat Bread", "price": 0},
   	            {"name": "Rye Bread", "price": 0}, {"name": "Brioche Roll", "price": 0},
                 {"name": "Wrap", "price": 0}, {"name": "Wheat Wrap", "price": 0},
                 {"name": "Sun Dried Tomato Wrap", "price": 0}, {"name": "Gluten Free Wrap", "price": 0},
                 {"name": "No Bread", "price": 0}
-            ],
-            "Cheese": [
+                ]
+            },
+            "Cheese": {
+                "type": "single",
+                "choices": [
                 {"name": "American Cheese", "price": 0}, {"name": "Pepper Jack Cheese", "price": 0},
                 {"name": "Provolone Cheese", "price": 0}, {"name": "Swiss Cheese", "price": 0},
                 {"name": "No Cheese", "price": 0}
-            ],
-            "Mayonnaise Spread": [
+                ]
+            },
+            "Mayonnaise Spread": {
+                "type": "single",
+                "choices": [
                 {"name": "Chipotle Mayonnaise", "price": 0}, {"name": "Mustard", "price": 0},
                 {"name": "Pesto Mayonnaise", "price": 0}, {"name": "Regular Mayonnaise", "price": 0},
                 {"name": "Sriracha Mayonnaise", "price": 0}, {"name": "No Mayonnaise", "price": 0}
-            ],
-            "Toppings": [
+                ]
+            },
+            "Toppings": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Oil", "price": 0}, {"name": "Lettuce", "price": 0},
   	            {"name": "Tomato", "price": 0}, {"name": "Onions", "price": 0},
                 {"name": "Pickled Chips", "price": 0}, {"name": "Jalapeño Slices", "price": 0},
                 {"name": "Red wine vinegar", "price": 0}, {"name": "Salt", "price": 0},
                 {"name": "Pepper", "price": 0}, {"name": "Oregano", "price": 0}
-            ],
-            "Toasted": [
-                {"name": "Toasted", "price": 0}, {"name": "Not Toasted", "price": 0}
-            ],
-            "Drinks": [
+                ]
+            },
+            "Toasted": {
+                "type": "single",
+                "choices": [
+                {"name": "Toasted", "price": 0}, {"name": "Not toasted", "price": 0}
+                ]
+            },
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
-                {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
-            ]
+                {"name": "Water", "price": 2.00}, {"name": "Fountain drink", "price": 2.00},
+                {"name": "No drinks", "price": 0}
+                ]
+            }
         }
     },
     {
@@ -286,37 +419,56 @@
         "ItemImage": "../img/woodys_club.jpg",
         "ItemIngredients": ["Bread", "cream cheese", "tomatoes", "lettuce", "onions", "bell peppers", "carrots", "spinach", "cucumber", "beets", "sprouts", "avocado", "salt", "pepper"],
         "ItemOptions": {
-            "Bread": [
+            "Bread": {
+                "type": "single",
+                "choices": [
                 {"name": "White Bread", "price": 0}, {"name": "Whole Wheat Bread", "price": 0},
   	            {"name": "Rye Bread", "price": 0}, {"name": "Brioche Roll", "price": 0},
                 {"name": "Wrap", "price": 0}, {"name": "Wheat Wrap", "price": 0},
                 {"name": "Sun Dried Tomato Wrap", "price": 0}, {"name": "Gluten Free Wrap", "price": 0},
                 {"name": "No Bread", "price": 0}
-            ],
-            "Cheese": [
+                ]
+            },
+            "Cheese": {
+                "type": "single",
+                "choices": [
                 {"name": "American Cheese", "price": 0}, {"name": "Pepper Jack Cheese", "price": 0},
                 {"name": "Provolone Cheese", "price": 0}, {"name": "Swiss Cheese", "price": 0},
                 {"name": "No Cheese", "price": 0}
-            ],
-            "Mayonnaise Spread": [
+                ]
+            },
+            "Mayonnaise Spread": {
+                "type": "single",
+                "choices": [
                 {"name": "Chipotle Mayonnaise", "price": 0}, {"name": "Mustard", "price": 0},
                 {"name": "Pesto Mayonnaise", "price": 0}, {"name": "Regular Mayonnaise", "price": 0},
                 {"name": "Sriracha Mayonnaise", "price": 0}, {"name": "No Mayonnaise", "price": 0}
-            ],
-            "Toppings": [
+                ]
+            },
+            "Toppings": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Oil", "price": 0}, {"name": "Lettuce", "price": 0},
   	            {"name": "Tomato", "price": 0}, {"name": "Onions", "price": 0},
                 {"name": "Pickled Chips", "price": 0}, {"name": "Jalapeño Slices", "price": 0},
                 {"name": "Red wine vinegar", "price": 0}, {"name": "Salt", "price": 0},
                 {"name": "Pepper", "price": 0}, {"name": "Oregano", "price": 0}
-            ],
-            "Toasted": [
-                {"name": "Toasted", "price": 0}, {"name": "Not Toasted", "price": 0}
-            ],
-            "Drinks": [
+                ]
+            },
+            "Toasted": {
+                "type": "single",
+                "choices": [
+                {"name": "Toasted", "price": 0}, {"name": "Not toasted", "price": 0}
+                ]
+            },
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
-                {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
-            ]
+                {"name": "Water", "price": 2.00}, {"name": "Fountain drink", "price": 2.00},
+                {"name": "No drinks", "price": 0}
+                ]
+            }
         }
     }
 ]

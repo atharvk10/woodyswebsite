@@ -6,11 +6,14 @@
         "ItemImage":"../img/3pc_chicken_fries.avif",
         "ItemIngredients": ["Chicken", "flour", "eggs", "bread crumbs", "salt", "pepper", "oil"],
         "ItemOptions": {
-            "Drinks": [
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
                 {"name": "Water", "price": 2.00}, {"name": "Fountain drink", "price": 2.00},
                 {"name": "No drinks", "price": 0}
-            ]
+                ]
+            }
         }
     },
     {
@@ -20,11 +23,14 @@
         "ItemImage":"../img/5pc_chicken.jpg",
         "ItemIngredients": ["Chicken", "flour", "eggs", "bread crumbs", "salt", "pepper", "oil"],
         "ItemOptions": {
-            "Drinks": [
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
                 {"name": "Water", "price": 2.00}, {"name": "Fountain drink", "price": 2.00},
                 {"name": "No drinks", "price": 0}
-            ]
+                ]
+            }
         }
     },
     {
@@ -34,11 +40,14 @@
         "ItemImage":"../img/8pc_chicken_wings.jpeg",
         "ItemIngredients": ["Chicken", "flour", "eggs", "bread crumbs", "salt", "pepper", "oil"],
         "ItemOptions": {
-            "Drinks": [
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
                 {"name": "Water", "price": 2.00}, {"name": "Fountain drink", "price": 2.00},
                 {"name": "No drinks", "price": 0}
-            ]
+                ]
+            }
         }
     },
     {
@@ -48,11 +57,14 @@
         "ItemImage":"../img/bacon_cheeseburger.jpg",
         "ItemIngredients": ["Bacon", "mayonnaise", "ketchup", "mustard", "pepper", "salt", "ground beef", "hamburger rolls", "cheese", "onions", "pickles", "lettuce", "tomatoes"],
         "ItemOptions": {
-            "Drinks": [
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
                 {"name": "Water", "price": 2.00}, {"name": "Fountain drink", "price": 2.00},
                 {"name": "No drinks", "price": 0}
-            ]
+                ]
+            }
         }
     },
     {
@@ -62,11 +74,14 @@
         "ItemImage": "../img/blackbean_burger.jpg",
         "ItemIngredients": ["Black beans", "onions", "garlic", "eggs", "breadcrumbs", "salt", "pepper", "oil"],
         "ItemOptions": {
-            "Drinks": [
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
                 {"name": "Water", "price": 2.00}, {"name": "Fountain drink", "price": 2.00},
                 {"name": "No drinks", "price": 0}
-            ]
+                ]
+            }
         }
     },
     {
@@ -76,11 +91,14 @@
         "ItemImage": "../img/cheeseburger.jpg",
         "ItemIngredients": ["Ground beef", "hamburger rolls", "cheese", "tomatoes", "onions", "pickles", "lettuce", "butter”, “oil", "mayonnaise", "salt", "pepper"],
         "ItemOptions": {
-            "Drinks": [
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
                 {"name": "Water", "price": 2.00}, {"name": "Fountain drink", "price": 2.00},
                 {"name": "No drinks", "price": 0}
-            ]
+                ]
+            }
         }
     },
     {
@@ -90,11 +108,14 @@
         "ItemImage": "../img/chicken_parm_sandwich.jpg",
         "ItemIngredients": ["Chicken", "flour", "eggs", "bread crumbs", "salt", "pepper", "parmesan cheese", "oil", "bread", "butter", "marinara sauce"],
         "ItemOptions": {
-            "Drinks": [
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
                 {"name": "Water", "price": 2.00}, {"name": "Fountain drink", "price": 2.00},
                 {"name": "No drinks", "price": 0}
-            ]
+                ]
+            }
         }
     },
     {
@@ -104,11 +125,14 @@
         "ItemImage": "../img/crispy_buffalo_chicken.jpeg",
         "ItemIngredients": ["Chicken", "buffalo sauce", "bread", "lettuce", "tomatoes", "pickles", "onions", "flour", "breadcrumbs", "buttermilk", "salt", "pepper"],
         "ItemOptions": {
-            "Drinks": [
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
                 {"name": "Water", "price": 2.00}, {"name": "Fountain drink", "price": 2.00},
                 {"name": "No drinks", "price": 0}
-            ]
+                ]
+            }
         }
     },
     {
@@ -118,11 +142,14 @@
         "ItemImage": "../img/fries.jpeg",
         "ItemIngredients": ["Potatoes", "oil", "salt"],
         "ItemOptions": {
-            "Drinks": [
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
                 {"name": "Water", "price": 2.00}, {"name": "Fountain drink", "price": 2.00},
                 {"name": "No drinks", "price": 0}
-            ]
+                ]
+            }
         }
     },
     {
@@ -132,11 +159,14 @@
         "ItemImage": "../img/hamburger.jpeg",
         "ItemIngredients": ["Ground beef", "cheese", "hamburger rolls", "onions", "lettuce", "garlic", "tomatoes", "salt", "pepper", "butter"],
         "ItemOptions": {
-            "Drinks": [
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
                 {"name": "Water", "price": 2.00}, {"name": "Fountain drink", "price": 2.00},
                 {"name": "No drinks", "price": 0}
-            ]
+                ]
+            }
         }
     },
     {
@@ -146,11 +176,14 @@
         "ItemImage": "../img/pulled_pork.jpeg",
         "ItemIngredients": ["Pork", "bread", "pepper", "salt", "mustard", "barbecue sauce", "onions", "pickles", "coleslaw"],
         "ItemOptions": {
-            "Drinks": [
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
                 {"name": "Water", "price": 2.00}, {"name": "Fountain drink", "price": 2.00},
                 {"name": "No drinks", "price": 0}
-            ]
+                ]
+            }
         }
     },
     {
@@ -160,12 +193,14 @@
         "ItemImage": "../img/turkey_burger.jpg",
         "ItemIngredients": ["Turkey", "breadcrumbs", "onions", "ketchup", "garlic", "hamburger rolls", "cheese", "tomatoes", "lettuce", "pickles", "mustard", "salt", "pepper"],
         "ItemOptions": {
-            "Drinks": [
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
                 {"name": "Water", "price": 2.00}, {"name": "Fountain drink", "price": 2.00},
                 {"name": "No drinks", "price": 0}
-            ]
+                ]
+            }
         }
     }   
 ]
-

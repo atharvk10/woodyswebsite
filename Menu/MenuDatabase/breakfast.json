@@ -6,10 +6,13 @@
         "ItemImage": "../img/french-toast.jpeg",
         "ItemIngredients": ["Eggs", "Milk", "Bread", "Cinnamon", "Vanilla Extract", "Butter"],
         "ItemOptions": {
-            "Drinks": [
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
                 {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
-            ]
+                ]
+            }
         }
     },
     {
@@ -19,15 +22,21 @@
         "ItemImage": "../img/eggplatter.jpg",
         "ItemIngredients": ["Eggs", "Meat", "Butter", "Salt", "Pepper"],
         "ItemOptions": {
-            "Meat": [
+            "Meat": {
+                "type": "single",
+                "choices": [
                 {"name": "Beef Bacon", "price": 0}, {"name": "Pork Bacon", "price": 0},
                 {"name": "Pork Roll", "price": 0}, {"name": "Pork Sausage", "price": 0},
                 {"name": "Turkey Bacon", "price": 0}
-            ],
-            "Drinks": [
+                ]
+            },
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
                 {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
-            ]
+                ]
+            }
         }
     },
     {
@@ -37,10 +46,13 @@
         "ItemImage": "../img/pancakes.jpg",
         "ItemIngredients": ["Flour", "Eggs", "Milk", "Butter", "Sugar", "Baking Powder", "Vanilla Extract"],
         "ItemOptions": {
-            "Drinks": [
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
                 {"name": "Water", "price": 2.00}, {"name": "No drinks", "price": 0}
-            ]
+                ]
+            }
         }
     }
 ]
