@@ -16,7 +16,7 @@
             "Toasted": {
                 "type": "single",
                 "choices": [
-                {"name": "Toasted", "price": 0}, {"name": "Not toasted", "price": 0}
+                {"name": "Toasted", "price": 0}, {"name": "Not Toasted", "price": 0}
                 ]
             },
             "Drinks": {
@@ -45,7 +45,7 @@
             "Toasted": {
                 "type": "single",
                 "choices": [
-                {"name": "Toasted", "price": 0}, {"name": "Not toasted", "price": 0}
+                {"name": "Toasted", "price": 0}, {"name": "Not Toasted", "price": 0}
                 ]
             },
             "Drinks": {
@@ -74,7 +74,7 @@
             "Toasted": {
                 "type": "single",
                 "choices": [
-                {"name": "Toasted", "price": 0}, {"name": "Not toasted", "price": 0}
+                {"name": "Toasted", "price": 0}, {"name": "Not Toasted", "price": 0}
                 ]
             },
             "Drinks": {
@@ -103,7 +103,7 @@
             "Toasted": {
                 "type": "single",
                 "choices": [
-                {"name": "Toasted", "price": 0}, {"name": "Not toasted", "price": 0}
+                {"name": "Toasted", "price": 0}, {"name": "Not Toasted", "price": 0}
                 ]
             },
             "Drinks": {
@@ -132,7 +132,7 @@
             "Toasted": {
                 "type": "single",
                 "choices": [
-                {"name": "Toasted", "price": 0}, {"name": "Not toasted", "price": 0}
+                {"name": "Toasted", "price": 0}, {"name": "Not Toasted", "price": 0}
                 ]
             },
             "Drinks": {
