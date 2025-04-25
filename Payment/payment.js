@@ -1,9 +1,8 @@
-
 async function submitOrder() {
-    const cart = JSON.parse(localStorage.getItem("userCart")) || [];
+    const cart = JSON.parse(localStorage.getItem("storage")) || [];
     const netID = sessionStorage.getItem("netID");
   
-    console.log("NETID:", sessionStorage.getItem("netID"));
+    console.log("NETID:", netID);
 
 
     if (!netID || cart.length === 0) {
@@ -11,12 +10,17 @@ async function submitOrder() {
       return;
     }
   
-    const itemNames = cart.map(item => `${item.ItemName} x${item.quantity}`);
+    const itemDetails = cart.map(item => ({
+      itemName: item.ItemName,
+      price: item.price,
+      quantity: item.quantity
+    }));
+      
   
     const order = {
-      orderID: Date.now(), // simple unique ID
+      confirmationNumber: Date.now(), // simple unique ID
       netID: netID,
-      menuItems: itemNames, // ["Bacon Egg x2", "Fries x1"]
+      items: itemDetails, // ["Bacon Egg x2", "Fries x1"]
       readyBy: new Date(Date.now() + 15 * 60000).toISOString(),
       status: "pending"
     };
@@ -29,7 +33,7 @@ async function submitOrder() {
   
     if (res.ok) {
       alert("Order placed successfully!");
-      localStorage.removeItem("userCart"); // clear cart
+      localStorage.removeItem("storage"); // clear cart
       window.location.href = "thankyou.html"; // or redirect elsewhere
     } else {
       alert("Failed to place order.");
@@ -37,7 +41,7 @@ async function submitOrder() {
   }
   
   function showOrderSummary() {
-    const cart = JSON.parse(localStorage.getItem("userCart")) || [];
+    const cart = JSON.parse(localStorage.getItem("storage")) || [];
     const summaryDiv = document.getElementById("orderSummary");
   
     cart.forEach(item => {

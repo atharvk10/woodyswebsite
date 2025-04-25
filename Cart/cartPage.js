@@ -1,8 +1,8 @@
-let basket = JSON.parse(localStorage.getItem("userCart")) || [];
+let storage = JSON.parse(localStorage.getItem("storage")) || [];
 
 function updatedCartCount() {
   const cartAmountDisplay = document.querySelector(".cartAmount");
-  const totalItems = basket.reduce((sum, item) => sum + item.quantity, 0);
+  const totalItems = storage.reduce((sum, item) => sum + item.quantity, 0);
   cartAmountDisplay.innerText = totalItems;
 }
 
@@ -17,7 +17,7 @@ function renderCartItems() {
       </tr>
     `;
   
-    if (basket.length === 0) {
+    if (storage.length === 0) {
       const row = document.createElement("tr");
       row.innerHTML = `
         <td colspan="4" style="text-align: center; font-style: italic;">Your cart is empty.</td>
@@ -28,7 +28,7 @@ function renderCartItems() {
       return;
     }
   
-    basket.forEach(item => {
+    storage.forEach(item => {
       const subtotal = (item.price * item.quantity).toFixed(2);
   
       const row = document.createElement("tr");
@@ -44,10 +44,10 @@ function renderCartItems() {
         const newQuantity = parseInt(e.target.value);
         if (newQuantity < 1) return;
   
-        const itemInBasket = basket.find(x => x.ItemName === item.ItemName);
+        const itemInBasket = storage.find(x => x.ItemName === item.ItemName);
         itemInBasket.quantity = newQuantity;
   
-        localStorage.setItem("userCart", JSON.stringify(basket));
+        localStorage.setItem("storage", JSON.stringify(storage));
         updatedCartCount();
         renderCartItems();
         updateCartTotal();
@@ -55,8 +55,8 @@ function renderCartItems() {
   
       const removeBtn = row.querySelector(".remove-btn");
       removeBtn.addEventListener("click", () => {
-        basket = basket.filter(x => x.ItemName !== item.ItemName);
-        localStorage.setItem("userCart", JSON.stringify(basket));
+        storage = storage.filter(x => x.ItemName !== item.ItemName);
+        localStorage.setItem("storage", JSON.stringify(storage));
         updatedCartCount();
         renderCartItems();
         updateCartTotal();
@@ -70,7 +70,7 @@ function renderCartItems() {
   
 
 function updateCartTotal() {
-  const subtotal = basket.reduce((sum, item) => sum + item.price * item.quantity, 0);
+  const subtotal = storage.reduce((sum, item) => sum + item.price * item.quantity, 0);
   const tax = subtotal * 0.06625;
   const total = subtotal + tax;
 
@@ -82,7 +82,7 @@ function updateCartTotal() {
 
 // Handle the "Continue to Payment" button
 document.getElementById("continueToPayment").addEventListener("click", () => {
-  if (basket.length === 0) {
+  if (storage.length === 0) {
     alert("Your cart is empty!");
     return;
   }
@@ -98,7 +98,7 @@ document.getElementById("continueToPayment").addEventListener("click", () => {
     return;
   }
 
-  const userCart = basket.map(item => ({
+  const userCart = storage.map(item => ({
     ItemName: item.ItemName,
     quantity: item.quantity,
     price: item.price
@@ -106,7 +106,7 @@ document.getElementById("continueToPayment").addEventListener("click", () => {
 
   const selectedTime = localStorage.getItem("orderTime") || "now";
 
-  localStorage.setItem("userCart", JSON.stringify(userCart));
+  localStorage.setItem("storage", JSON.stringify(userCart));
   localStorage.setItem("userCartTiming", orderTiming);
   localStorage.setItem("userCartSelectedTime", selectedTime);
 
@@ -171,3 +171,5 @@ document.getElementById("orderTime").addEventListener("change", (e) => {
 
 renderCartItems();
 updateCartTotal();
+
+
