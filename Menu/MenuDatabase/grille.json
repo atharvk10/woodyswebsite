@@ -59,7 +59,7 @@
                 "type": "multiple",
                 "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
-                {"name": "Water", "price": 2.00}, {"name": "Fountain drink", "price": 2.00},
+                {"name": "Water", "price": 2.00}, {"name": "Fountain Drink", "price": 2.00},
                 {"name": "No drinks", "price": 0}
                 ]
             }
@@ -108,7 +108,7 @@
                 "type": "multiple",
                 "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
-                {"name": "Water", "price": 2.00}, {"name": "Fountain drink", "price": 2.00},
+                {"name": "Water", "price": 2.00}, {"name": "Fountain Drink", "price": 2.00},
                 {"name": "No drinks", "price": 0}
                 ]
             }
@@ -125,7 +125,7 @@
                 "type": "multiple",
                 "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
-                {"name": "Water", "price": 2.00}, {"name": "Fountain drink", "price": 2.00},
+                {"name": "Water", "price": 2.00}, {"name": "Fountain Drink", "price": 2.00},
                 {"name": "No drinks", "price": 0}
                 ]
             }
@@ -142,7 +142,7 @@
                 "type": "multiple",
                 "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
-                {"name": "Water", "price": 2.00}, {"name": "Fountain drink", "price": 2.00},
+                {"name": "Water", "price": 2.00}, {"name": "Fountain Drink", "price": 2.00},
                 {"name": "No drinks", "price": 0}
                 ]
             }
@@ -185,7 +185,7 @@
                 "type": "multiple",
                 "choices": [
                 {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
-                {"name": "Water", "price": 2.00}, {"name": "Fountain drink", "price": 2.00},
+                {"name": "Water", "price": 2.00}, {"name": "Fountain Drink", "price": 2.00},
                 {"name": "No drinks", "price": 0}
                 ]
             }

@@ -13,6 +13,7 @@ async function loadItems(item, id) {
     <h1 class = "itemName">${item.ItemName}</h1>
     <img class = "itemImage" src="${item.ItemImage}" alt="${item.ItemName}">
     <div class="itemDescription">${item.ItemDescription || 'No description available.'}</div>
+    <div class="ingredients">Ingredients: ${ingredients}</div>
     <div class="price-and-buttons">
       <div class="price">Price: $${item.ItemPrice.toFixed(2)}</div>
       <div class="buttons">
@@ -24,7 +25,6 @@ async function loadItems(item, id) {
       </div>
     </div>
     <div class="calories">Calories: ${calories} calories</div>
-    <div class="ingredients">Ingredients: ${ingredients}</div>
     `;
 
   let optionsHTML = '';

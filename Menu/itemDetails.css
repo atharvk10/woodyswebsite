@@ -97,7 +97,7 @@ ul {
 
 .itemName {
     position:relative;
-    left:550px;
+    left:20px;
     top:40px;
     font-size: 50px;
     font-family:cursive;
@@ -130,7 +130,7 @@ ul {
     font-style: italic;
     position: relative;
     left: 550px;
-    bottom:450px;
+    bottom:470px;
     width: 800px;
     font-size:25px;
     font-family:Georgia, 'Times New Roman', Times, serif
@@ -138,24 +138,25 @@ ul {
 }
 
 .itemOptions {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
     font-style: italic;
     position: relative;
-    padding: 4px;
-    left: 550px;
+    padding: 10px;
+    left: 540px;
     bottom:505px;
-    width: 800px;
+    width:700px;
     font-size:20px;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    display: flex;
-    flex-direction: column;
+
 }
 
 .itemOptionsSelections {
     font-style: italic;
     position: relative;
-    padding: 4px;
+    padding: 6px;
     left: 10px;
-    width: 250px;
+    width: 300px;
     font-size:15px;
     border-radius:15px;
     text-align:center;
@@ -166,9 +167,9 @@ ul {
 
 .calories {
     position:relative;
-    font-size:15px;
-    left:900px;
-    bottom:150px;
+    font-size:20px;
+    left:180px;
+    bottom:100px;
     font-style: italic;
     font-family:Georgia, 'Times New Roman', Times, serif
 }
@@ -176,10 +177,11 @@ ul {
 .ingredients {
     position:relative;
     font-size:15px;
-    left:900px;
-    bottom:150px;
-    width: 800px;
+    left:30px;
+    bottom: 10px;
+    width: 500px;
     font-style: italic;
+    text-align: center;
     font-family:Georgia, 'Times New Roman', Times, serif
 
 }
@@ -219,10 +221,9 @@ body {
 
 .price-and-buttons {
     display: flex;
-    gap: 20px;
+    gap: 10px;
     position: relative;
-    left: 750px;
-    bottom: 385px;
+    left:400px;
 }
 
 .price {

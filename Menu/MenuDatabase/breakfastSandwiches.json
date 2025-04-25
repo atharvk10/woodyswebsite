@@ -25,7 +25,7 @@
                 {"name": "No Cheese", "price": 0}
                 ]
             },
-            "Extra cheese": {
+            "Extra Cheese": {
                 "type": "single",
                 "choices": [
                 {"name": "American Cheese", "price": 1.00}, {"name": "Pepper Jack Cheese", "price": 1.00},
@@ -33,7 +33,7 @@
                 {"name": "No Extra Cheese", "price": 0}
                 ]
             },
-            "Extra egg": {
+            "Extra Egg": {
                 "type": "single",
                 "choices": [
                 {"name": "Fried Egg", "price": 2.00}, {"name": "No Extra Egg", "price": 0}
@@ -80,7 +80,7 @@
                 {"name": "No Cheese", "price": 0}
                 ]
             },
-            "Extra egg": {
+            "Extra Egg": {
                 "type": "single",
                 "choices": [
                 {"name": "Fried Egg", "price": 2.00}, {"name": "No Extra Egg", "price": 0}
@@ -127,12 +127,12 @@
                 {"name": "No Cheese", "price": 0}
                 ]
             },
-            "Extra meat": {
+            "Extra Meat": {
                 "type": "single",
                 "choices": [
                 {"name": "Beef Bacon", "price": 2.25}, {"name": "Pork Bacon", "price": 2.25},
                 {"name": "Pork Roll", "price": 2.25}, {"name": "Pork Sausage", "price": 2.25},
-                {"name": "Turkey Bacon", "price": 2.25}
+                {"name": "Turkey Bacon", "price": 2.25}, {"name": "No Extra Meat", "price": 0}
                 ]
             },
             "Breakfast Potatoes": {
@@ -176,7 +176,7 @@
                 {"name": "No Cheese", "price": 0}
                 ]
             },
-            "Extra cheese": {
+            "Extra Cheese": {
                 "type": "single",
                 "choices": [
                 {"name": "American Cheese", "price": 1.00}, {"name": "Pepper Jack Cheese", "price": 1.00},
@@ -184,12 +184,12 @@
                 {"name": "No Extra Cheese", "price": 0}
                 ]
             },
-            "Extra meat": {
+            "Extra Meat": {
                 "type": "single",
                 "choices": [
                 {"name": "Beef Bacon", "price": 2.25}, {"name": "Pork Bacon", "price": 2.25},
                 {"name": "Pork Roll", "price": 2.25}, {"name": "Pork Sausage", "price": 2.25},
-                {"name": "Turkey Bacon", "price": 2.25}
+                {"name": "Turkey Bacon", "price": 2.25}, {"name": "No Extra Meat", "price": 0}
                 ]
             },
             "Breakfast Potatoes": {
@@ -233,7 +233,7 @@
                 {"name": "No Cheese", "price": 0}
                 ]
             },
-            "Extra cheese": {
+            "Extra Cheese": {
                 "type": "single",
                 "choices": [
                 {"name": "American Cheese", "price": 1.00}, {"name": "Pepper Jack Cheese", "price": 1.00},
@@ -241,15 +241,15 @@
                 {"name": "No Extra Cheese", "price": 0}
                 ]
             },
-            "Extra meat": {
+            "Extra Meat": {
                 "type": "single",
                 "choices": [
                 {"name": "Beef Bacon", "price": 2.25}, {"name": "Pork Bacon", "price": 2.25},
                 {"name": "Pork Roll", "price": 2.25}, {"name": "Pork Sausage", "price": 2.25},
-                {"name": "Turkey Bacon", "price": 2.25}
+                {"name": "Turkey Bacon", "price": 2.25}, {"name": "No Extra Meat", "price": 0}
                 ]
             },
-            "Extra egg": {
+            "Extra Egg": {
                 "type": "single",
                 "choices": [
                 {"name": "Fried Egg", "price": 2.00}, {"name": "No Extra Egg", "price": 0}
@@ -296,15 +296,15 @@
                 {"name": "No Cheese", "price": 0}
                 ]
             },
-            "Extra meat": {
+            "Extra Meat": {
                 "type": "single",
                 "choices": [
                 {"name": "Beef Bacon", "price": 2.25}, {"name": "Pork Bacon", "price": 2.25},
                 {"name": "Pork Roll", "price": 2.25}, {"name": "Pork Sausage", "price": 2.25},
-                {"name": "Turkey Bacon", "price": 2.25}
+                {"name": "Turkey Bacon", "price": 2.25}, {"name": "No Extra Meat", "price": 0}
                 ]
             },
-            "Extra egg": {
+            "Extra Egg": {
                 "type": "single",
                 "choices": [
                 {"name": "Fried Egg", "price": 2.00}, {"name": "No Extra Egg", "price": 0}
@@ -351,7 +351,7 @@
                 {"name": "No Cheese", "price": 0}
                 ]
             },
-            "Extra cheese": {
+            "Extra Cheese": {
                 "type": "single",
                 "choices": [
                 {"name": "American Cheese", "price": 1.00}, {"name": "Pepper Jack Cheese", "price": 1.00},
@@ -359,12 +359,12 @@
                 {"name": "No Extra Cheese", "price": 0}
                 ]
             },
-            "Extra meat": {
+            "Extra Meat": {
                 "type": "single",
                 "choices": [
                 {"name": "Beef Bacon", "price": 2.25}, {"name": "Pork Bacon", "price": 2.25},
                 {"name": "Pork Roll", "price": 2.25}, {"name": "Pork Sausage", "price": 2.25},
-                {"name": "Turkey Bacon", "price": 2.25}
+                {"name": "Turkey Bacon", "price": 2.25}, {"name": "No Extra Meat", "price": 0.00}
                 ]
             },
             "Breakfast Potatoes": {
@@ -408,7 +408,7 @@
                 {"name": "No Cheese", "price": 0}
                 ]
             },
-            "Extra cheese": {
+            "Extra Cheese": {
                 "type": "single",
                 "choices": [
                 {"name": "American Cheese", "price": 1.00}, {"name": "Pepper Jack Cheese", "price": 1.00},
@@ -416,12 +416,12 @@
                 {"name": "No Extra Cheese", "price": 0}
                 ]
             },
-            "Extra meat": {
+            "Extra Meat": {
                 "type": "single",
                 "choices": [
                 {"name": "Beef Bacon", "price": 2.25}, {"name": "Pork Bacon", "price": 2.25},
                 {"name": "Pork Roll", "price": 2.25}, {"name": "Pork Sausage", "price": 2.25},
-                {"name": "Turkey Bacon", "price": 2.25}
+                {"name": "Turkey Bacon", "price": 2.25}, {"name": "No Extra Meat", "price": 0.00}
                 ]
             },
             "Extra egg": {
@@ -471,15 +471,15 @@
                 {"name": "No Cheese", "price": 0}
                 ]
             },
-            "Extra meat": {
+            "Extra Meat": {
                 "type": "single",
                 "choices": [
                 {"name": "Beef Bacon", "price": 2.25}, {"name": "Pork Bacon", "price": 2.25},
                 {"name": "Pork Roll", "price": 2.25}, {"name": "Pork Sausage", "price": 2.25},
-                {"name": "Turkey Bacon", "price": 2.25}
+                {"name": "Turkey Bacon", "price": 2.25}, {"name": "No Extra Meat", "price": 0.00}
                 ]
             },
-            "Extra egg": {
+            "Extra Egg": {
                 "type": "single",
                 "choices": [
                 {"name": "Fried Egg", "price": 2.00}, {"name": "No Extra Egg", "price": 0}
@@ -526,7 +526,7 @@
                 {"name": "No Cheese", "price": 0}
                 ]
             },
-            "Extra cheese": {
+            "Extra Cheese": {
                 "type": "single",
                 "choices": [
                 {"name": "American Cheese", "price": 1.00}, {"name": "Pepper Jack Cheese", "price": 1.00},
@@ -534,12 +534,12 @@
                 {"name": "No Extra Cheese", "price": 0}
                 ]
             },
-            "Extra meat": {
+            "Extra Meat": {
                 "type": "single",
                 "choices": [
                 {"name": "Beef Bacon", "price": 2.25}, {"name": "Pork Bacon", "price": 2.25},
                 {"name": "Pork Roll", "price": 2.25}, {"name": "Pork Sausage", "price": 2.25},
-                {"name": "Turkey Bacon", "price": 2.25}
+                {"name": "Turkey Bacon", "price": 2.25}, {"name": "No Extra Meat", "price": 0.00}
                 ]
             },
             "Breakfast Potatoes": {
@@ -583,7 +583,7 @@
                 {"name": "No Cheese", "price": 0}
                 ]
             },
-            "Extra cheese": {
+            "Extra Cheese": {
                 "type": "single",
                 "choices": [
                 {"name": "American Cheese", "price": 1.00}, {"name": "Pepper Jack Cheese", "price": 1.00},
@@ -591,15 +591,15 @@
                 {"name": "No Extra Cheese", "price": 0}
                 ]
             },
-            "Extra meat": {
+            "Extra Meat": {
                 "type": "single",
                 "choices": [
                 {"name": "Beef Bacon", "price": 2.25}, {"name": "Pork Bacon", "price": 2.25},
                 {"name": "Pork Roll", "price": 2.25}, {"name": "Pork Sausage", "price": 2.25},
-                {"name": "Turkey Bacon", "price": 2.25}
+                {"name": "Turkey Bacon", "price": 2.25}, {"name": "No Extra Meat", "price": 0.00}
                 ]
             },
-            "Extra egg": {
+            "Extra Egg": {
                 "type": "single",
                 "choices": [
                 {"name": "Fried Egg", "price": 2.00}, {"name": "No Extra Egg", "price": 0}
@@ -646,15 +646,15 @@
                 {"name": "No Cheese", "price": 0}
                 ]
             },
-            "Extra meat": {
+           "Extra Meat": {
                 "type": "single",
                 "choices": [
                 {"name": "Beef Bacon", "price": 2.25}, {"name": "Pork Bacon", "price": 2.25},
                 {"name": "Pork Roll", "price": 2.25}, {"name": "Pork Sausage", "price": 2.25},
-                {"name": "Turkey Bacon", "price": 2.25}
+                {"name": "Turkey Bacon", "price": 2.25}, {"name": "No Extra Meat", "price": 0.00}
                 ]
             },
-            "Extra egg": {
+            "Extra Egg": {
                 "type": "single",
                 "choices": [
                 {"name": "Fried Egg", "price": 2.00}, {"name": "No Extra Egg", "price": 0}
@@ -701,7 +701,7 @@
                 {"name": "No Cheese", "price": 0}
                 ]
             },
-            "Extra cheese": {
+            "Extra Cheese": {
                 "type": "single",
                 "choices": [
                 {"name": "American Cheese", "price": 1.00}, {"name": "Pepper Jack Cheese", "price": 1.00},
@@ -709,12 +709,12 @@
                 {"name": "No Extra Cheese", "price": 0}
                 ]
             },
-            "Extra meat": {
+            "Extra Meat": {
                 "type": "single",
                 "choices": [
                 {"name": "Beef Bacon", "price": 2.25}, {"name": "Pork Bacon", "price": 2.25},
                 {"name": "Pork Roll", "price": 2.25}, {"name": "Pork Sausage", "price": 2.25},
-                {"name": "Turkey Bacon", "price": 2.25}
+                {"name": "Turkey Bacon", "price": 2.25}, {"name": "No Extra Meat", "price": 0.00}
                 ]
             },
             "Breakfast Potatoes": {
@@ -758,7 +758,7 @@
                 {"name": "No Cheese", "price": 0}
                 ]
             },
-            "Extra cheese": {
+            "Extra Cheese": {
                 "type": "single",
                 "choices": [
                 {"name": "American Cheese", "price": 1.00}, {"name": "Pepper Jack Cheese", "price": 1.00},
@@ -766,12 +766,12 @@
                 {"name": "No Extra Cheese", "price": 0}
                 ]
             },
-            "Extra meat": {
+            "Extra Meat": {
                 "type": "single",
                 "choices": [
                 {"name": "Beef Bacon", "price": 2.25}, {"name": "Pork Bacon", "price": 2.25},
                 {"name": "Pork Roll", "price": 2.25}, {"name": "Pork Sausage", "price": 2.25},
-                {"name": "Turkey Bacon", "price": 2.25}
+                {"name": "Turkey Bacon", "price": 2.25}, {"name": "No Extra Meat", "price": 0.00}
                 ]
             },
             "Extra egg": {
@@ -821,15 +821,15 @@
                 {"name": "No Cheese", "price": 0}
                 ]
             },
-            "Extra meat": {
+            "Extra Meat": {
                 "type": "single",
                 "choices": [
                 {"name": "Beef Bacon", "price": 2.25}, {"name": "Pork Bacon", "price": 2.25},
                 {"name": "Pork Roll", "price": 2.25}, {"name": "Pork Sausage", "price": 2.25},
-                {"name": "Turkey Bacon", "price": 2.25}
+                {"name": "Turkey Bacon", "price": 2.25}, {"name": "No Extra Meat", "price": 0.00}
                 ]
             },
-            "Extra egg": {
+            "Extra Egg": {
                 "type": "single",
                 "choices": [
                 {"name": "Fried Egg", "price": 2.00}, {"name": "No Extra Egg", "price": 0}
