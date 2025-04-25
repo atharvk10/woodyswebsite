@@ -1,95 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
-    <meta name = "author" content = "Yes, We Do Byte">
-    <meta name = "keywords" content = "woodys, menu, order">
-    <link rel = "stylesheet" href="paymentPage.css">
-    <link rel = "shortcut icon" href = "/img/woodyLogo.jpeg"> <!-- The code to add an icon before your title! -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title> Woody's Cafe Payment </title>
+  <meta charset="UTF-8">
+  <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+  <meta name = "author" content = "Yes, We Do Byte">
+  <meta name = "keywords" content = "woodys, menu, order">
+  <link rel = "stylesheet" href="paymentPage.css">
+  <link rel = "shortcut icon" href = "/img/woodyLogo.jpeg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <title>Woody's Cafe Payment</title>
 </head>
 <body>
-    <ul class="navigation">
-        <li id="PaymentTitle">Woody's Cafe</li> 
-        <li id="paymentHomeButton"><a href="../Home/homePage.html" target="_blank" style = "text-decoration: none">Home</a></li>
-        <li id="paymentMenuButton"><a href="../Menu/menuPage.html" target="_blank" style = "text-decoration: none">Menu</a></li>
-        <li id="paymentLoginButton"><a href="../Login/loginPage.html" target="_blank" style = "text-decoration: none">Login</a></li>
-        <a href = "../Cart/cartPage.html", target = "_blank", style = "text-decoration: none">
-            <li id = "cartButton">
-                <i class="bi bi-cart4"></i>
-                <div class="cartAmount">0</div>
-            </li>
-        </a>
-    </ul>
-    <h2 id="PaymentTitle">Payment Form</h2>
+  <ul class="navigation">
+    <li id="PaymentTitle">Woody's Cafe</li> 
+    <li id="paymentHomeButton"><a href="../Home/homePage.html" target="_blank" style="text-decoration: none">Home</a></li>
+    <li id="paymentMenuButton"><a href="../Menu/menuPage.html" target="_blank" style="text-decoration: none">Menu</a></li>
+    <li id="paymentLoginButton"><a href="../Login/loginPage.html" target="_blank" style="text-decoration: none">Login</a></li>
+    <a href="../Cart/cartPage.html" style="text-decoration: none">
+      <li id="cartButton">
+        <i class="bi bi-cart4"></i>
+        <div class="cartAmount">0</div>
+      </li>
+    </a>
+  </ul>
 
-    <div id="orderSummary" style="text-align: center; font-family: 'Trebuchet MS'; margin-bottom: 30px;">
+  <h2 id="PaymentTitle">Payment Form</h2>
 
+  <div id="orderSummary" style="text-align: center; font-family: 'Trebuchet MS'; margin-bottom: 30px;"></div>
+
+  <form id="formbody">
+    <div class="namegroup">
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname"><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname"><br>
     </div>
 
-    <form id = "formbody">
-        <div class="namegroup">
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname"><br>
-        </div>
+    <div class="paymentgroup">
+      <p>Payment type: </p>
+      <input type="radio" id="visa" name="paymentType" value="visa">
+      <label for="visa">Visa</label><br>
+      <input type="radio" id="paypal" name="paymentType" value="paypal">
+      <label for="paypal">PayPal</label><br>
+      <input type="radio" id="masterc" name="paymentType" value="masterc">
+      <label for="masterc">Mastercard</label>
+      <input type="radio" id="ruexp" name="paymentType" value="ruexp">
+      <label for="ruexp">RUExpress</label>
+      <input type="radio" id="mealswipe" name="paymentType" value="mealswipe">
+      <label for="mealswipe">Meal Swipe</label>
+    </div>
 
-        <div class="paymentgroup">
-            <p>Payment type: </p>
-            <input type="radio" id="visa" name="paymentType" value="visa">
-            <label for="visa">Visa</label><br>
-            <input type="radio" id="paypal" name="paymentType" value="paypal">
-            <label for="paypal">PayPal</label><br>
-            <input type="radio" id="masterc" name="paymentType" value="masterc">
-            <label for="masterc">Mastercard</label>
-            <input type="radio" id="ruexp" name="paymentType" value="ruexp">
-            <label for="ruexp">RUExpress</label>
-            <input type="radio" id="mealswipe" name="paymentType" value="mealswipe">
-            <label for="mealswipe">Meal Swipe</label>
-        </div>
+    <div class="cardgroup">
+      <label for="cardnum">Credit Card Number:</label><br>
+      <input type="text" id="cardnum" name="cardnum"><br>
+      <label for="carddate">Card Expiration Date:</label><br>
+      <input type="text" id="carddate" name="carddate"><br>
+      <label for="cardcvc">Security Code:</label><br>
+      <input type="text" id="cardcvc" name="cardcvc"><br>
+    </div>
 
-        <div class="cardgroup">
-            <label for="cardnum">Credit Card Number:</label><br>
-            <input type="text" id="cardnum" name="cardnum"><br>
-    
-            <label for="carddate">Card Expiration Date:</label><br>
-            <input type="text" id="carddate" name="carddate"><br>
-    
-            <label for="cardcvc">Security Code:</label><br>
-            <input type="text" id="cardcvc" name="cardcvc"><br>
-        </div>
-        <p></p>
-        <label for="phone">Phone Number:</label><br>
-        <input type="text" id="phone" name="phone"><br>
+    <p></p>
+    <label for="phone">Phone Number:</label><br>
+    <input type="text" id="phone" name="phone"><br>
+    <input type="submit" value="Submit">
+  </form>
 
-        <input type="submit" value="Submit">
-    </form>
+  <!-- Display the cart summary -->
+  <script>
+    const cart = JSON.parse(localStorage.getItem("userCart")) || [];
+    const summaryDiv = document.getElementById("orderSummary");
+
+    if (summaryDiv) {
+      let html = `<h3>Your Order:</h3><ul style="list-style: none; padding: 0;">`;
+      cart.forEach(item => {
+        html += `<li>${item.quantity} x ${item.ItemName} @ $${item.price.toFixed(2)}</li>`;
+      });
+      html += `</ul>`;
+      summaryDiv.innerHTML = html;
+    }
+  </script>
+
+  <!-- Handle form submission and order POST -->
+  <script>
+    document.getElementById("formbody").addEventListener("submit", async function(e) {
+      e.preventDefault(); // ✅ Prevent form from reloading the page
+  
+      // ✅ Add debug logs
+      const netID = sessionStorage.getItem("netID");
+      const cart = JSON.parse(localStorage.getItem("userCart")) || [];
+  
+      console.log("NETID:", netID);
+      console.log("CART:", cart);
+      console.log("CART LENGTH:", cart.length);
+  
+      if (!netID || cart.length === 0) {
+        alert("Missing NetID or cart is empty.");
+        return;
+      }
+  
+      const menuItems = cart.map(item => `${item.ItemName} x${item.quantity}`);
+      const readyTime = new Date(Date.now() + 15 * 60000).toISOString();
+  
+      const order = {
+        orderID: Date.now(),
+        netID: netID,
+        menuItems: menuItems,
+        readyBy: readyTime,
+        status: "pending"
+      };
+  
+      try {
+        const res = await fetch("http://localhost:3000/orders", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(order)
+        });
+  
+        if (res.ok) {
+          alert("Order placed successfully!");
+          localStorage.removeItem("userCart");
+          window.location.href = "thankyou.html";
+        } else {
+          alert("Failed to place order.");
+        }
+      } catch (error) {
+        console.error("Submit failed:", error);
+        alert("An error occurred while placing the order.");
+      }
+    });
+  </script>
+  
 </body>
 </html>
-<script>
-    const cart = JSON.parse(localStorage.getItem("userCart")) || [];
-    const timing = localStorage.getItem("userCartTiming") || "";
-    const selectedTime = localStorage.getItem("userCartSelectedTime") || "";
-
-    console.log("User Cart: ", cart);
-    console.log("Order Timing: ", timing);
-    console.log("Pickup Time: ", selectedTime);
-
-    const summaryDiv = document.getElementById("orderSummary");
-    if (summaryDiv) {
-        let html = `<h3> Your Order:</h3><ul style="list-style: none; padding: 0;">`;
-            cart.forEach(item => {
-                html+= `<li>${item.quantity} x ${item.name} @ $${item.price.toFixed(2)}</li>`;
-   
-            });
-            html += `</ul>`;
-            html += `<p><strong>Order Timing:</strong> ${timing}<p>`;
-            if (timing === "later") {
-                html += `<p><strong>Pickup Time:</strong> ${selectedTime}</p>`;
-            }
-            summaryDiv.innerHTML = html;
-    }
-</script>

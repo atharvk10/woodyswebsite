@@ -20,26 +20,19 @@
 }
 
 #ordersContainer {
-    margin-top: 20px;
-  }
-  
-  .order {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  .order p {
-    margin-right: 20px;
-  }
-  
-  select {
-    padding: 5px;
-    font-size: 16px;
-  }
-  
-  button {
-    margin-left: 10px;
-    padding: 5px 10px;
-    cursor: pointer;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 20px;
+}
+
+.orderCard {
+  border: 2px solid #444;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+.orderCard button {
+  margin-right: 10px;
+  padding: 5px 10px;
+}

@@ -3,7 +3,8 @@ const sqlite3 = require('sqlite3').verbose();
 const app = express();
 app.use(express.json());
 
-const db = new sqlite3.Database('orders.db');
+const path = require('path');
+const db = new sqlite3.Database(path.join(__dirname, '../Payment/orders.db'));
 
 //view current orders
 app.get('/kitchen/orders', (req, res) => {
