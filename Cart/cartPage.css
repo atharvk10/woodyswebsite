@@ -61,11 +61,10 @@
     font-size: 30px;
     line-height: 20px;
     padding-left: 50px;
-    padding-top: 5px;
+    padding-top: 25px;
     color: #281d1b;
     text-decoration: none;
     position: relative;
-    vertical-align: top;
 }
 
 #cartButton:hover {
@@ -75,7 +74,7 @@
 .cartAmount{
     font-size: 20px;
     position: absolute;
-    bottom: -10px;
+    bottom: -15px;
     left: 30px;
     background-color: rgb(203, 33, 33);
     color: white;
@@ -149,7 +148,7 @@ h2{
 
 .navigation li a {
     text-decoration: none;
-    color: black; /* or whatever your default color is */
+    color: black; 
 }
 
 .navigation li a:hover {

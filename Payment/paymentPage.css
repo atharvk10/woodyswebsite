@@ -1,4 +1,16 @@
-#PaymentTitle {
+#PaymentTitle{
+    list-style-type: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 25px;
+    text-align: left;
+    padding-top: 30px;
+    padding-left: 25px;
+    color: #d62100;
+}
+
+#PaymentTitle2 {
     list-style-type: none;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 400;
@@ -7,6 +19,7 @@
     text-align: center;
     padding-top: 30px;
     padding-bottom: 10px;
+    margin-top: 20px;
     color: #ffffff;
     background-color: rgb(234, 94, 94); 
 }
@@ -26,35 +39,32 @@
 }
 
 #paymentHomeButton {
-    font-family: "Public Sans";
+    font-family: "Trebuchet MS";
     font-weight: 700;
     font-size: 24px;
     line-height: 20px;
     padding-left: 750px;
-    padding-top: 30px;
-    color:black;
+    color: #281d1b;
     text-decoration: none;
 }
 
 #paymentMenuButton {
-    font-family: "Public Sans";
+    font-family: "Trebuchet MS";
     font-weight: 700;
     font-size: 24px;
     line-height: 20px;
     padding-left: 50px;
-    padding-top: 30px;
-    color:black;
+    color: #281d1b;
     text-decoration: none;
 }
 
 #paymentLoginButton {
-    font-family: "Public Sans";
+    font-family: "Trebuchet MS";
     font-weight: 700;
     font-size: 24px;
     line-height: 20px;
     padding-left: 50px;
-    padding-top: 30px;
-    color:black;
+    color: #281d1b;
     text-decoration: none;
 }
 
@@ -70,6 +80,10 @@
     position: relative;
 }
 
+#cartButton:hover {
+    color: red;
+}
+
 .cartAmount{
     font-size: 20px;
     position: absolute;
@@ -81,35 +95,24 @@
     border-radius: 50%;
 }
 
-#cartButton:hover {
-    color: red;
-}
-
 .navigation li a {
     text-decoration: none;
-    color: black; /* or whatever your default color is */
+    color: black; 
 }
 
 .navigation li a:hover {
     color: red;
 }
 
-ul {
+li {
     list-style-type: none;
+    display: inline-block;
+}
+
+ul {
+    display: inline-block;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-}
-  
-li {
-    float: left;
-}
-  
-li a {
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
 }
 
 input[type=text] {

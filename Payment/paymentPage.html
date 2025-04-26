@@ -6,7 +6,7 @@
     <meta name = "author" content = "Yes, We Do Byte">
     <meta name = "keywords" content = "woodys, menu, order">
     <link rel = "stylesheet" href="paymentPage.css">
-    <link rel = "shortcut icon" href = "/img/woodyLogo.jpeg"> <!-- The code to add an icon before your title! -->
+    <link rel = "shortcut icon" href = "/img/woodyLogo.jpeg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title> Woody's Cafe Payment </title>
 </head>
@@ -19,15 +19,13 @@
         <a href = "../Cart/cartPage.html", target = "_blank", style = "text-decoration: none">
             <li id = "cartButton">
                 <i class="bi bi-cart4"></i>
-                <div class="cartAmount">0</div>
+                <div id="cartnavbar" class="cartAmount">0</div>
             </li>
         </a>
     </ul>
-    <h2 id="PaymentTitle">Payment Form</h2>
+    <h2 id="PaymentTitle2">Payment Form</h2>
 
-    <div id="orderSummary" style="text-align: center; font-family: 'Trebuchet MS'; margin-bottom: 30px;">
-
-    </div>
+    <div id="orderSummary" style="text-align: center; font-family: 'Trebuchet MS'; margin-bottom: 30px;"></div>
 
     <form id = "formbody">
         <div class="namegroup">
@@ -65,7 +63,7 @@
         <label for="phone">Phone Number:</label><br>
         <input type="text" id="phone" name="phone"><br>
 
-        <input type="submit" value="Submit">
+        <input id="submitButton" type="submit" value="Submit">
     </form>
 </body>
 </html>
@@ -82,7 +80,7 @@
     if (summaryDiv) {
         let html = `<h3> Your Order:</h3><ul style="list-style: none; padding: 0;">`;
             cart.forEach(item => {
-                html+= `<li>${item.quantity} x ${item.name} @ $${item.price.toFixed(2)}</li>`;
+                html+= `<li>${item.quantity} x ${item.ItemName} @ $${item.price.toFixed(2)}</li>`;
    
             });
             html += `</ul>`;
@@ -91,5 +89,13 @@
                 html += `<p><strong>Pickup Time:</strong> ${selectedTime}</p>`;
             }
             summaryDiv.innerHTML = html;
+    }
+
+    const submitButton = document.getElementById("submitButton");
+    if (submitButton) {
+        submitButton.addEventListener("click", function(event) {
+            event.preventDefault(); 
+            window.location.href = "../Payment/OrderSubmitPage.html";
+        });
     }
 </script>

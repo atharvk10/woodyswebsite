@@ -28,14 +28,14 @@ function renderCartItems(){
         const input = row.querySelector("input");
         input.addEventListener("change", (e)=> {
             const newQuantity = parseInt(e.target.value);
-            if (newQuantity < 1) return;
-
-            const itemsInBasket = basket.find((x) => x.ItemName === item.ItemName);
-            itemsInBasket.quantity = newQuantity;
-
+            if (newQuantity < 1){
+                basket = basket.filter((x) => x.ItemName !== item.ItemName);
+            }else{
+                const itemsInBasket = basket.find((x) => x.ItemName === item.ItemName);
+                itemsInBasket.quantity = newQuantity;
+            }
 
             localStorage.setItem("basket", JSON.stringify(basket));
-
 
             updatedCartCount();   
             localStorage.setItem("storage", JSON.stringify(basket)); 
