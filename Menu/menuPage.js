@@ -6,7 +6,7 @@ function smoothScrollToSection(event, sectionID) {
   }
 }
 
-let userCart = JSON.parse(localStorage.getItem("storage")) || [];
+let userCart = JSON.parse(localStorage.getItem("userCart")) || [];
 
 let increase = (itemToAdd) => {
     let itemFind = "";
@@ -25,7 +25,7 @@ let increase = (itemToAdd) => {
     } else {
       itemFind.quantity += 1;
     }
-    localStorage.setItem("storage", JSON.stringify(userCart));
+    localStorage.setItem("userCart", JSON.stringify(userCart));
     updateQuantity(itemToAdd.ItemName);
 };
 
@@ -46,7 +46,7 @@ let decrease = (ItemName) => {
       itemFind.quantity -= 1;
     }
     userCart = userCart.filter((x) => x.quantity !== 0);
-    localStorage.setItem("storage", JSON.stringify(userCart));
+    localStorage.setItem("userCart", JSON.stringify(userCart));
     updateQuantity(itemToAdd.ItemName);
 };
 

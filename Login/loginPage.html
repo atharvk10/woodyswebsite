@@ -10,7 +10,7 @@
         <img src="rutgers-netid-logo.png" alt="Rutgers Logo" class="logo"/>
         <div class="login-container">
             <h1>NetID Login</h1>
-            <form id = "loginForm">
+            <form id="loginForm">
                 <label for="netid">NetID:</label>
                 <input type="text" id="netid" name="netid" required/>
             
@@ -33,7 +33,24 @@
             <p class="footer">For security reasons, please log out and exit your web browser when you are done accessing services that require authentication!</p>
         </div>
     </div>
+
     <script src="users.js"></script>
-    <script src = "login.js"></script>
+    <script src="login.js"></script>
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(e) {
+            e.preventDefault(); // prevent default form submission
+
+            const netid = document.getElementById("netid").value.trim();
+            const password = document.getElementById("password").value.trim();
+
+            // Basic simulation of login — add real validation if needed
+            if (netid && password) {
+                sessionStorage.setItem("netID", netid);
+                window.location.href = "menu.html"; // go to next page
+            } else {
+                alert("Please enter valid NetID and password.");
+            }
+        });
+    </script>
 </body>
 </html>

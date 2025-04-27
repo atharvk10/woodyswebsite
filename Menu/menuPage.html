@@ -89,6 +89,34 @@
     <div class = "item-container" id = "traditional"> </div>
     <br> <br> <br> <br> <br>
 
-
+    <script>
+        function addItemToCart(itemName) {
+          let cart = JSON.parse(localStorage.getItem("cart")) || [];
+          cart.push(itemName);
+          localStorage.setItem("cart", JSON.stringify(cart));
+      
+          const cartCounter = document.getElementById("cartnavbar");
+          if (cartCounter) {
+            cartCounter.textContent = cart.length;
+          }
+        }
+      
+        function smoothScrollToSection(event, id) {
+          event.preventDefault();
+          const section = document.getElementById(id);
+          if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      
+        window.onload = function () {
+          const cart = JSON.parse(localStorage.getItem("cart")) || [];
+          const cartCounter = document.getElementById("cartnavbar");
+          if (cartCounter) {
+            cartCounter.textContent = cart.length;
+          }
+        };
+      </script>
+      
 </body>
 </html>
