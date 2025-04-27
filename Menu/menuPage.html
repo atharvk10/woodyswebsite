@@ -17,12 +17,12 @@
         <li id="menuMenuButton"><a href="../Menu/menuPage.html" target="_blank" style = "text-decoration: none">Menu</a></li>
         <li id="menuStudentAccButton"><a href="../Login/studentAccPage.html" target="_blank" style = "text-decoration: none">My Account</a></li>
 
-        <a href = "../Cart/cartPage.html", target = "_blank", style = "text-decoration: none">
-            <li id = "cartButton">
+        <li id = "cartButton">
+            <a href = "../Cart/cartPage.html" target = "_blank" style = "text-decoration: none">
                 <i class="bi bi-cart4"></i>
                 <div id="cartnavbar" class="cartAmount">0</div>
-            </li>
-        </a>
+            </a>
+        </li>
     </ul>
 
     <div class = "sidebar">
@@ -91,7 +91,7 @@
 
     <script>
         function addItemToCart(itemName) {
-          let cart = JSON.parse(localStorage.getItem("cart")) || [];
+          let cart = JSON.parse(localStorage.getItem("userCart")) || [];
           cart.push(itemName);
           localStorage.setItem("cart", JSON.stringify(cart));
       
@@ -110,7 +110,7 @@
         }
       
         window.onload = function () {
-          const cart = JSON.parse(localStorage.getItem("cart")) || [];
+          const cart = JSON.parse(localStorage.getItem("userCart")) || [];
           const cartCounter = document.getElementById("cartnavbar");
           if (cartCounter) {
             cartCounter.textContent = cart.length;
