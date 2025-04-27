@@ -2,16 +2,47 @@
     {
         "ItemName": "Crispy BBQ Chicken and Bacon Wrap",
         "ItemPrice": 7.25, 
-        "ItemDescription":"",
-        "ItemImage": "../img/chicken_bacon_wrap.jpg"
+        "ItemDescription":"Bold, smoky, and full of crunch. This wrap features crispy chicken, crispy bacon, melted cheese, fresh lettuce, juicy tomatoes, and grilled onions, all drizzled with tangy barbecue sauce and wrapped in your choice of tortilla. Toasted or untoasted — you call it.",
+        "ItemImage": "../img/chicken_bacon_wrap.jpg",
+        "ItemIngredients": ["Tortilla wrap", "chicken", "bacon", "barbecue sauce", "lettuce", "tomatoes", "cheese", "onions", "salt", "pepper"],
+        "ItemOptions": {
+            "Toasted": {
+                "type": "single",
+                "choices": [
+                {"name": "Toasted", "price": 0}, {"name": "Not Toasted", "price": 0}
+                ]
+            },
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
+                {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
+                {"name": "Water", "price": 2.00}, {"name": "Fountain Drink", "price": 2.00},
+                {"name": "No drinks", "price": 0}
+                ]
+            }
+        }
     },
     {
         "ItemName": "Hot Knight Wrap", 
         "ItemPrice": 7.25, 
-        "ItemDescription":"",
-        "ItemImage": "../img/hot_knight_wrap.jpg"
+        "ItemDescription":"Bold flavor in every bite. This wrap combines juicy grilled chicken, crispy bacon, melted cheese, fresh lettuce, ripe tomatoes, and grilled onions, all coated in sweet and smoky barbecue sauce. Wrapped in a warm tortilla and seasoned with a dash of salt and pepper. Toasted or not — your call.",
+        "ItemIngredients": ["Tortilla wrap", "chicken", "bacon", "barbecue sauce", "lettuce", "tomatoes", "cheese", "onions", "salt", "pepper"],
+        "ItemOptions": {
+            "Toasted": {
+                "type": "single",
+                "choices": [
+                {"name": "Toasted", "price": 0}, {"name": "Not Toasted", "price": 0}
+                ]
+            },
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
+                {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
+                {"name": "Water", "price": 2.00}, {"name": "Fountain Drink", "price": 2.00},
+                {"name": "No drinks", "price": 0}
+                ]
+            }
+        }
     }
-    
-
 ]
 

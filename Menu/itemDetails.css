@@ -12,7 +12,7 @@
 
 #itemHomeButton {
     list-style-type: none;
-    font-family: "Public Sans";
+    font-family: "Trebuchet MS";
     font-weight: 700;
     font-size: 24px;
     line-height: 20px;
@@ -23,7 +23,7 @@
 }
 
 #itemMenuButton {
-    font-family: "Public Sans";
+    font-family: "Trebuchet MS";
     font-weight: 700;
     font-size: 24px;
     line-height: 20px;
@@ -33,7 +33,7 @@
 }
 
 #itemLoginButton {
-    font-family: "Public Sans";
+    font-family: "Trebuchet MS";
     font-weight: 700;
     font-size: 24px;
     line-height: 20px;
@@ -97,7 +97,7 @@ ul {
 
 .itemName {
     position:relative;
-    left:550px;
+    left:20px;
     top:40px;
     font-size: 50px;
     font-family:cursive;
@@ -119,8 +119,8 @@ ul {
 .price {
     position:relative;
     font-size:25px;
-    left:550px;
-    bottom:175px;
+    bottom:50px;
+    left: 150px;
     font-style: italic;
     font-family:Georgia, 'Times New Roman', Times, serif
 
@@ -130,12 +130,59 @@ ul {
     font-style: italic;
     position: relative;
     left: 550px;
-    bottom:450px;
+    bottom:470px;
     width: 800px;
     font-size:25px;
     font-family:Georgia, 'Times New Roman', Times, serif
 
+}
 
+.itemOptions {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-style: italic;
+    position: relative;
+    padding: 10px;
+    left: 540px;
+    bottom:505px;
+    width:700px;
+    font-size:20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.itemOptionsSelections {
+    font-style: italic;
+    position: relative;
+    padding: 6px;
+    left: 10px;
+    width: 300px;
+    font-size:15px;
+    border-radius:15px;
+    text-align:center;
+    background-color: #d62100;
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+.calories {
+    position:relative;
+    font-size:20px;
+    left:180px;
+    bottom:100px;
+    font-style: italic;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+.ingredients {
+    position:relative;
+    font-size:15px;
+    left:30px;
+    bottom: 10px;
+    width: 500px;
+    font-style: italic;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif
 
 }
 
@@ -144,4 +191,44 @@ body {
     padding: 20px;
 }
 
+.buttons ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+}
 
+.button-item {
+    background-color: #d62100;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.button-item:hover {
+    background-color: #a91a00;
+}
+
+.quantity {
+    font-family: "Trebuchet MS";
+    font-size: 20px;
+    padding: 0 10px;
+    line-height: 35px;
+}
+
+.price-and-buttons {
+    display: flex;
+    gap: 10px;
+    position: relative;
+    left:400px;
+}
+
+.price {
+    font-size: 25px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+}

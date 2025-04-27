@@ -2,40 +2,194 @@
     {
         "ItemName": "Bacon Grilled Cheese",
         "ItemPrice": 6.50, 
-        "ItemDescription":"",
-        "ItemImage": "../img/bacon_grilled_cheese.jpg"
+        "ItemDescription":"Golden-grilled bread stuffed with gooey melted cheese and crispy bacon, toasted to perfection in oil with a hint of salt and pepper.",
+        "ItemImage": "../img/bacon_grilled_cheese.jpg",
+        "ItemIngredients": ["Bacon", "bread", "cheese", "oil", "salt", "pepper"],
+        "ItemOptions": {
+            "Bacon": {
+                "type": "single",
+                "choices": [
+                {"name": "Beef Bacon", "price": 0}, {"name": "Pork Bacon", "price": 0}
+                ]
+            },
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
+                {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
+                {"name": "Water", "price": 2.00}, {"name": "Fountain drink", "price": 2.00},
+                {"name": "No drinks", "price": 0}
+                ]
+            }
+        }
     },
     {
         "ItemName": "Cheese Steak", 
         "ItemPrice": 8.50, 
-        "ItemDescription":"",
-        "ItemImage": "../img/cheesesteak.jpg"
+        "ItemDescription":"A savory sandwich packed with your choice of seasoned beef or chicken, sautéed onions, and melted cheese, all nestled in warm bread.",
+        "ItemImage": "../img/cheesesteak.jpg",
+        "ItemIngredients": ["Beef", "chicken", "onions", "cheese", "bread", "salt", "pepper"],
+        "ItemOptions": {
+            "Cheese": {
+                "type": "single",
+                "choices": [
+                {"name": "American Cheese", "price": 0}, {"name": "Pepper Jack Cheese", "price": 0},
+                {"name": "Provolone Cheese", "price": 0}, {"name": "Swiss Cheese", "price": 0},
+                {"name": "No Cheese", "price": 0}
+                ]
+            },
+            "Toppings": {
+                "type": "multiple",
+                "choices": [
+                {"name": "Onions", "price": 0}, {"name": "Peppers", "price": 0}
+                ]
+            },
+            "Meat": {
+                "type": "single",
+                "choices": [
+                {"name": "Beef", "price": 0}, {"name": "Chicken", "price": 0}
+                ]
+            },
+            "Bacon": {
+                "type": "single",
+                "choices": [
+                {"name": "Bacon", "price": 0}, {"name": "No bacon", "price": 0}
+                ]
+            },
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
+                {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
+                {"name": "Water", "price": 2.00}, {"name": "Fountain Drink", "price": 2.00},
+                {"name": "No drinks", "price": 0}
+                ]
+            }
+        }
     },
     {
         "ItemName": "Chicken Sandwich", 
         "ItemPrice": 6.50, 
-        "ItemDescription":"",
-        "ItemImage": "../img/chickensandwich.jpg"
+        "ItemDescription":"Juicy chicken—crispy or grilled—topped with melted cheese, crisp lettuce, ripe tomato, and onions, finished with your choice of flavorful mayo spread and seasonings, all on fresh bread.",
+        "ItemImage": "../img/chickensandwich.jpg",
+        "ItemIngredients": ["chicken", "cheese", "bread", "lettuce", "tomato", "onions", "oil", "salt", "pepper", "mayonnaise spread"],
+        "ItemOptions": {
+            "Cheese": {
+                "type": "single",
+                "choices": [
+                {"name": "American Cheese", "price": 0}, {"name": "Pepper Jack Cheese", "price": 0},
+                {"name": "Provolone Cheese", "price": 0}, {"name": "Swiss Cheese", "price": 0},
+                {"name": "No Cheese", "price": 0}
+                ]
+            },
+            "Mayonnaise Spread": {
+                "type": "single",
+                "choices": [
+                {"name": "Chipotle Mayonnaise", "price": 0}, {"name": "Mustard", "price": 0},
+                {"name": "Pesto Mayonnaise", "price": 0}, {"name": "Regular Mayonnaise", "price": 0},
+                {"name": "Sriracha Mayonnaise", "price": 0}, {"name": "No Mayonnaise", "price": 0}
+                ]
+            },
+            "Toppings": {
+                "type": "multiple",
+                "choices": [
+                {"name": "Oil", "price": 0}, {"name": "Lettuce", "price": 0},
+  	            {"name": "Tomato", "price": 0}, {"name": "Onions", "price": 0},
+                {"name": "Pickled Chips", "price": 0}, {"name": "Jalapeño Slices", "price": 0},
+                {"name": "Red wine vinegar", "price": 0}, {"name": "Salt", "price": 0},
+                {"name": "Pepper", "price": 0}, {"name": "Oregano", "price": 0}
+                ]
+            },
+            "Chicken": {
+                "type": "single",
+                "choices": [
+                {"name": "Crispy Chicken", "price": 0}, {"name": "Grilled Chicken", "price": 0}
+                ]
+            },
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
+                {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
+                {"name": "Water", "price": 2.00}, {"name": "Fountain Drink", "price": 2.00},
+                {"name": "No drinks", "price": 0}
+                ]
+            }
+        }
     },
     {
         "ItemName": "Grilled Cheese", 
         "ItemPrice": 5.50, 
-        "ItemDescription":"",
-        "ItemImage": "../img/grilledcheese.jpg"
+        "ItemDescription":"A classic comfort food: buttery toasted bread with rich melted cheese, seasoned simply with salt and pepper.",
+        "ItemImage": "../img/grilledcheese.jpg",
+        "ItemIngredients": ["Bread", "butter", "cheese", "salt", "pepper"],
+        "ItemOptions": {
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
+                {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
+                {"name": "Water", "price": 2.00}, {"name": "Fountain Drink", "price": 2.00},
+                {"name": "No drinks", "price": 0}
+                ]
+            }
+        }
     },
     {
         "ItemName": "NAAN Pizza", 
         "ItemPrice": 5.25, 
-        "ItemDescription":"",
-        "ItemImage": "../img/NAANPizza.jpg"
+        "ItemDescription":"A personal-sized pizza made on warm naan bread, topped with savory marinara sauce and a generous layer of melted cheese, drizzled with a touch of oil for a crisp finish.",
+        "ItemImage": "../img/NAANPizza.jpg",
+        "ItemIngredients": ["Naan bread", "cheese", "marinara sauce", "oil"],
+        "ItemOptions": {
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
+                {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
+                {"name": "Water", "price": 2.00}, {"name": "Fountain Drink", "price": 2.00},
+                {"name": "No drinks", "price": 0}
+                ]
+            }
+        }
     },
     {
         "ItemName": "Philly Cheesesteak Wrap", 
         "ItemPrice": 8.50, 
-        "ItemDescription":"",
-        "ItemImage": "../img/phillycheesesteak.jpg"
+        "ItemDescription":"All the bold flavors of a Philly cheesesteak wrapped in a soft tortilla—your choice of beef or chicken, crispy bacon, melty cheese, sautéed onions, and bell peppers.",
+        "ItemImage": "../img/phillycheesesteak.jpg",
+        "ItemIngredients": ["Beef", "chicken", "bacon", "cheese", "onions", "bell peppers", "tortilla"],
+        "ItemOptions": {
+            "Cheese": {
+                "type": "single",
+                "choices": [
+                {"name": "American Cheese", "price": 0}, {"name": "Pepper Jack Cheese", "price": 0},
+                {"name": "Provolone Cheese", "price": 0}, {"name": "Swiss Cheese", "price": 0},
+                {"name": "No Cheese", "price": 0}
+                ]
+            },
+            "Toppings": {
+                "type": "multiple",
+                "choices": [
+                {"name": "Onions", "price": 0}, {"name": "Peppers", "price": 0}
+                ]
+            },
+            "Meat": {
+                "type": "single",
+                "choices": [
+                {"name": "Beef", "price": 0}, {"name": "Chicken", "price": 0}
+                ]
+            },
+            "Bacon": {
+                "type": "single",
+                "choices": [
+                {"name": "Bacon", "price": 0}, {"name": "No bacon", "price": 0}
+                ]
+            },
+            "Drinks": {
+                "type": "multiple",
+                "choices": [
+                {"name": "Coffee", "price": 2.00}, {"name": "Hot Chocolate", "price": 2.00},
+                {"name": "Water", "price": 2.00}, {"name": "Fountain Drink", "price": 2.00},
+                {"name": "No drinks", "price": 0}
+                ]
+            }
+        }
     }
-        
-
 ]
 

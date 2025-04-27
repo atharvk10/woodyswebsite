@@ -1,16 +1,3 @@
-#cartTitle {
-    list-style-type: none;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 10px;
-    color: #ffffff;
-    background-color: rgb(234, 94, 94); 
-}
-
 #formbody{
     background-color: rgb(255, 248, 218); 
 }
@@ -25,35 +12,45 @@
     text-decoration: none;
 }
 
+#cartTitle {
+    list-style-type: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 25px;
+    text-align: left;
+    padding-top: 30px;
+    padding-left: 25px;
+    color: #d62100;
+}
+
 #cartHomeButton {
-    font-family: "Public Sans";
+    font-family: "Trebuchet MS";
     font-weight: 700;
     font-size: 24px;
     line-height: 20px;
-    padding-left: 710px;
-    padding-top: 30px;
+    padding-left: 750px;
     color: #281d1b;
     text-decoration: none;
+
 }
 
 #cartMenuButton {
-    font-family: "Public Sans";
+    font-family: "Trebuchet MS";
     font-weight: 700;
     font-size: 24px;
     line-height: 20px;
     padding-left: 50px;
-    padding-top: 30px;
     color: #281d1b;
     text-decoration: none;
 }
 
 #cartLoginButton {
-    font-family: "Public Sans";
+    font-family: "Trebuchet MS";
     font-weight: 700;
     font-size: 24px;
     line-height: 20px;
     padding-left: 50px;
-    padding-top: 30px;
     color: #281d1b;
     text-decoration: none;
 }
@@ -64,16 +61,21 @@
     font-size: 30px;
     line-height: 20px;
     padding-left: 50px;
-    padding-top: 25px;
+    padding-top: 5px;
     color: #281d1b;
     text-decoration: none;
     position: relative;
+    vertical-align: top;
+}
+
+#cartButton:hover {
+    color: red;
 }
 
 .cartAmount{
     font-size: 20px;
     position: absolute;
-    bottom: -15px;
+    bottom: -10px;
     left: 30px;
     background-color: rgb(203, 33, 33);
     color: white;
@@ -81,58 +83,68 @@
     border-radius: 50%;
 }
 
-#cartButton:hover {
-    color: red;
+body {
+    font-family: "Trebuchet MS";
+    max-width: 100%;
+    overflow: auto;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
 }
 
 ul {
-    list-style-type: none;
+    display: inline-block;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-}
-  
-li {
-    float: left;
-}
-  
-li a {
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
 }
 
 .cartTable{
     margin: 80px auto;
     table{
-        width: 100%;
+        width: 96%;
         border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
     }
     th{
         text-align: left;
         padding: 5px;
-        color: white;
         background: rgb(234, 94, 94);
         font-weight: normal;
+        color:rgb(252, 247, 241)
     }
     td{
         padding: 10px 5px;
+        background:rgb(252, 247, 241);
     }
 }
 
 .cartTotal{
     display: flex;
     justify-content: flex-end;
+    padding-right: 30px;
+    margin-top: 40px;
     table{
         border-top: 3px solid rgb(234, 94, 94);
         width: 100%;
         max-width: 350px;
     }
 }
+.cartTotal td:last-child {
+    font-weight: bold;
+}
 
 h2{
-    font-family: "Trebuchet MS";
+    list-style-type: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 25px;
+    text-align: center;
+    padding-top: 50px;
+    color: #000000;
 }
 
 .navigation li a {
@@ -160,4 +172,43 @@ h2{
 .orderOption.active {
     background-color: rgb(234, 94, 94);
     color: white;
+}
+.orderOption:hover,
+#continueToPayment:hover {
+    background-color: #c94c4c;
+    color: white;
+}
+
+
+#orderTime {
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-family: 'Trebuchet MS';
+    font-size:  16px;
+    border: 1px solid #ccc;
+    background-color: white;
+    transition: border-color 0.3s;
+    margin-top: 10px;
+}
+
+
+#orderTime:focus {
+    border-color: #ea5e5e;
+    outline: none;
+}
+
+#continueToPayment {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+#continueToPayment:hover {
+    box-shadow: 0 6px rgba(0, 0, 0, 0.2);
+}
+
+#timePickerWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
 }

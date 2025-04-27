@@ -7,19 +7,19 @@
   <link rel ="stylesheet" href = "itemDetails.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <script src="itemDetails.js" defer></script>
-
+  <link rel="icon" href="data:,">
 </head>
 <body style = "background-color: #FAFAEB;">
 
     <ul class="navigation">
         <li id="menuTitle">Woody's Cafe</li> 
-        <li id="itemHomeButton"><a href="../Home/homePage.html" target="_blank" style = "text-decoration: none">Home</a></li>
-        <li id="itemMenuButton"><a href="../Menu/menuPage.html" target="_blank" style = "text-decoration: none">Menu</a></li>
-        <li id="itemLoginButton"><a href="../Login/loginPage.html" target="_blank" style = "text-decoration: none">Login</a></li>
-        <a href = "../Cart/cartPage.html", target = "_blank", style = "text-decoration: none">
+        <li id="itemHomeButton"><a href="../Home/homePage.html" target="_self" style = "text-decoration: none">Home</a></li>
+        <li id="itemMenuButton"><a href="../Menu/menuPage.html" target="_self" style = "text-decoration: none">Menu</a></li>
+        <li id="itemLoginButton"><a href="../Login/loginPage.html" target="_self" style = "text-decoration: none">Login</a></li>
+        <a href = "../Cart/cartPage.html", target = "_self", style = "text-decoration: none">
           <li id = "cartButton">
               <i class="bi bi-cart4"></i>
-              <div class="cartAmount">0</div>
+              <div id="cartnavbar" class="cartAmount">0</div>
           </li>
       </a>
     </ul>
@@ -37,8 +37,7 @@
    <div id = "grille"> </div>
    <div id = "pananis"> </div>
    <div id = "traditional"> </div>
-  
-  <br><br>
+
 
 </body>
 </html>

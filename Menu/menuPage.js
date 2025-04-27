@@ -6,10 +6,9 @@ function smoothScrollToSection(event, sectionID) {
   }
 }
 
-let userCart = JSON.parse(localStorage.getItem("storage")) || [];
+let userCart = JSON.parse(localStorage.getItem("userCart")) || [];
 
-let increase = (ItemName) => {
-    let itemToAdd = ItemName;
+let increase = (itemToAdd) => {
     let itemFind = "";
     for (let element of userCart) {
         if (element.ItemName === itemToAdd.ItemName) {
@@ -20,14 +19,15 @@ let increase = (ItemName) => {
     if (itemFind === ""){
       userCart.push({
         ItemName: itemToAdd.ItemName,
-        item: 1,
+        price: Number(itemToAdd.ItemPrice),
+        quantity: 1,
       });
-    }else{
-      itemFind.item += 1;
+    } else {
+      itemFind.quantity += 1;
     }
-    localStorage.setItem("storage", JSON.stringify(userCart));
+    localStorage.setItem("userCart", JSON.stringify(userCart));
     updateQuantity(itemToAdd.ItemName);
-  };
+};
 
 let decrease = (ItemName) => {
     let itemToAdd = ItemName;
@@ -40,21 +40,21 @@ let decrease = (ItemName) => {
     }
     if (itemFind === ""){
         return;
-    }else if(itemFind.item === 0){
+    } else if(itemFind.quantity === 0){
         return;
-    }else{
-      itemFind.item -= 1;
+    } else {
+      itemFind.quantity -= 1;
     }
-    userCart = userCart.filter((x) => x.item !== 0);
-    localStorage.setItem("storage", JSON.stringify(userCart));
+    userCart = userCart.filter((x) => x.quantity !== 0);
+    localStorage.setItem("userCart", JSON.stringify(userCart));
     updateQuantity(itemToAdd.ItemName);
-  };
-  
-  let updateQuantity = (ItemName) => {
+};
+
+let updateQuantity = (ItemName) => {
     let itemFind = userCart.find((x) => x.ItemName === ItemName);
-    if(!itemFind){
+    if (!itemFind){
         const element1 = document.getElementById(ItemName);
-        if(element1){
+        if (element1){
           element1.innerHTML = 0;
         }
         updateCart();
@@ -62,19 +62,19 @@ let decrease = (ItemName) => {
     }
     const element2 = document.getElementById(ItemName);
     if (element2) {
-      element2.innerHTML = itemFind.item;
+      element2.innerHTML = itemFind.quantity;
     }
     updateCart();
-  };  
+};
 
-  let updateCart = () => {
+let updateCart = () => {
     let cartnavbarUP = document.getElementById("cartnavbar");
     let totalCartAmount = 0;
     for (var i = 0; i < userCart.length; ++i) {
-        totalCartAmount = totalCartAmount + userCart[i].item;
+        totalCartAmount = totalCartAmount + userCart[i].quantity;
     }
-    cartnavbarUP.innerHTML=totalCartAmount;
-  }
+    cartnavbarUP.innerHTML = totalCartAmount;
+};
 
 //THIS IS FOR BREAKFAST SANDWICHES
 
@@ -97,7 +97,7 @@ function displayBreakfastSanwiches(items) {
         let existingItem = 0;
         for (let i = 0; i < userCart.length; i++) {
             if (userCart[i].ItemName === item.ItemName) {
-                existingItem = userCart[i].item;
+                existingItem = userCart[i].quantity;
                 break;
             }
         }
@@ -120,9 +120,9 @@ function displayBreakfastSanwiches(items) {
                     <div class="item-price">$${item.ItemPrice.toFixed(2)}</div>
                     <div class="buttons">
                         <ul>
-                            <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
+                            <li onclick="decrease({ItemName: '${item.ItemName}'})" class="button-item"><i class="bi bi-dash"></i></li>
                             <li id="${item.ItemName}" class="quantity">${existingItem}</li>
-                            <li onclick="increase({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-plus"></i></li>
+                            <li onclick='increase(${JSON.stringify(item)})' class="button-item"><i class="bi bi-plus"></i></li>
                         </ul>
                     </div>
                     <img class="item-image" src="${item.ItemImage}" width="250" height="250">
@@ -153,7 +153,7 @@ function displayBreakfast(items) {
         let existingItem = 0;
         for (let i = 0; i < userCart.length; i++) {
             if (userCart[i].ItemName === item.ItemName) {
-                existingItem = userCart[i].item;
+                existingItem = userCart[i].quantity;
                 break;
             }
         }
@@ -178,7 +178,7 @@ function displayBreakfast(items) {
                         <ul>
                             <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
                             <li id="${item.ItemName}" class="quantity">${existingItem}</li>
-                            <li onclick="increase({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-plus"></i></li>
+                            <li onclick='increase(${JSON.stringify(item)})' class="button-item"><i class="bi bi-plus"></i></li>
                         </ul>
                     </div>
                     <img class="item-image" src="${item.ItemImage}" width="250" height="250">
@@ -208,7 +208,7 @@ function displayBreakfastSides(items) {
         let existingItem = 0;
         for (let i = 0; i < userCart.length; i++) {
             if (userCart[i].ItemName === item.ItemName) {
-                existingItem = userCart[i].item;
+                existingItem = userCart[i].quantity;
                 break;
             }
         }
@@ -233,7 +233,7 @@ function displayBreakfastSides(items) {
                         <ul>
                             <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
                             <li id="${item.ItemName}" class="quantity">${existingItem}</li>
-                            <li onclick="increase({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-plus"></i></li>
+                            <li onclick='increase(${JSON.stringify(item)})' class="button-item"><i class="bi bi-plus"></i></li>
                         </ul>
                     </div>
                     <img class="item-image" src="${item.ItemImage}" width="250" height="250">
@@ -264,7 +264,7 @@ function displayBagels(items) {
         let existingItem = 0;
         for (let i = 0; i < userCart.length; i++) {
             if (userCart[i].ItemName === item.ItemName) {
-                existingItem = userCart[i].item;
+                existingItem = userCart[i].quantity;
                 break;
             }
         }
@@ -289,7 +289,7 @@ function displayBagels(items) {
                         <ul>
                             <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
                             <li id="${item.ItemName}" class="quantity">${existingItem}</li>
-                            <li onclick="increase({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-plus"></i></li>
+                            <li onclick='increase(${JSON.stringify(item)})' class="button-item"><i class="bi bi-plus"></i></li>
                         </ul>
                     </div>
                     <img class="item-image" src="${item.ItemImage}" width="250" height="250">
@@ -320,7 +320,7 @@ function displayGrabAndGo(items) {
         let existingItem = 0;
         for (let i = 0; i < userCart.length; i++) {
             if (userCart[i].ItemName === item.ItemName) {
-                existingItem = userCart[i].item;
+                existingItem = userCart[i].quantity;
                 break;
             }
         }
@@ -345,7 +345,7 @@ function displayGrabAndGo(items) {
                         <ul>
                             <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
                             <li id="${item.ItemName}" class="quantity">${existingItem}</li>
-                            <li onclick="increase({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-plus"></i></li>
+                            <li onclick='increase(${JSON.stringify(item)})' class="button-item"><i class="bi bi-plus"></i></li>
                         </ul>
                     </div>
                     <img class="item-image" src="${item.ItemImage}" width="250" height="250">
@@ -376,7 +376,7 @@ function displayLunchBagels(items) {
         let existingItem = 0;
         for (let i = 0; i < userCart.length; i++) {
             if (userCart[i].ItemName === item.ItemName) {
-                existingItem = userCart[i].item;
+                existingItem = userCart[i].quantity;
                 break;
             }
         }
@@ -401,7 +401,7 @@ function displayLunchBagels(items) {
                         <ul>
                             <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
                             <li id="${item.ItemName}" class="quantity">${existingItem}</li>
-                            <li onclick="increase({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-plus"></i></li>
+                            <li onclick='increase(${JSON.stringify(item)})' class="button-item"><i class="bi bi-plus"></i></li>
                         </ul>
                     </div>
                     <img class="item-image" src="${item.ItemImage}" width="250" height="250">
@@ -432,7 +432,7 @@ function displayWraps(items) {
         let existingItem = 0;
         for (let i = 0; i < userCart.length; i++) {
             if (userCart[i].ItemName === item.ItemName) {
-                existingItem = userCart[i].item;
+                existingItem = userCart[i].quantity;
                 break;
             }
         }
@@ -457,7 +457,7 @@ function displayWraps(items) {
                         <ul>
                             <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
                             <li id="${item.ItemName}" class="quantity">${existingItem}</li>
-                            <li onclick="increase({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-plus"></i></li>
+                            <li onclick='increase(${JSON.stringify(item)})' class="button-item"><i class="bi bi-plus"></i></li>
                         </ul>
                     </div>
                     <img class="item-image" src="${item.ItemImage}" width="450" height="400">
@@ -488,7 +488,7 @@ document.addEventListener("DOMContentLoaded", function() {
           let existingItem = 0;
           for (let i = 0; i < userCart.length; i++) {
               if (userCart[i].ItemName === item.ItemName) {
-                  existingItem = userCart[i].item;
+                  existingItem = userCart[i].quantity;
                   break;
               }
           }
@@ -513,7 +513,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         <ul>
                             <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
                             <li id="${item.ItemName}" class="quantity">${existingItem}</li>
-                            <li onclick="increase({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-plus"></i></li>
+                            <li onclick='increase(${JSON.stringify(item)})' class="button-item"><i class="bi bi-plus"></i></li>
                         </ul>
                     </div>
                     <img class="item-image" src="${item.ItemImage}" width="250" height="250">
@@ -543,7 +543,7 @@ document.addEventListener("DOMContentLoaded", function() {
           let existingItem = 0;
           for (let i = 0; i < userCart.length; i++) {
               if (userCart[i].ItemName === item.ItemName) {
-                  existingItem = userCart[i].item;
+                  existingItem = userCart[i].quantity;
                   break;
               }
           }
@@ -568,7 +568,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         <ul>
                             <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
                             <li id="${item.ItemName}" class="quantity">${existingItem}</li>
-                            <li onclick="increase({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-plus"></i></li>
+                            <li onclick='increase(${JSON.stringify(item)})' class="button-item"><i class="bi bi-plus"></i></li>
                         </ul>
                     </div>
                     <img class="item-image" src="${item.ItemImage}" width="250" height="250">
@@ -598,7 +598,7 @@ document.addEventListener("DOMContentLoaded", function() {
           let existingItem = 0;
           for (let i = 0; i < userCart.length; i++) {
               if (userCart[i].ItemName === item.ItemName) {
-                  existingItem = userCart[i].item;
+                  existingItem = userCart[i].quantity;
                   break;
               }
           }
@@ -624,7 +624,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         <ul>
                             <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
                             <li id="${item.ItemName}" class="quantity">${existingItem}</li>
-                            <li onclick="increase({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-plus"></i></li>
+                            <li onclick='increase(${JSON.stringify(item)})' class="button-item"><i class="bi bi-plus"></i></li>
                         </ul>
                     </div>                    
                     <img class="item-image" src="${item.ItemImage}" width="250" height="250">

@@ -1,45 +1,82 @@
-#big_title
-{
-    text-align: center;
-    padding-top: 200px;
-    padding-left: 540px;
-    color: #CC0033;
-    font-family: "Public Sans";
-    font-size: 54px;
-    
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f2f2f2;
 }
 
-#big_title::after
-{
-    content: "";
-    display: block;
-    width: 100%;
-    height: 3px;
-    background: #DEDEDE;
-    margin: 10px auto;
+#big_title {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
 }
 
 #ordersContainer {
-    margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.orderCard {
+  width: 90%;
+  max-width: 600px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.orderCard p {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #555;
+}
+
+.orderCard button {
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #e25b5b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.orderCard button:hover {
+  background-color: #c84a4a;
+}
+
+.orderDetails {
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.orderDetails ul {
+  list-style-type: disc;
+  margin: 10px 0 0 20px;
+  padding: 0;
+}
+
+.orderDetails li {
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #444;
+}
+
+@media (max-width: 600px) {
+  .orderCard {
+    width: 95%;
+    padding: 15px;
   }
-  
-  .order {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+
+  #big_title {
+    font-size: 28px;
   }
-  
-  .order p {
-    margin-right: 20px;
-  }
-  
-  select {
-    padding: 5px;
-    font-size: 16px;
-  }
-  
-  button {
-    margin-left: 10px;
-    padding: 5px 10px;
-    cursor: pointer;
-  }
+}
