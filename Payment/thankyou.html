@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Yes, We Do Byte">
+  <title>Thank You!</title>
+  <link rel="shortcut icon" href="/img/woodyLogo.jpeg">
+  <style>
+    body {
+      font-family: 'Trebuchet MS', sans-serif;
+      background-color: #f8f9fa;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 48px;
+      color: #e25b5b;
+      animation: fadeIn 1.5s ease-in-out forwards;
+    }
+
+    p {
+      font-size: 20px;
+      margin-top: 10px;
+      animation: fadeIn 2s ease-in-out forwards;
+    }
+
+    button {
+      margin-top: 30px;
+      padding: 12px 24px;
+      font-size: 18px;
+      background-color: #e25b5b;
+      border: none;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      animation: fadeIn 3s ease-in-out forwards;
+    }
+
+    button:hover {
+      background-color: #c84a4a;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Thank you for your order!</h1>
+  <p>You will be redirected to the homepage shortly.</p>
+  <button onclick="goHome()">Return to Menu Now</button>
+
+  <script>
+    function goHome() {
+      window.location.href = "../Login/loginPage.html";
+    }
+
+    setTimeout(goHome, 7000);
+  </script>
+
+</body>
+</html>
+

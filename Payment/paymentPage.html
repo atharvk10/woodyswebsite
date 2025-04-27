@@ -90,10 +90,9 @@
   <!-- Handle form submission and order POST -->
   <script>
     document.getElementById("formbody").addEventListener("submit", async function(e) {
-      e.preventDefault(); // ✅ Prevent form from reloading the page
+      e.preventDefault(); 
   
-      // ✅ Add debug logs
-      const netID = sessionStorage.getItem("netID");
+      const netID = JSON.parse(localStorage.getItem("netId")) || "sfa60";
       const cart = JSON.parse(localStorage.getItem("userCart")) || [];
   
       console.log("NETID:", netID);

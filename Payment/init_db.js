@@ -7,15 +7,17 @@ db.serialize(() => {
       orderID INTEGER PRIMARY KEY,
       netID TEXT NOT NULL,
       menuItems TEXT NOT NULL,
-      readyBy TEXT NOT NULL
+      readyBy TEXT NOT NULL,
+      status TEXT NOT NULL
     )
   `, (err) => {
     if (err) {
-      console.error("❌ Failed to create table:", err.message);
+      console.error("Error creating orders table:", err.message);
     } else {
-      console.log("✅ 'orders' table created or already exists.");
+      console.log("orders table created with status column.");
     }
   });
 });
 
 db.close();
+
