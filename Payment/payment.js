@@ -1,6 +1,6 @@
 async function submitOrder() {
-    const cart = JSON.parse(localStorage.getItem("storage")) || [];
-    const netID = sessionStorage.getItem("netID");
+    const cart = JSON.parse(localStorage.getItem("userCart")) || [];
+    const netID = localStorage.getItem("netID");
   
     console.log("NETID:", netID);
 
@@ -18,9 +18,9 @@ async function submitOrder() {
       
   
     const order = {
-      confirmationNumber: Date.now(), // simple unique ID
+      confirmationNumber: Date.now(), 
       netID: netID,
-      items: itemDetails, // ["Bacon Egg x2", "Fries x1"]
+      items: itemDetails, 
       readyBy: new Date(Date.now() + 15 * 60000).toISOString(),
       status: "pending"
     };
@@ -33,7 +33,7 @@ async function submitOrder() {
   
     if (res.ok) {
       alert("Order placed successfully!");
-      localStorage.removeItem("storage"); // clear cart
+      localStorage.removeItem("userCart"); // clear cart
       window.location.href = "thankyou.html"; // or redirect elsewhere
     } else {
       alert("Failed to place order.");
@@ -41,7 +41,7 @@ async function submitOrder() {
   }
   
   function showOrderSummary() {
-    const cart = JSON.parse(localStorage.getItem("storage")) || [];
+    const cart = JSON.parse(localStorage.getItem("userCart")) || [];
     const summaryDiv = document.getElementById("orderSummary");
   
     cart.forEach(item => {
