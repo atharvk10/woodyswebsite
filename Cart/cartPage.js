@@ -42,10 +42,12 @@ function renderCartItems() {
       const input = row.querySelector("input");
       input.addEventListener("change", (e) => {
         const newQuantity = parseInt(e.target.value);
-        if (newQuantity < 1) return;
-  
-        const itemInBasket = storage.find(x => x.ItemName === item.ItemName);
-        itemInBasket.quantity = newQuantity;
+        if (newQuantity < 1){
+            basket = basket.filter((x) => x.ItemName !== item.ItemName);
+        }else{
+            const itemInBasket = storage.find(x => x.ItemName === item.ItemName);
+            itemInBasket.quantity = newQuantity;
+        }
   
         localStorage.setItem("userCart", JSON.stringify(storage));
         updatedCartCount();

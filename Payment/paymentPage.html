@@ -11,6 +11,19 @@
   <title>Woody's Cafe Payment</title>
 </head>
 <body>
+    <ul class="navigation">
+        <li id="PaymentTitle">Woody's Cafe</li> 
+        <li id="paymentHomeButton"><a href="../Home/homePage.html" target="_blank" style = "text-decoration: none">Home</a></li>
+        <li id="paymentMenuButton"><a href="../Menu/menuPage.html" target="_blank" style = "text-decoration: none">Menu</a></li>
+        <li id="paymentLoginButton"><a href="../Login/loginPage.html" target="_blank" style = "text-decoration: none">Login</a></li>
+        <a href = "../Cart/cartPage.html", target = "_blank", style = "text-decoration: none">
+            <li id = "cartButton">
+                <i class="bi bi-cart4"></i>
+                <div id="cartnavbar" class="cartAmount">0</div>
+            </li>
+        </a>
+    </ul>
+    <h2 id="PaymentTitle2">Payment Form</h2>
   <ul class="navigation">
     <li id="PaymentTitle">Woody's Cafe</li> 
     <li id="paymentHomeButton"><a href="../Home/homePage.html" target="_blank" style="text-decoration: none">Home</a></li>
@@ -50,26 +63,27 @@
       <label for="mealswipe">Meal Swipe</label>
     </div>
 
-    <div class="cardgroup">
-      <label for="cardnum">Credit Card Number:</label><br>
-      <input type="text" id="cardnum" name="cardnum"><br>
-      <label for="carddate">Card Expiration Date:</label><br>
-      <input type="text" id="carddate" name="carddate"><br>
-      <label for="cardcvc">Security Code:</label><br>
-      <input type="text" id="cardcvc" name="cardcvc"><br>
-    </div>
+        <div class="cardgroup">
+            <label for="cardnum">Credit Card Number:</label><br>
+            <input type="text" id="cardnum" name="cardnum"><br>
+    
+            <label for="carddate">Card Expiration Date:</label><br>
+            <input type="text" id="carddate" name="carddate"><br>
+    
+            <label for="cardcvc">Security Code:</label><br>
+            <input type="text" id="cardcvc" name="cardcvc"><br>
+        </div>
+        <p></p>
+        <label for="phone">Phone Number:</label><br>
+        <input type="text" id="phone" name="phone"><br>
 
-    <p></p>
-    <label for="phone">Phone Number:</label><br>
-    <input type="text" id="phone" name="phone"><br>
-    <input type="submit" value="Submit">
-  </form>
-
-  <!-- Display the cart summary -->
-  <script>
+        <input id="submitButton" type="submit" value="Submit">
+    </form>
+</body>
+</html>
+<script>
     const cart = JSON.parse(localStorage.getItem("userCart")) || [];
     const summaryDiv = document.getElementById("orderSummary");
-
     if (summaryDiv) {
       let html = `<h3>Your Order:</h3><ul style="list-style: none; padding: 0;">`;
       cart.forEach(item => {
@@ -77,6 +91,13 @@
       });
       html += `</ul>`;
       summaryDiv.innerHTML = html;
+    }
+    const submitButton = document.getElementById("submitButton");
+    if (submitButton) {
+        submitButton.addEventListener("click", function(event) {
+            event.preventDefault(); 
+            window.location.href = "../Payment/OrderSubmitPage.html";
+        });
     }
   </script>
 
