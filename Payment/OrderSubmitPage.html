@@ -59,7 +59,7 @@
             </tr>
             <tr>
                 <td id="orderTimeRow">Time Here</td>
-                <td><input type="number" value="1"></td>
+                <td id="orderNumber">Order Number Here</td>
                 <td id="subtotalRow">Subtotal Here</td>
             </tr>
         </table>
@@ -79,6 +79,7 @@
     subtotal = subtotal + (subtotal * 0.06625);
 
     document.getElementById("orderTimeRow").textContent = selectedTime || "N/A";
+    document.getElementById("orderNumber").textContent = Date.now() || "N/A";
     document.getElementById("subtotalRow").textContent = `$${subtotal.toFixed(2)}`;
-    localStorage.removeItem("storage");
+    localStorage.clear();
 </script>

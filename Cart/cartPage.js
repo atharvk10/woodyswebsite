@@ -43,7 +43,7 @@ function renderCartItems() {
       input.addEventListener("change", (e) => {
         const newQuantity = parseInt(e.target.value);
         if (newQuantity < 1){
-            basket = basket.filter((x) => x.ItemName !== item.ItemName);
+            storage = storage.filter((x) => x.ItemName !== item.ItemName);
         }else{
             const itemInBasket = storage.find(x => x.ItemName === item.ItemName);
             itemInBasket.quantity = newQuantity;
