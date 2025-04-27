@@ -1,44 +1,13 @@
-body {
-    font-family: 'Public Sans';
-    background-color: #f8f8f8;
-    text-align: center;
-    padding: 50px;
-  }
-  
-  .container {
-    background-color: #fff;
-    padding: 30px;
-    max-width: 500px;
-    margin: 50px auto 0;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  h1 {
-    color: #cc0000;
-    font-size: 32px;
-  }
-  
-  p {
-    font-size: 20px;
-    margin: 10px 0;
-  }
-  
-  a {
-    display: inline-block;
-    margin-top: 20px;
-    text-decoration: none;
-    color: #cc0000;
-    font-weight: bold;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  .navigation li a {
-    text-decoration: none;
-    color: black; /* or whatever your default color is */
+#title {
+  list-style-type: none;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 25px;
+  text-align: left;
+  padding-top: 30px;
+  padding-left: 25px;
+  color: #d62100;
 }
 
 #homeButton {
@@ -62,7 +31,7 @@ body {
   text-decoration: none;
 }
 
-#loginButton {
+#studentAccButton {
   font-family: "Trebuchet MS";;
   font-weight: 700;
   font-size: 24px;
@@ -134,4 +103,47 @@ ul {
 }
 .navigation li a:hover {
     color: red;
+}
+
+body {
+  font-family: 'Public Sans';
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 50px;
+}
+
+.container {
+  background-color: #fff;
+  padding: 30px;
+  max-width: 500px;
+  margin: 50px auto 0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #cc0000;
+  font-size: 32px;
+}
+
+p {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+a {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #cc0000;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.navigation li a {
+  text-decoration: none;
+  color: black; 
 }
