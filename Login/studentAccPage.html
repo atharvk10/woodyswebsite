@@ -55,6 +55,13 @@
                 window.location.href = 'loginPage.html';
             }
         });
+        document.addEventListener('DOMContentLoaded', () => {
+            const rewardPoints = localStorage.getItem('reward_points') || 10;
+            const rewardPointsUP = document.getElementById('rewardPoints');
+            if (rewardPointsUP) {
+            rewardPointsUP.innerHTML = rewardPoints;
+            }
+        });
     </script>
 </body>
 </html>

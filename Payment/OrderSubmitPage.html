@@ -39,7 +39,7 @@
         <li id="PaymentTitle">Woody's Cafe</li>
         <li id="paymentHomeButton"><a href="../Home/homePage.html" target="_blank" style="text-decoration: none">Home</a></li>
         <li id="paymentMenuButton"><a href="../Menu/menuPage.html" target="_blank" style="text-decoration: none">Menu</a></li>
-        <li id="paymentLoginButton"><a href="../Login/loginPage.html" target="_blank" style="text-decoration: none">Login</a></li>
+        <li id="paymentStudentAccButton"><a href="../Login/studentAccPage.html" target="_blank" style = "text-decoration: none">My Account</a></li>
         <a href="../Cart/cartPage.html" target="_blank" style="text-decoration: none">
             <li id="cartButton">
                 <i class="bi bi-cart4"></i>
@@ -64,6 +64,8 @@
             </tr>
         </table>
     </div>
+    <h2 style="text-align: center; font-family: Trebuchet MS;">Reward Points Earned:</h2>
+    <h2 id = "rewardPointsUser" style="text-align: center; font-family: Trebuchet MS;">Reward Points Here</h2>
 </body>
 </html>
 
@@ -71,15 +73,27 @@
     const cart = JSON.parse(localStorage.getItem("userCart")) || [];
     const selectedTime = localStorage.getItem("userCartSelectedTime") || "";
     const timing = localStorage.getItem("userCartTiming") || "";
+    const netIDuser = JSON.parse(localStorage.getItem("netId")) || "sfa60";
+
+    let rewardPointsNEW = parseInt(localStorage.getItem('reward_points')) || 10;
+    rewardPointsNEW += 10;
+    localStorage.setItem('reward_points', rewardPointsNEW);
+    console.log(`New reward points: ${rewardPointsNEW}`);
 
     let subtotal = 0;
     cart.forEach(item => {
         subtotal += item.price * item.quantity;
     });
     subtotal = subtotal + (subtotal * 0.06625);
-
+    
     document.getElementById("orderTimeRow").textContent = selectedTime || "N/A";
     document.getElementById("orderNumber").textContent = Date.now() || "N/A";
     document.getElementById("subtotalRow").textContent = `$${subtotal.toFixed(2)}`;
-    localStorage.clear();
+    document.getElementById("rewardPointsUser").textContent = 10 || 0;
+
+
+    localStorage.removeItem("userCart");
+    localStorage.removeItem("userCartSelectedTime");
+    localStorage.removeItem("userCartTiming");
+    localStorage.removeItem("storage");
 </script>
