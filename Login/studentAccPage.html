@@ -52,16 +52,35 @@
                 document.getElementById('mealSwipes').textContent = mealSwipes;
                 document.getElementById('retailSwipes').textContent = retailSwipes;
             } else {
-                window.location.href = 'loginPage.html';
+                window.location.href = '.../Menu/menuPage.html';
             }
         });
-        document.addEventListener('DOMContentLoaded', () => {
-            const rewardPoints = localStorage.getItem('reward_points') || 10;
+       
+        const rewardPoints = localStorage.getItem('reward_points') || 0; // Default reward points as 0
             const rewardPointsUP = document.getElementById('rewardPoints');
             if (rewardPointsUP) {
-            rewardPointsUP.innerHTML = rewardPoints;
+                rewardPointsUP.textContent = rewardPoints;
             }
-        });
+
+            const redeemButton = document.getElementById('redeemButton');
+            const rewardMessage = document.getElementById('rewardMessage');
+
+            redeemButton.addEventListener('click', () => {
+                let points = parseInt(rewardPointsUP.textContent);
+
+                if (points >= 10) {
+                    points -= 10;
+                    localStorage.setItem('reward_points', points);
+                    rewardPointsUP.textContent = points;
+
+                    rewardMessage.textContent = "Congratulations! You have redeemed 10 points for a free coffee.";
+                    rewardMessage.style.color = "green";
+                    window.location.href = "../Menu/menuPage.html";
+                } else {
+                    rewardMessage.textContent = "You don't have enough points to redeem.";
+                    rewardMessage.style.color = "red";
+                }
+            });
     </script>
 </body>
 </html>
