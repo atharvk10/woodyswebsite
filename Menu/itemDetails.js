@@ -35,7 +35,7 @@ async function loadItems(item, id) {
       const key = optionKeys[i];
       const value = optionValues[i];
       optionsHTML = optionsHTML + `<div class="itemOptions">${key}
-      <select class="itemOptionsSelections" id="${key}">`;
+      <select class="itemOptionsSelections" id="${key}" onchange="updatePrice('${JSON.stringify(item)}', ${item.ItemPrice}, '${id}')">`;
       for (let j = 0; j < value.choices.length; j++){
         const choice = value.choices[j];
         optionsHTML = optionsHTML + `<option value="${choice.name}">${choice.name} ($${choice.price.toFixed(2)})</option>`;
@@ -45,6 +45,30 @@ async function loadItems(item, id) {
     }
   }
   container.innerHTML = container.innerHTML + optionsHTML;
+}
+function updatePrice(item, originalPrice, id){
+  let finalPrice = originalPrice;
+  const menuItem = document.getElementById(id);
+  const allSelections = menuItem.getElementsByClassName('itemOptionsSelections');
+
+  for (let i = 0; i < allSelections.length; i++){
+    const selectionCategory = allSelections[i];
+    const selection = selectionCategory.value;
+    for (const itemOption in item.ItemOptions){
+      const itemOptionChoices = item.ItemsOptions[itemOption];
+      for (let j = 0; j < itemOptionChoices.length; j++){
+        const itemOptionChoice = itemOptionChoices[j];
+        if (itemOptionChoice.ItemName === selection){
+          finalPrice = finalPrice + itemOptionChoice.price;
+        }
+      }
+    }
+  }
+
+  const price = menuItem.querySelector('.price');
+  if (price){
+    price.innerHTML = `Price: $${finalPrice.toFixed(2)}`;
+  }
 }
 async function getCalories(ingredients){
   const apiKey = 'yZw91PtqEeP8cfePqMIiqV0rQYSjrHSOJ5getpIV';
