@@ -43,10 +43,9 @@
             const netid = document.getElementById("netid").value.trim();
             const password = document.getElementById("password").value.trim();
 
-            // Basic simulation of login — add real validation if needed
             if (netid && password) {
                 sessionStorage.setItem("netID", netid);
-                window.location.href = "menu.html"; // go to next page
+                window.location.href = "../Home/homePage.html"; // go to next page
             } else {
                 alert("Please enter valid NetID and password.");
             }
