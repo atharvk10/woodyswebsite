@@ -12,11 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
         );
 
         if (user) {
-            localStorage.setItem("netid", user.netid);
-            localStorage.setItem("num_meal_swipes", user.num_meal_swipes);
-            localStorage.setItem("retail_swipes", user.retail_swipes);
-            
-            window.location.href = '../Home/homePage.html';
+            localStorage.setItem('pendingDUOUser', JSON.stringify(user));
+
+            window.location.href = 'duoPage.html';
         }else{
             alert('Invalid NetID or Password. Please try again');
             window.location.href = '../Login/loginPage.html';
