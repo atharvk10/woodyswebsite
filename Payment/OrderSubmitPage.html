@@ -64,7 +64,7 @@
             </tr>
         </table>
     </div>
-    <h2 style="text-align: center; font-family: Trebuchet MS;">Reward Points Earned:</h2>
+    <h2 style="text-align: center; font-family: Trebuchet MS;">Reward Points:</h2>
     <h2 id = "rewardPointsUser" style="text-align: center; font-family: Trebuchet MS;">Reward Points Here</h2>
 </body>
 </html>
@@ -75,10 +75,10 @@
     const timing = localStorage.getItem("userCartTiming") || "";
     const netIDuser = JSON.parse(localStorage.getItem("netId")) || "sfa60";
 
-    let rewardPointsNEW = parseInt(localStorage.getItem('reward_points')) || 10;
-    rewardPointsNEW += 10;
-    localStorage.setItem('reward_points', rewardPointsNEW);
-    console.log(`New reward points: ${rewardPointsNEW}`);
+    let currentRewardPoints = parseInt(localStorage.getItem('reward_points')) || 0;
+    let newRewardPoints = currentRewardPoints + 10;
+    localStorage.setItem('reward_points', newRewardPoints);
+    console.log(`New reward points: ${newRewardPoints}`);
 
     let subtotal = 0;
     cart.forEach(item => {
@@ -89,7 +89,7 @@
     document.getElementById("orderTimeRow").textContent = selectedTime || "N/A";
     document.getElementById("orderNumber").textContent = Date.now() || "N/A";
     document.getElementById("subtotalRow").textContent = `$${subtotal.toFixed(2)}`;
-    document.getElementById("rewardPointsUser").textContent = 10 || 0;
+    document.getElementById("rewardPointsUser").textContent = newRewardPoints;
 
 
     localStorage.removeItem("userCart");

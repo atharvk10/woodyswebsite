@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
             window.location.href = '../Home/homePage.html';
         }else{
             alert('Invalid NetID or Password. Please try again');
+            window.location.href = '../Login/loginPage.html';
         }
     });
 });

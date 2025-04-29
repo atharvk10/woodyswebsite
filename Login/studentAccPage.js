@@ -3,11 +3,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const user = JSON.parse(localStorage.getItem('loggedInUser'));
 
     if (user) {
-        
         document.getElementById('welcomeMessage').textContent = `Welcome, ${user.netid}!`;
-        document.getElementById('mealSwipes').textContent = user.swipes.num_meal_swipes;
-        document.getElementById('retailSwipes').textContent = user.swipes.retail_swipes;
-        document.getElementById('rewardPoints').textContent = user.reward_points || 0;
+        document.getElementById('mealSwipes').textContent = user.num_meal_swipes;
+        document.getElementById('retailSwipes').textContent = user.retail_swipes;
+        document.getElementById('rewardPoints').textContent = user.reward_points;
     } else {
         window.location.href = 'loginPage.html';
     }
@@ -37,5 +36,12 @@ document.addEventListener('DOMContentLoaded', () => {
             rewardMessage.textContent = '❌ Not enough points to redeem!';
             rewardMessage.style.color = 'red';
         }
+    });
+
+    const logoutButton = document.getElementById('logoutButton');
+    logoutButton.addEventListener('click', () => {
+        localStorage.removeItem('netid');
+        localStorage.removeItem('loggedInUser');
+        window.location.href = '../Login/loginPage.html'; 
     });
 });

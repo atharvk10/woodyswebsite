@@ -39,6 +39,14 @@
         <p id="rewardMessage" style="color: green; margin-top: 10px;"></p>
 
         <br />
+
+        <hr>
+        <h2>Past Orders</h2>
+        <div id="pastOrders" style="margin-top: 20px;">
+            <p>No past orders found.</p>
+        </div>
+
+        <button id="logoutButton">Log Out</button>
     </div>
 
     <script>
@@ -81,6 +89,45 @@
                     rewardMessage.style.color = "red";
                 }
             });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const logoutButton = document.getElementById('logoutButton');
+            
+            if (logoutButton) {
+                logoutButton.addEventListener('click', () => {
+                    localStorage.removeItem('netid');
+                    localStorage.removeItem('loggedInUser');
+                    console.log("Logging out");
+                    window.location.href = '../Login/loginPage.html';
+                });
+            }
+        });
+
+    document.addEventListener('DOMContentLoaded', () => {
+
+        const pastOrdersContainer = document.getElementById('pastOrders');
+        const allOrders = JSON.parse(localStorage.getItem('allPastOrders')) || {};
+        const netid = localStorage.getItem('netid');
+        const userOrders = allOrders[netid] || [];
+
+        if (userOrders.length > 0) {
+            pastOrdersContainer.innerHTML = '';
+
+            userOrders.forEach((order, index) => {
+                const orderDiv = document.createElement('div');
+                orderDiv.classList.add('order-entry');
+                orderDiv.innerHTML = `
+                    <strong>Order #${index + 1}</strong><br>
+                    <em>${order.time}</em><br>
+                    Total: $${parseFloat(order.total).toFixed(2)}<br>
+                    Items: ${order.items.map(item => `${item.name} x${item.quantity}`).join(', ')}
+                    <hr>
+                `;
+                pastOrdersContainer.appendChild(orderDiv);
+            });
+        }
+    });
+
     </script>
 </body>
 </html>
