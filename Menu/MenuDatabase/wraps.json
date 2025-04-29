@@ -25,6 +25,7 @@
     {
         "ItemName": "Hot Knight Wrap", 
         "ItemPrice": 7.25, 
+        "ItemImage": "../img/hot_knight_wrap.jpg",
         "ItemDescription":"Bold flavor in every bite. This wrap combines juicy grilled chicken, crispy bacon, melted cheese, fresh lettuce, ripe tomatoes, and grilled onions, all coated in sweet and smoky barbecue sauce. Wrapped in a warm tortilla and seasoned with a dash of salt and pepper. Toasted or not — your call.",
         "ItemIngredients": ["Tortilla wrap", "chicken", "bacon", "barbecue sauce", "lettuce", "tomatoes", "cheese", "onions", "salt", "pepper"],
         "ItemOptions": {
