@@ -108,61 +108,78 @@ async function getCalories(ingredients){
   return sumCals;
 }
 
+function getSelectedOptions(id) {
+  const container = document.getElementById(id);
+  const selects = container.querySelectorAll('.itemOptionsSelections');
+  let selectedOptions = {};
+  selects.forEach(select => {
+    const key = select.getAttribute('data-key');
+    selectedOptions[key] = select.value;
+  });
+  return selectedOptions;
+}
+
 let increase = (itemToAdd) => {
-  let itemFind = "";
-  for (let element of userCart) {
-      if (element.ItemName === itemToAdd.ItemName) {
-          itemFind = element;
-          break;
-      }
-  }
-  if (itemFind === ""){
-    userCart.push({
-      ItemName: itemToAdd.ItemName,
-      price: Number(itemToAdd.ItemPrice),
-      quantity: 1,
-    });
+  const finalPrice = parseFloat(document.querySelector("#princeItem").textContent.replace("Price: $", ""));
+  const selectedOptions = getSelectedOptions('breakfastsandwiches');
+  console.log(selectedOptions);
+
+  const cartItem = {
+    ItemName: itemToAdd.ItemName,
+    price: finalPrice,
+    quantity: 1,
+    options: selectedOptions,
+  };
+  console.log(cartItem)
+  let iteminCart = userCart.find(item =>
+    item.ItemName === cartItem.ItemName &&
+    item.price === cartItem.price &&
+    JSON.stringify(item.options) === JSON.stringify(cartItem.options)
+  );
+  if (iteminCart) {
+    iteminCart.quantity += 1;
   } else {
-    itemFind.quantity += 1;
+    userCart.push(cartItem);
   }
+
   localStorage.setItem("userCart", JSON.stringify(userCart));
+  console.log(userCart);
   updateQuantity(itemToAdd.ItemName);
 };
 
-let decrease = (ItemName) => {
-  let itemToAdd = ItemName;
-  let itemFind = "";
-  for (let element of userCart) {
-      if (element.ItemName === itemToAdd.ItemName) {
-          itemFind = element;
-          break;
-      }
+let decrease = (itemToAdd) => {
+  const finalPrice = parseFloat(document.querySelector("#princeItem").textContent.replace("Price: $", ""));
+  const selectedOptions = getSelectedOptions('breakfastsandwiches');
+
+  console.log(itemToAdd);
+  const itemIndex = userCart.findIndex(element =>
+    element.ItemName === itemToAdd.ItemName &&
+    element.price === finalPrice &&
+    JSON.stringify(element.options) === JSON.stringify(selectedOptions)
+  );
+  console.log(itemIndex);
+  if (itemIndex === -1) return;
+  userCart[itemIndex].quantity -= 1;
+  if (userCart[itemIndex].quantity === 0) {
+    userCart.splice(itemIndex, 1);
   }
-  if (itemFind === ""){
-      return;
-  } else if(itemFind.quantity === 0){
-      return;
-  } else {
-    itemFind.quantity -= 1;
-  }
-  userCart = userCart.filter((x) => x.quantity !== 0);
   localStorage.setItem("userCart", JSON.stringify(userCart));
+  console.log(userCart);
   updateQuantity(itemToAdd.ItemName);
 };
 
 let updateQuantity = (ItemName) => {
-  let itemFind = userCart.find((x) => x.ItemName === ItemName);
-  if (!itemFind){
-      const element1 = document.getElementById(ItemName);
-      if (element1){
-        element1.innerHTML = 0;
-      }
-      updateCart();
-      return;
+  let totalQuantity = 0;
+  for (let i = 0; i < userCart.length; i++) {
+    if (userCart[i].ItemName === ItemName) {
+      totalQuantity += userCart[i].quantity;
+    }
   }
-  const element2 = document.getElementById(ItemName);
-  if (element2) {
-    element2.innerHTML = itemFind.quantity;
+  const quantityElements = document.querySelectorAll("li.quantity");
+  for (let i = 0; i < quantityElements.length; i++) {
+    if (quantityElements[i].id === ItemName) {
+      quantityElements[i].textContent = totalQuantity;
+    }
   }
   updateCart();
 };
