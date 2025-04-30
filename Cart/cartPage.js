@@ -1,3 +1,8 @@
+window.addEventListener("DOMContentLoaded", () => {
+  localStorage.removeItem("orderTiming");
+  localStorage.removeItem("orderTime");
+});
+
 let storage = JSON.parse(localStorage.getItem("userCart")) || [];
 
 function updatedCartCount() {
