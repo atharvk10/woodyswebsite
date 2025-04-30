@@ -16,10 +16,22 @@ async function viewCompletedOrders(){
         orders.forEach(order => {
             const box = document.createElement("div");
             box.className = "orderCard";
+
+            let menuItemsHTML = "";
+            if(Array.isArray(order.menuItems)){
+                menuItemsHTML = order.menuItems.map(item=> `<i>${item}</li>`).join("");
+            } else {
+                menuItemsHTML = `<li>${order.menuItems}</li>`;
+            }
+
             box.innerHTML = `
                 <h3>Order ID: ${order.orderID}</h3>
                 <p><strong>NetID:</strong> ${order.netID}</p>
                 <p><strong>Status:</strong> ${order.status}</p>
+                <div class="orderDetails">
+                    <strong>Menu Items:</strong>
+                    <ul>${menuItemsHTML}</ul>
+                </div>
             `;
             container.appendChild(box);
         });

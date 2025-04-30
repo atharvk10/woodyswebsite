@@ -21,7 +21,13 @@ async function viewOrder() {
             orderBox.style.marginBottom = "20px";
             orderBox.style.borderRadius = "8px";
 
-            const menuItemsHTML = order.menuItems.map(item => `<li>${item}</li>`).join("");
+           // const menuItemsHTML = order.menuItems.map(item => `<li>${item}</li>`).join("");
+           let menuItemsHTML = "";
+           if(Array.isArray(order.menuItems)){
+            menuItemsHTML = order.menuItems.map(item => `<li>${item}</li>`).join("");
+           } else {
+            menuItemsHTML = `<li>${order.menuItems}</li>`;
+           }
 
             orderBox.innerHTML = `
                 <h3>Order ID: ${order.orderID}</h3>
