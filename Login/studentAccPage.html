@@ -51,17 +51,22 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const netid = localStorage.getItem('netid');
-            const mealSwipes = localStorage.getItem('num_meal_swipes');
-            const retailSwipes = localStorage.getItem('retail_swipes');
+            const user = JSON.parse(localStorage.getItem('loggedInUser'));
 
-            if (netid && mealSwipes && retailSwipes) {
-                document.getElementById('welcomeMessage').textContent = `Welcome, ${netid}!`;
-                document.getElementById('mealSwipes').textContent = mealSwipes;
-                document.getElementById('retailSwipes').textContent = retailSwipes;
-            } else {
+            // user not found - redirect to login page
+            if (!user || !user.netid) {
                 window.location.href = 'loginPage.html';
+            return;
             }
+
+            // user found - welcome
+            document.getElementById('welcomeMessage').textContent = `Welcome, ${user.netid}!`;
+
+            const mealSwipes = localStorage.getItem('num_meal_swipes') || 0;
+            const retailSwipes = localStorage.getItem('retail_swipes') || 0;
+
+            document.getElementById('mealSwipes').textContent = mealSwipes;
+            document.getElementById('retailSwipes').textContent = retailSwipes;
         });
        
         const rewardPoints = localStorage.getItem('reward_points') || 0; // Default reward points as 0
