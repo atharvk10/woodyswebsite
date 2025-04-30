@@ -68,7 +68,6 @@ let updateQuantity = (ItemName) => {
 };
 
 let updateCart = () => {
-
     let cartnavbarUP = document.getElementById("cartnavbar");
     let totalCartAmount = 0;
     for (var i = 0; i < userCart.length; ++i) {

@@ -12,69 +12,74 @@ function updatedCartCount() {
 }
 
 function renderCartItems() {
-    const table = document.querySelector(".cartTable table");
-    table.innerHTML = `
-      <tr>
-        <th>Product</th>
-        <th>Quantity</th>
-        <th>Subtotal</th>
-        <th>Action</th>
-      </tr>
+  const table = document.querySelector(".cartTable table");
+  table.innerHTML = `
+    <tr>
+      <th>Product</th>
+      <th>Quantity</th>
+      <th>Subtotal</th>
+      <th>Action</th>
+    </tr>
+  `;
+  if (storage.length === 0) {
+    const row = document.createElement("tr");
+    row.innerHTML = `
+      <td colspan="4" style="text-align: center; font-style: italic;">Your cart is empty.</td>
     `;
-  
-    if (storage.length === 0) {
-      const row = document.createElement("tr");
-      row.innerHTML = `
-        <td colspan="4" style="text-align: center; font-style: italic;">Your cart is empty.</td>
-      `;
-      table.appendChild(row);
-      updateCartTotal();
-      updatedCartCount();
-      return;
-    }
-  
-    storage.forEach(item => {
-      const subtotal = (item.price * item.quantity).toFixed(2);
-  
-      const row = document.createElement("tr");
-      row.innerHTML = `
-        <td>${item.ItemName}</td>
-        <td><input type="number" min="1" value="${item.quantity}" data-id="${item.ItemName}"></td>
-        <td>$${subtotal}</td>
-        <td><button class="remove-btn" data-id="${item.ItemName}">Remove</button></td>
-      `;
-  
-      const input = row.querySelector("input");
-      input.addEventListener("change", (e) => {
-        const newQuantity = parseInt(e.target.value);
-        if (newQuantity < 1){
-            storage = storage.filter((x) => x.ItemName !== item.ItemName);
-        }else{
-            const itemInBasket = storage.find(x => x.ItemName === item.ItemName);
-            itemInBasket.quantity = newQuantity;
-        }
-  
-        localStorage.setItem("userCart", JSON.stringify(storage));
-        updatedCartCount();
-        renderCartItems();
-        updateCartTotal();
-      });
-  
-      const removeBtn = row.querySelector(".remove-btn");
-      removeBtn.addEventListener("click", () => {
-        storage = storage.filter(x => x.ItemName !== item.ItemName);
-        localStorage.setItem("userCart", JSON.stringify(storage));
-        updatedCartCount();
-        renderCartItems();
-        updateCartTotal();
-      });
-  
-      table.appendChild(row);
-    });
-  
+    table.appendChild(row);
+    updateCartTotal();
     updatedCartCount();
+    return;
   }
-  
+  storage.forEach((item) => {
+    const subtotal = (item.price * item.quantity).toFixed(2);
+    const itemId = `${item.ItemName}|${Object.values(item.options).join('|')}`;
+
+    const row = document.createElement("tr");
+    row.innerHTML = `
+      <td>${item.ItemName}<br><small>${Object.values(item.options).join(', ')}</small></td>
+      <td><input type="number" min="1" value="${item.quantity}" data-id="${itemId}"></td>
+      <td class="subtotal">$${subtotal}</td>
+      <td><button class="remove-btn" data-id="${itemId}">Remove</button></td>
+    `;
+
+    const input = row.querySelector("input");
+    input.addEventListener("change", (e) => {
+      const newQuantity = parseInt(e.target.value);
+      const dataId = input.getAttribute("data-id");
+
+      const index = storage.findIndex(x => {
+        const id = `${x.ItemName}|${Object.values(x.options).join('|')}`;
+        return id === dataId;
+      });
+
+      if (index !== -1) {
+        if (newQuantity < 1) {
+          storage.splice(index, 1);
+        } else {
+          storage[index].quantity = newQuantity;
+        }
+
+        localStorage.setItem("userCart", JSON.stringify(storage));
+        renderCartItems();
+      }
+    });
+    const removeBtn = row.querySelector(".remove-btn");
+    removeBtn.addEventListener("click", () => {
+      const dataId = removeBtn.getAttribute("data-id");
+      storage = storage.filter(x => {
+        const id = `${x.ItemName}|${Object.values(x.options).join('|')}`;
+        return id !== dataId;
+      });
+      localStorage.setItem("userCart", JSON.stringify(storage));
+      renderCartItems();
+    });
+    table.appendChild(row);
+  });
+
+  updatedCartCount();
+  updateCartTotal();
+}
 
 function updateCartTotal() {
   const subtotal = storage.reduce((sum, item) => sum + item.price * item.quantity, 0);
@@ -87,7 +92,6 @@ function updateCartTotal() {
   summaryRows[5].innerText = `$${total.toFixed(2)}`;
 }
 
-// Handle the "Continue to Payment" button
 document.getElementById("continueToPayment").addEventListener("click", () => {
   if (storage.length === 0) {
     alert("Your cart is empty!");
