@@ -1,3 +1,5 @@
+let userCart = JSON.parse(localStorage.getItem("userCart")) || [];
+
 async function loadItems(item, id) {
   const calories = await getCalories(item.ItemIngredients);
   const ingredients = item.ItemIngredients.join(', ');
@@ -15,12 +17,12 @@ async function loadItems(item, id) {
     <div class="itemDescription">${item.ItemDescription || 'No description available.'}</div>
     <div class="ingredients">Ingredients: ${ingredients}</div>
     <div class="price-and-buttons">
-      <div class="price">Price: $${item.ItemPrice.toFixed(2)}</div>
+      <div id = "princeItem" class="price">Price: $${item.ItemPrice.toFixed(2)}</div>
       <div class="buttons">
         <ul>
-          <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
+          <li onclick="decrease({ItemName: '${item.ItemName}'})" class="button-item"><i class="bi bi-dash"></i></li>
           <li id="${item.ItemName}" class="quantity">${existingItem}</li>
-          <li onclick='increase(${JSON.stringify(item)})' class="button-item"><i class="bi bi-plus"></i></li>
+          <li onclick="increase({ItemName: '${item.ItemName}'})" class="button-item"><i class="bi bi-plus"></i></li>
         </ul>
       </div>
     </div>
@@ -30,23 +32,30 @@ async function loadItems(item, id) {
   let optionsHTML = '';
   if (item.ItemOptions){
     const optionKeys = Object.keys(item.ItemOptions);
-    const optionValues = Object.values(item.ItemOptions);
-    for (let i = 0; i < optionKeys.length; i++){
+    for (let i = 0; i < optionKeys.length; i++) {
       const key = optionKeys[i];
-      const value = optionValues[i];
-      optionsHTML = optionsHTML + `<div class="itemOptions">${key}
-      <select class="itemOptionsSelections" id="${key}" onchange="updatePrice('${JSON.stringify(item)}', ${item.ItemPrice}, '${id}')">`;
-      for (let j = 0; j < value.choices.length; j++){
+      const value = item.ItemOptions[key];
+      optionsHTML += `
+        <div class="itemOptions">${key}
+          <select class="itemOptionsSelections" data-key="${key}">
+      `;
+      for (let j = 0; j < value.choices.length; j++) {
         const choice = value.choices[j];
-        optionsHTML = optionsHTML + `<option value="${choice.name}">${choice.name} ($${choice.price.toFixed(2)})</option>`;
+        optionsHTML += `<option value="${choice.name}">${choice.name} ($${choice.price.toFixed(2)})</option>`;
       }
-      optionsHTML = optionsHTML + `</select>
-      </div>`;
+      optionsHTML += `</select></div>`;
     }
   }
-  container.innerHTML = container.innerHTML + optionsHTML;
+  container.innerHTML += optionsHTML;
+  const selects = container.querySelectorAll('.itemOptionsSelections');
+  selects.forEach(select => {
+    select.addEventListener('change', () => {
+      updatePrice(item, item.ItemPrice, id, item.ItemOptions);
+    });
+  });
 }
-function updatePrice(item, originalPrice, id){
+
+function updatePrice(item, originalPrice, id, ItemOptions){
   let finalPrice = originalPrice;
   const menuItem = document.getElementById(id);
   const allSelections = menuItem.getElementsByClassName('itemOptionsSelections');
@@ -54,21 +63,19 @@ function updatePrice(item, originalPrice, id){
   for (let i = 0; i < allSelections.length; i++){
     const selectionCategory = allSelections[i];
     const selection = selectionCategory.value;
-    for (const itemOption in item.ItemOptions){
-      const itemOptionChoices = item.ItemsOptions[itemOption];
-      for (let j = 0; j < itemOptionChoices.length; j++){
-        const itemOptionChoice = itemOptionChoices[j];
-        if (itemOptionChoice.ItemName === selection){
+    for (const itemOption in ItemOptions){
+      const itemOptionChoices = ItemOptions[itemOption];
+      for (let j = 0; j < itemOptionChoices.choices.length; j++){
+        const itemOptionChoice = itemOptionChoices.choices[j];
+        if (itemOptionChoice.name === selection) {
           finalPrice = finalPrice + itemOptionChoice.price;
         }
       }
     }
   }
 
-  const price = menuItem.querySelector('.price');
-  if (price){
-    price.innerHTML = `Price: $${finalPrice.toFixed(2)}`;
-  }
+  let priceUP = document.getElementById("princeItem");
+  priceUP.innerHTML = `Price: $${finalPrice.toFixed(2)}`;
 }
 async function getCalories(ingredients){
   const apiKey = 'yZw91PtqEeP8cfePqMIiqV0rQYSjrHSOJ5getpIV';
@@ -101,8 +108,6 @@ async function getCalories(ingredients){
   return sumCals;
 }
 
-let userCart = JSON.parse(localStorage.getItem("storage")) || [];
-
 let increase = (itemToAdd) => {
   let itemFind = "";
   for (let element of userCart) {
@@ -120,7 +125,7 @@ let increase = (itemToAdd) => {
   } else {
     itemFind.quantity += 1;
   }
-  localStorage.setItem("storage", JSON.stringify(userCart));
+  localStorage.setItem("userCart", JSON.stringify(userCart));
   updateQuantity(itemToAdd.ItemName);
 };
 
@@ -141,7 +146,7 @@ let decrease = (ItemName) => {
     itemFind.quantity -= 1;
   }
   userCart = userCart.filter((x) => x.quantity !== 0);
-  localStorage.setItem("storage", JSON.stringify(userCart));
+  localStorage.setItem("userCart", JSON.stringify(userCart));
   updateQuantity(itemToAdd.ItemName);
 };
 
@@ -356,3 +361,4 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 updateCart();
+
