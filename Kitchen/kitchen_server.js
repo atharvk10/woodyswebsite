@@ -7,6 +7,7 @@ const cors = require('cors');
 const app = express();
 app.use(cors());
 app.use(express.json());
+app.use(express.static(__dirname));
 
 const db = new sqlite3.Database(path.join(__dirname, '../Payment/orders.db'));
 
@@ -77,4 +78,46 @@ app.post('/kitchen/orders/:id/status', (req, res) => {
 
 app.listen(4000, () => {
   console.log('Kitchen system running on http://localhost:4000');
+});
+
+app.get('/kitchen/orders/completed', (req, res) => {
+  db.all("SELECT * FROM orders WHERE status = 'ready'", [], (err, rows) => {
+    if(err){
+      console.error("Database error:", err.message);
+      return res.status(500).json({ error: err.message });
+    }
+
+    const formattedOrders = rows.map(row => ({
+      orderID: row.orderID,
+      netID: row.netID,
+      menuItems: JSON.parse(row.menuItems),
+      readyBy: row.readyBy,
+      status: row.status
+    }));
+
+    res.json(formattedOrders);
+  });
+});
+
+
+
+// serve kitchenInterface.html
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'kitchenInterface.html'));
+});
+
+// serve completed.html
+app.get('/completedOrders.html', (req, res) => {
+  res.sendFile(path.join(__dirname, 'completedOrders.html'));
+});
+
+// serve css
+app.get('/kitchenInterface.js', (req, res) => {
+  res.sendFile(path.join(__dirname, 'kitchenInterface.js'));
+});
+app.get('/completedInterface.js', (req, res) => {
+  res.sendFile(path.join(__dirname, 'completedInterface.js'));
+});
+app.get('/kitchenInterface.css', (req, res) => {
+  res.sendFile(path.join(__dirname, 'kitchenInterface.css'));
 });

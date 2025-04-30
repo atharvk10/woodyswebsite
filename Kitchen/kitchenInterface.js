@@ -32,7 +32,7 @@ async function viewOrder() {
                     <ul>${menuItemsHTML}</ul>
                 </div>
                 <button onclick="updateOrder('${order.orderID}', 'begun order')">Begin Order</button>
-                <button onclick="updateOrder('${order.orderID}', 'order complete')">Commplete Order</button>
+                <button onclick="updateOrder('${order.orderID}', 'order complete')">Complete Order</button>
             `;
 
             ordersContainer.appendChild(orderBox);
