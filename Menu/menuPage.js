@@ -94,13 +94,9 @@ function displayBreakfastSanwiches(items) {
 
     items.forEach(item => {
         let div = document.createElement('div');
-        let existingItem = 0;
-        for (let i = 0; i < userCart.length; i++) {
-            if (userCart[i].ItemName === item.ItemName) {
-                existingItem = userCart[i].quantity;
-                break;
-            }
-        }
+        let existingItem = userCart
+        .filter(cartItem => cartItem.ItemName === item.ItemName)
+        .reduce((sum, cartItem) => sum + cartItem.quantity, 0);
         div.className = 'menu-item';
         div.innerHTML = `
                     <style>
@@ -150,13 +146,9 @@ function displayBreakfast(items) {
 
     items.forEach(item => {
         let div = document.createElement('div');
-        let existingItem = 0;
-        for (let i = 0; i < userCart.length; i++) {
-            if (userCart[i].ItemName === item.ItemName) {
-                existingItem = userCart[i].quantity;
-                break;
-            }
-        }
+        let existingItem = userCart
+        .filter(cartItem => cartItem.ItemName === item.ItemName)
+        .reduce((sum, cartItem) => sum + cartItem.quantity, 0);
         div.className = 'menu-item';
         div.innerHTML = `
                     <style>
@@ -205,13 +197,9 @@ function displayBreakfastSides(items) {
 
     items.forEach(item => {
         let div = document.createElement('div');
-        let existingItem = 0;
-        for (let i = 0; i < userCart.length; i++) {
-            if (userCart[i].ItemName === item.ItemName) {
-                existingItem = userCart[i].quantity;
-                break;
-            }
-        }
+        let existingItem = userCart
+        .filter(cartItem => cartItem.ItemName === item.ItemName)
+        .reduce((sum, cartItem) => sum + cartItem.quantity, 0);
         div.className = 'menu-item';
         div.innerHTML = `
                     <style>
@@ -261,13 +249,9 @@ function displayBagels(items) {
 
     items.forEach(item => {
         let div = document.createElement('div');
-        let existingItem = 0;
-        for (let i = 0; i < userCart.length; i++) {
-            if (userCart[i].ItemName === item.ItemName) {
-                existingItem = userCart[i].quantity;
-                break;
-            }
-        }
+        let existingItem = userCart
+        .filter(cartItem => cartItem.ItemName === item.ItemName)
+        .reduce((sum, cartItem) => sum + cartItem.quantity, 0);
         div.className = 'menu-item';
         div.innerHTML = `
                     <style>
@@ -317,13 +301,9 @@ function displayGrabAndGo(items) {
 
     items.forEach(item => {
         let div = document.createElement('div');
-        let existingItem = 0;
-        for (let i = 0; i < userCart.length; i++) {
-            if (userCart[i].ItemName === item.ItemName) {
-                existingItem = userCart[i].quantity;
-                break;
-            }
-        }
+        let existingItem = userCart
+        .filter(cartItem => cartItem.ItemName === item.ItemName)
+        .reduce((sum, cartItem) => sum + cartItem.quantity, 0);
         div.className = 'menu-item';
         div.innerHTML = `
                     <style>
@@ -373,13 +353,9 @@ function displayLunchBagels(items) {
 
     items.forEach(item => {
         let div = document.createElement('div');
-        let existingItem = 0;
-        for (let i = 0; i < userCart.length; i++) {
-            if (userCart[i].ItemName === item.ItemName) {
-                existingItem = userCart[i].quantity;
-                break;
-            }
-        }
+        let existingItem = userCart
+        .filter(cartItem => cartItem.ItemName === item.ItemName)
+        .reduce((sum, cartItem) => sum + cartItem.quantity, 0);
         div.className = 'menu-item';
         div.innerHTML = `
                     <style>
@@ -429,13 +405,9 @@ function displayWraps(items) {
 
     items.forEach(item => {
         let div = document.createElement('div');
-        let existingItem = 0;
-        for (let i = 0; i < userCart.length; i++) {
-            if (userCart[i].ItemName === item.ItemName) {
-                existingItem = userCart[i].quantity;
-                break;
-            }
-        }
+        let existingItem = userCart
+        .filter(cartItem => cartItem.ItemName === item.ItemName)
+        .reduce((sum, cartItem) => sum + cartItem.quantity, 0);
         div.className = 'menu-item';
         div.innerHTML = `
                     <style>
@@ -485,13 +457,9 @@ document.addEventListener("DOMContentLoaded", function() {
   
       items.forEach(item => {
           let div = document.createElement('div');
-          let existingItem = 0;
-          for (let i = 0; i < userCart.length; i++) {
-              if (userCart[i].ItemName === item.ItemName) {
-                  existingItem = userCart[i].quantity;
-                  break;
-              }
-          }
+          let existingItem = userCart
+          .filter(cartItem => cartItem.ItemName === item.ItemName)
+          .reduce((sum, cartItem) => sum + cartItem.quantity, 0);
           div.className = 'menu-item';
           div.innerHTML = `
                     <style>
@@ -540,13 +508,9 @@ document.addEventListener("DOMContentLoaded", function() {
   
       items.forEach(item => {
           let div = document.createElement('div');
-          let existingItem = 0;
-          for (let i = 0; i < userCart.length; i++) {
-              if (userCart[i].ItemName === item.ItemName) {
-                  existingItem = userCart[i].quantity;
-                  break;
-              }
-          }
+          let existingItem = userCart
+          .filter(cartItem => cartItem.ItemName === item.ItemName)
+          .reduce((sum, cartItem) => sum + cartItem.quantity, 0);
           div.className = 'menu-item';
           div.innerHTML = `
                     <style>
@@ -595,13 +559,9 @@ document.addEventListener("DOMContentLoaded", function() {
   
       items.forEach(item => {
           let div = document.createElement('div');
-          let existingItem = 0;
-          for (let i = 0; i < userCart.length; i++) {
-              if (userCart[i].ItemName === item.ItemName) {
-                  existingItem = userCart[i].quantity;
-                  break;
-              }
-          }
+          let existingItem = userCart
+          .filter(cartItem => cartItem.ItemName === item.ItemName)
+          .reduce((sum, cartItem) => sum + cartItem.quantity, 0);
           div.className = 'menu-item';
           div.innerHTML = `
                     <style>
