@@ -19,7 +19,7 @@ app.post('/kitchen/orders', (req, res) => {
 
 // View current orders from the shared database
 app.get('/kitchen/orders', (req, res) => {
-  db.all("SELECT * FROM orders", [], (err, rows) => {
+  db.all("SELECT * FROM orders WHERE status != 'ready'", [], (err, rows) => {
     if (err) {
       console.error("Database error:", err.message);
       return res.status(500).json({ error: err.message });
@@ -41,10 +41,10 @@ app.post('/kitchen/orders/:id/status', (req, res) => {
   const orderID = req.params.id;
   const { status } = req.body;
 
-  if (status === 'ready') {
-    db.run("DELETE FROM orders WHERE orderID = ?", [orderID], function (err) {
+  if (status === 'ready' || status === 'In progress') {
+    db.run("UPDATE orders SET status = ? WHERE orderID = ?", [status, orderID], function (err) {
       if (err) {
-        console.error("Database delete error:", err.message);
+        console.error("Database update error:", err.message);
         return res.status(500).json({ error: err.message });
       }
 
@@ -52,24 +52,9 @@ app.post('/kitchen/orders/:id/status', (req, res) => {
         return res.status(404).json({ error: "Order not found." });
       }
 
-      console.log(`Order ${orderID} marked ready and removed.`);
-      res.json({ message: `Order ${orderID} removed from kitchen.` });
-    });
-  } else if (status === 'In progress'){
-    db.run("UPDATE orders SET status = ? WHERE orderID = ?", [status, orderID], function (err){
-      if(err){
-        console.error("Database update error:", err.message);
-        return res.status(500).json({ error: err.message });
-      }
-
-
-      if(this.changes === 0){
-        return res.status(404).json({ error: "Order not found." });
-      }
-
       console.log(`Order ${orderID} updated to status "${status}".`);
       res.json({ message: `Order ${orderID} updated to "${status}".` });
-    });
+    }); 
 
   } else {
     res.status(400).json({ error: "Only status 'ready' or 'In progress' is supported." });
