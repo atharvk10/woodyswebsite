@@ -54,8 +54,24 @@ app.post('/kitchen/orders/:id/status', (req, res) => {
       console.log(`Order ${orderID} marked ready and removed.`);
       res.json({ message: `Order ${orderID} removed from kitchen.` });
     });
+  } else if (status === 'In progress'){
+    db.run("UPDATE orders SET status = ? WHERE orderID = ?", [status, orderID], function (err){
+      if(err){
+        console.error("Database update error:", err.message);
+        return res.status(500).json({ error: err.message });
+      }
+
+
+      if(this.changes === 0){
+        return res.status(404).json({ error: "Order not found." });
+      }
+
+      console.log(`Order ${orderID} updated to status "${status}".`);
+      res.json({ message: `Order ${orderID} updated to "${status}".` });
+    });
+
   } else {
-    res.status(400).json({ error: "Only status 'ready' is supported." });
+    res.status(400).json({ error: "Only status 'ready' or 'In progress' is supported." });
   }
 });
 

@@ -16,10 +16,23 @@ async function viewOrder() {
         orders.forEach(order => {
             const orderBox = document.createElement("div");
             orderBox.className = "orderCard";
+            orderBox.style.border = "1px solid #ccc";
+            orderBox.style.padding = "15px";
+            orderBox.style.marginBottom = "20px";
+            orderBox.style.borderRadius = "8px";
+
+            const menuItemsHTML = order.menuItems.map(item => `<li>${item}</li>`).join("");
+
             orderBox.innerHTML = `
                 <h3>Order ID: ${order.orderID}</h3>
-                <p><strong>NetID:</strong> ${Array.isArray(order.netID) ? order.netID.join(", ") : order.netID}</p>
+                <p><strong>NetID:</strong> ${order.netID}</p>
                 <p><strong>Status:</strong> ${order.status}</p>
+                <div class="orderDetails">
+                    <strong>Menu Items:</strong>
+                    <ul>${menuItemsHTML}</ul>
+                </div>
+                <button onclick="updateOrder('${order.orderID}', 'begun order')">Begin Order</button>
+                <button onclick="updateOrder('${order.orderID}', 'order complete')">Commplete Order</button>
             `;
 
             ordersContainer.appendChild(orderBox);
