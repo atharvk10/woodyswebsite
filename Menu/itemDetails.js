@@ -1,3 +1,15 @@
+function areAllOptionsSelected(id, itemOptions) {
+  const selectedOptions = getSelectedOptions(id);
+  for (const key in itemOptions) {
+    if (!selectedOptions[key]) {
+      alert(`Please select a ${key} option.`);
+      return false;
+    }
+  }
+  return true;
+}
+
+
 let userCart = JSON.parse(localStorage.getItem("userCart")) || [];
 
 async function loadItems(item, id) {
@@ -6,39 +18,44 @@ async function loadItems(item, id) {
   const container = document.getElementById(id);
   let existingItem = 0;
   for (let i = 0; i < userCart.length; i++) {
-      if (userCart[i].ItemName === item.ItemName) {
+      if (userCart[i].ItemName === item.ItemName &&
+        JSON.stringify(userCart[i].options) === JSON.stringify(getSelectedOptions(id))
+      ) {
           existingItem = userCart[i].quantity;
           break;
       }
   }
+
+
   container.innerHTML = `
-    <h1 class = "itemName">${item.ItemName}</h1>
-    <img class = "itemImage" src="${item.ItemImage}" alt="${item.ItemName}">
+    <h1 class="itemName">${item.ItemName}</h1>
+    <img class="itemImage" src="${item.ItemImage}" alt="${item.ItemName}">
     <div class="itemDescription">${item.ItemDescription || 'No description available.'}</div>
     <div class="ingredients">Ingredients: ${ingredients}</div>
     <div class="price-and-buttons">
-      <div id = "princeItem" class="price">Price: $${item.ItemPrice.toFixed(2)}</div>
+      <div id="princeItem" class="price">Price: $${item.ItemPrice.toFixed(2)}</div>
       <div class="buttons">
         <ul>
-          <li onclick="decrease({ItemName: '${item.ItemName}'})" class="button-item"><i class="bi bi-dash"></i></li>
-          <li id="${item.ItemName}" class="quantity">${existingItem}</li>
-          <li onclick="increase({ItemName: '${item.ItemName}'})" class="button-item"><i class="bi bi-plus"></i></li>
+          <li class="decrease-btn button-item"><i class="bi bi-dash"></i></li>
+          <li id="quantity-${id}" class="quantity">${existingItem}</li>
+          <li class="increase-btn button-item"><i class="bi bi-plus"></i></li>
         </ul>
       </div>
     </div>
     <div class="calories">Calories: ${calories} calories</div>
-    `;
+  `;
+
+
 
   let optionsHTML = '';
-  if (item.ItemOptions){
+  if (item.ItemOptions) {
     const optionKeys = Object.keys(item.ItemOptions);
     for (let i = 0; i < optionKeys.length; i++) {
       const key = optionKeys[i];
       const value = item.ItemOptions[key];
-      optionsHTML += `
-        <div class="itemOptions">${key}
-          <select class="itemOptionsSelections" data-key="${key}">
-      `;
+      optionsHTML += `<div class="itemOptions">${key}
+        <select class="itemOptionsSelections" data-key="${key}">
+          <option value="" disabled selected>Select an option</option>`;
       for (let j = 0; j < value.choices.length; j++) {
         const choice = value.choices[j];
         optionsHTML += `<option value="${choice.name}">${choice.name} ($${choice.price.toFixed(2)})</option>`;
@@ -47,34 +64,45 @@ async function loadItems(item, id) {
     }
   }
   container.innerHTML += optionsHTML;
+
+
+
+  updatePrice(item, item.ItemPrice, id, item.ItemOptions);
+  const decreaseBtn = container.querySelector('.decrease-btn');
+const increaseBtn = container.querySelector('.increase-btn');
+increaseBtn.onclick = () => increase({ ItemName: item.ItemName }, id, item.ItemOptions);
+decreaseBtn.onclick = () => decrease({ ItemName: item.ItemName }, id, item.ItemOptions);
+
   const selects = container.querySelectorAll('.itemOptionsSelections');
   selects.forEach(select => {
-    select.addEventListener('change', () => {
+    select.onchange = () => {
+      const decreaseBtn = container.querySelector('.decrease-btn');
+      const increaseBtn = container.querySelector('.increase-btn');
+      increaseBtn.onclick = () => increase({ ItemName: item.ItemName }, id, item.ItemOptions);
+      decreaseBtn.onclick = () => decrease({ ItemName: item.ItemName }, id, item.ItemOptions);
       updatePrice(item, item.ItemPrice, id, item.ItemOptions);
-    });
+    };
   });
 }
 
-function updatePrice(item, originalPrice, id, ItemOptions){
-  let finalPrice = originalPrice;
+function updatePrice(item, _, id, ItemOptions) {
+  let finalPrice = item.ItemPrice;
   const menuItem = document.getElementById(id);
   const allSelections = menuItem.getElementsByClassName('itemOptionsSelections');
-
-  for (let i = 0; i < allSelections.length; i++){
-    const selectionCategory = allSelections[i];
-    const selection = selectionCategory.value;
-    for (const itemOption in ItemOptions){
-      const itemOptionChoices = ItemOptions[itemOption];
-      for (let j = 0; j < itemOptionChoices.choices.length; j++){
-        const itemOptionChoice = itemOptionChoices.choices[j];
-        if (itemOptionChoice.name === selection) {
-          finalPrice = finalPrice + itemOptionChoice.price;
-        }
+  for (let i = 0; i < allSelections.length; i++) {
+    const select = allSelections[i];
+    const selectedValue = select.value;
+    const key = select.getAttribute("data-key");
+    const optionGroup = ItemOptions[key];
+    for (let j = 0; j < optionGroup.choices.length; j++) {
+      const choice = optionGroup.choices[j];
+      if (choice.name === selectedValue) {
+        finalPrice += choice.price;
+        break;
       }
     }
   }
-
-  let priceUP = document.getElementById("princeItem");
+  const priceUP = document.getElementById("princeItem");
   priceUP.innerHTML = `Price: $${finalPrice.toFixed(2)}`;
 }
 async function getCalories(ingredients){
@@ -119,18 +147,16 @@ function getSelectedOptions(id) {
   return selectedOptions;
 }
 
-let increase = (itemToAdd) => {
+let increase = (itemToAdd, id, itemOptions) => {
   const finalPrice = parseFloat(document.querySelector("#princeItem").textContent.replace("Price: $", ""));
-  const selectedOptions = getSelectedOptions('breakfastsandwiches');
-  console.log(selectedOptions);
-
+  const selectedOptions = getSelectedOptions(id);
+  if (!areAllOptionsSelected(id, itemOptions)) return;
   const cartItem = {
     ItemName: itemToAdd.ItemName,
     price: finalPrice,
     quantity: 1,
     options: selectedOptions,
   };
-  console.log(cartItem)
   let iteminCart = userCart.find(item =>
     item.ItemName === cartItem.ItemName &&
     item.price === cartItem.price &&
@@ -141,45 +167,45 @@ let increase = (itemToAdd) => {
   } else {
     userCart.push(cartItem);
   }
-
   localStorage.setItem("userCart", JSON.stringify(userCart));
-  console.log(userCart);
-  updateQuantity(itemToAdd.ItemName);
+  updateQuantity(itemToAdd.ItemName, id);
 };
 
-let decrease = (itemToAdd) => {
-  const finalPrice = parseFloat(document.querySelector("#princeItem").textContent.replace("Price: $", ""));
-  const selectedOptions = getSelectedOptions('breakfastsandwiches');
 
-  console.log(itemToAdd);
+let decrease = (itemToAdd, id, itemOptions) => {
+  const finalPrice = parseFloat(document.querySelector("#princeItem").textContent.replace("Price: $", ""));
+  const selectedOptions = getSelectedOptions(id);
+  for (const key in itemOptions) {
+    if (!selectedOptions[key]) {
+      alert(`Please select a ${key} option before removing.`);
+      return;
+    }
+  }
   const itemIndex = userCart.findIndex(element =>
     element.ItemName === itemToAdd.ItemName &&
     element.price === finalPrice &&
     JSON.stringify(element.options) === JSON.stringify(selectedOptions)
   );
-  console.log(itemIndex);
   if (itemIndex === -1) return;
   userCart[itemIndex].quantity -= 1;
   if (userCart[itemIndex].quantity === 0) {
     userCart.splice(itemIndex, 1);
   }
   localStorage.setItem("userCart", JSON.stringify(userCart));
-  console.log(userCart);
-  updateQuantity(itemToAdd.ItemName);
+  updateQuantity(itemToAdd.ItemName, id);
 };
 
-let updateQuantity = (ItemName) => {
+
+let updateQuantity = (ItemName, id) => {
   let totalQuantity = 0;
   for (let i = 0; i < userCart.length; i++) {
     if (userCart[i].ItemName === ItemName) {
       totalQuantity += userCart[i].quantity;
     }
   }
-  const quantityElements = document.querySelectorAll("li.quantity");
-  for (let i = 0; i < quantityElements.length; i++) {
-    if (quantityElements[i].id === ItemName) {
-      quantityElements[i].textContent = totalQuantity;
-    }
+  const quantityElement = document.getElementById(`quantity-${id}`);
+  if (quantityElement) {
+    quantityElement.textContent = totalQuantity;
   }
   updateCart();
 };
@@ -187,8 +213,8 @@ let updateQuantity = (ItemName) => {
 let updateCart = () => {
   let cartnavbarUP = document.getElementById("cartnavbar");
   let totalCartAmount = 0;
-  for (var i = 0; i < userCart.length; ++i) {
-      totalCartAmount = totalCartAmount + userCart[i].quantity;
+  for (let i = 0; i < userCart.length; ++i) {
+    totalCartAmount += userCart[i].quantity;
   }
   cartnavbarUP.innerHTML = totalCartAmount;
 };
