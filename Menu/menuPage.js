@@ -114,13 +114,7 @@ function displayBreakfastSanwiches(items) {
                         </a>
                     </div>
                     <div class="item-price">$${item.ItemPrice.toFixed(2)}</div>
-                    <div class="buttons">
-                        <ul>
-                            <li onclick="decrease({ItemName: '${item.ItemName}'})" class="button-item"><i class="bi bi-dash"></i></li>
-                            <li id="${item.ItemName}" class="quantity">${existingItem}</li>
-                            <li onclick='increase(${JSON.stringify(item)})' class="button-item"><i class="bi bi-plus"></i></li>
-                        </ul>
-                    </div>
+                    <div class="item-numberq">In Cart: <span id="${item.ItemName}">${existingItem}</span></div>
                     <img class="item-image" src="${item.ItemImage}" width="250" height="250">
                     `;
 
@@ -166,13 +160,7 @@ function displayBreakfast(items) {
                         </a>
                     </div>
                     <div class="item-price">$${item.ItemPrice.toFixed(2)}</div>
-                    <div class="buttons">
-                        <ul>
-                            <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
-                            <li id="${item.ItemName}" class="quantity">${existingItem}</li>
-                            <li onclick='increase(${JSON.stringify(item)})' class="button-item"><i class="bi bi-plus"></i></li>
-                        </ul>
-                    </div>
+                    <div class="item-numberq">In Cart: <span id="${item.ItemName}">${existingItem}</span></div>
                     <img class="item-image" src="${item.ItemImage}" width="250" height="250">
                     `;
         menuDiv.appendChild(div);
@@ -217,13 +205,7 @@ function displayBreakfastSides(items) {
                         </a>
                     </div>
                     <div class="item-price">$${item.ItemPrice.toFixed(2)}</div>
-                    <div class="buttons">
-                        <ul>
-                            <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
-                            <li id="${item.ItemName}" class="quantity">${existingItem}</li>
-                            <li onclick='increase(${JSON.stringify(item)})' class="button-item"><i class="bi bi-plus"></i></li>
-                        </ul>
-                    </div>
+                    <div class="item-numberq">In Cart: <span id="${item.ItemName}">${existingItem}</span></div>
                     <img class="item-image" src="${item.ItemImage}" width="250" height="250">
                     `;
 
@@ -269,13 +251,7 @@ function displayBagels(items) {
                         </a>
                     </div>
                     <div class="item-price">$${item.ItemPrice.toFixed(2)}</div>
-                    <div class="buttons">
-                        <ul>
-                            <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
-                            <li id="${item.ItemName}" class="quantity">${existingItem}</li>
-                            <li onclick='increase(${JSON.stringify(item)})' class="button-item"><i class="bi bi-plus"></i></li>
-                        </ul>
-                    </div>
+                    <div class="item-numberq">In Cart: <span id="${item.ItemName}">${existingItem}</span></div>
                     <img class="item-image" src="${item.ItemImage}" width="250" height="250">
                     `;
 
@@ -321,13 +297,7 @@ function displayGrabAndGo(items) {
                         </a>
                     </div>
                     <div class="item-price">$${item.ItemPrice.toFixed(2)}</div>
-                    <div class="buttons">
-                        <ul>
-                            <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
-                            <li id="${item.ItemName}" class="quantity">${existingItem}</li>
-                            <li onclick='increase(${JSON.stringify(item)})' class="button-item"><i class="bi bi-plus"></i></li>
-                        </ul>
-                    </div>
+                    <div class="item-numberq">In Cart: <span id="${item.ItemName}">${existingItem}</span></div>
                     <img class="item-image" src="${item.ItemImage}" width="250" height="250">
                     `;
 
@@ -373,13 +343,7 @@ function displayLunchBagels(items) {
                         </a>
                     </div>
                     <div class="item-price">$${item.ItemPrice.toFixed(2)}</div>
-                    <div class="buttons">
-                        <ul>
-                            <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
-                            <li id="${item.ItemName}" class="quantity">${existingItem}</li>
-                            <li onclick='increase(${JSON.stringify(item)})' class="button-item"><i class="bi bi-plus"></i></li>
-                        </ul>
-                    </div>
+                    <div class="item-numberq">In Cart: <span id="${item.ItemName}">${existingItem}</span></div>
                     <img class="item-image" src="${item.ItemImage}" width="250" height="250">
                     `;
 
@@ -425,13 +389,7 @@ function displayWraps(items) {
                         </a>
                     </div>
                     <div class="item-price">$${item.ItemPrice.toFixed(2)}</div>
-                    <div class="buttons">
-                        <ul>
-                            <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
-                            <li id="${item.ItemName}" class="quantity">${existingItem}</li>
-                            <li onclick='increase(${JSON.stringify(item)})' class="button-item"><i class="bi bi-plus"></i></li>
-                        </ul>
-                    </div>
+                    <div class="item-numberq">In Cart: <span id="${item.ItemName}">${existingItem}</span></div>
                     <img class="item-image" src="${item.ItemImage}" width="450" height="400">
                     `;
 
@@ -477,13 +435,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         </a>
                     </div>
                     <div class="item-price">$${item.ItemPrice.toFixed(2)}</div>
-                    <div class="buttons">
-                        <ul>
-                            <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
-                            <li id="${item.ItemName}" class="quantity">${existingItem}</li>
-                            <li onclick='increase(${JSON.stringify(item)})' class="button-item"><i class="bi bi-plus"></i></li>
-                        </ul>
-                    </div>
+                    <div class="item-numberq">In Cart: <span id="${item.ItemName}">${existingItem}</span></div>
                     <img class="item-image" src="${item.ItemImage}" width="250" height="250">
                     `;
   
@@ -528,13 +480,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         </a>
                     </div>
                     <div class="item-price">$${item.ItemPrice.toFixed(2)}</div>
-                    <div class="buttons">
-                        <ul>
-                            <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
-                            <li id="${item.ItemName}" class="quantity">${existingItem}</li>
-                            <li onclick='increase(${JSON.stringify(item)})' class="button-item"><i class="bi bi-plus"></i></li>
-                        </ul>
-                    </div>
+                    <div class="item-numberq">In Cart: <span id="${item.ItemName}">${existingItem}</span></div>
                     <img class="item-image" src="${item.ItemImage}" width="250" height="250">
                     `;
   
@@ -580,13 +526,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         </a>
                     </div>
                     <div class="item-price">$${item.ItemPrice.toFixed(2)}</div>
-                    <div class="buttons">
-                        <ul>
-                            <li onclick="decrease({ ItemName: '${item.ItemName}' })" class="button-item"><i class="bi bi-dash"></i></li>
-                            <li id="${item.ItemName}" class="quantity">${existingItem}</li>
-                            <li onclick='increase(${JSON.stringify(item)})' class="button-item"><i class="bi bi-plus"></i></li>
-                        </ul>
-                    </div>                    
+                    <div class="item-numberq">In Cart: <span id="${item.ItemName}">${existingItem}</span></div>                  
                     <img class="item-image" src="${item.ItemImage}" width="250" height="250">
                     `;
   
