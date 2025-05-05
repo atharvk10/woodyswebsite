@@ -84,6 +84,15 @@
             window.location.href = "../Payment/OrderSubmitPage.html";
         });
     }
+    let updateCart = () => {
+    let cartnavbarUP = document.getElementById("cartnavbar");
+      let totalCartAmount = 0;
+      for (let i = 0; i < cart.length; ++i) {
+        totalCartAmount += cart[i].quantity;
+      }
+      cartnavbarUP.innerHTML = totalCartAmount;
+    };
+    updateCart();
   </script>
 
   <!-- Handle form submission and order POST -->
